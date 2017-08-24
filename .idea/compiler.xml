@@ -15,14 +15,14 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="EItems" target="1.7" />
-      <module name="EItems-common" target="1.7" />
-      <module name="EItems-manager" target="1.7" />
-      <module name="EItems-manager-mapping" target="1.7" />
-      <module name="EItems-manager-pojo" target="1.7" />
-      <module name="EItems-manager-service" target="1.7" />
-      <module name="EItems-manager-web" target="1.7" />
-      <module name="EItems-portal" target="1.7" />
+      <module name="EItems" target="1.5" />
+      <module name="EItems-common" target="1.5" />
+      <module name="EItems-manager" target="1.5" />
+      <module name="EItems-manager-mapping" target="1.5" />
+      <module name="EItems-manager-pojo" target="1.5" />
+      <module name="EItems-manager-service" target="1.5" />
+      <module name="EItems-manager-web" target="1.5" />
+      <module name="EItems-portal" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

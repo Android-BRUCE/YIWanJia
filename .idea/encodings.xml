@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EItems-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EItems-manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EItems-manager-mapping" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EItems-manager-pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EItems-manager-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EItems-manager-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/skin/css/base.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/EItems-portal" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/fonts/fontawesome-webfont.eot" charset="UTF-16" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

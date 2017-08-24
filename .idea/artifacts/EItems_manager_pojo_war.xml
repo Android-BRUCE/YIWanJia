@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="EItems-manager-pojo:war">
+    <output-path>$PROJECT_DIR$/EItems-manager-pojo/target</output-path>
+    <root id="archive" name="EItems-manager-pojo.war">
+      <element id="artifact" artifact-name="EItems-manager-pojo:war exploded" />
+    </root>
+  </artifact>
+</component>

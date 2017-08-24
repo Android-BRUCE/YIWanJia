@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="EItems-common" />
+        <module name="EItems-manager-mapping" />
+        <module name="EItems-manager-pojo" />
+        <module name="EItems-manager-service" />
+        <module name="EItems-manager-web" />
+        <module name="EItems-portal" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="EItems" target="1.7" />
+      <module name="EItems-common" target="1.7" />
+      <module name="EItems-manager" target="1.7" />
+      <module name="EItems-manager-mapping" target="1.7" />
+      <module name="EItems-manager-pojo" target="1.7" />
+      <module name="EItems-manager-service" target="1.7" />
+      <module name="EItems-manager-web" target="1.7" />
+      <module name="EItems-portal" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

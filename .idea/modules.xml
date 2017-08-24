@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EItems.iml" filepath="$PROJECT_DIR$/EItems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EItems-common/EItems-common.iml" filepath="$PROJECT_DIR$/EItems-common/EItems-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EItems-manager/EItems-manager.iml" filepath="$PROJECT_DIR$/EItems-manager/EItems-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EItems-manager-mapping/EItems-manager-mapping.iml" filepath="$PROJECT_DIR$/EItems-manager-mapping/EItems-manager-mapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EItems-manager-pojo/EItems-manager-pojo.iml" filepath="$PROJECT_DIR$/EItems-manager-pojo/EItems-manager-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EItems-manager-service/EItems-manager-service.iml" filepath="$PROJECT_DIR$/EItems-manager-service/EItems-manager-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EItems-manager-web/EItems-manager-web.iml" filepath="$PROJECT_DIR$/EItems-manager-web/EItems-manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EItems-portal/EItems-portal.iml" filepath="$PROJECT_DIR$/EItems-portal/EItems-portal.iml" />
+    </modules>
+  </component>
+</project>

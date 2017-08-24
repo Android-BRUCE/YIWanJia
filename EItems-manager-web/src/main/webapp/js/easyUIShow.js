@@ -2,8 +2,8 @@ $(function(){
     var editing;
     var flag;
     $("#tt").datagrid({
-        width:1010,
-        height:215,
+        width:1200,
+        height: 600,
         collapsible:true,
         //idField:"id",只能选中一个行
         fitColumns:true,
@@ -20,11 +20,11 @@ $(function(){
                 var aa= value;
                 if (value == null||value=="") {
 
-                    var aa="../skin/images/frame/book.gif";
+                    var aa="http://localhost:8080/skin/images/frame/book.gif";
                     var bb = "download()"
-                str = "<img src='../skin/images/frame/book.gif ' onclick='download()'/>";
+                str = "<img src='../skin/images/frame/book.gif ' onclick='download(\""+aa+"\")'/>";
                 return str; }else{
-                    str = "<img src=\""+value+"\" />";
+                    str = "<img src=\""+value+"\" onclick='download(\""+aa+"\")'/>";
                 }
 
                 return str;
@@ -201,7 +201,6 @@ $(function(){
 
 });
 function download(address){
-    var address =  address;
     $('#dd').dialog({
         title: '预览',
         width: 430,
@@ -211,5 +210,5 @@ function download(address){
         cache: false,
         modal: true,
     });
-    $("#address").attr("src","http:localhost:8080/skin/images/frame/book.gif");
+    $("#dd").attr("src",address);
 }

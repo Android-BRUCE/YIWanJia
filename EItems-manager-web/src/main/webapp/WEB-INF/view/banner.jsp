@@ -24,6 +24,7 @@
 <body leftmargin="8" topmargin="8" background='${pageContext.request.contextPath}/skin/images/allbg.gif'>
 
 <div id="dd"></div>
+<div id="address"></div>
 
 
 <!--  快速转换位置按钮  -->

@@ -1,6 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-		 pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="UTF-8"%>
+< html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -14,6 +13,8 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
+
+<body>
 <script>
     $(function(){
 
@@ -23,19 +24,34 @@
             cache:false,
             dataType:"json",
             success:function(results){
-                alert(results.data[0].image);
+                // <ul class="slides" id="banner_show" ></div>
+
+                $("#banner").append("<div id=\"main-slider\" class=\"flexslider\"></div>");
+                $("#main-slider").append("<ul class=\"slides\" id=\"banner_show\" ></div>");
                 for(var i=0;i<results.data.length;i++)
                 {
-                 	var positionName=results.data[i].image;
-                    //var positionId=results[0].positions[i].position_id;
-                    //$("#position_id").append("<option value='"+positionId+"'>"+positionName+"</option>");
+                    /**
+                     *<li>
+                     <img src="/img/slides/2.jpg" alt="" />
+                     <div class="flex-caption">
+                     <h3>Creative Minds</h3>
+                     <p>We create best opportunities</p>
+                     </div>
+                     </li>
+                     */
+                    var image = results.data[i].image;
+                    var title = results.data[i].title;
+                    var point = results.data[i].point;
+                    var ttt = "<li><img src=\""+image+"\" /><div class=\"flex-caption\"><h3>"+title+"</h3><p>"+point+"</p></div></li>";
+                  //  alert(ttt);
+                    $("#banner_show").append("<li><img src='"+image+"' /><div class='flex-caption'><h3>"+title+"</h3><p>"+point+"</p></div></li>");
+
                 }
             }
         });
     });
 
 </script>
-<body>
 <div id="wrapper" class="home-page"> 
 	<header class="topbar">
 		<div class="container">
@@ -106,46 +122,11 @@
 	<section id="banner">
 	 
 	<!-- Slider -->
-        <div id="main-slider" class="flexslider">
-            <ul class="slides">
+        <%--<div id="main-slider" class="flexslider">--%>
+            <%--&lt;%&ndash;<ul class="slides" id="banner_show" >&ndash;%&gt;--%>
 
-                <li>
-					<img src="/img/slides/2.jpg" alt="" />
-					<div class="flex-caption">
-						<h3>Creative Minds</h3>
-						<p>We create best opportunities</p>
-					</div>
-              </li>
-
-                <li>
-                <img src="/img/slides/1.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Business  Goal</h3> 
-					<p>Success depends on productivity</p> 
-					 
-                </div>
-              </li>
-
-				<li>
-					<img src="/img/slides/1.jpg" alt="" />
-					<div class="flex-caption">
-						<h3>Business  Goal</h3>
-						<p>Success depends on productivity</p>
-
-					</div>
-				</li>
-
-				<li>
-					<img src="/img/slides/1.jpg" alt="" />
-					<div class="flex-caption">
-						<h3>Business  Goal</h3>
-						<p>Success depends on productivity</p>
-
-					</div>
-				</li>
-
-            </ul>
-        </div>
+            <%--&lt;%&ndash;</ul>&ndash;%&gt;--%>
+        <%--</div>--%>
 	<!-- end slider --> 
 	</section>  
 	<section class="section-padding whyWe nav-bg">

@@ -19,9 +19,13 @@ public class BannerService {
     @Autowired
     private TbBannerMapper tbBannerMapper;
 
+    /**
+     * 获取status为1的banner信息
+     * @return
+     */
     public TaotaoResult getBanner(){
         TbBannerExample example = new TbBannerExample();
-
+        example.createCriteria().andStatusEqualTo(1);
         List<TbBanner> bannerList = tbBannerMapper.selectByExample(example);
         if(bannerList==null){
             return TaotaoResult.ok();

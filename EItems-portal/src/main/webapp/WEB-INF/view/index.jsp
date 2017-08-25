@@ -14,6 +14,27 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
+<script>
+    $(function(){
+
+        $.ajax({
+            type:"POST",
+            url:"portal/banner/getBanner.do",
+            cache:false,
+            dataType:"json",
+            success:function(results){
+                alert(results.data[0].image);
+                for(var i=0;i<results.data.length;i++)
+                {
+                 	var positionName=results.data[i].image;
+                    //var positionId=results[0].positions[i].position_id;
+                    //$("#position_id").append("<option value='"+positionId+"'>"+positionName+"</option>");
+                }
+            }
+        });
+    });
+
+</script>
 <body>
 <div id="wrapper" class="home-page"> 
 	<header class="topbar">
@@ -87,15 +108,16 @@
 	<!-- Slider -->
         <div id="main-slider" class="flexslider">
             <ul class="slides">
-              <li>
-                <img src="/img/slides/2.jpg" alt="" />
-                <div class="flex-caption">
-					<h3>Creative Minds</h3> 
-					<p>We create best opportunities</p> 
-					 
-                </div>
+
+                <li>
+					<img src="/img/slides/2.jpg" alt="" />
+					<div class="flex-caption">
+						<h3>Creative Minds</h3>
+						<p>We create best opportunities</p>
+					</div>
               </li>
-              <li>
+
+                <li>
                 <img src="/img/slides/1.jpg" alt="" />
                 <div class="flex-caption">
                     <h3>Business  Goal</h3> 
@@ -103,6 +125,7 @@
 					 
                 </div>
               </li>
+
 				<li>
 					<img src="/img/slides/1.jpg" alt="" />
 					<div class="flex-caption">
@@ -111,6 +134,7 @@
 
 					</div>
 				</li>
+
 				<li>
 					<img src="/img/slides/1.jpg" alt="" />
 					<div class="flex-caption">

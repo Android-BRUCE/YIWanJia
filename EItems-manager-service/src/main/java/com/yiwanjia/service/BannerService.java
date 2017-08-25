@@ -10,6 +10,10 @@ import com.yiwanjia.pojo.TbBanner;
 import com.yiwanjia.pojo.TbBannerExample;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
 import java.util.Date;
 import java.util.List;
 
@@ -53,5 +57,14 @@ public class BannerService{
         euDataGridResult.setTotal(pageInfo.getTotal());
         //返回查询结果
         return euDataGridResult;
+    }
+
+
+    public TaotaoResult deleteBanner( int id ){
+        int sout = tbBannerMapper.deleteByPrimaryKey(id);
+        if(sout==0){
+            return TaotaoResult.build(500,"删除失败！");
+        }
+        return TaotaoResult.build(200,"删除成功！");
     }
 }

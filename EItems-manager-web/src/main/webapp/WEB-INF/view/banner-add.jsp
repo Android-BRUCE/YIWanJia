@@ -57,6 +57,7 @@
         $.post("/banner/save.do",$("#itemAddForm").serialize(), function(data){
             if(data.status == 200){
                 $.messager.alert('提示','新增轮播图成功!');
+                clearForm();
             }
         });
     }

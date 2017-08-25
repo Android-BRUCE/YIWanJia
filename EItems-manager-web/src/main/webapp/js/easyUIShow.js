@@ -14,19 +14,13 @@ $(function(){
         columns:[[
             {field:"ck",checkbox:true, width:50},
             {field:"id",title:"主键", width:0,hidden:true},
-            {field:'image',title:'轮播图片',width:50,
+            {field:'image',title:'轮播图片',width:140,
             formatter:function(value, rec) {//使用formatter格式化刷子
                 var str = "";
                 var aa= value;
-                if (value == null||value=="") {
-
-                    var aa="http://localhost:8080/skin/images/frame/book.gif";
-                    var bb = "download()"
+                if (value == null||value=="") {var aa="http://localhost:8080/skin/images/frame/book.gif";
                 str = "<img src='../skin/images/frame/book.gif ' onclick='download(\""+aa+"\")'/>";
-                return str; }else{
-                    str = "<img src=\""+value+"\" onclick='download(\""+aa+"\")'/>";
-                }
-
+                return str; }else{str = "<img src=\'"+value+"\' onclick='download(\""+aa+"\")'  height='200' width='400'  />";}
                 return str;
             }},
 
@@ -59,8 +53,17 @@ $(function(){
                         }
                    } */
             },
-            {field:"createtime",title:"创建时间",width:50,align:"center"},
-            {field:"updatetime",title:"修改时间",width:50,align:"center"}
+            {field:"createtime",title:"创建时间",width:50,align:"center",
+                formatter:function(value,row,index){
+                    var unixTimestamp = new Date(value);
+                    return unixTimestamp.toLocaleString();
+                }
+            },
+            {field:"updatetime",title:"修改时间",width:50,align:"center",
+                formatter:function(value,row,index){
+                    var unixTimestamp = new Date(value);
+                    return unixTimestamp.toLocaleString();
+                }}
         ]],
         pagination:true,
         pageNumber:1,
@@ -165,18 +168,18 @@ $(function(){
                         var ids="";
                         for(var i=0;i<rows.length;i++)
                         {
-                            ids=ids+rows[i].r_id+",";
+                            ids=ids+rows[i].id+",";
                         }
                         ids=ids.substring(0,ids.length-1);
                         $.messager.confirm("确认框","您确定要删除吗?",function(b){
                             if(b)
                             {
-                                $.post("${pageContext.request.contextPath}/role/role_delete.do","r_id="+ids,function(data){
+                                $.post("banner/"+ids+"/delete.do?",function(data){
                                     $.messager.show({
                                         title:"消息",
                                         width:200,
                                         height:100,
-                                        msg:data.message
+                                        msg:data.msg
                                     });
                                     //刷新datagrid
                                     $("#tt").datagrid("reload",{});
@@ -200,15 +203,3 @@ $(function(){
     });
 
 });
-function download(address){
-    $('#dd').dialog({
-        title: '预览',
-        width: 430,
-        height:430,
-        resizable:true,
-        closed: false,
-        cache: false,
-        modal: true,
-    });
-    $("#dd").attr("src",address);
-}

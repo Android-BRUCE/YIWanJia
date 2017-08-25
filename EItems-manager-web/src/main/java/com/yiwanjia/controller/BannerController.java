@@ -6,9 +6,12 @@ import com.yiwanjia.pojo.TbBanner;
 import com.yiwanjia.service.BannerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.xml.ws.RequestWrapper;
 
 @Controller
 @RequestMapping("banner")
@@ -34,5 +37,12 @@ public class BannerController {
     public EUDataGridResult getBannerList(Integer page,Integer rows){
         EUDataGridResult bannerList = bannerService.getBannerList(page, rows);
         return bannerList;
+    }
+    @RequestMapping("{id}/delete")
+    @ResponseBody
+    public TaotaoResult deleteBanner(@PathVariable int id){
+        System.out.println("id = [" + id + "]");
+        TaotaoResult result = bannerService.deleteBanner(id);
+        return result;
     }
 }

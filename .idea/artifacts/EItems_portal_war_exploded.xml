@@ -7,9 +7,6 @@
           <element id="module-output" name="EItems-portal" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.2.5.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.2.5.RELEASE" />
-          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
           <element id="archive" name="EItems-manager-mapping-1.0-SNAPSHOT.jar">
             <element id="module-output" name="EItems-manager-mapping" />
           </element>
@@ -23,6 +20,9 @@
           <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:0.9.5" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.32" />
           <element id="library" level="project" name="Maven: com.alibaba:druid:1.0.29" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
           <element id="archive" name="EItems-common-1.0-SNAPSHOT.jar">
             <element id="module-output" name="EItems-common" />
           </element>

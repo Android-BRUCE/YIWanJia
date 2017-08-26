@@ -62,21 +62,3 @@ $(function(){
         }
     });
 });
-
-
-$(function(){
-    $.ajax({
-        type:"POST",
-        url:"${pageContext.request.contextPath}/role/position_names.do",
-        cache:false,
-        dataType:"json",
-        success:function(results){
-            for(var i=0;i<results[0].positions.length;i++)
-            {
-                var positionName=results[0].positions[i].position_name;
-                var positionId=results[0].positions[i].position_id;
-                $("#position_id").append("<option value='"+positionId+"'>"+positionName+"</option>");
-            }
-        }
-    });
-});

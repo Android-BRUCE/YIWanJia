@@ -41,7 +41,6 @@ public class BannerController {
     @RequestMapping("{id}/delete")
     @ResponseBody
     public TaotaoResult deleteBanner(@PathVariable int id){
-        System.out.println("id = [" + id + "]");
         TaotaoResult result = bannerService.deleteBanner(id);
         return result;
     }

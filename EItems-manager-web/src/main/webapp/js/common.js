@@ -74,7 +74,7 @@ var TT = TAOTAO = {
         		var imgs = data.pics.split(",");
         		for(var i in imgs){
         			if($.trim(imgs[i]).length > 0){
-        				_ele.siblings(".pics").find("ul").append("<li><a href='"+imgs[i]+"' target='_blank'><img src='"+imgs[i]+"' width='80' height='50' /></a></li>");
+        				_ele.siblings(".pics").find("ul").append("<li><a href='"+imgs[i]+"' target='_blank' id='imagehref'><img name='image' id='image' src='"+imgs[i]+"' width='80' height='50'/></a></li>");
         			}
         		}
         	}
@@ -89,7 +89,7 @@ var TT = TAOTAO = {
 							var imgArray = [];
 							KindEditor.each(urlList, function(i, data) {
 								imgArray.push(data.url);
-								form.find(".pics ul").append("<li><a href='"+data.url+"' target='_blank'><img src='"+data.url+"' width='80' height='50' /></a></li>");
+								form.find(".pics ul").append("<li><a href='"+data.url+"' target='_blank'><img src='"+data.url+"' width='80' height='50' id='image'/></a></li>");
 							});
 							form.find("[name=image]").val(imgArray.join(","));
 							editor.hideDialog();
@@ -195,7 +195,7 @@ var TT = TAOTAO = {
 						var input = _self.siblings("input");
 						input.parent().find("img").remove();
 						input.val(url);
-						input.after("<a href='"+url+"' target='_blank'><img src='"+url+"' width='80' height='50'/></a>");
+						input.after("<a href='"+url+"' target='_blank'><img src='"+url+"' width='80' height='50' id='image'/></a>");
 						this.hideDialog();
 					}
 				});

@@ -5,21 +5,18 @@
 <html>
 <head>
 
-    <title>轮播管理</title>
+    <title>产品轮播管理</title>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/skin/css/base.css">
     <script type="text/javascript" src="${pageContext.request.contextPath}/jquery-easyui-1.2.6/jquery-1.7.2.min.js"></script>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jquery-easyui-1.2.6/themes/default/easyui.css">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jquery-easyui-1.2.6/themes/icon.css">
     <script type="text/javascript" src="${pageContext.request.contextPath}/jquery-easyui-1.2.6/jquery.easyui.min.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/jquery-easyui-1.2.6/locale/easyui-lang-zh_CN.js"></script>
-    <script type="text/javascript" src="${pageContext.request.contextPath}/js/easyUIShow.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/easyUIShow-indexGoods.js"></script>
 </head>
 <body leftmargin="8" topmargin="8" background='${pageContext.request.contextPath}/skin/images/allbg.gif'>
-
 <div id="dd"></div>
 <div id="address"></div>
-
-
 <!--  快速转换位置按钮  -->
 <table width="98%" border="0" cellpadding="0" cellspacing="1" bgcolor="#D1DDAA" align="left">
     <tr>
@@ -27,17 +24,16 @@
             <table width="58%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td >
-                        当前位置:首页管理>>轮播控制
+                        当前位置:首页管理>>产品轮播管理
                     </td>
                     <td>
-                        <input type='button' class="coolbg np" onClick="location='banner-add.html';" value='添加轮播图' />
+                        <input type='button' class="coolbg np" onClick="location='indexGoods-add.html';" value='添加产品轮播' />
                     </td>
                 </tr>
             </table>
         </td>
     </tr>
 </table>
-
 <!--  搜索表单  -->
 <form name='form3' method='post'>
     <input type='hidden' name='dopost' value='' />
@@ -66,9 +62,4 @@
             </td>
         </tr>
     </table>
-</form>
-<!--  内容列表   -->
-<form id="tt">
-</form>
-</body>
-</html>
+</form><!--  内容列表   --><form id="tt"></form></body></html>

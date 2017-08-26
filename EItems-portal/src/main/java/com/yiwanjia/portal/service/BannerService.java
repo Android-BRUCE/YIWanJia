@@ -20,7 +20,7 @@ public class BannerService {
     private TbBannerMapper tbBannerMapper;
 
     /**
-     * 获取status为1的banner信息
+     * 获取status为1的banner信息(ajax获取id生成节点比html加载慢)
      * @return
      */
     public TaotaoResult getBanner(){
@@ -31,5 +31,11 @@ public class BannerService {
             return TaotaoResult.ok();
         }
         return TaotaoResult.ok(bannerList);
+    }
+    public List<TbBanner> getBanner2(){
+        TbBannerExample example = new TbBannerExample();
+        example.createCriteria().andStatusEqualTo(1);
+        List<TbBanner> bannerList = tbBannerMapper.selectByExample(example);
+        return bannerList;
     }
 }

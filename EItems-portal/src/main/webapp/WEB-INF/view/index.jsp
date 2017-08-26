@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="UTF-8"%>
-< html>
+<%@taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -120,14 +120,22 @@
 	</header>
 	<!-- end header -->
 	<section id="banner">
-	 
-	<!-- Slider -->
-        <%--<div id="main-slider" class="flexslider">--%>
-            <%--&lt;%&ndash;<ul class="slides" id="banner_show" >&ndash;%&gt;--%>
 
-            <%--&lt;%&ndash;</ul>&ndash;%&gt;--%>
-        <%--</div>--%>
-	<!-- end slider --> 
+	<!-- Slider -->
+        <div id="main-slider" class="flexslider">
+            <ul class="slides" id="banner_show" >
+				<c:forEach items="${banner }" var="pr">
+					<li>
+						<img src="${pr.image}" alt="" />
+						<div class="flex-caption">
+							<h3>${pr.title}</h3>
+							<p>${pr.point}</p>
+						</div>
+					</li>
+				</c:forEach>
+            </ul>
+        </div>
+	<!-- end slider -->
 	</section>  
 	<section class="section-padding whyWe nav-bg">
 		<div class="container"> 
@@ -160,7 +168,7 @@
 	<section id="content">
 
 		<div id="ind_box_service">
-			<h1 class="ind_bt">联运产品</h1>
+			<h1 class="ind_bt">产品</h1>
 			<h2 class="ind_ms">PRODUCTS</h2>
 			<span class="ind_x"></span>
 

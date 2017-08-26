@@ -47,11 +47,9 @@ public class BannerService{
         //分页处理
         PageHelper.startPage(page,rows);
         List<TbBanner> list = tbBannerMapper.selectByExample(tbBannerExample);
-
         //创建返回值对象
         EUDataGridResult euDataGridResult = new EUDataGridResult();
         euDataGridResult.setRows(list);
-
         //取记录总条数
         PageInfo<TbBanner> pageInfo = new PageInfo<>();
         euDataGridResult.setTotal(pageInfo.getTotal());
@@ -59,7 +57,11 @@ public class BannerService{
         return euDataGridResult;
     }
 
-
+    /**
+     * 根据删除banner信息
+     * @param id
+     * @return
+     */
     public TaotaoResult deleteBanner( int id ){
         int sout = tbBannerMapper.deleteByPrimaryKey(id);
         if(sout==0){
@@ -67,4 +69,28 @@ public class BannerService{
         }
         return TaotaoResult.build(200,"删除成功！");
     }
+
+    /**
+     * 更新banner信息
+     * @param tbBanner
+     * @return TaotaoResult 返回更新是否成功
+     */
+    public TaotaoResult updateBanner(TbBanner tbBanner){
+
+        //设置更新时间
+        tbBanner.setUpdatetime(new Date());
+//        int id = tbBanner.getId();
+//        TbBannerExample example = new TbBannerExample();
+//        TbBannerExample.Criteria criteria = example.createCriteria();
+//        criteria.andIdEqualTo(id);
+        int resultCode = tbBannerMapper.updateByPrimaryKeySelective(tbBanner);
+        /**
+         * 判断返回值 返回更新是否成功信息
+         */
+        if(resultCode == 0){
+            return TaotaoResult.build(500,"更新失败！");
+        }
+        return TaotaoResult.build(200,"更新成功!");
+    }
+
 }

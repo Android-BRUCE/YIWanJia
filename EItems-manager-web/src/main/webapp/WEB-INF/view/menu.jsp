@@ -44,6 +44,7 @@
         <dd style='display:none' class='sitem' id='items2_1'>
           <ul class='sitemu'>
             <li><a href='banner.html' target='main'>轮播控制</a> </li>
+            <li><a href='indexGoods.html' target='main'>首页产品轮播</a> </li>
             <li><a href='task.html' target='main'>底部导航栏</a> </li>
             <%--<li><a href='task-my.html' target='main'>我的任务</a> </li>--%>
           </ul>

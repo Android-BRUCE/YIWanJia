@@ -32,7 +32,7 @@ public class BannerService{
         banner.setUpdatetime(new Date());
         banner.setStatus(1);
         tbBannerMapper.insert(banner);
-        return TaotaoResult.ok();
+        return TaotaoResult.build(200,"新增轮播图成功啦！");
     }
 
     /**
@@ -51,8 +51,8 @@ public class BannerService{
         EUDataGridResult euDataGridResult = new EUDataGridResult();
         euDataGridResult.setRows(list);
         //取记录总条数
-        PageInfo<TbBanner> pageInfo = new PageInfo<>();
-        euDataGridResult.setTotal(pageInfo.getTotal());
+     //   PageInfo<TbBanner> pageInfo = new PageInfo<>();
+        euDataGridResult.setTotal(tbBannerMapper.countByExample(tbBannerExample));
         //返回查询结果
         return euDataGridResult;
     }

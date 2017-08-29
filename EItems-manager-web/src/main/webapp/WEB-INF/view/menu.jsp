@@ -46,19 +46,17 @@
             <li><a href='banner.html' target='main'>轮播控制</a> </li>
             <li><a href='indexGoods.html' target='main'>首页产品轮播</a> </li>
             <li><a href='task.html' target='main'>底部导航栏</a> </li>
-            <%--<li><a href='task-my.html' target='main'>我的任务</a> </li>--%>
           </ul>
         </dd>
       </dl>
       <!-- Item  End -->
 	<!-- Item  Strat -->
       <dl class='bitem'>
-        <dt onClick='showHide("items3_1")'><b>信息箱</b></dt>
+        <dt onClick='showHide("items3_1")'><b>产品展示管理</b></dt>
         <dd style='display:none' class='sitem' id='items3_1'>
           <ul class='sitemu'>
-            <li><a href='message-seed.html' target='main'>发信息</a> </li>
-            <li><a href='message.html' target='main'>发件箱</a> </li>
-            <li><a href='message-give.html' target='main'>收件箱</a> </li>
+            <li><a href='goodsCategory.html' target='main'>添加产品分类</a> </li>
+            <li><a href='Goods.html' target='main'>产品展示</a> </li>
           </ul>
         </dd>
       </dl>
@@ -87,10 +85,10 @@
       <!-- Item  End -->
 	<!-- Item  Strat -->
       <dl class='bitem'>
-        <dt onClick='showHide("items6_1")'><b>我的信息</b></dt>
+        <dt onClick='showHide("items6_1")'><b>联系我们管理</b></dt>
         <dd style='display:none' class='sitem' id='items6_1'>
           <ul class='sitemu'>
-            <li><a href='info.html' target='main'>信息查看</a> </li>
+            <li><a href='contact.html' target='main'>联系方式</a> </li>
             <li><a href='modpassword.html' target='main'>修改密码</a> </li>
           </ul>
         </dd>

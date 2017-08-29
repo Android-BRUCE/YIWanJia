@@ -186,7 +186,8 @@ var TT = TAOTAO = {
      * 上传完成后会设置input内容以及在input后面追加<img> 
      */
     initOnePicUpload : function(){
-    	$(".onePicUpload").click(function(){
+
+        $(".onePicUpload").click(function(){
 			var _self = $(this);
 			KindEditor.editor(TT.kingEditorParams).loadPlugin('image', function() {
 				this.plugin.imageDialog({

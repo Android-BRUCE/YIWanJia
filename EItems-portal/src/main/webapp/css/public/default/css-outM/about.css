@@ -1,0 +1,1116 @@
+@charset "utf-8";
+
+#company-profile {
+  /*  background:url(../../img/about/company-profile-bg.jpg) no-repeat right top;*/
+    height:614px;
+}
+.about-main .about-con {
+    width:1200px;
+    margin:0 auto;
+}
+.about-main .about-con-left{
+    width:550px;
+    height:;
+    float:left;
+    padding:45px 170px 130px 0;
+}
+.about-main .about-con-left h2{
+
+    font-size:36px;
+    color:#e9e9e9;
+    font-weight:300;
+    margin-bottom:10px;
+}
+.about-main .about-con-left p{
+    text-align:justify;
+    line-height:25px;
+    color:#555555;
+}
+.about-main .about-con-left-p{
+    border-bottom:1px dashed #bfbfbf;
+    margin-bottom:10px;
+    margin-top:5px;
+    padding-bottom:10px;
+}
+.about-main .about-con-right{
+    padding-top:70px;
+}
+/*==============================================================公司简介样式结束*/
+
+/*==============================================================联系我们样式开始*/
+.about-main .about-us-left{
+    float:left;
+    padding:75px 0 80px 0;
+}
+.about-main .about-us-right{
+    padding:175px 70px;
+    width:350px;
+    /*height:320px;*/
+    float:right;
+}
+.about-main .about-us-right p{
+    margin:10px 0;
+    font-size:17px;
+   // display:inline-block;
+    color:#555555;
+        line-height: 1.4;
+    height: 30px;
+
+}
+.about-main .about-us-right-p1,.about-main .about-us-right-p2,.about-main .about-us-right-p3,.about-main .about-us-right-p4,.about-main .about-us-right-p5{
+
+     background:url(../../img/about/about-contactus-icon-170714.png) no-repeat left top;
+      padding-left: 35px;
+}
+
+.about-main .about-us-right-p1{
+    background-position:  0 0;
+
+}
+.about-main .about-us-right-p2{
+    background-position:  0 -53px;
+
+}
+.about-main .about-us-right-p3{
+    background-position:  0 -105px;
+
+}
+.about-main .about-us-right-p4{
+    background-position:  0 -160px;
+
+}
+.about-main .about-us-right-p5{
+    background-position:  0 -213px;
+
+}
+
+
+
+.about-main .about-us-right p span{
+    width:26px;
+    height:18px;
+    display:inline-block;
+    padding-right:15px;
+}
+.about-main .about-us-right .about-us-right-p1 span{
+    background:url(../../img/about/weixin.png) no-repeat center bottom;
+}
+.about-main .about-us-right .about-us-right-p2 span{
+    background:url(../../img/about/xlang.png) no-repeat center bottom;
+}
+.about-main .about-us-right .about-us-right-p3 span{
+    background:url(../../img/about/phone.png) no-repeat center bottom;
+}
+.about-main .about-us-right .about-us-right-p4 span{
+    background:url(../../img/about/Shape-176.png) no-repeat center bottom;
+}
+.about-main .about-us-right .about-us-right-p5 span{
+    background:url(../../img/about/home.png) no-repeat center bottom;
+}
+.about-main .about-us-right h2{
+    color:#646464;
+    font-size:22px;
+    line-height:45px;
+    padding-left:30px;
+}
+/*==============================================================联系我们样式结束*/
+
+
+/*==============================================================新闻媒体样式开始*/
+.about-con-top{
+    display:block;
+    margin:60px 50%;
+    margin-left: 396px;
+    width:825px;
+    height:36px;
+}
+.about-main .about-con-top li{
+    width:163px;
+    height:34px;
+   /* border:#dbdbdb 1px solid;*/
+    text-align:center;
+    line-height:34px;
+    float:left;
+    cursor:pointer;
+    margin-left:-1px;
+    font-size: 20px;
+}
+
+.about-main .about-con-top{
+    width:495px;
+    height:36px;}
+.about-main .about-con-top  .current{
+  /*  background:#00a0e8;
+    color:#fff;
+    border-radius:3px;*/
+    border-bottom: 2px solid #00a0e8;
+   
+
+}
+.about-main .about-con-top  .current a{
+     color: #000000
+}
+/*.about-main .about-con-bottom ul{
+	padding-left:10px;}*/
+.about-main .about-con-main > div{
+    margin-bottom:140px;
+    display:none;
+}
+.about-main .about-con-main div.current{
+    display:block;
+}
+.about-main .about-con-main div li{
+    margin:10px;
+    width:950px;
+    padding:25px;
+    border-left:2px solid #fff;
+    cursor:pointer;
+}
+.about-main .about-con-main div .li01{
+    border-left:2px solid #00a0e8;
+    background:#fafafa;
+}
+.about-main .about-con-main div li h3{
+    font-size:18px;
+    color:#000;
+    display:inline-block;
+    font-weight:500;
+}
+.about-main .about-con-main div li:hover{
+    border-left:2px solid #00a0e8;
+    background:#fafafa;
+}
+
+.about-main .about-con-main div li span{
+    color:#c8c8c8;
+    font-size:16px;
+   
+    padding-left:10px;
+}
+.about-main .about-con-main div li p{
+    color:#646464;
+    font-size:14px;
+
+    padding-top:10px;
+    text-overflow:ellipsis;
+    line-height:22px;
+}
+.about-con .yema{
+    margin:50px 0 150px 50px;
+    width:;
+    height:30px;
+    text-align:center;
+    line-height:30px;
+
+}
+.about-con .yema li{
+    width:30px;
+    height:30px;
+    border:1px solid #f0f0f0;
+    float:left;color:#343434;
+}
+.about-con .yema .first{
+    background:#00a0e8;
+}
+.about-con .yema li a{
+    color:#343434;
+}
+.about-con .yema li.cur a { color:#fff;}
+.about-con .yema .yma{
+    background:#00a0e8;
+}
+/*==============================================================新闻媒体样式结束*/
+
+
+/*==============================================================人才招聘样式开始=*/
+.about-main .about-con .recruit-top{
+    width:1104px;
+    height:246px;
+    margin:100px auto 80px;
+}
+.about-main .about-con .recruit-top img{
+    float:left;
+}
+.about-main .about-con .recruit-center p{
+    margin:0 auto;
+    width:500px;
+    height:75px;
+    color:#808080;
+    text-align:center;
+    line-height:20px;
+}
+.about-main .about-con .recruit-center{
+    margin-bottom:80px;
+}
+.about-main .about-con .recruit-center .drop{
+    margin-left:175px;
+}
+.about-main .about-con .recruit-center .drop #drop-center{
+    margin:0 271px 0 305px;
+}
+.about-main .about-con .recruit-center li{
+    width:79px;
+    height:62px;
+    list-style:none;
+    float:left;
+    font-size:14px;;
+    text-align:center;
+    padding-top:33px;
+    margin-right:4px;
+    cursor:pointer;
+    position:relative;
+    background:url(../../img/about/shuidi.png) no-repeat;
+    color:#fff;
+}
+.about-main .about-con .recruit-center .drop .current{
+    background:url(../../img/about/shuidi1.png) no-repeat;
+}
+.about-main .about-con .recruit-center img{
+    margin:0 auto;
+    display:block;
+}
+.about-main .about-con .recruit-bottom{
+    margin-bottom:100px;
+}
+.about-main .about-con .recruit-bottom div{
+    padding:0 50px;
+    display:none;
+}
+.about-main .about-con .recruit-bottom div.current{
+    display:block;
+}
+.about-main .about-con .recruit-bottom div dd{
+    padding:0 30px;
+    background:url(../../img/about/dian.png) no-repeat left center;
+    color:#474747;
+}
+.about-main .about-con .recruit-bottom div dl{
+    line-height:25px;
+    padding-bottom:30px;
+    border-bottom:1px dashed #999;
+}
+.about-main .about-con .recruit-bottom div h2{
+    font-size:16px;
+    font-weight:bold;
+    color:#232323;
+    line-height:55px;
+    margin-top:20px;
+}
+/*==============================================================人才招聘样式结束=*/
+
+
+/*===============================================================数梦纪样式开始=*/
+.about-main .about-con .downmeau{
+    margin:40px 0;
+}
+.about-main .about-con .downmeau li{
+    width:100px;
+    height:30px;
+    font-size:24px;
+    line-height:30px;
+    text-align:center;
+    background:url(../../img/about/years.png) no-repeat left center;
+    cursor:pointer;
+}
+.about-main .about-con .downmeau .tutu{
+    background:url(../../img/about/year.png) no-repeat left center;
+}
+.about-main .math-main{
+    /*margin-bottom:150px;*/
+    margin-bottom:100px;
+}
+.about-main .math-main div{
+    margin:0 50px;
+    font-size:20px;
+    line-height:50px;
+    height:50px;
+    position:relative;
+}
+.about-main .math-main div em{
+    color:#a4a4a4;
+}
+.about-main .math-main div span{
+    font-size:12px;
+    color:#a4a4a4;
+    padding-right:15px;
+}
+.about-main .math-main div i{
+    background:url(../../img/about/timee.png) no-repeat;
+    width:18px;
+    height:19px;
+    display:inline-block;
+    position:absolute;
+    top:18px;
+    left:52px;
+}
+.about-main .math-main div .time{
+    background:url(../../img/about/time.png) no-repeat;
+    width:21px;
+    height:22px;
+}
+.about-main .math-main div p{
+    display:inline-block;
+    padding-left:15px;
+    font-size:14px;
+    border-left:1px solid #b8e5f9;
+    color:#808080;
+}
+/*===============================================================数梦纪样式结束=*/
+
+
+/*===============================================================内页样式开始==*/
+.about-main .insidepage{
+    margin-bottom:150px;
+    padding:0 150px;
+}
+.about-main .insidepage h2{
+    margin:80px auto 60px;
+    /*width:420px;
+    height:30px;*/
+    font-size:24px;
+    font-weight:500;
+    text-align:center;
+}
+.about-main .insidepage img{
+    /*width:635px;
+    height:420px;*/
+    margin:30px auto;
+    display:block;
+}
+.about-main .insidepage p{
+    font-size:14px;
+    color:#646464;
+    line-height:25px;
+    margin-bottom:20px;
+    text-align:justify;
+}
+
+.pagesite{ text-align:center; margin-top:50px; background-color:#fafafa;    height: 30px;
+    line-height: 30px;}
+.pagesite a:link,.pagesite a:visited{ color:#000; text-decoration:none;}
+.pagesite a:hover{ text-decoration:none; color:#00A0E8;}
+/*===============================================================内页样式结束==*/
+
+
+#broadcast-madia .about-con-top li a,
+#company-activities .about-con-top li a{
+    color:#020202;
+}
+#broadcast-madia .about-con-top li.current a,
+#company-activities .about-con-top li.current a{
+    
+}
+
+
+#recruit .drop li a { color:#fff;}
+
+
+
+
+
+/*===============================================================搜索列表开始==*/
+.about-con-main div.res{
+    margin-top:140px;
+    display:block;
+    margin-bottom:0;
+}
+.about-con-main .res input{
+    width:850px;
+    height:39px;
+    border:1px solid #ececec;
+    border-radius:5px;
+    font-size:14px;
+    color:#959595;
+    padding-left: 20px;
+
+    margin-left:10px;
+    margin-top:35px;
+}
+.about-con-main .res em{
+    background:url(../../img/p-search.jpg) no-repeat 0 center;
+    display: inline-block;
+    height: 15px;
+    width: 17px;
+    position: relative;
+    left: -35px;
+    top: 4px
+}
+.about-con-main .res .p-search{
+    font-size:30px;
+    color:#3396da;
+    margin:20px 0 20px 10px;
+    border-bottom:1px solid #e4e3e3;
+    padding-bottom:20px;
+    width:1000px;
+}
+.about-con-main .res .at-last{
+    color:#959595;
+    font-size:14px;
+    padding:0 0 10px 10px;
+}
+.about-con-main li i a{
+    color:#499edc;
+    font-size:14px;
+    line-height:25px;
+}
+
+/*===============================================================搜索列表结束==*/
+
+
+/*===============================================================忘记密码开始==*/
+.about-con .forgot-warn{
+    width:585px;
+    margin:0 auto;
+}
+.about-con .forgot-warn div.forg{
+    margin-top:190px;
+    display:block;
+    margin-bottom:25px;
+    width:585px;
+}
+.about-con .forgot-warn div.pass-word{
+    display:block;
+    width:585px;
+    border-top:#e4e3e3 1px solid;
+}
+.about-con .forgot-warn .forg p{
+    font-size:30px;
+    font-weight:600;
+    color:#3396da;
+}
+.about-con .forgot-warn div.pass-word li em{
+    font-size:14px;
+    color:#383838;
+    line-height:25px;
+    width:60px;
+    display:inline-block;
+}
+.about-con .forgot-warn div.pass-word p{
+    line-height:30px;
+    margin-bottom:3px;
+    margin-top:25px;
+}
+.about-con .forgot-warn div.pass-word li .wenzi{
+    word-spacing:10px;
+}
+.about-con .forgot-warn div.pass-word input{
+    width:201px;
+    height:37px;
+    border:1px solid #ececec;
+    border-radius:4px;
+    margin:8px 20px;
+    padding-left:10px;
+    color:#dddddd;
+}
+.about-con .forgot-warn div.pass-word li span{
+    color:#fe1e1e;
+    background:url(../../img/warn.png) no-repeat left center;
+    padding-left:25px;
+
+}
+.about-con .forgot-warn div.pass-word .Code{
+    padding-left:50px;
+    border-bottom:#e4e3e3 1px solid;
+    margin-bottom:20px;
+}
+.about-con .forgot-warn div.pass-word .Code em a{
+    color:#3396da;
+    position:relative;
+    top:-22px;
+}
+.about-con .forgot-warn div.pass-word .Code p{
+    color:#a0a0a0;
+    font-size:12px;
+    margin-top:0;
+}
+.about-con .forgot-warn div.pass-word .Code span{
+    background:url(../../img/code.jpg) no-repeat;
+    width:120px;
+    height:41px;
+    display:inline-block;
+    margin:10px 4px 20px 0;
+}
+.about-con .forgot-warn div.pass-word button{
+    margin-left:50px;
+    width:221px;
+    height:37px;
+    font-size:18px;
+    color:#fff;
+    background:#3396da;
+    border:0;
+    border-radius:4px;
+    margin-bottom:125px;
+    cursor:pointer;
+}
+/*===============================================================忘记密码结束==*/
+
+
+/*===============================================================登录页面开始==*/
+.about-con .forgot-warn div.login{
+    display:block;
+    width:585px;
+    border-top:#e4e3e3 1px solid;
+    position:relative;
+}
+.about-con .forgot-warn div.login i{
+    position:relative;
+    top:35px;
+    left:-224px;
+    color:#3396da;
+}
+.about-con .forgot-warn div.login .pp{
+    position:absolute;
+    top:0;
+    right:0;
+}
+.about-con .forgot-warn div.login .pp a{
+    font-size:12px;
+    color:#3396da;
+}
+.about-con .forgot-warn .forg p{
+    font-size:30px;
+    font-weight:600;
+    color:#3396da;
+}
+.about-con .forgot-warn div.login li em{
+    font-size:14px;
+    color:#383838;
+    line-height:25px;
+    width:60px;
+    display:inline-block;
+}
+.about-con .forgot-warn div.login p{
+    line-height:30px;
+    margin-top:25px;
+}
+.about-con .forgot-warn div.login .login-ch{
+    border-bottom:1px solid #e4e3e3;
+    margin-bottom:20px;
+}
+.about-con .forgot-warn div.login .login-ch input{
+    width:15px;
+    height:15px;
+    margin: 10px 10px 40px 62px;
+}
+.about-con .forgot-warn div.login .login-p{
+    margin-top:0;
+    margin-bottom:20px;
+}
+.about-con .forgot-warn div.login .li-po{
+    position:relative;
+}
+.about-con .forgot-warn div.login .li-po .po-span{
+    position:absolute;
+    left:60px;
+    top:-19px;
+    line-height:20px;
+    color: #fe1e1e;
+    background:url(../../img/warn.png) no-repeat left center;
+    padding-left:25px;
+}
+.about-con .forgot-warn div.login input{
+    width:201px;
+    height:37px;
+    border:1px solid #ececec;
+    border-radius:4px;
+    margin:8px 0;
+    padding-left:10px;
+    color:#dddddd;
+}
+.about-con .forgot-warn div.login .Code{
+    padding-left:50px;
+    border-bottom:#e4e3e3 1px solid;
+    margin-bottom:20px;
+}
+.about-con .forgot-warn div.login .Code em a{
+    color:#3396da;
+    position:relative;
+    top:-22px;
+}
+.about-con .forgot-warn div.login .Code p{
+    color:#a0a0a0;
+    font-size:12px;
+    margin-top:0;
+}
+.about-con .forgot-warn div.login .Code span{
+    background:url(../../img/code.jpg) no-repeat;
+    width:120px;
+    height:41px;
+    display:inline-block;
+    margin:10px 4px 20px 0;
+}
+.about-con .forgot-warn div.login button{
+    margin-left:50px;
+    width:221px;
+    height:37px;
+    font-size:18px;
+    color:#fff;
+    background:#3396da;
+    border:0;
+    border-radius:4px;
+    margin-bottom:125px;
+    cursor:pointer;
+}
+
+/*==============================================================登录页面结束===*/
+
+
+/*==============================================================注册页面开始===*/
+
+.about-con .zhuce{
+    margin:140px auto 0;
+    width:777px;
+}
+.about-con .zhuce div.enroll{
+    display:block;
+    width:840px;
+    border-top:#e4e3e3 1px solid;
+    position:relative;
+    padding-top:10px;
+}
+.about-con .zhuce div.enroll .padd-right{
+    padding-right:30px;
+    line-height:50px;
+}
+.about-con .zhuce div.enroll i{
+    position:relative;
+    top:35px;
+    left:-224px;
+    color:#3396da;
+}
+.about-con .zhuce div.enroll .pp{
+    position:absolute;
+    top:37px;
+    right:0;
+    height:535px;
+    border-left:1px solid #CCC;
+    width:401px;
+    padding-left:63px;
+}
+.about-con .zhuce div.enroll .pp p{
+    color:#707070;
+    line-height:20px;
+}
+.about-con .zhuce div.enroll .pp .mess{
+    line-height:0px;
+    margin:0;
+    position:relative;
+    left:275px;
+    top:-120px;
+}
+.about-con .zhuce div.enroll .pp .mess em{
+    position:absolute;
+    top:28px;
+    left:-11px;
+}
+.about-con .zhuce .forg p{
+    font-size:30px;
+    font-weight:600;
+    color:#3396da;
+    line-height:75px
+}
+.about-con .zhuce div.enroll li em{
+    font-size:14px;
+    color:#383838;
+    line-height:25px;
+    width:60px;
+    display:inline-block;
+}
+
+.about-con .zhuce div.enroll p{
+    line-height:30px;
+    padding-top:25px;
+}
+.about-con .zhuce div.enroll .enroll-ch{
+    border-bottom:1px solid #e4e3e3;
+    margin-bottom:20px;
+}
+.about-con .zhuce div.enroll .enroll-ch input{
+    width:15px;
+    height:15px;
+    margin: 10px 10px 40px 62px;
+}
+.about-con .zhuce div.enroll .enroll-p{
+    padding-top:0;
+    margin-bottom:20px;
+}
+.about-con .zhuce div.enroll span{
+    background:url(../../img/warn.png) no-repeat left center;
+    padding-left:25px;
+    color:#fb5d5c;
+}
+.about-con .zhuce div.enroll input{
+    width:201px;
+    height:37px;
+    border:1px solid #ececec;
+    border-radius:4px;
+    margin:8px 0;
+    padding-left:10px;
+    color:#dddddd;
+}
+.about-con .zhuce div.enroll .li-input input{
+    height:70px;
+}
+.about-con .zhuce div.enroll .li-input em{
+    vertical-align: top;
+    line-height: 3;
+}
+.about-con .zhuce div.enroll button{
+    margin-left:50px;
+    width:221px;
+    height:37px;
+    font-size:18px;
+    color:#fff;
+    background:#3396da;
+    border:0;
+    border-radius:4px;
+    margin:50px 0 80px 271px;
+    cursor:pointer;
+}
+
+
+.footer a{
+    text-decoration:none;}
+
+/*==============================================================注册页面结束===*/
+
+/*==============================================================邮件发送成功开始===*/
+
+.about-con .forgot-warn div.mail{
+    display:block;
+    width:588px;
+    border-top:#e4e3e3 1px solid;
+    border-bottom:#e4e3e3 1px solid;
+    position:relative;
+    margin-bottom:130px;
+}
+.about-con .forgot-warn div.mail button{
+    margin-left:50px;
+    width:221px;
+    height:37px;
+    font-size:18px;
+    color:#fff;
+    background:#3396da;
+    border:0;
+    border-radius:4px;
+    margin:50px 0 80px 175px;
+    cursor:pointer;
+}
+.about-con .forgot-warn div.mail p{
+    color:#393939;
+    margin-top:100px;
+    margin-left:120px;
+    font-size:16px;
+    font-weight:600;
+
+}
+
+/*==============================================================邮件发送成功结束===*/
+.about-con .forgot-warn div.mail p.loser{
+    margin-left:203px;
+}
+/*===================================邮件发送失败结束===============================*/
+.about-con .zhuce div.enroll .font-w{
+    font-weight:600;
+}
+.about-con .zhuce div.enroll .warn-sp{
+    margin-left:30px;
+}
+.about-con .zhuce div.newpass button{
+    margin:50px 0 60px 90px;
+}
+.about-con .zhuce div.newpass{
+    width:600px;
+    border-bottom:#e4e3e3 1px solid;
+}
+.about-con .newpassword{
+    padding-left:200px;
+    margin-bottom:140px;
+}
+/*=========================================================设置新密码结束=============*/
+
+/*=============================================2017 招聘栏目==========================*/
+.enter-container{
+    width: 1200px;
+    margin: 0 auto;
+    padding:45px 0;
+ 
+}
+.enter-box {
+    height: 270px;
+}
+.social-container{
+    width: 49%;
+    border-right:1px solid #ccc ;
+    float: left;
+    height: 270px;
+}
+
+.campus-container{
+    width: 50%;
+    float: right;
+    text-align: left;
+    height: 270px;
+}
+.social-container dl dt,.campus-container dl dt{
+    float: left;
+    width: 141px;
+    height: 141px;
+    margin-top: 55px;
+    display: inline;
+    margin-left:100px;
+}
+.social-container dl dd,.campus-container dl dd{
+
+    float: left;
+    margin-left: 50px;
+    width: auto;
+    margin-top: 45px;
+}
+.campus-container h3,.social-container h3{
+    font-size: 36px;
+    font-weight: 500;
+    color: #353737;
+    margin: 0;
+    padding: 0;
+  
+    margin-bottom: 25px;
+}
+.campus-container p,.social-container p{
+    color: #807f7f;
+   
+    font-weight: 200;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.campus-container a:link,.social-container a:link,.campus-container a:visited,.social-container a:visited{
+    color:#2ac2fb ;
+    text-decoration: none;
+}
+.campus-container a:hover,.social-container a:hover{
+    color:#2ac2fb ;
+    text-decoration: none;
+}
+
+/*实习生页面*/
+body{min-width: 1200px;}
+
+.campus-aboutus-container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 55px;
+    padding-bottom: 120px;
+
+}
+.campus-aboutus-container h3{
+    font-size: 44px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 55px;
+}
+.campus-aboutus-container p{
+    font-size: 16px;
+    line-height: 1.4;
+    color: #808080;
+    padding-bottom: 15px;
+}
+.campus-joinus-container{
+    width: 100%;
+    background:url("../../img/about/joinus-container-bg.png") repeat-y ;
+}
+.campus-joinus-content{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 130px;
+    padding-top: 100px;
+}
+.campus-joinus-content h3{
+    font-size: 44px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 100px;
+}
+.campus-flow-container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.campus-flow-container h3{
+    font-size: 44px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+}
+.campus-roadshow-container{
+    width: 100%;
+    background:url("../../img/about/joinus-container-bg.png") repeat-y ;
+    padding-bottom: 130px;
+    padding-top: 100px;
+}
+.campus-roadshow-container h3{
+    font-size: 44px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 75px;
+
+}
+.campus-roadshow-container p{
+    text-align: center;
+    color: white;
+    font-style: 18px;
+    line-height: 1.4;
+    margin-bottom: 60px;
+}
+.campus-roadshow-container table{
+    width:1200px;
+    margin: 0 auto;
+}
+.campus-roadshow-container table tr,.campus-roadshow-container table tr td{
+    margin: 0 ;
+    padding: 0;
+}
+.campus-roadshow-container table tr td{
+    border: 1px solid white;
+    font-size: 16px;
+    line-height: 1.4;
+    color: white;
+    text-align: center;
+    padding: 10px ;
+}
+.campus-roadshow-container table tr:first-child td{
+    font-size: 18px;
+}
+.campus-job-title-container{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.campus-job-title-container h3{
+    font-size: 44px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 75px;
+}
+.campus-job-title-container .btn{
+    display: block;
+    font-size: 28px;
+    font-weight: 400;
+    padding:10px 30px;
+    border: 3px solid #2ac2fb;
+    text-align: center;
+    text-decoration: none;
+    color: #2ac2fb;
+    width: 286px;
+    margin: 0 auto;
+}
+.campus-jobs-container{
+    background:url("../../img/about/joinus-container-bg.png") repeat-y ;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.campus-jobs-container .jobs-title{
+    margin: 0;
+    padding: 0;
+
+}
+.campus-jobs-container .jobs-title li{
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style-type: none;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 70px;
+    text-align: center;
+    padding-left: 20%;
+}
+.campus-jobs-container .jobs-title .current{
+    position: relative;
+    font-weight: 400;
+}
+.campus-jobs-container .jobs-title li a{
+    color: white;
+    text-decoration: none;
+}
+.campus-jobs-content-container{
+    width: 1100px;
+    margin: 0 auto;
+    border: 2px solid white;
+}
+
+.campus-jobs-content-container .cj-padding{
+    padding:50px;
+    color: white;
+}
+
+.campus-jobs-content-container .cj-padding  h3{
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 40px;
+
+}
+.campus-jobs-content-container .cj-padding  h4{
+    padding: 0;
+    margin: 0;
+    font-size: 26px;
+    border: 2px solid white;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.campus-jobs-content-container .cj-padding p{
+    font-size: 18px;
+    line-height: 1.4;
+    padding-bottom: 15px;
+}
+.campus-jobs-content-container .cj-padding .ad{
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.jobs-box{
+    padding-bottom: 50px;
+    border-bottom:2px solid #81daed ;
+    margin-bottom: 50px;
+}
+
+.campus-jobs-container .jobs-title .current .sanjiao{
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid white;
+    position: absolute;
+    top: 96px;
+    left: 45px;
+}
+.sanjiao{
+    display: none;
+}
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.clearfix:after {
+    clear: both;
+}
+
+
+/*=============================================2017 招聘栏目==========================*/

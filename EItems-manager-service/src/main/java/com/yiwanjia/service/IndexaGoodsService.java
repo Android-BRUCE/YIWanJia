@@ -74,9 +74,9 @@ public class IndexaGoodsService {
         EUDataGridResult euDataGridResult = new EUDataGridResult();
         euDataGridResult.setRows(tbIndexGoods);
         //获取分页信息
-        PageInfo<TbIndexGoods> pageInfo = new PageInfo<>();
+  //      PageInfo<TbIndexGoods> pageInfo = new PageInfo<>();
         //设置总记录数
-        euDataGridResult.setTotal(pageInfo.getTotal());
+        euDataGridResult.setTotal(tbIndexGoodsMapper.countByExample(example));
 
         return euDataGridResult;
     }

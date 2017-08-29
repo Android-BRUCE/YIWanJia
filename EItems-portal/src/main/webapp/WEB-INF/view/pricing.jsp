@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="UTF-8"%>
+<%@taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +10,11 @@
 <meta name="author" content="" />
 <!-- css --> 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="../stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
-<link href="../css/bootstrap.min.css" rel="stylesheet" />
-<link href="../css/fancybox/jquery.fancybox.css" rel="stylesheet">
-<link href="../css/flexslider.css" rel="stylesheet" />
-<link href="../css/style.css" rel="stylesheet" />
+<link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
+<link href="css/flexslider.css" rel="stylesheet" /> 
+<link href="css/style.css" rel="stylesheet" />
  
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -50,97 +52,141 @@
 		</div>
 	</header>
 
-	<!-- start header -->
 	<header>
-        <div class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                  <a class="navbar-brand" href="index.index.jsp"><i class="icon-info-blocks material-icons">language</i>Arrive</a>
-                </div>
-                <div class="navbar-collapse collapse ">
-                    <ul class="nav navbar-nav">
-                        <li><a class="waves-effect waves-dark" href="index.index.jsp">Home</a></li>
-						 <li class="dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="waves-effect waves-dark" href="about.html">Company</a></li>
-                            <li><a class="waves-effect waves-dark" href="#">Our Team</a></li>
-                            <li><a class="waves-effect waves-dark" href="#">News</a></li> 
-                            <li><a class="waves-effect waves-dark" href="#">Investors</a></li>
-                        </ul>
-                    </li> 
-						<li><a class="waves-effect waves-dark" href="services.html">Services</a></li>
-                        <li><a class="waves-effect waves-dark" href="portfolio.html">Gallery</a></li>
-                        <li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>
-                        <li class="active"><a href="contact.html" class="waves-effect waves-dark">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-	</header><!-- end header -->
+		<div class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<%--<i class="icon-info-blocks material-icons">language</i>--%>
+						<img src="/img/top.png" alt="" height="50" width="50" align=""/>
+						易万家科技
+					</a>
+				</div>
+				<div class="navbar-collapse collapse ">
+					<ul class="nav navbar-nav">
+						<li class="active"><a class="waves-effect waves-dark" href="index.html">主页</a></li>
+						<li><a class="waves-effect waves-dark" href="portfolio.html">产品展示</a></li>
+						<li><a class="waves-effect waves-dark" href="services.html">服务与支持</a></li>
+						<li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a class="waves-effect waves-dark" href="about.html">公司介绍</a></li>
+								<li><a class="waves-effect waves-dark" href="#">公司新闻</a></li>
+								<li><a class="waves-effect waves-dark" href="#">公司文化</a></li>
+								<li><a class="waves-effect waves-dark" href="#">公司活动</a></li>
+								<li><a class="waves-effect waves-dark" href="#">加入我们</a></li>
+							</ul>
+						</li>
+						<li><a class="waves-effect waves-dark" href="contact.html">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
 	<section id="inner-headline">
 	<div class="container">
+	
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="pageTitle">Contact Us</h2>
+				<h2 class="pageTitle">Pricing</h2>
 			</div>
 		</div>
 	</div>
 	</section>
 	<section id="content">
-	
-	<div class="container">
-		<div class="row"> 
+<section id="pricing">
+        <div class="container">
+           <div class="row"> 
 							<div class="col-md-12">
 								<div class="about-logo">
-									<h3>Get<span class="color"> in Touch</span></h3>
+									<h3>Our Price<span class="color">List</span></h3>
 									<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
                                     	<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
 								</div>  
 							</div>
 						</div>
-	<div class="row">
-								<div class="col-md-6">
-									<p> </p>
-								  	
-		   <!-- Form itself -->
-          <form name="sentMessage" id="contactForm"  novalidate> 
-		 <div class="input-field"> 
-			<input type="text" name="name" class="form-control" 
-			   	   id="name" required
-			           data-validation-required-message="Please enter your name" />
-					   <label for="name" class="">   Name </label> 
-			  <p class="help-block"></p>
-		   
-	         </div> 	
-                <div class="input-field"> 
-			<input type="email" class="form-control" id="email" required
-			   		   data-validation-required-message="Please enter your email" /> 
-					   <label for="name" class="">   Email </label> 
-	    </div> 	
-			  
-               <div class="input-field"> 
-				 <textarea rows="10" cols="100" required class="form-control materialize-textarea" 
-                       idation-required-message="Please enter your message" minlength="5" 
-                       data-validation-minlength-message="Min 5 characters" 
-                        maxlength="999" style="resize:none"></textarea>
-						 <label for="name" class="">   Message </label> 
-		  </div> 		 
-	     <div id="success"> </div> <!-- For success/fail messages -->
-	    <button type="submit" class="btn btn-primary waves-effect waves-dark pull-right">Send</button><br />
-          </form>
-								</div>
-								<div class="col-md-6">
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:500px;width:600px;"><div id="gmap_canvas" style="height:500px;width:600px;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.trivoo.net" id="get-map-data">trivoo</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(40.805478,-73.96522499999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.805478, -73.96522499999998)});infowindow = new google.maps.InfoWindow({content:"<b>The Breslin</b><br/>2880 Broadway<br/> New York" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-								</div>
-							</div>
-	</div>
- 
+				 
+</div><!--container-fluid close-->
+
+
+<section>
+<div class="container">
+<div class="row">
+                <!-- item -->
+<div class="col-md-4 col-sm-4 col-xs-12 text-center">
+<div class="panel panel-pricing">
+<div class="panel-heading">
+<i class="fa fa-windows"></i>
+<h3>Plan -1</h3>
+</div><!--panel-heading close-->
+<div class="panel-body text-center">
+<p class="p-title">Subscription Duration</p><!--p-title close-->
+<p class="p-time">2 days - 30 Mins</p><!--p-time close-->
+</div><!--panel-body text-center close-->
+<div class="panel-body text-center">
+<p class="p-price">₦ 50.00 </p><!--p-price close-->
+<p class="p-tax">All inclusive</p><!--p-tax close-->
+</div><!--panel-body text-center close-->
+<div class="panel-footer">
+<a class="btn sub-btn" href="#">Subscribe Now</a>
+</div>
+</div><!--panel panel-pricing close-->
+</div><!--col-md-4 col-sm-4 col-xs-12 text-center close-->
+
+
+<div class="col-md-4 col-sm-4 col-xs-12 text-center">
+<div class="panel panel-pricing">
+<div class="panel-heading">
+<i class="fa fa-windows"></i>
+<h3>Plan -2</h3>
+</div><!--panel-heading close-->
+<div class="panel-body text-center">
+<p class="p-title">Subscription Duration</p><!--p-title close-->
+<p class="p-time">7 days - 90 Mins</p><!--p-time close-->
+</div><!--panel-body text-center close-->
+<div class="panel-body text-center">
+<p class="p-price">₦ 150.00 </p><!--p-price close-->
+<p class="p-tax">All inclusive</p><!--p-tax close-->
+</div><!--panel-body text-center close-->
+<div class="panel-footer">
+<a class="btn sub-btn" href="#">Subscribe Now</a>
+</div>
+</div><!--panel panel-pricing close-->
+</div><!--col-md-4 col-sm-4 col-xs-12 text-center close-->
+
+
+
+<div class="col-md-4 col-sm-4 col-xs-12 text-center">
+<div class="panel panel-pricing">
+<div class="panel-heading">
+<i class="fa fa-windows"></i>
+<h3>Plan -3</h3>
+</div><!--panel-heading close-->
+<div class="panel-body text-center">
+<p class="p-title">Subscription Duration</p><!--p-title close-->
+<p class="p-time">30 days - 250 Mins</p><!--p-time close-->
+</div><!--panel-body text-center close-->
+<div class="panel-body text-center">
+<p class="p-price">₦ 400.00 </p><!--p-price close-->
+<p class="p-tax">All inclusive</p><!--p-tax close-->
+</div><!--panel-body text-center close-->
+<div class="panel-footer">
+<a class="btn sub-btn" href="#">Subscribe Now</a>
+</div>
+</div><!--panel panel-pricing close-->
+</div><!--col-md-4 col-sm-4 col-xs-12 text-center close-->
+
+</div><!--row close-->
+</div><!--container close-->
+         </div>
+    </section>
+	 
 	</section>
 	<footer>
 	<div class="container">
@@ -234,8 +280,5 @@
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/animate.js"></script> 
 <script src="js/custom.js"></script>
-
- <script src="contact/jqBootstrapValidation.js"></script>
- <script src="contact/contact_me.js"></script>
 </body>
 </html>

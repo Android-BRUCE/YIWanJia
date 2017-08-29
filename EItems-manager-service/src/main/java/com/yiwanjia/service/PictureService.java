@@ -33,10 +33,11 @@ public class PictureService  {
             if(!up.exists()){
                 up.mkdirs();
             }
-            System.out.println(realPath  + "public" + appenfPath);
+          //  System.out.println(realPath  + "public" + appenfPath);
             uploadFile.transferTo(up);
             resultMap.put("error", 0);
             resultMap.put("url", LOCAL_PICTURE_ADDRESS+appenfPath);
+            System.out.println("uploadFile = [" + LOCAL_PICTURE_ADDRESS+appenfPath+ "]");
             return resultMap;
         } catch (Exception e) {
             resultMap.put("error", 1);

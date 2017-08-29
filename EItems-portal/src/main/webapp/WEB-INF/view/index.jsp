@@ -13,45 +13,7 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
-
 <body>
-<script>
-    $(function(){
-
-        $.ajax({
-            type:"POST",
-            url:"portal/banner/getBanner.do",
-            cache:false,
-            dataType:"json",
-            success:function(results){
-                // <ul class="slides" id="banner_show" ></div>
-
-                $("#banner").append("<div id=\"main-slider\" class=\"flexslider\"></div>");
-                $("#main-slider").append("<ul class=\"slides\" id=\"banner_show\" ></div>");
-                for(var i=0;i<results.data.length;i++)
-                {
-                    /**
-                     *<li>
-                     <img src="/img/slides/2.jpg" alt="" />
-                     <div class="flex-caption">
-                     <h3>Creative Minds</h3>
-                     <p>We create best opportunities</p>
-                     </div>
-                     </li>
-                     */
-                    var image = results.data[i].image;
-                    var title = results.data[i].title;
-                    var point = results.data[i].point;
-                    var ttt = "<li><img src=\""+image+"\" /><div class=\"flex-caption\"><h3>"+title+"</h3><p>"+point+"</p></div></li>";
-                  //  alert(ttt);
-                    $("#banner_show").append("<li><img src='"+image+"' /><div class='flex-caption'><h3>"+title+"</h3><p>"+point+"</p></div></li>");
-
-                }
-            }
-        });
-    });
-
-</script>
 <div id="wrapper" class="home-page"> 
 	<header class="topbar">
 		<div class="container">
@@ -59,11 +21,11 @@
 				<!-- social icon-->
 				<div class="col-sm-3">
 				   <ul class="social-network">
-					<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>
-					<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>
-					<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>
+					<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>--%>
+					<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>--%>
+					<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>--%>
+					<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>--%>
+					<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>--%>
 				</ul>
 				</div>
 				<div class="col-sm-9">
@@ -94,25 +56,26 @@
                     <a class="navbar-brand" href="index.html">
 						<%--<i class="icon-info-blocks material-icons">language</i>--%>
 							<img src="/img/top.png" alt="" height="50" width="50" align=""/>
-							易万家科技
+							杭州钱王万家信息科技有限公司
 					</a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a class="waves-effect waves-dark" href="index.index.jsp">主页</a></li>
-						 <li class="dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="waves-effect waves-dark" href="about.html">Company</a></li>
-                            <li><a class="waves-effect waves-dark" href="#">Our Team</a></li>
-                            <li><a class="waves-effect waves-dark" href="#">News</a></li> 
-                            <li><a class="waves-effect waves-dark" href="#">Investors</a></li>
-                        </ul>
-                    </li> 
-						<li><a class="waves-effect waves-dark" href="services.html">Services</a></li>
-                        <li><a class="waves-effect waves-dark" href="portfolio.html">Gallery</a></li>
+                        <li class="active"><a class="waves-effect waves-dark" href="index.html">主页</a></li>
+                        <li><a class="waves-effect waves-dark" href="portfolio.html">产品展示</a></li>
+						<li><a class="waves-effect waves-dark" href="services.html">服务与支持</a></li>
                         <li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>
-                        <li><a class="waves-effect waves-dark" href="contact.html">Contact</a></li>
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a class="waves-effect waves-dark" href="about.html">公司介绍</a></li>
+								<li><a class="waves-effect waves-dark" href="#">公司新闻</a></li>
+								<li><a class="waves-effect waves-dark" href="#">公司文化</a></li>
+								<li><a class="waves-effect waves-dark" href="#">公司活动</a></li>
+								<li><a class="waves-effect waves-dark" href="#">加入我们</a></li>
+							</ul>
+						</li>
+						<li><a class="waves-effect waves-dark" href="contact.html">联系我们</a></li>
                     </ul>
                 </div>
             </div>
@@ -178,83 +141,18 @@
 					<a class="prev"></a>
 				</div>
 				<div class="bd">
-					<div class="tempWrap" style="overflow:hidden; position:relative; width:1100px"><ul class="ind_service_list" style="width: 2750px; left: 0px; position: relative; overflow: hidden; padding: 0px; margin: 0px;">
-						<li style="float: left; width: 255px;">
-							<div class="title">
-								<a href="http://www.zjlyzhkj.com/prodetail.aspx?id=15" title="车辆调度监控终端">车辆调度监控终端</a>
-								<p class="ms"></p>
-							</div>
-							<div class="pic"><a href="http://www.zjlyzhkj.com/prodetail.aspx?id=15"><img src="./浙江联运知慧科技有限公司_files/图片7-15532017614.png" alt="车辆调度监控终端"></a></div>
-						</li>
-						<li style="float: left; width: 255px;">
-							<div class="title">
-								<a href="http://www.zjlyzhkj.com/prodetail.aspx?id=14" title="LHC-C01车载信息监控终端">LHC-C01车载信息监控终端</a>
-								<p class="ms"></p>
-							</div>
-							<div class="pic"><a href="http://www.zjlyzhkj.com/prodetail.aspx?id=14"><img src="./浙江联运知慧科技有限公司_files/图片6-15505460282.png" alt="LHC-C01车载信息监控终端"></a></div>
-						</li>
-						<li style="float: left; width: 255px;">
-							<div class="title">
-								<a href="http://www.zjlyzhkj.com/prodetail.aspx?id=13" title="垃圾倾倒点传感器">垃圾倾倒点传感器</a>
-								<p class="ms"></p>
-							</div>
-							<div class="pic"><a href="http://www.zjlyzhkj.com/prodetail.aspx?id=13"><img src="./浙江联运知慧科技有限公司_files/图片5-15472614480.png" alt="垃圾倾倒点传感器"></a></div>
-						</li>
+					<div class="tempWrap" style="overflow:hidden; position:relative; width:1100px">
+						<ul class="ind_service_list" style="width: 2750px; left: 0px; position: relative; overflow: hidden; padding: 0px; margin: 0px;">
 
-
-						<li style="float: left; width: 255px;">
-							<div class="title">
-								<a href="http://www.zjlyzhkj.com/prodetail.aspx?id=12" title="智慧垃圾手持终端">智慧垃圾手持终端</a>
-								<p class="ms"></p>
-							</div>
-							<div class="pic"><a href="http://www.zjlyzhkj.com/prodetail.aspx?id=12"><img src="./浙江联运知慧科技有限公司_files/图片4-13524349864.png" alt="智慧垃圾手持终端"></a></div>
-						</li>
-						<li style="float: left; width: 255px;">
-							<div class="title">
-								<a href="http://www.zjlyzhkj.com/prodetail.aspx?id=11" title="智能垃圾分类可回收箱">智能垃圾分类可回收箱</a>
-								<p class="ms"></p>
-							</div>
-							<div class="pic"><a href="http://www.zjlyzhkj.com/prodetail.aspx?id=11"><img src="./浙江联运知慧科技有限公司_files/图片3-13491842635.png" alt="智能垃圾分类可回收箱"></a></div>
-						</li>
-						<li style="float: left; width: 255px;">
-							<div class="title">
-								<a href="http://www.zjlyzhkj.com/prodetail.aspx?id=10" title="智能垃圾分类箱">智能垃圾分类箱</a>
-								<p class="ms"></p>
-							</div>
-							<div class="pic"><a href="http://www.zjlyzhkj.com/prodetail.aspx?id=10"><img src="./浙江联运知慧科技有限公司_files/图片2-13451799246.png" alt="智能垃圾分类箱"></a></div>
-						</li>
-						<li style="float: left; width: 255px;">
-							<div class="title">
-								<a href="http://www.zjlyzhkj.com/prodetail.aspx?id=9" title="智能垃圾袋发放机">智能垃圾袋发放机</a>
-								<p class="ms"></p>
-							</div>
-							<div class="pic"><a href="http://www.zjlyzhkj.com/prodetail.aspx?id=9"><img src="./浙江联运知慧科技有限公司_files/图片1-16583654557.png" alt="智能垃圾袋发放机"></a></div>
-						</li>
-
-
-						<li style="float: left; width: 255px;">
-							<div class="title">
-								<a href="http://www.zjlyzhkj.com/prodetail.aspx?id=18" title="超声波油位计">超声波油位计</a>
-								<p class="ms"></p>
-							</div>
-							<div class="pic"><a href="http://www.zjlyzhkj.com/prodetail.aspx?id=18"><img src="./浙江联运知慧科技有限公司_files/图片10-16342367115.png" alt="超声波油位计"></a></div>
-						</li>
-						<li style="float: left; width: 255px;">
-							<div class="title">
-								<a href="http://www.zjlyzhkj.com/prodetail.aspx?id=17" title="降尘喷水传感器">降尘喷水传感器</a>
-								<p class="ms"></p>
-							</div>
-							<div class="pic"><a href="http://www.zjlyzhkj.com/prodetail.aspx?id=17"><img src="./浙江联运知慧科技有限公司_files/图片9-16320774908.png" alt="降尘喷水传感器"></a></div>
-						</li>
-						<li style="float: left; width: 255px;">
-							<div class="title">
-								<a href="http://www.zjlyzhkj.com/prodetail.aspx?id=16" title="LHC-S01车载信息监控终端">LHC-S01车载信息监控终端</a>
-								<p class="ms"></p>
-							</div>
-							<div class="pic"><a href="http://www.zjlyzhkj.com/prodetail.aspx?id=16"><img src="./浙江联运知慧科技有限公司_files/图片8-16294040882.png" alt="LHC-S01车载信息监控终端"></a></div>
-						</li>
-
-
+							<c:forEach items="${bannerGoods }" var="pr">
+								<li style="float: left; width: 255px;">
+									<div class="title">
+										<a href="http://www.zjlyzhkj.com/prodetail.aspx?id=15" title="${pr.title}">${pr.title}</a>
+										<p class="ms"></p>
+									</div>
+									<div class="pic"><a href="http://www.zjlyzhkj.com/prodetail.aspx?id=15"><img src="http://localhost:8080/${pr.image}" alt=${pr.title}></a></div>
+								</li>
+							</c:forEach>
 
 					</ul></div>
 				</div>

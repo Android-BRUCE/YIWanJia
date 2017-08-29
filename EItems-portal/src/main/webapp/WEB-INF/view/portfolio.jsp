@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="UTF-8"%>
+<%@taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,44 +57,48 @@
 		</div>
 	</header>
 
-	<!-- start header -->
-		<header>
-        <div class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.index.jsp"><i class="icon-info-blocks material-icons">language</i>Arrive</a>
-                </div>
-                <div class="navbar-collapse collapse ">
-                    <ul class="nav navbar-nav">
-                        <li><a class="waves-effect waves-dark" href="index.index.jsp">Home</a></li>
-						 <li class="dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="waves-effect waves-dark" href="about.html">Company</a></li>
-                            <li><a class="waves-effect waves-dark" href="#">Our Team</a></li>
-                            <li><a class="waves-effect waves-dark" href="#">News</a></li> 
-                            <li><a class="waves-effect waves-dark" href="#">Investors</a></li>
-                        </ul>
-                    </li> 
-						<li><a class="waves-effect waves-dark" href="services.html">Services</a></li>
-                        <li class="active"><a href="portfolio.html" class="waves-effect waves-dark" >Gallery</a></li>
-                        <li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>
-                        <li><a class="waves-effect waves-dark" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-	</header><!-- end header -->
+	<header>
+		<div class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<%--<i class="icon-info-blocks material-icons">language</i>--%>
+						<img src="/img/top.png" alt="" height="50" width="50" align=""/>
+						易万家科技
+					</a>
+				</div>
+				<div class="navbar-collapse collapse ">
+					<ul class="nav navbar-nav">
+						<li class="active"><a class="waves-effect waves-dark" href="index.html">主页</a></li>
+						<li><a class="waves-effect waves-dark" href="portfolio.html">产品展示</a></li>
+						<li><a class="waves-effect waves-dark" href="services.html">服务与支持</a></li>
+						<li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a class="waves-effect waves-dark" href="about.html">公司介绍</a></li>
+								<li><a class="waves-effect waves-dark" href="#">公司新闻</a></li>
+								<li><a class="waves-effect waves-dark" href="#">公司文化</a></li>
+								<li><a class="waves-effect waves-dark" href="#">公司活动</a></li>
+								<li><a class="waves-effect waves-dark" href="#">加入我们</a></li>
+							</ul>
+						</li>
+						<li><a class="waves-effect waves-dark" href="contact.html">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
 	<section id="inner-headline">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="pageTitle">Portfolio</h2>
+				<h2 class="pageTitle">产品展示</h2>
 			</div>
 		</div>
 	</div>
@@ -119,11 +125,12 @@
 			<div class="editContent">
 	            <ul class="filter">
 	                <li class="active"><a href="#" data-filter="*">All</a></li>
-	                <li><a class="waves-effect waves-dark" href="#" data-filter=".artwork">Artwork</a></li>
+	                <li><a class="waves-effect waves-dark" href="#" data-filter=".artwork ">Artwork</a></li>
 	                <li><a class="waves-effect waves-dark" href="#" data-filter=".creative">Creative</a></li>
 	                <li><a class="waves-effect waves-dark" href="#" data-filter=".nature">Nature</a></li>
 	                <li><a class="waves-effect waves-dark" href="#" data-filter=".outside">Outside</a></li>
 	                <li><a class="waves-effect waves-dark" href="#" data-filter=".photography">Photography</a></li>
+	                <li><a class="waves-effect waves-dark" href="#" data-filter=".哈哈">哈哈</a></li>
 	            </ul>
 			</div>
             <!-- /.gallery-filter -->
@@ -148,6 +155,30 @@
                             </div>
                         </div>
                     </div>
+
+
+					<!-- /.gallery-filter -->
+
+					<div class="row">
+						<div id="isotope-gallery-container">
+							<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper 哈哈">
+								<div class="gallery-item">
+									<div class="gallery-thumb">
+										<img src="img/works/1.jpg" class="img-responsive" alt="1st gallery Thumb">
+										<div class="image-overlay"></div>
+										<a href="img/works/1.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+
+									</div>
+									<div class="gallery-details">
+										<div class="editContent">
+											<h5>pppppppppp</h5>
+										</div>
+										<div class="editContent">
+											<p>pppppppppppppppppppppppp.</p>
+										</div>
+									</div>
+								</div>
+							</div>
                     <!-- /.gallery-item-wrapper -->
                     <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper nature outside">
                         <div class="gallery-item">
@@ -207,23 +238,61 @@
                     </div>
                     <!-- /.gallery-item-wrapper -->
                     <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper nature">
-                        <div class="gallery-item">
-                            <div class="gallery-thumb">
-                                <img src="img/works/5.jpg" class="img-responsive" alt="5th gallery Thumb">
-                                <div class="image-overlay"></div>
-                                <a href="img/works/5.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
-                                
-                            </div>
-                            <div class="gallery-details">
-                            	<div class="editContent">
-                                	<h5>5th gallery Item</h5>
-                            	</div>
-                            	<div class="editContent">
-                                	<p>Nullam id dolor id nibh ultricies vehicula.</p>
-                            	</div>
-                            </div>
-                        </div>
-                    </div>
+					<div class="gallery-item">
+						<div class="gallery-thumb">
+							<img src="img/works/5.jpg" class="img-responsive" alt="5th gallery Thumb">
+							<div class="image-overlay"></div>
+							<a href="img/works/5.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+
+						</div>
+						<div class="gallery-details">
+							<div class="editContent">
+								<a href="http://www.baidu.com"><h5>5th gallery Item</h5></a>
+							</div>
+							<div class="editContent">
+								<a href="http://www.baidu.com"><p>Nullam id dolor id nibh ultricies vehicula.</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<!-- /.gallery-item-wrapper -->
+					<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper nature">
+						<div class="gallery-item">
+							<div class="gallery-thumb">
+								<img src="img/works/5.jpg" class="img-responsive" alt="5th gallery Thumb">
+								<div class="image-overlay"></div>
+								<a href="img/works/5.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+
+							</div>
+							<div class="gallery-details">
+								<div class="editContent">
+									<a href="http://www.baidu.com"><h5>5th gallery Item</h5></a>
+								</div>
+								<div class="editContent">
+									<a href="http://www.baidu.com"><p>Nullam id dolor id nibh ultricies vehicula.</p></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.gallery-item-wrapper -->
+					<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper nature">
+						<div class="gallery-item">
+							<div class="gallery-thumb">
+								<img src="img/works/5.jpg" class="img-responsive" alt="5th gallery Thumb">
+								<div class="image-overlay"></div>
+								<a href="img/works/5.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+
+							</div>
+							<div class="gallery-details">
+								<div class="editContent">
+									<a href="http://www.baidu.com"><h5>5th gallery Item</h5></a>
+								</div>
+								<div class="editContent">
+									<a href="http://www.baidu.com"><p>Nullam id dolor id nibh ultricies vehicula.</p></a>
+								</div>
+							</div>
+						</div>
+					</div>
                     <!-- /.gallery-item-wrapper -->
                     <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
                         <div class="gallery-item">
@@ -253,6 +322,8 @@
     </section>
     <!--// End Gallery 1-2 -->  
 	</div>
+
+
 	<footer>
 	<div class="container">
 	

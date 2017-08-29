@@ -56,14 +56,13 @@
         //$("#itemAddForm").serialize()将表单序列号为key-value形式的字符串
         $.post("/banner/save.do",$("#itemAddForm").serialize(), function(data){
             if(data.status == 200){
-                $.messager.alert('提示','新增轮播图成功!');
+                $.messager.alert('提示',data.msg);
                 clearForm();
             }
         });
     }
 
     function clearForm(){
-        document.getElementById("image").style.visibility="hidden";
         $('#itemAddForm').form('reset');
         itemAddEditor.html('');
     }

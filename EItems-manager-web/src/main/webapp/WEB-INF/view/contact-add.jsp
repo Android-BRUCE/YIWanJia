@@ -9,27 +9,17 @@
 <script type="text/javascript" src="/js/jquery-easyui-1.4.1/jquery.easyui.min.js"></script>
 <script type="text/javascript" src="/js/jquery-easyui-1.4.1/locale/easyui-lang-zh_CN.js"></script>
 <script type="text/javascript" src="/js/common.js"></script>
+
 <div style="padding:10px 10px 10px 10px">
 	<form id="itemAddForm" class="itemForm" method="post">
 	    <table cellpadding="5">
 	        <tr>
 	            <td>图片标题:</td>
-	            <td><input class="easyui-textbox" type="text" name="title" data-options="required:true" style="width: 280px;"></input></td>
-	        </tr>
-
-	        <tr>
-	            <td>商品图片:</td>
-	            <td>
-	            	 <a href="javascript:void(0)" class="easyui-linkbutton onePicUpload">上传图片</a>
-	                 <input type="hidden" name="image" id="image"/>
-	            </td>
+	            <td><input class="easyui-textbox" type="text" name="contactname" data-options="required:true" style="width: 280px;"></input></td>
 	        </tr>
 			<tr>
-				<td>状态设置:</td>
-				<td>
-					<input class="easyui-radio" type="radio" name="status" value="1" data-options="required:true" style="width: 10px;">开启</input>
-					<input class="easyui-radio" type="radio" name="status" value="0" style="width: 10px;">关闭</input>
-				</td>
+				<td>内容简述:</td>
+				<td><input class="easyui-textbox" type="text" name="contactcontent" data-options="required:true" style="width: 280px;"></input></td>
 			</tr>
 	    </table>
 	    <input type="hidden" name="itemParams"/>
@@ -45,6 +35,7 @@
     $(function(){
         TT.initOnePicUpload();
     });
+
     //提交表单
     function submitForm(){
         //有效性验证
@@ -54,7 +45,7 @@
         }
         //ajax的post方式提交表单
         //$("#itemAddForm").serialize()将表单序列号为key-value形式的字符串
-        $.post("/indexGoods/save.do",$("#itemAddForm").serialize(), function(data){
+        $.post("/contact/addContact.do",$("#itemAddForm").serialize(), function(data){
             if(data.status == 200){
                 $.messager.alert('提示',data.msg);
                 clearForm();

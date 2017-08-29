@@ -29,7 +29,7 @@ public class BannerController {
     @ResponseBody
     public TaotaoResult insertBanner(TbBanner banner){
         TaotaoResult result = bannerService.addBanner(banner);
-        return TaotaoResult.ok();
+        return result;
     }
 
     @RequestMapping("list")

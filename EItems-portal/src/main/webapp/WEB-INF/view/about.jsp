@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="UTF-8"%>
+<%@taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,38 +53,43 @@
 	</header>
 
 	<!-- start header -->
-		<header>
-        <div class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                  <a class="navbar-brand" href="index.index.jsp"><i class="icon-info-blocks material-icons">language</i>Arrive</a>
-                </div>
-                <div class="navbar-collapse collapse ">
-                    <ul class="nav navbar-nav">
-                        <li><a class="waves-effect waves-dark" href="index.index.jsp">Home</a></li>
-							 <li class="dropdown active">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">About Us <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="waves-effect waves-dark" href="about.html">Company</a></li>
-                            <li><a class="waves-effect waves-dark" href="#">Our Team</a></li>
-                            <li><a class="waves-effect waves-dark" href="#">News</a></li> 
-                            <li><a class="waves-effect waves-dark" href="#">Investors</a></li>
-                        </ul>
-                    </li> 
-						<li><a class="waves-effect waves-dark" href="services.html">Services</a></li>
-                        <li><a class="waves-effect waves-dark" href="portfolio.html">Gallery</a></li>
-                        <li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>
-                        <li><a class="waves-effect waves-dark" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-	</header><!-- end header -->
+	<header>
+		<div class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<%--<i class="icon-info-blocks material-icons">language</i>--%>
+						<img src="/img/top.png" alt="" height="50" width="50" align=""/>
+						易万家科技
+					</a>
+				</div>
+				<div class="navbar-collapse collapse ">
+					<ul class="nav navbar-nav">
+						<li class="active"><a class="waves-effect waves-dark" href="index.html">主页</a></li>
+						<li><a class="waves-effect waves-dark" href="portfolio.html">产品展示</a></li>
+						<li><a class="waves-effect waves-dark" href="services.html">服务与支持</a></li>
+						<li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a class="waves-effect waves-dark" href="about.html">公司介绍</a></li>
+								<li><a class="waves-effect waves-dark" href="#">公司新闻</a></li>
+								<li><a class="waves-effect waves-dark" href="#">公司文化</a></li>
+								<li><a class="waves-effect waves-dark" href="#">公司活动</a></li>
+								<li><a class="waves-effect waves-dark" href="#">加入我们</a></li>
+							</ul>
+						</li>
+						<li><a class="waves-effect waves-dark" href="contact.html">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
 	<section id="inner-headline">
 	<div class="container">
 		<div class="row">
@@ -93,12 +100,14 @@
 	</div>
 	</section>
 	<section id="content">
-	<section class="section-padding">
+
+		<section class="section-padding">
 		<div class="container">
 			<div class="row showcase-section">
 				<div class="col-md-6">
 					<img src="img/dev1.png" alt="showcase image">
 				</div>
+
 				<div class="col-md-6">
 					<div class="about-text">
 						<h3>Our <span class="color">Company</span></h3>
@@ -106,10 +115,12 @@
 						 <p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo..</p>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</section>
-	<div class="container">
+
+		<div class="container">
 					
 					<div class="about">
 				

@@ -4,6 +4,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class TbGoods implements Serializable {
+
+    private String name;    //种类的字段name
+
     private Long id;
 
     private String goodsttile;
@@ -21,6 +24,14 @@ public class TbGoods implements Serializable {
     private String goodsdesc;
 
     private static final long serialVersionUID = 1L;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
+    }
 
     public Long getId() {
         return id;
@@ -99,6 +110,7 @@ public class TbGoods implements Serializable {
         }
         TbGoods other = (TbGoods) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
+                && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
             && (this.getGoodsttile() == null ? other.getGoodsttile() == null : this.getGoodsttile().equals(other.getGoodsttile()))
             && (this.getImage() == null ? other.getImage() == null : this.getImage().equals(other.getImage()))
             && (this.getCreatetime() == null ? other.getCreatetime() == null : this.getCreatetime().equals(other.getCreatetime()))
@@ -112,8 +124,10 @@ public class TbGoods implements Serializable {
     public int hashCode() {
         final int prime = 31;
         int result = 1;
+        result = prime * result + ((getName() == null) ? 0 : getName().hashCode());
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
         result = prime * result + ((getGoodsttile() == null) ? 0 : getGoodsttile().hashCode());
+
         result = prime * result + ((getImage() == null) ? 0 : getImage().hashCode());
         result = prime * result + ((getCreatetime() == null) ? 0 : getCreatetime().hashCode());
         result = prime * result + ((getUpdatetime() == null) ? 0 : getUpdatetime().hashCode());
@@ -131,6 +145,8 @@ public class TbGoods implements Serializable {
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
         sb.append(", goodsttile=").append(goodsttile);
+        sb.append(", name=").append(name);
+        sb.append(", name=").append(name);
         sb.append(", image=").append(image);
         sb.append(", createtime=").append(createtime);
         sb.append(", updatetime=").append(updatetime);

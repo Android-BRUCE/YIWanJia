@@ -130,55 +130,14 @@
 	                <li><a class="waves-effect waves-dark" href="#" data-filter=".nature">Nature</a></li>
 	                <li><a class="waves-effect waves-dark" href="#" data-filter=".outside">Outside</a></li>
 	                <li><a class="waves-effect waves-dark" href="#" data-filter=".photography">Photography</a></li>
-	                <li><a class="waves-effect waves-dark" href="#" data-filter=".哈哈">哈哈</a></li>
 	            </ul>
 			</div>
             <!-- /.gallery-filter -->
-            
+
             <div class="row">
                 <div id="isotope-gallery-container">
-                    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
-                        <div class="gallery-item">
-                            <div class="gallery-thumb">
-                                <img src="img/works/1.jpg" class="img-responsive" alt="1st gallery Thumb">
-                                <div class="image-overlay"></div>
-                                <a href="img/works/1.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
-                                
-                            </div>
-                            <div class="gallery-details">
-                            	<div class="editContent">
-	                                <h5>1st gallery Item</h5>
-                            	</div>
-                            	<div class="editContent">
-	                                <p>Nullam id dolor id nibh ultricies vehicula.</p>
-                            	</div>
-                            </div>
-                        </div>
-                    </div>
 
 
-					<!-- /.gallery-filter -->
-
-					<div class="row">
-						<div id="isotope-gallery-container">
-							<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper 哈哈">
-								<div class="gallery-item">
-									<div class="gallery-thumb">
-										<img src="img/works/1.jpg" class="img-responsive" alt="1st gallery Thumb">
-										<div class="image-overlay"></div>
-										<a href="img/works/1.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
-
-									</div>
-									<div class="gallery-details">
-										<div class="editContent">
-											<h5>pppppppppp</h5>
-										</div>
-										<div class="editContent">
-											<p>pppppppppppppppppppppppp.</p>
-										</div>
-									</div>
-								</div>
-							</div>
                     <!-- /.gallery-item-wrapper -->
                     <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper nature outside">
                         <div class="gallery-item">
@@ -186,7 +145,7 @@
                                 <img src="img/works/2.jpg" class="img-responsive" alt="2nd gallery Thumb">
                                 <div class="image-overlay"></div>
                                 <a href="img/works/2.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
-                                
+
                             </div>
                             <div class="gallery-details">
                             	<div class="editContent">
@@ -198,121 +157,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /.gallery-item-wrapper -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper photography artwork">
-                        <div class="gallery-item">
-                            <div class="gallery-thumb">
-                                <img src="img/works/3.jpg" class="img-responsive" alt="3rd gallery Thumb">
-                                <div class="image-overlay"></div>
-                                <a href="img/works/3.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
-                                
-                            </div>
-                            <div class="gallery-details">
-                            	<div class="editContent">
-                                	<h5>3rd gallery Item</h5>
-                            	</div>
-                            	<div class="editContent">
-                                	<p>Nullam id dolor id nibh ultricies vehicula.</p>
-                            	</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.gallery-item-wrapper -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper creative nature">
-                        <div class="gallery-item">
-                            <div class="gallery-thumb">
-                                <img src="img/works/4.jpg" class="img-responsive" alt="4th gallery Thumb">
-                                <div class="image-overlay"></div>
-                                <a href="img/works/4.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
-                                
-                            </div>
-                            <div class="gallery-details">
-                            	<div class="editContent">
-                                	<h5>4th gallery Item</h5>
-                            	</div>
-                            	<div class="editContent">
-                                	<p>Nullam id dolor id nibh ultricies vehicula.</p>
-                            	</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.gallery-item-wrapper -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper nature">
-					<div class="gallery-item">
-						<div class="gallery-thumb">
-							<img src="img/works/5.jpg" class="img-responsive" alt="5th gallery Thumb">
-							<div class="image-overlay"></div>
-							<a href="img/works/5.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
 
-						</div>
-						<div class="gallery-details">
-							<div class="editContent">
-								<a href="http://www.baidu.com"><h5>5th gallery Item</h5></a>
-							</div>
-							<div class="editContent">
-								<a href="http://www.baidu.com"><p>Nullam id dolor id nibh ultricies vehicula.</p></a>
-							</div>
-						</div>
-					</div>
-				</div>
-					<!-- /.gallery-item-wrapper -->
-					<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper nature">
-						<div class="gallery-item">
-							<div class="gallery-thumb">
-								<img src="img/works/5.jpg" class="img-responsive" alt="5th gallery Thumb">
-								<div class="image-overlay"></div>
-								<a href="img/works/5.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
 
-							</div>
-							<div class="gallery-details">
-								<div class="editContent">
-									<a href="http://www.baidu.com"><h5>5th gallery Item</h5></a>
-								</div>
-								<div class="editContent">
-									<a href="http://www.baidu.com"><p>Nullam id dolor id nibh ultricies vehicula.</p></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /.gallery-item-wrapper -->
-					<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper nature">
-						<div class="gallery-item">
-							<div class="gallery-thumb">
-								<img src="img/works/5.jpg" class="img-responsive" alt="5th gallery Thumb">
-								<div class="image-overlay"></div>
-								<a href="img/works/5.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
 
-							</div>
-							<div class="gallery-details">
-								<div class="editContent">
-									<a href="http://www.baidu.com"><h5>5th gallery Item</h5></a>
-								</div>
-								<div class="editContent">
-									<a href="http://www.baidu.com"><p>Nullam id dolor id nibh ultricies vehicula.</p></a>
-								</div>
-							</div>
-						</div>
-					</div>
-                    <!-- /.gallery-item-wrapper -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
-                        <div class="gallery-item">
-                            <div class="gallery-thumb">
-                                <img src="img/works/6.jpg" class="img-responsive" alt="6th gallery Thumb">
-                                <div class="image-overlay"></div>
-                                <a href="img/works/6.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
-                                
-                            </div>
-                            <div class="gallery-details">
-                            	<div class="editContent">
-                                	<h5>6th gallery Item</h5>
-                            	</div>
-                            	<div class="editContent">
-                                	<p>Nullam id dolor id nibh ultricies vehicula.</p>
-                            	</div>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
                 <!-- /.isotope-gallery-container -->
             </div>

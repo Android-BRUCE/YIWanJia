@@ -94,6 +94,7 @@
       order by ${orderByClause}
     </if>
   </select>
+
   <select id="selectByExample" parameterType="com.yiwanjia.pojo.TbGoodsExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
@@ -109,6 +110,7 @@
       order by ${orderByClause}
     </if>
   </select>
+
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
     select 
     <include refid="Base_Column_List" />
@@ -127,6 +129,24 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
+  <!--===================================================自定义select 链表=====start============================================-->
+<select id="selectUnionCategory" resultType="com.yiwanjia.pojo.TbGoods" >
+  SELECT a.id,a.GoodsTtile,a.image,a.CreateTime,a.UpdateTime,a.point,a.cid,b.name FROM tb_goods a , tb_GoodsCategory b WHERE a.`cid`=b.`id`
+</select>
+
+  <!--===================================================自定义select 链表=================================================-->
+  <!--===================================================批量删除=====start============================================-->
+  <delete id="deleteByGoodsIds" parameterType="int" >
+
+    delete from tb_goods
+    where id in
+    <foreach item="empnoItem" collection="array" open="(" separator="," close=")">
+      #{empnoItem}
+    </foreach>
+  </delete>
+  <!--===================================================批量删除=====end============================================-->
+
+
   <insert id="insert" parameterType="com.yiwanjia.pojo.TbGoods">
     insert into tb_goods (id, GoodsTtile, image, 
       CreateTime, UpdateTime, cid, 

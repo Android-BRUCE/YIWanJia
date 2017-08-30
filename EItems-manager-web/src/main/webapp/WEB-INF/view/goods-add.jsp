@@ -34,16 +34,16 @@
 	            </td>
 	        </tr>
 	        <tr>
-	            <td>商品图片:</td>
+	            <td>产品图片:</td>
 	            <td>
-	            	 <a href="javascript:void(0)" class="easyui-linkbutton picFileUpload">上传图片</a>
+					<a href="javascript:void(0)" class="easyui-linkbutton onePicUpload">图片上传</a>
 	                 <input type="hidden" name="image"/>
 	            </td>
 	        </tr>
 	        <tr>
-	            <td>商品描述:</td>
+	            <td>产品具述:</td>
 	            <td>
-	                <textarea style="width:800px;height:300px;visibility:hidden;" name="desc"></textarea>
+	                <textarea style="width:800px;height:300px;visibility:hidden;" name="goodsdesc"></textarea>
 	            </td>
 	        </tr>
 	    </table>
@@ -58,7 +58,8 @@
 	var itemAddEditor ;
 	//页面初始化完毕后执行此方法
 	$(function(){
-	itemAddEditor = KindEditor.create("#itemAddForm [name=desc]", TT.kingEditorParams);
+        TT.initOnePicUpload();
+	    itemAddEditor = KindEditor.create("#itemAddForm [name=goodsdesc]", TT.kingEditorParams);
 	});
 	//提交表单
 	function submitForm(){
@@ -67,32 +68,8 @@
 			$.messager.alert('提示','表单还未填写完成!');
 			return ;
 		}
-		//取商品价格，单位为“分”
-		$("#itemAddForm [name=price]").val(eval($("#itemAddForm [name=priceView]").val()) * 100);
 		//同步文本框中的商品描述
 		itemAddEditor.sync();
-		//取商品的规格
-		var paramJson = [];
-		$("#itemAddForm .params li").each(function(i,e){
-			var trs = $(e).find("tr");
-			var group = trs.eq(0).text();
-			var ps = [];
-			for(var i = 1;i<trs.length;i++){
-				var tr = trs.eq(i);
-				ps.push({
-					"k" : $.trim(tr.find("td").eq(0).find("span").text()),
-					"v" : $.trim(tr.find("input").val())
-				});
-			}
-			paramJson.push({
-				"group" : group,
-				"params": ps
-			});
-		});
-		//把json对象转换成字符串
-		paramJson = JSON.stringify(paramJson);
-		$("#itemAddForm [name=itemParams]").val(paramJson);
-		
 		//ajax的post方式提交表单
 		//$("#itemAddForm").serialize()将表单序列号为key-value形式的字符串
 		$.post("/goods/save.do",$("#itemAddForm").serialize(), function(data){

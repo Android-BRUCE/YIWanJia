@@ -8,9 +8,13 @@ import org.apache.ibatis.annotations.Param;
 public interface TbGoodsMapper {
     long countByExample(TbGoodsExample example);
 
+    List<TbGoods> selectUnionCategory();
+
     int deleteByExample(TbGoodsExample example);
 
     int deleteByPrimaryKey(Long id);
+
+    int deleteByGoodsIds(int[] ids);
 
     int insert(TbGoods record);
 

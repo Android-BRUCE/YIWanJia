@@ -20,7 +20,7 @@ public interface TbGoodsMapper {
 
     int insertSelective(TbGoods record);
 
-    List<TbGoods> selectByExampleWithBLOBs(TbGoodsExample example);
+    List<TbGoods> selectByExampleWithBLOBs();
 
     List<TbGoods> selectByExample(TbGoodsExample example);
 

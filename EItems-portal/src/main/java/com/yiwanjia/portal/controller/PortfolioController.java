@@ -9,6 +9,7 @@ import com.yiwanjia.pojo.TbGoodsExample;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
@@ -27,7 +28,7 @@ public class PortfolioController {
     public String jumpToPortfolio(Model model){
 
         TbGoodsExample tbGoodsExample = new TbGoodsExample();
-        List<TbGoods> tbGoods = tbGoodsMapper.selectByExample(tbGoodsExample);
+        List<TbGoods> tbGoods = tbGoodsMapper.selectUnionCategory();
 
         TbGoodsCategoryExample tbGoodsCategoryExample = new TbGoodsCategoryExample();
         List<TbGoodsCategory> categoryList = categoryMapper.selectByExample(tbGoodsCategoryExample);
@@ -36,5 +37,13 @@ public class PortfolioController {
         model.addAttribute("category",categoryList);
 
         return "portfolio";
+    }
+
+    @RequestMapping("{id}/detilPortfolio")
+    public String jumpToPortfolioDetil(@PathVariable long id,Model model){
+        TbGoods goods = tbGoodsMapper.selectByPrimaryKey(id);
+        model.addAttribute("list",goods);
+
+        return "portfolioPage";
     }
 }

@@ -69,9 +69,9 @@
 				</div>
 				<div class="navbar-collapse collapse ">
 					<ul class="nav navbar-nav">
-						<li class="active"><a class="waves-effect waves-dark" href="index.html">主页</a></li>
+						<li><a class="waves-effect waves-dark" href="index.html">主页</a></li>
 						<li><a class="waves-effect waves-dark" href="portfolio.html">产品展示</a></li>
-						<li><a class="waves-effect waves-dark" href="services.html">服务与支持</a></li>
+						<li class="active"><a class="waves-effect waves-dark" href="services.html">服务与支持</a></li>
 						<li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>

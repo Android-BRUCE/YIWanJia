@@ -10,13 +10,17 @@
 <meta name="author" content="" />
 <!-- css --> 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
-<link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
-<link href="css/flexslider.css" rel="stylesheet" /> 
-<link href="css/style.css" rel="stylesheet" />
- 
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<link rel="/stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
+<link href="/css/bootstrap.min.css" rel="stylesheet" />
+<link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="/css/flexslider.css" rel="stylesheet" />
+<link href="/css/style.css" rel="stylesheet" />
+<link href="/css/public/default/css-outM/style.css" rel="stylesheet" />
+	<%--<script type="text/javascript" src="/css/public/default/css-outM/jquery.min.js"></script>--%>
+
+	<%--<script type="text/javascript" src="/css/public/default/css-outM/jquery.SuperSlide.2.1.1.js"></script>--%>
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -27,31 +31,12 @@
 	<header class="topbar">
 		<div class="container">
 			<div class="row">
-				<!-- social icon-->
-				<div class="col-sm-3">
-				   <ul class="social-network">
-					<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>
-					<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>
-					<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>
-				</ul>
-				</div>
-				<div class="col-sm-9">
-					<div class="row">
-						<ul class="info"> 
-							<li><i class="icon-info-blocks material-icons">question_answer</i><span>info@Arrive.com</span></li>
-							<li><i class="icon-info-blocks material-icons">perm_phone_msg</i><span>+(012) 345 6789</span></li>
-						</ul>
-						<div class="clr"></div>
-					</div>
-				</div>
-				<!-- info -->
-
 			</div>
 		</div>
 	</header>
 
+	<!-- start header -->
+	<!-- start header -->
 	<header>
 		<div class="navbar navbar-default navbar-static-top">
 			<div class="container">
@@ -69,124 +54,93 @@
 				</div>
 				<div class="navbar-collapse collapse ">
 					<ul class="nav navbar-nav">
-						<li><a class="waves-effect waves-dark" href="index.html">主页</a></li>
-						<li><a class="waves-effect waves-dark" href="portfolio.html">产品展示</a></li>
-						<li><a class="waves-effect waves-dark" href="services.html">服务与支持</a></li>
-						<li class="active"><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">主页</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品展示</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/services.html">服务与支持</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/pricing.html">Pricing</a></li>
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a class="waves-effect waves-dark" href="about.html">公司介绍</a></li>
-								<li><a class="waves-effect waves-dark" href="#">公司新闻</a></li>
-								<li><a class="waves-effect waves-dark" href="#">公司文化</a></li>
-								<li><a class="waves-effect waves-dark" href="#">公司活动</a></li>
-								<li><a class="waves-effect waves-dark" href="#">加入我们</a></li>
+								<li><a class="waves-effect waves-dark" href="../about.html">公司介绍</a></li>
+								<li><a class="waves-effect waves-dark" href="../#">公司新闻</a></li>
+								<li><a class="waves-effect waves-dark" href="../#">公司文化</a></li>
+								<li><a class="waves-effect waves-dark" href="../#">公司活动</a></li>
+								<li><a class="waves-effect waves-dark" href="../#">加入我们</a></li>
 							</ul>
 						</li>
-						<li><a class="waves-effect waves-dark" href="contact.html">联系我们</a></li>
+						<li  class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact.html">联系我们</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</header>
+
+
 	<section id="inner-headline">
 	<div class="container">
-	
 		<div class="row">
-			<div class="col-lg-12">
-				<h2 class="pageTitle">Pricing</h2>
-			</div>
+			<%--<div class="col-lg-12">--%>
+				<%--&lt;%&ndash;<h2 class="pageTitle">联系我们</h2>&ndash;%&gt;--%>
+			<%--</div>--%>
 		</div>
 	</div>
 	</section>
 	<section id="content">
-<section id="pricing">
-        <div class="container">
-           <div class="row"> 
+	
+	<div class="container">
+		<div class="row">
 							<div class="col-md-12">
 								<div class="about-logo">
-									<h3>Our Price<span class="color">List</span></h3>
+									<h3>Get<span class="color"> in Touch</span></h3>
 									<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
                                     	<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
-								</div>  
+								</div>
 							</div>
 						</div>
-				 
-</div><!--container-fluid close-->
 
 
-<section>
-<div class="container">
-<div class="row">
-                <!-- item -->
-<div class="col-md-4 col-sm-4 col-xs-12 text-center">
-<div class="panel panel-pricing">
-<div class="panel-heading">
-<i class="fa fa-windows"></i>
-<h3>Plan -1</h3>
-</div><!--panel-heading close-->
-<div class="panel-body text-center">
-<p class="p-title">Subscription Duration</p><!--p-title close-->
-<p class="p-time">2 days - 30 Mins</p><!--p-time close-->
-</div><!--panel-body text-center close-->
-<div class="panel-body text-center">
-<p class="p-price">₦ 50.00 </p><!--p-price close-->
-<p class="p-tax">All inclusive</p><!--p-tax close-->
-</div><!--panel-body text-center close-->
-<div class="panel-footer">
-<a class="btn sub-btn" href="#">Subscribe Now</a>
+		<div class="about-main" id="company-profile">
+			<div class="about-con">
+
+
+
+				<!-- =+++++++++++++++++++++-->
+				<div id="nr_main_box">
+					<div style=" width:745px; float:right;">
+						<div id="inside_rnewtil" style=" text-align:left; border-bottom:1px solid #ddd; padding-bottom:15px;">${list.goodsttile}</div>
+
+						<div id="nrboxstyle">
+
+${list.goodsdesc}
+
+						</div>
+					</div>
+
+					<div style=" width:280px; float:left; text-align:center; margin-top:15px;">
+						<img  src="http://localhost:8080${list.image}" class="proxx_img" style=" width:280px; margin-bottom:10px;" />
+						<div style=" font-size:16px; color:#333; line-height:20px; text-align:center;">${list.goodsttile}</div>
+					</div>
+
+
+
+					<div style="clear:both;"></div>
+				</div> <!--内容 END-->
+
+
+
+
+				<!-- =+++++++++++++++++++++-->
+
+
+
+		</div>
+		<!--end about-main-->
+	</div>
 </div>
-</div><!--panel panel-pricing close-->
-</div><!--col-md-4 col-sm-4 col-xs-12 text-center close-->
 
-
-<div class="col-md-4 col-sm-4 col-xs-12 text-center">
-<div class="panel panel-pricing">
-<div class="panel-heading">
-<i class="fa fa-windows"></i>
-<h3>Plan -2</h3>
-</div><!--panel-heading close-->
-<div class="panel-body text-center">
-<p class="p-title">Subscription Duration</p><!--p-title close-->
-<p class="p-time">7 days - 90 Mins</p><!--p-time close-->
-</div><!--panel-body text-center close-->
-<div class="panel-body text-center">
-<p class="p-price">₦ 150.00 </p><!--p-price close-->
-<p class="p-tax">All inclusive</p><!--p-tax close-->
-</div><!--panel-body text-center close-->
-<div class="panel-footer">
-<a class="btn sub-btn" href="#">Subscribe Now</a>
 </div>
-</div><!--panel panel-pricing close-->
-</div><!--col-md-4 col-sm-4 col-xs-12 text-center close-->
+	</div>
 
-
-
-<div class="col-md-4 col-sm-4 col-xs-12 text-center">
-<div class="panel panel-pricing">
-<div class="panel-heading">
-<i class="fa fa-windows"></i>
-<h3>Plan -3</h3>
-</div><!--panel-heading close-->
-<div class="panel-body text-center">
-<p class="p-title">Subscription Duration</p><!--p-title close-->
-<p class="p-time">30 days - 250 Mins</p><!--p-time close-->
-</div><!--panel-body text-center close-->
-<div class="panel-body text-center">
-<p class="p-price">₦ 400.00 </p><!--p-price close-->
-<p class="p-tax">All inclusive</p><!--p-tax close-->
-</div><!--panel-body text-center close-->
-<div class="panel-footer">
-<a class="btn sub-btn" href="#">Subscribe Now</a>
-</div>
-</div><!--panel panel-pricing close-->
-</div><!--col-md-4 col-sm-4 col-xs-12 text-center close-->
-
-</div><!--row close-->
-</div><!--container close-->
-         </div>
-    </section>
-	 
 	</section>
 	<footer>
 	<div class="container">
@@ -266,19 +220,23 @@
 <!-- javascript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="materialize/js/materialize.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script>  
-<script src="js/jquery.flexslider.js"></script>
-<script src="js/animate.js"></script>
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/materialize/js/materialize.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.fancybox.pack.js"></script>
+<script src="/js/jquery.fancybox-media.js"></script>
+<script src="/js/jquery.flexslider.js"></script>
+<script src="/js/animate.js"></script>
 <!-- Vendor Scripts -->
-<script src="js/modernizr.custom.js"></script>
-<script src="js/jquery.isotope.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/animate.js"></script> 
-<script src="js/custom.js"></script>
+<script src="/js/modernizr.custom.js"></script>
+<script src="/js/jquery.isotope.min.js"></script>
+<script src="/js/jquery.magnific-popup.min.js"></script>
+<script src="/js/animate.js"></script>
+<script src="/js/custom.js"></script>
+
+ <script src="/contact/jqBootstrapValidation.js"></script>
+ <script src="/contact/contact_me.js"></script>
 </body>
+
 </html>

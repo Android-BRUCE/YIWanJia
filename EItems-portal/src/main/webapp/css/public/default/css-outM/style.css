@@ -259,7 +259,7 @@ transform: rotate(360deg);}
 
 
 /*-- µ×²¿ --*/
-#foot_box{ font-size:12px; color:#fff; background:#333333; clear:both; margin-top:0px; padding-top:50px; border-top:1px solid #333;}
+#foot_box{ font-size:12px; color:#fff; clear:both; margin-top:0px; padding-top:50px; border-top:1px }
 .foot_right{ float:right; background:url(../images/weixin.jpg) no-repeat right bottom;  padding-right:220px;}
 .foot_right h2{ font-weight:normal; margin-top:15px; }
 .foot_add_box{ margin-top:15px;}

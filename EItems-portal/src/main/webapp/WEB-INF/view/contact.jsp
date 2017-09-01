@@ -54,7 +54,6 @@
 					<a class="navbar-brand" href="index.html">
 						<%--<i class="icon-info-blocks material-icons">language</i>--%>
 						<img src="/img/top.png" alt="" height="50" width="50" align=""/>
-						易万家科技
 					</a>
 				</div>
 				<div class="navbar-collapse collapse ">
@@ -67,7 +66,7 @@
 							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a class="waves-effect waves-dark" href="about.html">公司介绍</a></li>
-								<li><a class="waves-effect waves-dark" href="#">公司新闻</a></li>
+								<li><a class="waves-effect waves-dark" href="news.html">公司新闻</a></li>
 								<li><a class="waves-effect waves-dark" href="#">公司文化</a></li>
 								<li><a class="waves-effect waves-dark" href="#">公司活动</a></li>
 								<li><a class="waves-effect waves-dark" href="#">加入我们</a></li>
@@ -84,9 +83,9 @@
 	<section id="inner-headline">
 	<div class="container">
 		<div class="row">
-			<%--<div class="col-lg-12">--%>
-				<%--&lt;%&ndash;<h2 class="pageTitle">联系我们</h2>&ndash;%&gt;--%>
-			<%--</div>--%>
+			<div class="col-lg-12">
+				<h2 class="pageTitle">联系我们</h2>
+			</div>
 		</div>
 	</div>
 	</section>
@@ -209,23 +208,23 @@
 <!-- javascript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="materialize/js/materialize.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script>  
-<script src="js/jquery.flexslider.js"></script>
-<script src="js/animate.js"></script>
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/materialize/js/materialize.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.fancybox.pack.js"></script>
+<script src="/js/jquery.fancybox-media.js"></script>
+<script src="/js/jquery.flexslider.js"></script>
+<script src="/js/animate.js"></script>
 <!-- Vendor Scripts -->
-<script src="js/modernizr.custom.js"></script>
-<script src="js/jquery.isotope.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/animate.js"></script> 
-<script src="js/custom.js"></script>
+<script src="/js/modernizr.custom.js"></script>
+<script src="/js/jquery.isotope.min.js"></script>
+<script src="/js/jquery.magnific-popup.min.js"></script>
+<script src="/js/animate.js"></script>
+<script src="/js/custom.js"></script>
 
- <script src="contact/jqBootstrapValidation.js"></script>
- <script src="contact/contact_me.js"></script>
+ <script src="/contact/jqBootstrapValidation.js"></script>
+ <script src="/contact/contact_me.js"></script>
 </body>
 <script type="text/javascript">
     //创建和初始化地图函数：

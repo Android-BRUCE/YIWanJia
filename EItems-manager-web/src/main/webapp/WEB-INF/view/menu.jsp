@@ -73,12 +73,14 @@
       <!-- Item  End -->
 	<!-- Item  Strat -->
       <dl class='bitem'>
-        <dt onClick='showHide("items5_1")'><b>权限管理</b></dt>
+        <dt onClick='showHide("items5_1")'><b>关于我们管理</b></dt>
         <dd style='display:none' class='sitem' id='items5_1'>
           <ul class='sitemu'>
-            <li><a href='user.html' target='main'>人员管理</a> </li>
-            <li><a href='role.html' target='main'>角色管理</a> </li>
-            <li><a href='resources.html' target='main'>菜单资源管理</a> </li>
+            <li><a href='about.html' target='main'>公司介绍管理</a> </li>
+            <li><a href='about_news.html' target='main'>公司新闻管理</a> </li>
+            <li><a href='role.html' target='main'>公司文化管理</a> </li>
+            <li><a href='role.html' target='main'>公司活动管理</a> </li>
+            <li><a href='role.html' target='main'>加入我们管理</a> </li>
           </ul>
         </dd>
       </dl>

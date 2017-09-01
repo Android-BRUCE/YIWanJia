@@ -1,0 +1,280 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>浙江联运知慧科技有限公司</title>
+	<meta name="keywords" content="浙江联运知慧科技有限公司"/>
+	<meta name="description" content="浙江联运知慧科技有限公司"/>
+
+
+	<link href="/css/public/default/css-outM/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/css/public/default/css-outM/jquery.min.js"></script>
+
+	<script type="text/javascript" src="/css/public/default/css-outM/jquery.SuperSlide.2.1.1.js"></script>
+
+
+	<!--[if IE 6]>
+	<script type='text/javascript' src='script/png_fix.js'></script>
+	<script type='text/javascript'>
+		DD_belatedPNG.fix('img,#top .logo a,.ind_s_icon a');
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/IE6_style.css" />
+	<![endif]-->
+
+
+
+	<script src="/css/public/default/css-outM/common.js" type="text/javascript"></script>
+</head>
+<body>
+
+<script language="javascript" type="text/javascript">
+    var nav= '4';
+    var nynav= '83';
+</script>
+
+
+
+<div id="top"><!--头部-->
+	<div class="w1200_center">
+		<div class="logo"><a href="/"></a></div>
+		<ul id="nav" class="main_nav hover" >
+			<li class="navID0" ><a href="index.aspx" class="dl_a">&nbsp;首 页&nbsp;</a> </li>
+			<li class="navID1"><a href="products.aspx" class="dl_a">产品中心</a></li>
+			<li class="navID2"><a href="Solution.aspx" class="dl_a">解决方案</a></li>
+			<li class="navID3"><a href="service.aspx" class="dl_a">服务与支持</a></li>
+			<li class="navID4"><a href="news.aspx" class="dl_a">新闻资讯</a></li>
+			<li class="navID5"><a href="job.aspx" class="dl_a">人力资源</a></li>
+			<li class="navID6"><a href="about.aspx" class="dl_a">关于联运</a></li>
+
+		</ul>
+		<script language="javascript" type="text/javascript">
+            var classn=".navID" + nav
+            $(classn).attr("id","nav_active")
+
+		</script>
+		<div id="clear"></div>
+	</div>
+</div>
+
+<div class="ny_banner_box ny_banner_news"><!--频道页 大背景和内页BANNER-->
+	<div class="w1200_center"><!--版块居中-->
+		<div class="ny_bt" style="display:block;"><!--栏目标题 区域-->
+			<h1 class="bt">新闻资讯</h1>
+			<span class="x"></span>
+			<div class="ms">News information</div>
+		</div><!--栏目标题 区域-->
+	</div><!--版块居中 END-->
+</div><!--频道页 大背景和内页BANNER END-->
+
+<div class="map_box"><!--当前位置-->
+	<div class="w1200_center"><!--版块居中-->
+		<div class="ny_news_nav">
+
+			<a href="news.aspx?cateid=83" id="nynavID83">公司新闻</a>
+
+			<a href="news.aspx?cateid=84" id="nynavID84">行业动态</a>
+
+			<a href="news.aspx?cateid=85" id="nynavID85">通知公告</a>
+
+
+			<script language="javascript" type="text/javascript">
+                try {
+                    document.getElementById("nynavID" + nynav).className = "acvier";
+                }
+                catch (e) {}
+			</script>
+		</div>
+
+		<div class="map_path_box">
+			<a href="index.html"><img src="images/home.png" />首页</a>
+			<span>></span>
+			<a href="news.aspx">新闻资讯</a>
+			<span>></span>
+			<a href="news.aspxcateid=83" class="active">公司新闻 </a>
+
+
+			<a href="news.aspx" class="fh">返回</a>
+		</div>
+		<div id="clear"></div>
+	</div>
+</div><!--当前位置 END-->
+
+
+
+
+<ul class="ny_news_list">
+
+	<dl>
+		<dd><a href="newsdetail.aspx?id=67"><img src="/Upload/1_副本-17524483560.jpg "  alt="杭州市余杭区智慧环卫监管平台正式投入运行"/></a></dd>
+		<dt>
+			<a class="bt" href="newsdetail.aspx?id=67">杭州市余杭区智慧环卫监管平台正式投入运行</a>
+			<div class="nr_ms">编者按：今年上半年，浙江联运知慧科技有限公司成功中标“余杭区城管局智慧环卫建设项目”。上月，该项目设备正式投入运行，有效帮助余杭区城管局实现环卫实施、环卫事件、清扫质量监管、环卫车辆管理、环卫人员管理、智能手环GPS定位等功能。将为引领和支撑余杭城市管理工作、创新和完善新型城市管理体系做出重要贡献！“…</div>
+			<a class="more" href="newsdetail.aspx?id=67">了解详细<span>>></span></a>
+		</dt>
+	</dl>
+	<dl>
+		<dd><a href="newsdetail.aspx?id=66"><img src="/Upload/2_副本-17211541452.png "  alt="联运环境五车监管云平台让亳州环卫监管更智慧"/></a></dd>
+		<dt>
+			<a class="bt" href="newsdetail.aspx?id=66">联运环境五车监管云平台让亳州环卫监管更智慧</a>
+			<div class="nr_ms">来源：中国建设报中央第四环境保护督察组不久前到安徽省亳州市检查督导当地环境保护治理相关工作，为推进亳州的环境保护工作起到了积极的推动作用。中央环保督察组进驻亳州期间专门来到亳州市数字城管指挥中心调研。在这里，督察组一行认真听取了浙江联运知慧科技有限公司（以下简称“联运知慧”）建设的亳州五车监管平台的…</div>
+			<a class="more" href="newsdetail.aspx?id=66">了解详细<span>>></span></a>
+		</dt>
+	</dl>
+	<dl>
+		<dd><a href="newsdetail.aspx?id=65"><img src="/Upload/微信图片_20170711201841-08500160711.jpg "  alt="根本停不下来 运河丽园垃圾分类换礼品go go go "/></a></dd>
+		<dt>
+			<a class="bt" href="newsdetail.aspx?id=65">根本停不下来 运河丽园垃圾分类换礼品go go go </a>
+			<div class="nr_ms">哇，免费积分换礼品？是什么小区这么热闹？7月11日这天且跟小编到现场瞧一瞧。原来，这里是杭州余杭区运河丽园小区。运河丽园小区位于东湖北路(运河镇行政中心西侧)，与运河镇政府行政中心隔路相望，毗邻规划中的运河核心景观湾区亭趾港核心景观湖。得天独厚的自然优势，让这里的居民对环境保护拥有天然的热情。数百户居民…</div>
+			<a class="more" href="newsdetail.aspx?id=65">了解详细<span>>></span></a>
+		</dt>
+	</dl>
+	<dl>
+		<dd><a href="newsdetail.aspx?id=63"><img src="/Upload/QQ图片20170701150730-15030216657.png "  alt="联运环境再下一城 助推岭南垃圾智慧分类"/></a></dd>
+		<dt>
+			<a class="bt" href="newsdetail.aspx?id=63">联运环境再下一城 助推岭南垃圾智慧分类</a>
+			<div class="nr_ms">6月29日上午，由联运环境主办，黄埔区长洲街道办事处、黄船社区协办的智慧垃圾分类启动仪式在黄船社区一区隆重举行，黄埔区城管局黄鹏飞副局长，长洲街道办事处王峻松主任及居民代表参加了此次启动仪式。亮点回顾启动仪式上，黄埔区城管局黄副局长的精彩致辞拉开了黄船社区垃圾分类启动仪式的序幕广东联运希奕环境工程有限…</div>
+			<a class="more" href="newsdetail.aspx?id=63">了解详细<span>>></span></a>
+		</dt>
+	</dl>
+	<dl>
+		<dd><a href="newsdetail.aspx?id=62"><img src="/Upload/3_副本-11281519536.jpg "  alt="圆满落幕！联运环境成功协办浙江省环协代表大会"/></a></dd>
+		<dt>
+			<a class="bt" href="newsdetail.aspx?id=62">圆满落幕！联运环境成功协办浙江省环协代表大会</a>
+			<div class="nr_ms">6月16日，由浙江省城市环境卫生协会主办，金华市环境卫生协会承办的浙江省城市环境卫生协会七届五次会员代表大会在金华召开。值得一提的是，这届盛会由浙江省联运环境工程股份公司全程协办。来自浙江省环卫界的近300名嘉宾齐聚一堂，共商环境事业大计，当天代表们一走进会场，就被大屏幕的新闻视频所吸引，原来上面播放的正…</div>
+			<a class="more" href="newsdetail.aspx?id=62">了解详细<span>>></span></a>
+		</dt>
+	</dl>
+	<span id='DcmsPage_PageInfo' style='display:none;'>9|43</span>
+
+	<div id="clear"></div>
+
+
+	<div id="fengye"><!--分页-->
+		<style>
+			<!--
+			#dcms_pager .pages {border:none;text-transform:uppercase;font-size:12px;margin:10px 0 10px 0;padding:0;height:20px;clear:both;text-align:center;}
+			#dcms_pager .pages a {border:1px solid #ccc;text-decoration:none;margin:0 5px 0 0;padding:5px 12px 5px 12px;font-size:14px;height:16px;line-height:16px; color:#333;}
+			#dcms_pager .pages a:hover {border:1px solid #189c43; color:#189c43;}
+			#dcms_pager .pages .pgempty {border:1px solid #ccc;color:#ccc;}
+			#dcms_pager .pages .pgempty:hover{border:1px solid #ccc;color:#ccc;}
+			#dcms_pager .pages .pgcurrent,#dcms_pager .pages .pgcurrent:hover {border:1px solid #189c43;color:#fff;font-weight:bold;background-color:#189c43;}
+			-->
+		</style>
+		<div id="dcms_pager" >
+			<div class=pages><a class=pgnext>first</a><a class=pgnext>prev</a><a>1</a><a>2</a><a>3</a><a>4</a><a class="page-number pgcurrent">5</a><a>6</a><a>7</a><a>8</a><a>9</a><a class=pgnext>next</a><a class=pgnext>last</a></div>
+		</div>
+		<script>renderDcmsPager('首页','上一页','下一页','尾页');</script>
+
+	</div><!--分页 End-->
+
+</ul>
+
+
+
+<div id="foot_box"><!-- 底部 -->
+	<div class="w1200_center">
+
+		<div class="foot_right">
+			<h2>联系我们</h2>
+			<div class="foot_400">400-0123-366</div>
+			<ul class="foot_add_box">
+				<li class="foot_tel">www.zjlyzhkj.com</li>
+				<li class="foot_add">杭州市余杭经济开发区五洲路98号 </li>
+			</ul>
+		</div>
+
+		<ul class="foot_lmnav">
+			<h2>关于联运</h2>
+			<Span class="foot_x"></Span>
+			<li><a href="about.aspx?cateid=91" title="公司介绍">公司介绍</a></li>
+			<li><a href="about.aspx?cateid=92" title="荣誉资质">荣誉资质</a></li>
+			<li><a href="about.aspx?cateid=93" title="发展历程">发展历程</a></li>
+			<li><a href="about.aspx?cateid=97" title="企业宣传视频">企业宣传视频</a></li>
+			<li><a href="about.aspx?cateid=95" title="联系我们">联系我们</a></li>
+
+
+		</ul>
+
+
+
+		<ul class="foot_lmnav">
+			<h2>产品中心</h2>
+			<Span class="foot_x"></Span>
+			<li><a href="products.aspx" title="环卫云平台">环卫云平台</a></li>
+			<li><a href="products02.aspx" title="垃圾分类云平台">垃圾分类云平台</a></li>
+			<li><a href="products03.aspx" title="公路云平台">公路云平台</a></li>
+
+
+		</ul>
+
+		<ul class="foot_lmnav">
+			<h2>新闻资讯</h2>
+			<Span class="foot_x"></Span>
+			<li><a href="news.aspx?cateid=83" title="公司新闻">公司新闻</a></li>
+			<li><a href="news.aspx?cateid=84" title="行业动态">行业动态</a></li>
+			<li><a href="news.aspx?cateid=85" title="通知公告">通知公告</a></li>
+
+
+		</ul>
+		<div id="clear"></div>
+
+	</div>
+
+	<div class="foot_text">
+		<div class="w1200_center">
+			<div class="foot_tl">
+				Copyright © 浙江联运知慧科技有限公司 All Rights Reserved　
+			</div>
+			<div class="foot_tr">技术支持：杭州三五互联 | 浙ICP备0213456789号
+
+				<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1262217744'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1262217744%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+
+				<script>
+                    var _hmt = _hmt || [];
+                    (function() {
+                        var hm = document.createElement("script");
+                        hm.src = "https://hm.baidu.com/hm.js?de2327fa8fe16a45a43658ad23aad336";
+                        var s = document.getElementsByTagName("script")[0];
+                        s.parentNode.insertBefore(hm, s);
+                    })();
+				</script>
+
+
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--[if lt IE 7]>
+<div id="bodyMask2" class="browser-mask"></div>
+<div class='browser-box'>
+	<h2>噢，您是否知道您正在使用的浏览器无法完全支持我们的页面？</h2>
+	<h3>很抱歉，由于您当前浏览器是IE6版本无法完美呈现该页面。</h3>
+	<div>
+		<span>如果你还不知道什么是HTML5标准，请看<a href="http://zh.wikipedia.org/wiki/HTML5" target='_blank'>维基百科</a>。</span>建议您使用以下浏览器的最新版本：
+	</div>
+	<ul>
+		<li><a class="ico icoChrome" title='谷歌Chrome浏览器' href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html" target='_blank'></a></li>
+		<li><a class="ico icoOpera" title='Opera浏览器' href="http://www.opera.com/" target='_blank'></a></li>
+		<li><a class="ico icoFirefox" title='火狐浏览器' href="http://www.firefox.com.cn/download/" target='_blank'></a></li>
+		<li><a class="ico icoSafar" title='Safar浏览器' href="http://www.apple.com.cn/safari/download/" target='_blank'></a></li>
+	</UL>
+
+	<p><a class="ico icoGt" href="http://www.microsoft.com/zh-cn/download/internet-explorer-8-details.aspx">升级IE浏览器</a></p>
+</div>
+
+<![endif]-->
+<!-- 
+<script type="text/javascript">
+$(function() {
+$('#nav li').hover(function() { $(this).find(".nav_xlbox").stop(true, true).slideDown(100); $(this).children("a").addClass("aNavHover"); }, function() { $(this).find("ul").stop(true, true).slideUp(100); $(this).children("a").removeClass("aNavHover"); });
+})
+</script>
+
+<script type="text/javascript" src="script/xl.js"></script>-->
+</body>
+</html>

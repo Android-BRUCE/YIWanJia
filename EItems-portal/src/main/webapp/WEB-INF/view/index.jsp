@@ -268,24 +268,24 @@
 				<div class="widget">
 					<h5 class="widgetheading">联系方式</h5>
 					<address>
-					<strong>Bootstrap company Inc</strong><br>
-					JC Main Road, Near Silnile tower<br>
-					 Pin-21542 NewYork US.</address>
+					<strong>杭州钱王万家信息科技有限公司</strong><br>
+						杭州临安市青山湖街道958号<br>
+						科创大楼1幢1101-06</address>
 					<p>
-						<i class="icon-phone"></i> (123) 456-789 - 1255-12584 <br>
+						<i class="icon-phone"></i> 61103779<br>
 						<i class="icon-envelope-alt"></i> email@domainname.com
 					</p>
 				</div>
 			</div>
 			<div class="col-sm-3">
 				<div class="widget">
-					<h5 class="widgetheading">Quick Links</h5>
+					<h5 class="widgetheading">关于万家</h5>
 					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="#">Latest Events</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Terms and conditions</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Privacy policy</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Career</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Contact us</a></li>
+						<li><a class="waves-effect waves-dark" href="#">万家科技介绍</a></li>
+						<li><a class="waves-effect waves-dark" href="#">万家科技新闻动态</a></li>
+						<li><a class="waves-effect waves-dark" href="#">万家科技活动</a></li>
+						<li><a class="waves-effect waves-dark" href="#">万家科技企业文化</a></li>
+						<li><a class="waves-effect waves-dark" href="#">联系我们</a></li>
 					</ul>
 				</div>
 			</div>
@@ -301,7 +301,7 @@
 			</div>
 			<div class="col-sm-3">
 				<div class="widget">
-					<h5 class="widgetheading">Recent News</h5>
+					<h5 class="widgetheading">最新新闻</h5>
 					<ul class="link-list">
 						<li><a class="waves-effect waves-dark" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
 						<li><a class="waves-effect waves-dark" href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
@@ -309,6 +309,8 @@
 					</ul>
 				</div>
 			</div>
+
+
 		</div>
 	</div>
 	<div id="sub-footer">

@@ -6,16 +6,16 @@
 <meta charset="utf-8">
 <title></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="" />
-<meta name="author" content="" />
+<meta name="description" content="杭州钱王万家信息科技有限公司" />
+<meta name="author" content="杭州钱王万家信息科技有限公司" />
 <!-- css --> 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="/stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
-<link href="/css/bootstrap.min.css" rel="stylesheet" />
-<link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-<link href="/css/flexslider.css" rel="stylesheet" />
-<link href="/css/style.css" rel="stylesheet" />
-<link href="/css/public/default/css-outM/style.css" rel="stylesheet" />
+<link rel="/stylesheet" href="${pageContext.request.contextPath}/materialize/css/materialize.min.css" media="screen,projection" />
+<link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/flexslider.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/public/default/css-outM/style.css" rel="stylesheet" />
 	<%--<script type="text/javascript" src="/css/public/default/css-outM/jquery.min.js"></script>--%>
 
 	<%--<script type="text/javascript" src="/css/public/default/css-outM/jquery.SuperSlide.2.1.1.js"></script>--%>
@@ -56,18 +56,18 @@
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">主页</a></li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品展示</a></li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/services.html">服务与支持</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/pricing.html">Pricing</a></li>
+						<%--<li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>--%>
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li class="active"><a class="waves-effect waves-dark" href="../about.html">公司介绍</a></li>
-								<li><a class="waves-effect waves-dark" href="../news.html">公司新闻</a></li>
-								<li><a class="waves-effect waves-dark" href="../#">公司文化</a></li>
-								<li><a class="waves-effect waves-dark" href="../#">公司活动</a></li>
-								<li><a class="waves-effect waves-dark" href="../#">加入我们</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">公司介绍</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news/page.html">公司新闻</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/culture.html">公司文化</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity/page.html">公司活动</a></li>
+								<li><a class="waves-effect waves-dark" href="#">加入我们</a></li>
 							</ul>
 						</li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact.html">联系我们</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
 					</ul>
 				</div>
 			</div>
@@ -79,7 +79,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="pageTitle">公司介绍</h2>
+				<h2 class="pageTitle">新闻详情</h2>
 			</div>
 		</div>
 	</div>
@@ -89,50 +89,29 @@
 	<div class="container">
 
 
-		<div class="about-main" id="company-profile">
+		<%--<div class="about-main" id="company-profile">--%>
 			<div id="nr_main_box">
 
 
 
 			<!-- =+++++++++++++++++++++-->
-				<div class="about_right">
 
-					<ul style="position:relative">
-						<li ><a href="about.aspx?cateid=91" title="公司介绍" id="nynavID91">公司介绍</a></li>
-						<li ><a href="about.aspx?cateid=92" title="荣誉资质" id="nynavID92">荣誉资质</a></li>
-						<li ><a href="about.aspx?cateid=93" title="发展历程" id="nynavID93">发展历程</a></li>
-						<li ><a href="about.aspx?cateid=97" title="企业宣传视频" id="nynavID97">企业宣传视频</a></li>
-						<li ><a href="about.aspx?cateid=95" title="联系我们" id="nynavID95">联系我们</a></li>
-
-
-					</ul>
-					<script language="javascript" type="text/javascript">
-                        try {
-                            document.getElementById("nynavID" + nynav).className = "acvier";
-                        }
-                        catch (e) {}
-					</script>
-
-					<div class="ny_left_gg">
-						<A href="http://www.zjlyzhkj.com/Solution.aspx?cateid=81"><img src="images/banner/x2.jpg" /></A>
-						<A href="http://www.zjlyzhkj.com/Solution.aspx?cateid=80"><img src="images/banner/x1.jpg" /></A>
-						<A href="http://www.zjlyzhkj.com/Solution.aspx?cateid=79"><img src="images/banner/x3.jpg" /></A>
-					</div>
-				</div>
 				<!-- =++++++++++++++left        left    left   +++++++-->
 
-				<div class="about_left">
-
-					<div id="about_text">
+				<div id="inside_rnewtil">${news.newstitle}</div>
+				<div class="inside_rnewtime">发布时间：${news.dateString}</div>
+				<%--<div id="about_text">--%>
 						<!-- =++++++++++++++context   start+++++++-->
 
+				<div id="nrboxstyle">
+					${news.content}
 
 
 						<!-- =++++++++++++++context   end t+++++++-->
 
 					</div>
 
-				</div>
+
 
 
 
@@ -145,7 +124,7 @@
 
 
 
-		</div>
+		<%--</div>--%>
 		<!--end about-main-->
 	</div>
 </div>
@@ -232,23 +211,23 @@
 <!-- javascript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="/js/jquery.js"></script>
-<script src="/js/jquery.easing.1.3.js"></script>
-<script src="/materialize/js/materialize.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/jquery.fancybox.pack.js"></script>
-<script src="/js/jquery.fancybox-media.js"></script>
-<script src="/js/jquery.flexslider.js"></script>
-<script src="/js/animate.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.easing.1.3.js"></script>
+<script src="${pageContext.request.contextPath}/materialize/js/materialize.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.fancybox.pack.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.fancybox-media.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.flexslider.js"></script>
+<script src="${pageContext.request.contextPath}/js/animate.js"></script>
 <!-- Vendor Scripts -->
-<script src="/js/modernizr.custom.js"></script>
-<script src="/js/jquery.isotope.min.js"></script>
-<script src="/js/jquery.magnific-popup.min.js"></script>
-<script src="/js/animate.js"></script>
-<script src="/js/custom.js"></script>
+<script src="${pageContext.request.contextPath}/js/modernizr.custom.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.isotope.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.magnific-popup.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/animate.js"></script>
+<script src="${pageContext.request.contextPath}/js/custom.js"></script>
 
- <script src="/contact/jqBootstrapValidation.js"></script>
- <script src="/contact/contact_me.js"></script>
+ <script src="${pageContext.request.contextPath}/contact/jqBootstrapValidation.js"></script>
+ <script src="${pageContext.request.contextPath}/contact/contact_me.js"></script>
 </body>
 
 </html>

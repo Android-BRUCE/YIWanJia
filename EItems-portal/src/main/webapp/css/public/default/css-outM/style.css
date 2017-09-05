@@ -6,7 +6,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,blockquote,fieldset,div,strong,la
 a{ text-decoration:none; outline:none;}
 a:active{star:expression(this.onFocus=this.blur());}
 #clear{ clear:both; height:0px; overflow:hidden;}
-.w1200_center{ width:1100px; margin:0 auto;}
+.w1200_center{ width:1100px; margin:1 auto;}
 .vertical { width:0; height:100%; display:inline-block;vertical-align:middle;}
 .center_img{display:inline-block;text-align: center;vertical-align:middle;border:none;}
 
@@ -467,7 +467,7 @@ div.digg span.disabled {border: #ccc 1px solid; padding:5px 10px 5px 10px; margi
 #nr_main_box{ width:1100px; margin:30px auto; clear:both;}
 .about_left{ float:right; width:800px; padding:20px; background:#fff; margin-left:20px;}
 .about_right{ float:left; width:230px;}
-.about_right .rnav_bt{ height:50px; font-size:24px; color:#fff; margin-top:-140px; margin-bottom:20px; background:#2a599b; padding:30px 20px;}
+.about_right .rnav_bt{ height:50px; font-size:28px; color:#fff; margin-top:-60px; margin-bottom:5px; background:#2a599b; padding:50px 55px;}
 .about_right .rnav_bt .x{ height:3px; width:40px; background:#fff; display:block; margin-top:20px; margin-bottom:20px;}
 .about_right ul{ clear:both;}
 .about_right ul li{ height:50px; line-height:50px;color:#333; font-size:14px; margin-bottom:5px;}

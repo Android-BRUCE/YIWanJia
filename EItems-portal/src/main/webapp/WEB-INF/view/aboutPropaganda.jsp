@@ -49,15 +49,14 @@
 					<a class="navbar-brand" href="index.html">
 						<%--<i class="icon-info-blocks material-icons">language</i>--%>
 						<img src="/img/top.png" alt="" height="50" width="50" align=""/>
-						易万家科技
 					</a>
 				</div>
 				<div class="navbar-collapse collapse ">
 					<ul class="nav navbar-nav">
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">主页</a></li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品展示</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/services.html">服务与支持</a></li>
-						<%--<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/pricing.html">Pricing</a></li>--%>
+						<li ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/services.html">服务与支持</a></li>
+						<%--<li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>--%>
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
 							<ul class="dropdown-menu">
@@ -65,10 +64,10 @@
 								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news/page.html">公司新闻</a></li>
 								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/culture.html">公司文化</a></li>
 								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity/page.html">公司活动</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/#">加入我们</a></li>
+								<li><a class="waves-effect waves-dark" href="#">加入我们</a></li>
 							</ul>
 						</li>
-						<li  class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
 					</ul>
 				</div>
 			</div>
@@ -79,54 +78,67 @@
 	<section id="inner-headline">
 	<div class="container">
 		<div class="row">
-			<%--<div class="col-lg-12">--%>
-				<%--&lt;%&ndash;<h2 class="pageTitle">联系我们</h2>&ndash;%&gt;--%>
-			<%--</div>--%>
+			<div class="col-lg-12">
+				<h2 class="pageTitle">公司宣传视频</h2>
+			</div>
 		</div>
 	</div>
 	</section>
 	<section id="content">
 	
 	<div class="container">
-		<div class="row">
-							<div class="col-md-12">
-								<div class="about-logo">
-									<h3>Get<span class="color"> in Touch</span></h3>
-									<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
-                                    	<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
-								</div>
-							</div>
-						</div>
 
 
 		<div class="about-main" id="company-profile">
-			<div class="about-con">
+			<div id="nr_main_box">
 
 
 
-				<!-- =+++++++++++++++++++++-->
-				<div id="nr_main_box">
-					<div style=" width:745px; float:right;">
-						<div id="inside_rnewtil" style=" text-align:left; border-bottom:1px solid #ddd; padding-bottom:15px;">${list.goodsttile}</div>
+			<!-- =+++++++++++++++++++++-->
+				<div class="about_right">
+					<div class="rnav_bt">
+						<b>关于万家</b>
+						<span class="x"></span>
+					</div>
+					<ul style="position:relative">
+						<li ><a href="${pageContext.request.contextPath}/about.html" title="公司介绍" id="nynavID91">公司介绍</a></li>
+						<li ><a href="${pageContext.request.contextPath}/aboutHonour.html" title="荣誉资质" id="nynavID92">荣誉资质</a></li>
+						<li ><a href="${pageContext.request.contextPath}/aboutDevelopment.html" title="发展历程" id="nynavID93">发展历程</a></li>
+						<li ><a href="${pageContext.request.contextPath}/aboutPropaganda.html" title="企业宣传视频" id="nynavID97" class="acvier">企业宣传视频</a></li>
+						<%--<li ><a href="about.aspx?cateid=95" title="联系我们" id="nynavID95">联系我们</a></li>--%>
 
-						<div id="nrboxstyle">
 
-${list.goodsdesc}
+					</ul>
+					<script language="javascript" type="text/javascript">
+                        try {
+                            document.getElementById("nynavID" + nynav).className = "acvier";
+                        }
+                        catch (e) {}
+					</script>
 
-						</div>
+					<div class="ny_left_gg">
+						<A href="http://www.zjlyzhkj.com/Solution.aspx?cateid=81"><img src="images/banner/x2.jpg" /></A>
+						<A href="http://www.zjlyzhkj.com/Solution.aspx?cateid=80"><img src="images/banner/x1.jpg" /></A>
+						<A href="http://www.zjlyzhkj.com/Solution.aspx?cateid=79"><img src="images/banner/x3.jpg" /></A>
+					</div>
+				</div>
+				<!-- =++++++++++++++left        left    left   +++++++-->
+
+				<div class="about_left">
+
+					<div id="about_text">
+
+						<p><iframe height="500" width="790" src="http://player.youku.com/embed/XMTYxNTQwNzU4NA==" frameborder="0"></iframe></p>
+
 					</div>
 
-					<div style=" width:280px; float:left; text-align:center; margin-top:15px;">
-						<img  src="http://localhost:8080${list.image}" class="proxx_img" style=" width:280px; margin-bottom:10px;" />
-						<div style=" font-size:16px; color:#333; line-height:20px; text-align:center;">${list.goodsttile}</div>
-					</div>
+				</div>
 
 
 
-					<div style="clear:both;"></div>
-				</div> <!--内容 END-->
 
-
+				<div id="clear" ></div>
+			</div> <!--内容 END-->
 
 
 				<!-- =+++++++++++++++++++++-->
@@ -235,8 +247,8 @@ ${list.goodsdesc}
 <script src="${pageContext.request.contextPath}/js/animate.js"></script>
 <script src="${pageContext.request.contextPath}/js/custom.js"></script>
 
-<script src="${pageContext.request.contextPath}/contact/jqBootstrapValidation.js"></script>
-<script src="${pageContext.request.contextPath}/contact/contact_me.js"></script>
+ <script src="${pageContext.request.contextPath}/contact/jqBootstrapValidation.js"></script>
+ <script src="${pageContext.request.contextPath}/contact/contact_me.js"></script>
 </body>
 
 </html>

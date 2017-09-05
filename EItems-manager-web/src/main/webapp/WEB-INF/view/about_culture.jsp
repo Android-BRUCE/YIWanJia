@@ -27,7 +27,7 @@
                         当前位置:首页管理>>产品展示
                     </td>
                     <td>
-                        <input type='button' class="coolbg np" onClick="location='goods/jump/goodsAddPage.do';" value='添加产品信息' />
+                        <input type='button' class="coolbg np" onClick="location='${pageContext.request.contextPath}/goods/jump/goodsAddPage.do';" value='添加产品信息' />
                     </td>
                 </tr>
             </table>

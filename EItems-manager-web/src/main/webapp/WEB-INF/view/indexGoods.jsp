@@ -27,7 +27,7 @@
                         当前位置:首页管理>>产品轮播管理
                     </td>
                     <td>
-                        <input type='button' class="coolbg np" onClick="location='indexGoods-add.html';" value='添加产品轮播' />
+                        <input type='button' class="coolbg np" onClick="location='${pageContext.request.contextPath}/indexGoods-add.html';" value='添加产品轮播' />
                     </td>
                 </tr>
             </table>

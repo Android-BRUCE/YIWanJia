@@ -3,10 +3,10 @@
 <html>
 <head>
 <title>menu</title>
-<link rel="stylesheet" href="/skin/css/base.css" type="text/css" />
-<link rel="stylesheet" href="/skin/css/menu.css" type="text/css" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/skin/css/base.css" type="text/css" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/skin/css/menu.css" type="text/css" />
 <script language='javascript'>var curopenItem = '1';</script>
-<script language="javascript" type="text/javascript" src="/skin/js/frame/menu.js"></script>
+<script language="javascript" type="text/javascript" src="${pageContext.request.contextPath}/skin/js/frame/menu.js"></script>
 <base target="main" />
 </head>
 <body target="main">
@@ -43,9 +43,9 @@
         <dt onClick='showHide("items2_1")'><b>首页管理</b></dt>
         <dd style='display:none' class='sitem' id='items2_1'>
           <ul class='sitemu'>
-            <li><a href='banner.html' target='main'>轮播控制</a> </li>
-            <li><a href='indexGoods.html' target='main'>首页产品轮播</a> </li>
-            <li><a href='task.html' target='main'>底部导航栏</a> </li>
+            <li><a href='${pageContext.request.contextPath}/banner.html' target='main'>轮播控制</a> </li>
+            <%--<li><a href='${pageContext.request.contextPath}/indexGoods.html' target='main'>首页产品轮播</a> </li>--%>
+            <li><a href='${pageContext.request.contextPath}/task.html' target='main'>底部导航栏</a> </li>
           </ul>
         </dd>
       </dl>
@@ -55,8 +55,8 @@
         <dt onClick='showHide("items3_1")'><b>产品展示管理</b></dt>
         <dd style='display:none' class='sitem' id='items3_1'>
           <ul class='sitemu'>
-            <li><a href='goodsCategory.html' target='main'>添加产品分类</a> </li>
-            <li><a href='Goods.html' target='main'>产品展示</a> </li>
+            <li><a href='${pageContext.request.contextPath}/goodsCategory.html' target='main'>添加产品分类</a> </li>
+            <li><a href='${pageContext.request.contextPath}/Goods.html' target='main'>产品展示</a> </li>
           </ul>
         </dd>
       </dl>
@@ -76,11 +76,11 @@
         <dt onClick='showHide("items5_1")'><b>关于我们管理</b></dt>
         <dd style='display:none' class='sitem' id='items5_1'>
           <ul class='sitemu'>
-            <li><a href='about.html' target='main'>公司介绍管理</a> </li>
-            <li><a href='about_news.html' target='main'>公司新闻管理</a> </li>
-            <li><a href='role.html' target='main'>公司文化管理</a> </li>
-            <li><a href='role.html' target='main'>公司活动管理</a> </li>
-            <li><a href='role.html' target='main'>加入我们管理</a> </li>
+            <li><a href='${pageContext.request.contextPath}/about.html' target='main'>公司介绍管理</a> </li>
+            <li><a href='${pageContext.request.contextPath}/about_news.html' target='main'>公司新闻管理</a> </li>
+            <li><a href='${pageContext.request.contextPath}/role.html' target='main'>公司文化管理</a> </li>
+            <li><a href='${pageContext.request.contextPath}/about_activity.html' target='main'>公司活动管理</a> </li>
+            <li><a href='${pageContext.request.contextPath}/role.html' target='main'>加入我们管理</a> </li>
           </ul>
         </dd>
       </dl>
@@ -90,8 +90,8 @@
         <dt onClick='showHide("items6_1")'><b>联系我们管理</b></dt>
         <dd style='display:none' class='sitem' id='items6_1'>
           <ul class='sitemu'>
-            <li><a href='contact.html' target='main'>联系方式</a> </li>
-            <li><a href='modpassword.html' target='main'>修改密码</a> </li>
+            <li><a href='${pageContext.request.contextPath}/contact.html' target='main'>联系方式</a> </li>
+            <li><a href='${pageContext.request.contextPath}/modpassword.html' target='main'>修改密码</a> </li>
           </ul>
         </dd>
       </dl>

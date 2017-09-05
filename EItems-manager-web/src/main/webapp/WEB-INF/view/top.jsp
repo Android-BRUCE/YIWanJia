@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 <title>top</title>
-<link href="../skin/css/base.css" rel="stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath}/skin/css/base.css" rel="stylesheet" type="text/css">
 <script language='javascript'>
 var preFrameW = '206,*';
 var FrameHide = 0;
@@ -138,18 +138,18 @@ a:link,a:visited {
 </style>
 </head>
 <body bgColor='#ffffff'>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" background="../skin/images/frame/topbg.gif">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" background="${pageContext.request.contextPath}/skin/images/frame/topbg.gif">
   <tr>
-    <td width='20%' height="60"><img src="../skin/images/frame/logo.gif" /></td>
+    <td width='20%' height="60"><img src="${pageContext.request.contextPath}/skin/images/frame/logo.gif" /></td>
     <td width='80%' align="right" valign="bottom">
     	<table width="750" border="0" cellspacing="0" cellpadding="0">
       <tr>
       <td align="right" height="26" style="padding-right:10px;line-height:26px;">
         	您好：<span class="username" ><font color="red">${employee.e_name }</font></span>，欢迎使用项目平台管理系统！
         	
-        	[<a href="index.html" target="_top">主页</a>]
-        	[<a href="modpassword.html"  target="_blank">修改密码</a>]
-        	[<a href="../login/exit.do" onClick="parent.location.href='login.htm'" target="_login">注销退出</a>]&nbsp;
+        	[<a href="${pageContext.request.contextPath}/index.html" target="_top">主页</a>]
+        	[<a href="${pageContext.request.contextPath}/modpassword.html"  target="_blank">修改密码</a>]
+        	[<a href="${pageContext.request.contextPath}/login/exit.do" onClick="parent.location.href='login.htm'" target="_login">注销退出</a>]&nbsp;
       </td>
       </tr>
       <tr>

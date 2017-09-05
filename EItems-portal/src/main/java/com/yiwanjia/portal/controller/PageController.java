@@ -1,7 +1,8 @@
 package com.yiwanjia.portal.controller;
 
-import com.yiwanjia.pojo.TbBanner;
-import com.yiwanjia.pojo.TbIndexGoods;
+import com.yiwanjia.dao.TbGoodsCategoryMapper;
+import com.yiwanjia.dao.TbGoodsMapper;
+import com.yiwanjia.pojo.*;
 import com.yiwanjia.portal.service.BannerGoodsService;
 import com.yiwanjia.portal.service.BannerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,10 @@ public class PageController {
 
     @Autowired
     private BannerGoodsService bannerGoodsService;
+
+    @Autowired
+    private TbGoodsMapper tbGoodsMapper;
+
     @RequestMapping("/index")
     public String showIndex(Model model) {
       //  String adJson = contentService.getContentList();
@@ -29,6 +34,14 @@ public class PageController {
         model.addAttribute("banner",banner2);
         List<TbIndexGoods> indexGoods = bannerGoodsService.getIndexGoodsList();
         model.addAttribute("bannerGoods",indexGoods);
+
+
+        TbGoodsExample tbGoodsExample = new TbGoodsExample();
+        List<TbGoods> tbGoods = tbGoodsMapper.selectUnionCategory();
+        model.addAttribute("goods",tbGoods);
+
+
+
         return "index";
     }
 

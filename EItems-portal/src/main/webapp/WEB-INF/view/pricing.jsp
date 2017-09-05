@@ -6,8 +6,8 @@
 <meta charset="utf-8">
 <title></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="" />
-<meta name="author" content="" />
+<meta name="description" content="杭州钱王万家信息科技有限公司" />
+<meta name="author" content="杭州钱王万家信息科技有限公司" />
 <!-- css --> 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
@@ -77,7 +77,7 @@
 							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a class="waves-effect waves-dark" href="about.html">公司介绍</a></li>
-								<li><a class="waves-effect waves-dark" href="news.html">公司新闻</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news/page.html">公司新闻</a></li>
 								<li><a class="waves-effect waves-dark" href="#">公司文化</a></li>
 								<li><a class="waves-effect waves-dark" href="#">公司活动</a></li>
 								<li><a class="waves-effect waves-dark" href="#">加入我们</a></li>
@@ -266,19 +266,22 @@
 <!-- javascript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="materialize/js/materialize.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script>  
-<script src="js/jquery.flexslider.js"></script>
-<script src="js/animate.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.easing.1.3.js"></script>
+<script src="${pageContext.request.contextPath}/materialize/js/materialize.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.fancybox.pack.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.fancybox-media.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.flexslider.js"></script>
+<script src="${pageContext.request.contextPath}/js/animate.js"></script>
 <!-- Vendor Scripts -->
-<script src="js/modernizr.custom.js"></script>
-<script src="js/jquery.isotope.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/animate.js"></script> 
-<script src="js/custom.js"></script>
+<script src="${pageContext.request.contextPath}/js/modernizr.custom.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.isotope.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.magnific-popup.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/animate.js"></script>
+<script src="${pageContext.request.contextPath}/js/custom.js"></script>
+
+<script src="${pageContext.request.contextPath}/contact/jqBootstrapValidation.js"></script>
+<script src="${pageContext.request.contextPath}/contact/contact_me.js"></script>
 </body>
 </html>

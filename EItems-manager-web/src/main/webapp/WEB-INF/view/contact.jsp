@@ -31,7 +31,7 @@
                         当前位置:联系我们>>联系方式
                     </td>
                     <td>
-                        <input type='button' class="coolbg np" onClick="location='contact-add.html';" value='添加联系方式' />
+                        <input type='button' class="coolbg np" onClick="location='${pageContext.request.contextPath}/contact-add.html';" value='添加联系方式' />
                     </td>
                 </tr>
             </table>

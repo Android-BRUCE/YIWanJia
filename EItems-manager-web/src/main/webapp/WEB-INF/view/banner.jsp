@@ -30,7 +30,7 @@
                         当前位置:首页管理>>轮播控制
                     </td>
                     <td>
-                        <input type='button' class="coolbg np" onClick="location='banner-add.html';" value='添加轮播图' />
+                        <input type='button' class="coolbg np" onClick="location='${pageContext.request.contextPath}/banner-add.html';" value='添加轮播图' />
                     </td>
                 </tr>
             </table>

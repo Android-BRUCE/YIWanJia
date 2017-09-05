@@ -31,7 +31,7 @@
                         当前位置:产品展示管理>>添加产品分类
                     </td>
                     <td>
-                        <input type='button' class="coolbg np" onClick="location='goodsCategory-add.html';" value='添加产品分类' />
+                        <input type='button' class="coolbg np" onClick="location='${pageContext.request.contextPath}/goodsCategory-add.html';" value='添加产品分类' />
                     </td>
                 </tr>
             </table>

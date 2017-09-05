@@ -83,7 +83,7 @@ $(function(){
                     var cid = document.getElementById("cid").value;
                     $("#tt").datagrid(//重定向url
                         {
-                            url:"${pageContext.request.contextPath}/role/dimRole.do?keyword="+keyword+"&cid="+cid
+                            url:"role/dimRole.do?keyword="+keyword+"&cid="+cid
                         }
                     );
                 }
@@ -114,7 +114,7 @@ $(function(){
                                 ids=ids+rows[i].r_id+",";
                             }
                             ids=ids.substring(0,ids.length-1);
-                            var path = "${pageContext.request.contextPath}/role/role_look.do?r_id="+ids;
+                            var path = "role/role_look.do?r_id="+ids;
                             window.location=path;
                         }
                         /*                                 //增加一行

@@ -1,4 +1,5 @@
-Date.prototype.format = function(format){ 
+
+Date.prototype.format = function(format){
     var o =  { 
     "M+" : this.getMonth()+1, //month 
     "d+" : this.getDate(), //day 
@@ -25,7 +26,7 @@ var TT = TAOTAO = {
 		//指定上传文件参数名称
 		filePostName  : "uploadFile",
 		//指定上传文件请求的url。
-		uploadJson : '/pic/upload.do',
+		uploadJson : 'pic/upload.do',
 		//上传类型，分别为image、flash、media、file
 		dir : "image"
 	},

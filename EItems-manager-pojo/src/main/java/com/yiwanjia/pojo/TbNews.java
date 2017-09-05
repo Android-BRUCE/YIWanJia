@@ -6,6 +6,20 @@ import java.util.Date;
 public class TbNews implements Serializable {
     private Long id;
 
+    private String dateString;
+
+    public String getDateString() {
+        return dateString;
+    }
+
+    public void setDateString(String dateString) {
+        this.dateString = dateString;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
     private String newstitle;
 
     private Date createtime;

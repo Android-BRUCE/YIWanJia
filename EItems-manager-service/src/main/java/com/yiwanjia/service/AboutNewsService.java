@@ -13,7 +13,7 @@ import java.util.Date;
 import java.util.List;
 
 @Service
-public class AboutService {
+public class AboutNewsService {
     @Autowired
     private TbNewsMapper tbNewsMapper;
 

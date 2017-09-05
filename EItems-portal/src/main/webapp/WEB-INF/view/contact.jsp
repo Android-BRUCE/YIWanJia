@@ -6,8 +6,8 @@
 <meta charset="utf-8">
 <title></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="" />
-<meta name="author" content="" />
+<meta name="description" content="杭州钱王万家信息科技有限公司" />
+<meta name="author" content="杭州钱王万家信息科技有限公司" />
 <!-- css --> 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="/stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
@@ -36,6 +36,24 @@
 	<header class="topbar">
 		<div class="container">
 			<div class="row">
+				<div class="col-sm-3">
+					<ul class="social-network">
+						<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>--%>
+						<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>--%>
+						<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>--%>
+						<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>--%>
+						<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>--%>
+					</ul>
+				</div>
+				<div class="col-sm-9">
+					<div class="row">
+						<ul class="info">
+							<li><i class="icon-info-blocks material-icons">question_answer</i><span>info@Arrive.com</span></li>
+							<li><i class="icon-info-blocks material-icons">perm_phone_msg</i><span>+(012) 345 6789</span></li>
+						</ul>
+						<div class="clr"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -58,21 +76,21 @@
 				</div>
 				<div class="navbar-collapse collapse ">
 					<ul class="nav navbar-nav">
-						<li><a class="waves-effect waves-dark" href="index.html">主页</a></li>
-						<li><a class="waves-effect waves-dark" href="portfolio.html">产品展示</a></li>
-						<li><a class="waves-effect waves-dark" href="services.html">服务与支持</a></li>
-						<li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">主页</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品展示</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/services.html">服务与支持</a></li>
+						<%--<li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>--%>
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a class="waves-effect waves-dark" href="about.html">公司介绍</a></li>
-								<li><a class="waves-effect waves-dark" href="news.html">公司新闻</a></li>
-								<li><a class="waves-effect waves-dark" href="#">公司文化</a></li>
-								<li><a class="waves-effect waves-dark" href="#">公司活动</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">公司介绍</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news/page.html">公司新闻</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/culture.html">公司文化</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity/page.html">公司活动</a></li>
 								<li><a class="waves-effect waves-dark" href="#">加入我们</a></li>
 							</ul>
 						</li>
-						<li  class="active"><a class="waves-effect waves-dark" href="contact.html">联系我们</a></li>
+						<li class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
 					</ul>
 				</div>
 			</div>
@@ -118,7 +136,9 @@
 
 					</style>
 					<h2 style="padding-left: 60;">联系方式</h2>
-					<p class="about-us-right-p1">腾讯微信：dtdream_corp</p><p class="about-us-right-p2">新浪微博：数梦工场科技有限公司</p><p class="about-us-right-p3">公司总机：0571-58110888</p><p class="about-us-right-p4">公司传真：0571-56150700</p><p class="about-us-right-p5">公司地址：杭州市西湖区云栖小镇山景路中大银座9栋</p>
+					<c:forEach items="${contact}" var="pr">
+						<p class="about-us-right-p5">${pr.contactname}： ${pr.contactcontent}</p>
+					</c:forEach>
 				</div>
 			</div>
 		</div>
@@ -208,24 +228,23 @@
 <!-- javascript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="/js/jquery.js"></script>
-<script src="/js/jquery.easing.1.3.js"></script>
-<script src="/materialize/js/materialize.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/jquery.fancybox.pack.js"></script>
-<script src="/js/jquery.fancybox-media.js"></script>
-<script src="/js/jquery.flexslider.js"></script>
-<script src="/js/animate.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.easing.1.3.js"></script>
+<script src="${pageContext.request.contextPath}/materialize/js/materialize.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.fancybox.pack.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.fancybox-media.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.flexslider.js"></script>
+<script src="${pageContext.request.contextPath}/js/animate.js"></script>
 <!-- Vendor Scripts -->
-<script src="/js/modernizr.custom.js"></script>
-<script src="/js/jquery.isotope.min.js"></script>
-<script src="/js/jquery.magnific-popup.min.js"></script>
-<script src="/js/animate.js"></script>
-<script src="/js/custom.js"></script>
+<script src="${pageContext.request.contextPath}/js/modernizr.custom.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.isotope.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.magnific-popup.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/animate.js"></script>
+<script src="${pageContext.request.contextPath}/js/custom.js"></script>
 
- <script src="/contact/jqBootstrapValidation.js"></script>
- <script src="/contact/contact_me.js"></script>
-</body>
+<script src="${pageContext.request.contextPath}/contact/jqBootstrapValidation.js"></script>
+<script src="${pageContext.request.contextPath}/contact/contact_me.js"></script>
 <script type="text/javascript">
     //创建和初始化地图函数：
     function initMap(){

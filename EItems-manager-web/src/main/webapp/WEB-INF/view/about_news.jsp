@@ -27,7 +27,7 @@
             fitColumns:true,
             rownumbers:true,
             loadMsg:"正在加载中....",
-            url:"about/query/newsList.do",
+            url:"${pageContext.request.contextPath}/about/query/newsList.do",
             striped:true,
             nowrap:false,
             columns:[[
@@ -161,7 +161,7 @@
                             $.messager.confirm("确认框","您确定要删除吗?",function(b){
                                 if(b)
                                 {
-                                    $.post("about/delete/"+ids+"/deleteNews.do?",function(data){
+                                    $.post("${pageContext.request.contextPath}/about/delete/"+ids+"/deleteNews.do?",function(data){
                                         $.messager.show({
                                             title:"消息",
                                             width:200,

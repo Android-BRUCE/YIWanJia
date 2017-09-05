@@ -12,10 +12,10 @@ body
 </style>
 </head>
 <frameset rows="60,*" cols="*" frameborder="no" border="0" framespacing="0">
-  <frame src="top.do" name="topFrame" scrolling="no">
+  <frame src="${pageContext.request.contextPath}/top.do" name="topFrame" scrolling="no">
   <frameset cols="180,*" name="btFrame" frameborder="NO" border="0" framespacing="0">
-    <frame src="menu.do" noresize name="menu" scrolling="yes">
-    <frame src="main.do" noresize name="main" scrolling="yes">
+    <frame src="${pageContext.request.contextPath}/menu.do" noresize name="menu" scrolling="yes">
+    <frame src="${pageContext.request.contextPath}/main.do" noresize name="main" scrolling="yes">
   </frameset>
 </frameset>
 <noframes>

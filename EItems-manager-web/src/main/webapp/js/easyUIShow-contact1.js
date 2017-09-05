@@ -57,7 +57,7 @@ $(function(){
                                 ids=ids+rows[i].r_id+",";
                             }
                             ids=ids.substring(0,ids.length-1);
-                            var path = "${pageContext.request.contextPath}/role/role_edit.do?r_id="+ids;
+                            var path = "role/role_edit.do?r_id="+ids;
                             window.location=path;
                         }
                         /*                                 //增加一行

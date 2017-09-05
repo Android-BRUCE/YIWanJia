@@ -31,6 +31,24 @@
 	<header class="topbar">
 		<div class="container">
 			<div class="row">
+				<div class="col-sm-3">
+					<ul class="social-network">
+						<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>--%>
+						<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>--%>
+						<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>--%>
+						<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>--%>
+						<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>--%>
+					</ul>
+				</div>
+				<div class="col-sm-9">
+					<div class="row">
+						<ul class="info">
+							<li><i class="icon-info-blocks material-icons">question_answer</i><span>info@Arrive.com</span></li>
+							<li><i class="icon-info-blocks material-icons">perm_phone_msg</i><span>+(012) 345 6789</span></li>
+						</ul>
+						<div class="clr"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -49,26 +67,25 @@
 					<a class="navbar-brand" href="index.html">
 						<%--<i class="icon-info-blocks material-icons">language</i>--%>
 						<img src="/img/top.png" alt="" height="50" width="50" align=""/>
-						易万家科技
 					</a>
 				</div>
 				<div class="navbar-collapse collapse ">
 					<ul class="nav navbar-nav">
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">主页</a></li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品展示</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/services.html">服务与支持</a></li>
-						<%--<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/pricing.html">Pricing</a></li>--%>
+						<li ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/services.html">服务与支持</a></li>
+						<%--<li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>--%>
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">公司介绍</a></li>
 								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news/page.html">公司新闻</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/culture.html">公司文化</a></li>
+								<li><a class="waves-effect waves-dark" href="#">公司文化</a></li>
 								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity/page.html">公司活动</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/#">加入我们</a></li>
+								<li><a class="waves-effect waves-dark" href="#">加入我们</a></li>
 							</ul>
 						</li>
-						<li  class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
 					</ul>
 				</div>
 			</div>
@@ -79,61 +96,54 @@
 	<section id="inner-headline">
 	<div class="container">
 		<div class="row">
-			<%--<div class="col-lg-12">--%>
-				<%--&lt;%&ndash;<h2 class="pageTitle">联系我们</h2>&ndash;%&gt;--%>
-			<%--</div>--%>
+			<div class="col-lg-12">
+				<h2 class="pageTitle">加入我们</h2>
+			</div>
 		</div>
 	</div>
 	</section>
 	<section id="content">
 	
-	<div class="container">
-		<div class="row">
-							<div class="col-md-12">
-								<div class="about-logo">
-									<h3>Get<span class="color"> in Touch</span></h3>
-									<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
-                                    	<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
-								</div>
-							</div>
-						</div>
-
-
-		<div class="about-main" id="company-profile">
-			<div class="about-con">
 
 
 
-				<!-- =+++++++++++++++++++++-->
-				<div id="nr_main_box">
-					<div style=" width:745px; float:right;">
-						<div id="inside_rnewtil" style=" text-align:left; border-bottom:1px solid #ddd; padding-bottom:15px;">${list.goodsttile}</div>
+		 <!--内容 END-->
 
-						<div id="nrboxstyle">
+		<div class="map_box"><!--当前位置-->
+			<div class="w1200_center"><!--版块居中-->
 
-${list.goodsdesc}
+				<div class="ny_news_nav">
+					<a href="job.aspx" id="nynavID1" class="acvier">人才招聘</a>
+					<a href="job_ln.aspx" id="nynavID2">职业发展</a>
+					<a href="job_fc.aspx" id="nynavID3">员工风采</a>
+					<script language="javascript" type="text/javascript">
+                        try {
+                            document.getElementById("nynavID" + nynav).className = "acvier";
+                        }
+                        catch (e) {}
+					</script>
+				</div>
 
-						</div>
-					</div>
 
-					<div style=" width:280px; float:left; text-align:center; margin-top:15px;">
-						<img  src="http://localhost:8080${list.image}" class="proxx_img" style=" width:280px; margin-bottom:10px;" />
-						<div style=" font-size:16px; color:#333; line-height:20px; text-align:center;">${list.goodsttile}</div>
-					</div>
+				<div class="map_path_box">
+					<a href="index.aspx"><img src="images/home.png" />首页</a>
+					<span>></span>
+					<a href="job.aspx">人力资源</a>
+					<span>></span>
+					<a href="job.aspx" class="active">人才招聘</a>
+					<a href="job.aspx" class="fh">返回</a>
+				</div>
+				<div id="clear"></div>
+			</div>
+		</div><!--当前位置 END-->
 
 
 
-					<div style="clear:both;"></div>
-				</div> <!--内容 END-->
+		<!-- =+++++++++++++++++++++-->
 
 
 
 
-				<!-- =+++++++++++++++++++++-->
-
-
-
-		</div>
 		<!--end about-main-->
 	</div>
 </div>
@@ -235,8 +245,8 @@ ${list.goodsdesc}
 <script src="${pageContext.request.contextPath}/js/animate.js"></script>
 <script src="${pageContext.request.contextPath}/js/custom.js"></script>
 
-<script src="${pageContext.request.contextPath}/contact/jqBootstrapValidation.js"></script>
-<script src="${pageContext.request.contextPath}/contact/contact_me.js"></script>
+ <script src="${pageContext.request.contextPath}/contact/jqBootstrapValidation.js"></script>
+ <script src="${pageContext.request.contextPath}/contact/contact_me.js"></script>
 </body>
 
 </html>

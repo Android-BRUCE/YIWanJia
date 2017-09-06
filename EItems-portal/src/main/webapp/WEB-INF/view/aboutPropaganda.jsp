@@ -6,8 +6,8 @@
 <meta charset="utf-8">
 <title></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="杭州钱王万家信息科技有限公司" />
-<meta name="author" content="杭州钱王万家信息科技有限公司" />
+<meta name="description" content="" />
+<meta name="author" content="" />
 <!-- css --> 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="/stylesheet" href="${pageContext.request.contextPath}/materialize/css/materialize.min.css" media="screen,projection" />
@@ -60,9 +60,9 @@
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">公司介绍</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about/aboutUs.html">公司介绍</a></li>
 								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news/page.html">公司新闻</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/culture.html">公司文化</a></li>
+								<li><a class="waves-effect waves-dark" href="#">公司文化</a></li>
 								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity/page.html">公司活动</a></li>
 								<li><a class="waves-effect waves-dark" href="#">加入我们</a></li>
 							</ul>
@@ -103,8 +103,8 @@
 					<ul style="position:relative">
 						<li ><a href="${pageContext.request.contextPath}/about.html" title="公司介绍" id="nynavID91">公司介绍</a></li>
 						<li ><a href="${pageContext.request.contextPath}/aboutHonour.html" title="荣誉资质" id="nynavID92">荣誉资质</a></li>
-						<li ><a href="${pageContext.request.contextPath}/aboutDevelopment.html" title="发展历程" id="nynavID93">发展历程</a></li>
-						<li ><a href="${pageContext.request.contextPath}/aboutPropaganda.html" title="企业宣传视频" id="nynavID97" class="acvier">企业宣传视频</a></li>
+						<li ><a href="${pageContext.request.contextPath}/about/road.html" title="发展历程" id="nynavID93">发展历程</a></li>
+						<li ><a href="${pageContext.request.contextPath}/about/videoPath.html" title="企业宣传视频" id="nynavID97" >企业宣传视频</a></li>
 						<%--<li ><a href="about.aspx?cateid=95" title="联系我们" id="nynavID95">联系我们</a></li>--%>
 
 
@@ -128,7 +128,8 @@
 
 					<div id="about_text">
 
-						<p><iframe height="500" width="790" src="http://player.youku.com/embed/XMTYxNTQwNzU4NA==" frameborder="0"></iframe></p>
+						<%--<p><iframe height="500" width="790" src="http://player.youku.com/embed/XMTYxNTQwNzU4NA==" frameborder="0"></iframe></p>--%>
+						<p><iframe height=500 width=790 src='${videoPath.video}' frameborder=0 'allowfullscreen'></iframe></p>
 
 					</div>
 

@@ -78,7 +78,7 @@
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">公司介绍</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about/aboutUs.html">公司介绍</a></li>
 								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news/page.html">公司新闻</a></li>
 								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/culture.html">公司文化</a></li>
 								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity/page.html">公司活动</a></li>
@@ -91,8 +91,6 @@
 			</div>
 		</div>
 	</header>
-
-
 	<section id="inner-headline">
 	<div class="container">
 		<div class="row">
@@ -103,31 +101,21 @@
 	</div>
 	</section>
 	<section id="content">
-	
 	<div class="container">
-
-
 		<div class="about-main" id="company-profile">
 			<div id="nr_main_box">
-
-
-
 			<!-- =+++++++++++++++++++++-->
 				<div class="about_right">
 					<div class="rnav_bt">
 						<b>关于万家</b>
 						<span class="x"></span>
 					</div>
-
-
 					<ul style="position:relative">
 						<li ><a href="${pageContext.request.contextPath}/about.html" title="公司介绍" id="nynavID91" class="acvier">公司介绍</a></li>
 						<li ><a href="${pageContext.request.contextPath}/aboutHonour.html" title="荣誉资质" id="nynavID92">荣誉资质</a></li>
-						<li ><a href="${pageContext.request.contextPath}/aboutDevelopment.html" title="发展历程" id="nynavID93">发展历程</a></li>
-						<li ><a href="${pageContext.request.contextPath}/aboutPropaganda.html" title="企业宣传视频" id="nynavID97">企业宣传视频</a></li>
+						<li ><a href="${pageContext.request.contextPath}/about/road.html" title="发展历程" id="nynavID93">发展历程</a></li>
+						<li ><a href="${pageContext.request.contextPath}/about/videoPath.html" title="企业宣传视频" id="nynavID97">企业宣传视频</a></li>
 						<%--<li ><a href="about.aspx?cateid=95" title="联系我们" id="nynavID95">联系我们</a></li>--%>
-
-
 					</ul>
 					<script language="javascript" type="text/javascript">
                         try {
@@ -135,7 +123,6 @@
                         }
                         catch (e) {}
 					</script>
-
 					<div class="ny_left_gg">
 						<A href="http://www.zjlyzhkj.com/Solution.aspx?cateid=81"><img src="images/banner/x2.jpg" /></A>
 						<A href="http://www.zjlyzhkj.com/Solution.aspx?cateid=80"><img src="images/banner/x1.jpg" /></A>
@@ -143,29 +130,18 @@
 					</div>
 				</div>
 				<!-- =++++++++++++++left        left    left   +++++++-->
-
 				<div class="about_left">
-
 					<div id="about_text">
+						<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span></p><h1 class="about_dbt" style="margin: 20px 0px 10px; padding: 0px; border: 0px currentColor; border-image: none; color: rgb(85, 85, 85); font-family: &quot;Microsoft YaHei&quot;, simsun, Arial, Helvetica, sans-serif; font-size: 24px; white-space: normal;">杭州钱王万家信息科技有限公司</h1><h3 class="about_xbt" style="border-width: 0px 0px 1px; margin: 0px 0px 20px; padding: 0px 0px 20px; height: auto; color: rgb(102, 102, 102); text-transform: uppercase; line-height: 20px; letter-spacing: 1px; font-family: &quot;Microsoft YaHei&quot;, simsun, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; border-bottom-color: rgb(221, 221, 221); border-bottom-style: solid; white-space: normal;">HANGZHOU &nbsp;QIANWANG WANJIA Technology Co.,Ltd.</h3>
+						<%--<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span></p><p style="text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">杭州钱王万家信息科技有限公司座落于杭州市余杭经济开发区，是一家致力于城市公共事业综合运营管理系统的研发、应用、销售于一体的高新技术企业，是浙江联运环境工程股份有限公司（证券代码：839166）的全资子公司。公司专注于为城市综合体信息化提供完善的软硬件解决方案，研发符合环境卫生行业发展要求的具有领先技术水准的软硬件系统产品。公司坚持致力于环境全产业链的打造，包括环境综合运用管理系统及硬件设备的研发、销售和运维服务。</span></p><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span><img title="about.JPG" style="padding: 5px; border: 1px solid rgb(238, 238, 238); border-image: none; width: 780px; margin-top: 10px; margin-bottom: 10px;" src="/Upload/ueditor/images/2017-01-20/about-5893a399-82e6-4d97-a432-1ce883226d2a.jpg"/><br/></p><h2 class="xbt"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">核心实力</span></h2><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span></p><p style="text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span></p><p style="background: rgb(255, 255, 255); margin: 0pt 0px; line-height: 18.75pt; text-indent: 24pt;"><span id="_baidu_bookmark_start_24" style="line-height: 0px; display: none;">‍</span><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">浙江联运知慧科技有限公司拥有200多名员工，其中各类骨干，博、硕士学历30余名，德、美专家4名，IT技术专家45名之多，环境卫生工程项目运营专家35名，以及一批环卫运营服务，互联网信息，电子环保产品制造，环卫设备服务等方面专业人才。公司通过ISO9001质量管理体系认证，ISO14001环境管理体系认证，OHSAS18001职业健康安全管理体系认证，中国国家强制性产品认证证书，并荣获2015城市固体废气物处理技术与设备国际展览会“争优创新项目奖”及各类专利、软著100余项</span><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">。</span><span id="_baidu_bookmark_end_25" style="line-height: 0px; display: none;">‍</span><span id="_baidu_bookmark_end_19" style="line-height: 0px; display: none;">‍</span><span id="_baidu_bookmark_end_13" style="line-height: 0px; display: none;">‍</span><span id="_baidu_bookmark_end_7" style="line-height: 0px; display: none;">‍</span></p><p style="text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><br/></span></p><p style="text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">公司成立以来，已成功研发出了具有自主知识产权的智慧环卫云平台、智慧公路云平台、智慧市政云平台；通过云服务自动化控制等互联网信息技术，在行业内率先构建了一整套领先的环境服务整体解决方案，满足了环卫行业的大数据分析需求。公司在智慧垃圾分类运营以及环境咨询规划、环卫服务、环卫设备销售、公路市政工程建设等多个方面取得了长足的发展。持续引领着智慧环卫发展新趋势，推动着行业标准的升级。公司结合多年的项目运营经验，首创智慧垃圾分类联运四化全服务模式，简称“联运四化模式”，即“前端分类智慧化、过程管控可视化、因地制宜减量化、收运处置一体化”，致力于为用户打造“全过程无忧式增值服务”的一种广域模式。同时，公司采用智慧环卫终端设备来解决新形势下的环卫问题，开创了传统环卫向智慧环卫转变的新局面。</span></p><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span><br/></p><h2 class="xbt"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">运营理念</span></h2><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span></p><p style="text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">浙江联运知慧科技有限公司以“知融环境，慧享生活”为品牌核心价值，致力于倡导和传播“认知、认同、融入环境”并以智能化技术和模式创新开展环境产业服务的理念。</span></p><p style="text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><br/></span></p><p style="text-indent: 2em;"><br/></p><p style="text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">公司以持续的产业化升级和创新，在国内率先提出“环境工程产业4.0”的概念，创造了适合不同环境工程条件下的“联运知慧模式”。公司通过智能软硬件技术，为客户创造专业、贴心、高效的品质服务。推动城市环境综合服务形成一个基于物联网、互联网和大数据、云平台的生态产业链，打造环境工程产业4.0领导者。</span></p><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span><br/></p><h2 class="xbt"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">业务范围</span></h2><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span></p><p style="background: rgb(255, 255, 255); line-height: 25px; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">浙江联运知慧科技有限公司通过以环卫咨询项目的方式，为客户提供环境卫生一体化解决设备整体方案，包括设备选型、产品配置方式和作业管理等，形成以整体解决方案带动环卫软件系统和硬件设施的营销模式。 基于多年环卫行业的销售与服务经验，公司以环境服务为业务核心，深耕环卫，服务市场，以技术为导向，以管理为手段，实现企业的稳步发展。公司长期与沃尔沃、中联重科、斗山、华为、浙江大学、重庆大学等企业、院校开展合作，在高端环境服务产业具有显著竞争力及整体优势。</span></p><p style="background: rgb(255, 255, 255); line-height: 25px; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><br/></span></p><p style="background: rgb(255, 255, 255); line-height: 25px; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">目前，公司的智慧环卫、垃圾分类项目覆盖了浙江、江苏、四川、广东、福建、江西、湖北等省市地区，总业绩突破2亿元，并且以每年以飞速的势头上升。随着管理手段，技术方案、业务流程的完善，公司业绩在很长时间内将会得到持续性大幅度的提</span><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">升。</span></p><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span><br/></p>--%>
 
-						<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span></p><h1 class="about_dbt" style="margin: 20px 0px 10px; padding: 0px; border: 0px currentColor; border-image: none; color: rgb(85, 85, 85); font-family: &quot;Microsoft YaHei&quot;, simsun, Arial, Helvetica, sans-serif; font-size: 24px; white-space: normal;">杭州钱王万家信息科技有限公司</h1><h3 class="about_xbt" style="border-width: 0px 0px 1px; margin: 0px 0px 20px; padding: 0px 0px 20px; height: auto; color: rgb(102, 102, 102); text-transform: uppercase; line-height: 20px; letter-spacing: 1px; font-family: &quot;Microsoft YaHei&quot;, simsun, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; border-bottom-color: rgb(221, 221, 221); border-bottom-style: solid; white-space: normal;">ZHEJIANG &nbsp;LIANYUN ZHIHUI SCI-TECH CO., LTD.</h3><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span></p><p style="text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">杭州钱王万家信息科技有限公司座落于杭州市余杭经济开发区，是一家致力于城市公共事业综合运营管理系统的研发、应用、销售于一体的高新技术企业，是浙江联运环境工程股份有限公司（证券代码：839166）的全资子公司。公司专注于为城市综合体信息化提供完善的软硬件解决方案，研发符合环境卫生行业发展要求的具有领先技术水准的软硬件系统产品。公司坚持致力于环境全产业链的打造，包括环境综合运用管理系统及硬件设备的研发、销售和运维服务。</span></p><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span><img title="about.JPG" style="padding: 5px; border: 1px solid rgb(238, 238, 238); border-image: none; width: 780px; margin-top: 10px; margin-bottom: 10px;" src="/Upload/ueditor/images/2017-01-20/about-5893a399-82e6-4d97-a432-1ce883226d2a.jpg"/><br/></p><h2 class="xbt"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">核心实力</span></h2><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span></p><p style="text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span></p><p style="background: rgb(255, 255, 255); margin: 0pt 0px; line-height: 18.75pt; text-indent: 24pt;"><span id="_baidu_bookmark_start_24" style="line-height: 0px; display: none;">‍</span><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">浙江联运知慧科技有限公司拥有200多名员工，其中各类骨干，博、硕士学历30余名，德、美专家4名，IT技术专家45名之多，环境卫生工程项目运营专家35名，以及一批环卫运营服务，互联网信息，电子环保产品制造，环卫设备服务等方面专业人才。公司通过ISO9001质量管理体系认证，ISO14001环境管理体系认证，OHSAS18001职业健康安全管理体系认证，中国国家强制性产品认证证书，并荣获2015城市固体废气物处理技术与设备国际展览会“争优创新项目奖”及各类专利、软著100余项</span><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">。</span><span id="_baidu_bookmark_end_25" style="line-height: 0px; display: none;">‍</span><span id="_baidu_bookmark_end_19" style="line-height: 0px; display: none;">‍</span><span id="_baidu_bookmark_end_13" style="line-height: 0px; display: none;">‍</span><span id="_baidu_bookmark_end_7" style="line-height: 0px; display: none;">‍</span></p><p style="text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><br/></span></p><p style="text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">公司成立以来，已成功研发出了具有自主知识产权的智慧环卫云平台、智慧公路云平台、智慧市政云平台；通过云服务自动化控制等互联网信息技术，在行业内率先构建了一整套领先的环境服务整体解决方案，满足了环卫行业的大数据分析需求。公司在智慧垃圾分类运营以及环境咨询规划、环卫服务、环卫设备销售、公路市政工程建设等多个方面取得了长足的发展。持续引领着智慧环卫发展新趋势，推动着行业标准的升级。公司结合多年的项目运营经验，首创智慧垃圾分类联运四化全服务模式，简称“联运四化模式”，即“前端分类智慧化、过程管控可视化、因地制宜减量化、收运处置一体化”，致力于为用户打造“全过程无忧式增值服务”的一种广域模式。同时，公司采用智慧环卫终端设备来解决新形势下的环卫问题，开创了传统环卫向智慧环卫转变的新局面。</span></p><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span><br/></p><h2 class="xbt"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">运营理念</span></h2><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span></p><p style="text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">浙江联运知慧科技有限公司以“知融环境，慧享生活”为品牌核心价值，致力于倡导和传播“认知、认同、融入环境”并以智能化技术和模式创新开展环境产业服务的理念。</span></p><p style="text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><br/></span></p><p style="text-indent: 2em;"><br/></p><p style="text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">公司以持续的产业化升级和创新，在国内率先提出“环境工程产业4.0”的概念，创造了适合不同环境工程条件下的“联运知慧模式”。公司通过智能软硬件技术，为客户创造专业、贴心、高效的品质服务。推动城市环境综合服务形成一个基于物联网、互联网和大数据、云平台的生态产业链，打造环境工程产业4.0领导者。</span></p><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span><br/></p><h2 class="xbt"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">业务范围</span></h2><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span></p><p style="background: rgb(255, 255, 255); line-height: 25px; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">浙江联运知慧科技有限公司通过以环卫咨询项目的方式，为客户提供环境卫生一体化解决设备整体方案，包括设备选型、产品配置方式和作业管理等，形成以整体解决方案带动环卫软件系统和硬件设施的营销模式。 基于多年环卫行业的销售与服务经验，公司以环境服务为业务核心，深耕环卫，服务市场，以技术为导向，以管理为手段，实现企业的稳步发展。公司长期与沃尔沃、中联重科、斗山、华为、浙江大学、重庆大学等企业、院校开展合作，在高端环境服务产业具有显著竞争力及整体优势。</span></p><p style="background: rgb(255, 255, 255); line-height: 25px; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><br/></span></p><p style="background: rgb(255, 255, 255); line-height: 25px; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">目前，公司的智慧环卫、垃圾分类项目覆盖了浙江、江苏、四川、广东、福建、江西、湖北等省市地区，总业绩突破2亿元，并且以每年以飞速的势头上升。随着管理手段，技术方案、业务流程的完善，公司业绩在很长时间内将会得到持续性大幅度的提</span><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">升。</span></p><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span><br/></p>
-
-
+						${aboutUsContent.content}
 					</div>
 
 				</div>
-
-
-
-
 				<div id="clear" ></div>
 			</div> <!--内容 END-->
-
-
 				<!-- =+++++++++++++++++++++-->
-
-
-
 		</div>
 		<!--end about-main-->
 	</div>

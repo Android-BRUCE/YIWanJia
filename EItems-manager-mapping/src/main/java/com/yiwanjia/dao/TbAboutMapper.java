@@ -9,6 +9,12 @@ import org.apache.ibatis.annotations.Param;
 public interface TbAboutMapper {
     long countByExample(TbAboutExample example);
 
+    TbAboutWithBLOBs seleteRoad();
+    TbAboutWithBLOBs seleteVideo();
+    TbAboutWithBLOBs seleteAboutUsContent();
+    TbAboutWithBLOBs seleteAboutUsPic();
+
+
     int deleteByExample(TbAboutExample example);
 
     int deleteByPrimaryKey(Long id);

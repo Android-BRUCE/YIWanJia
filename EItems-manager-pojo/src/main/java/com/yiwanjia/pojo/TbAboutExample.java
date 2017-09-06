@@ -354,6 +354,146 @@ public class TbAboutExample {
             addCriterion("updatetime not between", value1, value2, "updatetime");
             return (Criteria) this;
         }
+
+        public Criteria andImageIsNull() {
+            addCriterion("image is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andImageIsNotNull() {
+            addCriterion("image is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andImageEqualTo(String value) {
+            addCriterion("image =", value, "image");
+            return (Criteria) this;
+        }
+
+        public Criteria andImageNotEqualTo(String value) {
+            addCriterion("image <>", value, "image");
+            return (Criteria) this;
+        }
+
+        public Criteria andImageGreaterThan(String value) {
+            addCriterion("image >", value, "image");
+            return (Criteria) this;
+        }
+
+        public Criteria andImageGreaterThanOrEqualTo(String value) {
+            addCriterion("image >=", value, "image");
+            return (Criteria) this;
+        }
+
+        public Criteria andImageLessThan(String value) {
+            addCriterion("image <", value, "image");
+            return (Criteria) this;
+        }
+
+        public Criteria andImageLessThanOrEqualTo(String value) {
+            addCriterion("image <=", value, "image");
+            return (Criteria) this;
+        }
+
+        public Criteria andImageLike(String value) {
+            addCriterion("image like", value, "image");
+            return (Criteria) this;
+        }
+
+        public Criteria andImageNotLike(String value) {
+            addCriterion("image not like", value, "image");
+            return (Criteria) this;
+        }
+
+        public Criteria andImageIn(List<String> values) {
+            addCriterion("image in", values, "image");
+            return (Criteria) this;
+        }
+
+        public Criteria andImageNotIn(List<String> values) {
+            addCriterion("image not in", values, "image");
+            return (Criteria) this;
+        }
+
+        public Criteria andImageBetween(String value1, String value2) {
+            addCriterion("image between", value1, value2, "image");
+            return (Criteria) this;
+        }
+
+        public Criteria andImageNotBetween(String value1, String value2) {
+            addCriterion("image not between", value1, value2, "image");
+            return (Criteria) this;
+        }
+
+        public Criteria andVideoIsNull() {
+            addCriterion("video is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andVideoIsNotNull() {
+            addCriterion("video is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andVideoEqualTo(String value) {
+            addCriterion("video =", value, "video");
+            return (Criteria) this;
+        }
+
+        public Criteria andVideoNotEqualTo(String value) {
+            addCriterion("video <>", value, "video");
+            return (Criteria) this;
+        }
+
+        public Criteria andVideoGreaterThan(String value) {
+            addCriterion("video >", value, "video");
+            return (Criteria) this;
+        }
+
+        public Criteria andVideoGreaterThanOrEqualTo(String value) {
+            addCriterion("video >=", value, "video");
+            return (Criteria) this;
+        }
+
+        public Criteria andVideoLessThan(String value) {
+            addCriterion("video <", value, "video");
+            return (Criteria) this;
+        }
+
+        public Criteria andVideoLessThanOrEqualTo(String value) {
+            addCriterion("video <=", value, "video");
+            return (Criteria) this;
+        }
+
+        public Criteria andVideoLike(String value) {
+            addCriterion("video like", value, "video");
+            return (Criteria) this;
+        }
+
+        public Criteria andVideoNotLike(String value) {
+            addCriterion("video not like", value, "video");
+            return (Criteria) this;
+        }
+
+        public Criteria andVideoIn(List<String> values) {
+            addCriterion("video in", values, "video");
+            return (Criteria) this;
+        }
+
+        public Criteria andVideoNotIn(List<String> values) {
+            addCriterion("video not in", values, "video");
+            return (Criteria) this;
+        }
+
+        public Criteria andVideoBetween(String value1, String value2) {
+            addCriterion("video between", value1, value2, "video");
+            return (Criteria) this;
+        }
+
+        public Criteria andVideoNotBetween(String value1, String value2) {
+            addCriterion("video not between", value1, value2, "video");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {

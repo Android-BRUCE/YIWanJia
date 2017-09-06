@@ -30,7 +30,7 @@ public class BannerService{
     public TaotaoResult addBanner(TbBanner banner) {
         banner.setCreatetime(new Date());
         banner.setUpdatetime(new Date());
-        banner.setStatus(1);
+       // banner.setStatus(1);
         tbBannerMapper.insert(banner);
         return TaotaoResult.build(200,"新增轮播图成功啦！");
     }

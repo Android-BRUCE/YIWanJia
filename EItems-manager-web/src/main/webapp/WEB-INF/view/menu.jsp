@@ -63,10 +63,13 @@
       <!-- Item  End -->
 	<!-- Item  Strat -->
       <dl class='bitem'>
-        <dt onClick='showHide("items4_1")'><b>客户信息管理</b></dt>
+        <dt onClick='showHide("items4_1")'><b>公司介绍管理</b></dt>
         <dd style='display:none' class='sitem' id='items4_1'>
           <ul class='sitemu'>
-            <li><a href='customer.html' target='main'>客户信息</a> </li>
+            <li><a href='${pageContext.request.contextPath}/companyIntroduction.html' target='main'>公司介绍更改</a> </li>
+            <li><a href='${pageContext.request.contextPath}/companyPic.html' target='main'>更换荣誉资质图片</a> </li>
+            <li><a href='${pageContext.request.contextPath}/companyRoad.html' target='main'>修改发展历程</a> </li>
+            <li><a href='${pageContext.request.contextPath}/companyVideo.html'>更换宣传视频</a> </li>
           </ul>
         </dd>
       </dl>
@@ -76,7 +79,7 @@
         <dt onClick='showHide("items5_1")'><b>关于我们管理</b></dt>
         <dd style='display:none' class='sitem' id='items5_1'>
           <ul class='sitemu'>
-            <li><a href='${pageContext.request.contextPath}/about.html' target='main'>公司介绍管理</a> </li>
+            <%--<li><a href='${pageContext.request.contextPath}/about.html' target='main'>公司介绍管理</a> </li>--%>
             <li><a href='${pageContext.request.contextPath}/about_news.html' target='main'>公司新闻管理</a> </li>
             <li><a href='${pageContext.request.contextPath}/role.html' target='main'>公司文化管理</a> </li>
             <li><a href='${pageContext.request.contextPath}/about_activity.html' target='main'>公司活动管理</a> </li>

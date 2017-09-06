@@ -68,7 +68,7 @@
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">公司介绍</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about/aboutUs.html">公司介绍</a></li>
 								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news/page.html">公司新闻</a></li>
 								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/culture.html">公司文化</a></li>
 								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity/page.html">公司活动</a></li>
@@ -289,24 +289,20 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-3">
-				<div class="widget">
-					<h5 class="widgetheading">Latest posts</h5>
-					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-					</ul>
-				</div>
-			</div>
+			<%--<div class="col-sm-3">--%>
+				<%--<div class="widget">--%>
+					<%--<h5 class="widgetheading">Latest posts</h5>--%>
+					<%--<ul class="link-list">--%>
+						<%--<li><a class="waves-effect waves-dark" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>--%>
+						<%--<li><a class="waves-effect waves-dark" href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>--%>
+						<%--<li><a class="waves-effect waves-dark" href="#">Natus error sit voluptatem accusantium doloremque</a></li>--%>
+					<%--</ul>--%>
+				<%--</div>--%>
+			<%--</div>--%>
 			<div class="col-sm-3">
 				<div class="widget">
 					<h5 class="widgetheading">最新新闻</h5>
-					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-					</ul>
+					<img src="${pageContext.request.contextPath}/img/public/wanjiaweixin.png" alt="" height="50" width="50" align=""/>
 				</div>
 			</div>
 

@@ -6,10 +6,12 @@
     <result column="title" jdbcType="VARCHAR" property="title" />
     <result column="creattime" jdbcType="TIMESTAMP" property="creattime" />
     <result column="updatetime" jdbcType="TIMESTAMP" property="updatetime" />
+    <result column="image" jdbcType="VARCHAR" property="image" />
+    <result column="video" jdbcType="VARCHAR" property="video" />
   </resultMap>
   <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.yiwanjia.pojo.TbAboutWithBLOBs">
     <result column="content" jdbcType="LONGVARCHAR" property="content" />
-    <result column="image" jdbcType="VARBINARY" property="image" />
+    <result column="introduction" jdbcType="LONGVARCHAR" property="introduction" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -70,10 +72,10 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, title, creattime, updatetime
+    id, title, creattime, updatetime, image, video
   </sql>
   <sql id="Blob_Column_List">
-    content, image
+    content, introduction
   </sql>
   <select id="selectByExampleWithBLOBs" parameterType="com.yiwanjia.pojo.TbAboutExample" resultMap="ResultMapWithBLOBs">
     select
@@ -115,6 +117,23 @@
     from tb_about
     where id = #{id,jdbcType=BIGINT}
   </select>
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <select id="seleteRoad" resultType="com.yiwanjia.pojo.TbAboutWithBLOBs">
+    select introduction from tb_about where id = 1
+  </select>
+  <select id="seleteVideo" resultType="com.yiwanjia.pojo.TbAboutWithBLOBs">
+    select video from tb_about where id = 1
+  </select>
+  <select id="seleteAboutUsContent" resultType="com.yiwanjia.pojo.TbAboutWithBLOBs">
+    select content from tb_about where id = 1
+  </select>
+  <select id="seleteAboutUsPic" resultType="com.yiwanjia.pojo.TbAboutWithBLOBs">
+    select image from tb_about where id = 1
+  </select>
+
+
+
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from tb_about
     where id = #{id,jdbcType=BIGINT}
@@ -127,11 +146,11 @@
   </delete>
   <insert id="insert" parameterType="com.yiwanjia.pojo.TbAboutWithBLOBs">
     insert into tb_about (id, title, creattime, 
-      updatetime, content, image
-      )
+      updatetime, image, video, 
+      content, introduction)
     values (#{id,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, #{creattime,jdbcType=TIMESTAMP}, 
-      #{updatetime,jdbcType=TIMESTAMP}, #{content,jdbcType=LONGVARCHAR}, #{image,jdbcType=VARBINARY}
-      )
+      #{updatetime,jdbcType=TIMESTAMP}, #{image,jdbcType=VARCHAR}, #{video,jdbcType=VARCHAR}, 
+      #{content,jdbcType=LONGVARCHAR}, #{introduction,jdbcType=LONGVARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.yiwanjia.pojo.TbAboutWithBLOBs">
     insert into tb_about
@@ -148,11 +167,17 @@
       <if test="updatetime != null">
         updatetime,
       </if>
+      <if test="image != null">
+        image,
+      </if>
+      <if test="video != null">
+        video,
+      </if>
       <if test="content != null">
         content,
       </if>
-      <if test="image != null">
-        image,
+      <if test="introduction != null">
+        introduction,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -168,11 +193,17 @@
       <if test="updatetime != null">
         #{updatetime,jdbcType=TIMESTAMP},
       </if>
+      <if test="image != null">
+        #{image,jdbcType=VARCHAR},
+      </if>
+      <if test="video != null">
+        #{video,jdbcType=VARCHAR},
+      </if>
       <if test="content != null">
         #{content,jdbcType=LONGVARCHAR},
       </if>
-      <if test="image != null">
-        #{image,jdbcType=VARBINARY},
+      <if test="introduction != null">
+        #{introduction,jdbcType=LONGVARCHAR},
       </if>
     </trim>
   </insert>
@@ -197,11 +228,17 @@
       <if test="record.updatetime != null">
         updatetime = #{record.updatetime,jdbcType=TIMESTAMP},
       </if>
+      <if test="record.image != null">
+        image = #{record.image,jdbcType=VARCHAR},
+      </if>
+      <if test="record.video != null">
+        video = #{record.video,jdbcType=VARCHAR},
+      </if>
       <if test="record.content != null">
         content = #{record.content,jdbcType=LONGVARCHAR},
       </if>
-      <if test="record.image != null">
-        image = #{record.image,jdbcType=VARBINARY},
+      <if test="record.introduction != null">
+        introduction = #{record.introduction,jdbcType=LONGVARCHAR},
       </if>
     </set>
     <if test="_parameter != null">
@@ -214,8 +251,10 @@
       title = #{record.title,jdbcType=VARCHAR},
       creattime = #{record.creattime,jdbcType=TIMESTAMP},
       updatetime = #{record.updatetime,jdbcType=TIMESTAMP},
+      image = #{record.image,jdbcType=VARCHAR},
+      video = #{record.video,jdbcType=VARCHAR},
       content = #{record.content,jdbcType=LONGVARCHAR},
-      image = #{record.image,jdbcType=VARBINARY}
+      introduction = #{record.introduction,jdbcType=LONGVARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -225,7 +264,9 @@
     set id = #{record.id,jdbcType=BIGINT},
       title = #{record.title,jdbcType=VARCHAR},
       creattime = #{record.creattime,jdbcType=TIMESTAMP},
-      updatetime = #{record.updatetime,jdbcType=TIMESTAMP}
+      updatetime = #{record.updatetime,jdbcType=TIMESTAMP},
+      image = #{record.image,jdbcType=VARCHAR},
+      video = #{record.video,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -242,11 +283,17 @@
       <if test="updatetime != null">
         updatetime = #{updatetime,jdbcType=TIMESTAMP},
       </if>
+      <if test="image != null">
+        image = #{image,jdbcType=VARCHAR},
+      </if>
+      <if test="video != null">
+        video = #{video,jdbcType=VARCHAR},
+      </if>
       <if test="content != null">
         content = #{content,jdbcType=LONGVARCHAR},
       </if>
-      <if test="image != null">
-        image = #{image,jdbcType=VARBINARY},
+      <if test="introduction != null">
+        introduction = #{introduction,jdbcType=LONGVARCHAR},
       </if>
     </set>
     where id = #{id,jdbcType=BIGINT}
@@ -256,15 +303,19 @@
     set title = #{title,jdbcType=VARCHAR},
       creattime = #{creattime,jdbcType=TIMESTAMP},
       updatetime = #{updatetime,jdbcType=TIMESTAMP},
+      image = #{image,jdbcType=VARCHAR},
+      video = #{video,jdbcType=VARCHAR},
       content = #{content,jdbcType=LONGVARCHAR},
-      image = #{image,jdbcType=VARBINARY}
+      introduction = #{introduction,jdbcType=LONGVARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.yiwanjia.pojo.TbAbout">
     update tb_about
     set title = #{title,jdbcType=VARCHAR},
       creattime = #{creattime,jdbcType=TIMESTAMP},
-      updatetime = #{updatetime,jdbcType=TIMESTAMP}
+      updatetime = #{updatetime,jdbcType=TIMESTAMP},
+      image = #{image,jdbcType=VARCHAR},
+      video = #{video,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

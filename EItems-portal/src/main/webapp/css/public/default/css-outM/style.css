@@ -72,7 +72,7 @@ a:active{star:expression(this.onFocus=this.blur());}
 .banner .slideBox .nextStop{ display:none;  }
 
 
-.case_hd {width:1100px; height:165px; margin:auto;text-align:center; z-index:10; margin-top:-200px; z-index:999; position:relative; margin-bottom:20px; }
+.case_hd {width:1100px; height:165px; margin:auto;text-align:center; z-index:10; margin-top:0px; z-index:999; position:relative; margin-bottom:0px; }
 .case_hdul { overflow:hidden; zoom:1; display:block; height:165px;}
 .case_hd li {float:left; _display:inline; text-align:center; transition: all 0.4s; width:366px; height:163px; overflow:hidden; margin-right:0px; cursor:pointer;}
 .case_hd li.on { background:#ffb504!important;  opacity:1;}
@@ -125,18 +125,18 @@ span.ind_x{ width:50px; height:3px; display:block; margin:25px auto 0 ; backgrou
 
 
 
-/*--ÖÇ¿â--*/
+
 .ind_zszk_box{ padding-top:60px;}
 .zszk_icon{ width:1150px; margin:50px auto;}
 .zszk_icon li{ width:355px; float:left; margin-left:20px;transition: all 0.5s; text-align:center; }
 .zszk_icon li{}
 .zszk_icon li i.icon{  border-radius:5px; display:block; transition: all 0.2s; border:1px solid #ccc; width:80px; height:80px; float:left;}
-.zszk_icon li i.icon01{ background:url(../images/service11.png) no-repeat;}
-.zszk_icon li i.icon02{ background:url(../images/service21.png) no-repeat;}
-.zszk_icon li i.icon03{ background:url(../images/service31.png) no-repeat;}
-.zszk_icon li:hover i.icon01,.zszk_icon li a.on i.icon01{background:url(../images/service12.png) no-repeat #189c43; border:1px solid #189c43;}
-.zszk_icon li:hover i.icon02,.zszk_icon li a.on i.icon02{background:url(../images/service22.png) no-repeat #189c43; border:1px solid #189c43;}
-.zszk_icon li:hover i.icon03,.zszk_icon li a.on i.icon03{background:url(../images/service32.png) no-repeat #189c43; border:1px solid #189c43;}
+.zszk_icon li i.icon01{ background:url(../service11.png) no-repeat;}
+.zszk_icon li i.icon02{ background:url(../service21.png) no-repeat;}
+.zszk_icon li i.icon03{ background:url(../service31.png) no-repeat;}
+.zszk_icon li:hover i.icon01,.zszk_icon li a.on i.icon01{background:url(../service12.png) no-repeat #189c43; border:1px solid #189c43;}
+.zszk_icon li:hover i.icon02,.zszk_icon li a.on i.icon02{background:url(../service22.png) no-repeat #189c43; border:1px solid #189c43;}
+.zszk_icon li:hover i.icon03,.zszk_icon li a.on i.icon03{background:url(../service32.png) no-repeat #189c43; border:1px solid #189c43;}
 
 .zszk_icon li a.on h1{ color:#189c43;}
 

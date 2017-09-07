@@ -6189,9 +6189,9 @@ KindEditor.lang({
 	'template.selectTemplate' : '可选模板',
 	'template.replaceContent' : '替换当前内容',
 	'template.fileList' : {
-		'1.html' : '图片和文字',
-		'2.html' : '表格',
-		'3.html' : '项目编号'
+		'1.jsp' : '图片和文字',
+		'2.jsp' : '表格',
+		'3.jsp' : '项目编号'
 	}
 }, 'zh_CN');
 /*******************************************************************************
@@ -6367,7 +6367,7 @@ KindEditor.plugin('baidumap', function(K) {
 			searchBtn = K('[name="searchBtn"]', div),
 			checkbox = K('[name="insertDynamicMap"]', dialog.div),
 			win, doc;
-		var iframe = K('<iframe class="ke-textarea" frameborder="0" src="' + self.pluginsPath + 'baidumap/map.html" style="width:' + mapWidth + 'px;height:' + mapHeight + 'px;"></iframe>');
+		var iframe = K('<iframe class="ke-textarea" frameborder="0" src="' + self.pluginsPath + 'baidumap/map.jsp" style="width:' + mapWidth + 'px;height:' + mapHeight + 'px;"></iframe>');
 		function ready() {
 			win = iframe[0].contentWindow;
 			doc = K.iframeDoc(iframe);
@@ -7641,7 +7641,7 @@ KindEditor.plugin('map', function(K) {
 			'<div id="map_canvas" style="width:100%; height:100%"></div>',
 			'</body></html>'].join('\n');
 		// TODO：用doc.write(iframeHtml)方式加载时，在IE6上第一次加载报错，暂时使用src方式
-		var iframe = K('<iframe class="ke-textarea" frameborder="0" src="' + self.pluginsPath + 'map/map.html" style="width:558px;height:360px;"></iframe>');
+		var iframe = K('<iframe class="ke-textarea" frameborder="0" src="' + self.pluginsPath + 'map/map.jsp" style="width:558px;height:360px;"></iframe>');
 		function ready() {
 			win = iframe[0].contentWindow;
 			doc = K.iframeDoc(iframe);

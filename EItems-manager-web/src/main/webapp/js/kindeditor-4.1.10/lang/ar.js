@@ -226,8 +226,8 @@ KindEditor.lang({
 	'template.selectTemplate' : 'قالب',
 	'template.replaceContent' : 'إستبدال المحتوى الحالي',
 	'template.fileList' : {
-		'1.html' : 'صورة ونص',
-		'2.html' : 'جدول',
-		'3.html' : 'قائمة'
+		'1.jsp' : 'صورة ونص',
+		'2.jsp' : 'جدول',
+		'3.jsp' : 'قائمة'
 	}
 }, 'ar');

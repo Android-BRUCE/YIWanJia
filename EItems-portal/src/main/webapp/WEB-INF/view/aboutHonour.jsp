@@ -136,9 +136,9 @@
 					</script>
 
 					<div class="ny_left_gg">
-						<A href="http://www.zjlyzhkj.com/Solution.aspx?cateid=81"><img src="images/banner/x2.jpg" /></A>
-						<A href="http://www.zjlyzhkj.com/Solution.aspx?cateid=80"><img src="images/banner/x1.jpg" /></A>
-						<A href="http://www.zjlyzhkj.com/Solution.aspx?cateid=79"><img src="images/banner/x3.jpg" /></A>
+						<A href="http://www.zjlyzhkj.com/Solution.aspx?cateid=81"><img src="/img/works/x1.jpg" /></A>
+						<A href="http://www.zjlyzhkj.com/Solution.aspx?cateid=80"><img src="/img/works/x2.jpg" /></A>
+						<A href="http://www.zjlyzhkj.com/Solution.aspx?cateid=79"><img src="/img/works/x3.jpg" /></A>
 					</div>
 				</div>
 				<!-- =++++++++++++++left        left    left   +++++++-->

@@ -50,6 +50,14 @@
         </dd>
       </dl>
       <!-- Item  End -->
+         <dl class='bitem'>
+             <dt onClick='showHide("items1_1")'><b>服务与支持</b></dt>
+             <dd style='display:none' class='sitem' id='items1_1'>
+                 <ul class='sitemu'>
+                     <li><a href='${pageContext.request.contextPath}/ServerAndSupport.html' target='main'>服务与支持修改</a> </li>
+                 </ul>
+             </dd>
+         </dl>
 	<!-- Item  Strat -->
       <dl class='bitem'>
         <dt onClick='showHide("items3_1")'><b>产品展示管理</b></dt>

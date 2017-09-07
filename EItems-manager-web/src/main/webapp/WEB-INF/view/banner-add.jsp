@@ -67,6 +67,9 @@
                 $.messager.alert('提示',data.msg);
                 clearForm();
             }
+            if(data.status == 500){
+                $.messager.alert('提示',data.msg);
+            }
         });
     }
 

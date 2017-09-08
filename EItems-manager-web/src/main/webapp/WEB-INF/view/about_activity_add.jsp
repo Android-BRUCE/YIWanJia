@@ -23,9 +23,10 @@
 	            <td><input class="easyui-textbox" name="point" data-options="multiline:true,validType:'length[0,150]'" style="height:60px;width: 280px;"></input></td>
 	        </tr>
 			<tr>
-				<td>活动图片:</td>
+				<td>活动图片（上传一张）:</td>
 				<td>
-					<a href="javascript:void(0)" class="easyui-linkbutton onePicUpload">卡片式图片上传</a>
+					<a href="javascript:void(0)" class="easyui-linkbutton picFileUpload">卡片式图片上传</a>
+					<%--<a href="javascript:void(0)" class="easyui-linkbutton onePicUpload">卡片式图片上传</a>--%>
 					<input type="hidden" name="image"/>
 				</td>
 			</tr>
@@ -55,8 +56,12 @@
 	var itemAddEditor ;
 	//页面初始化完毕后执行此方法
 	$(function(){
-        TT.initOnePicUpload();
+//      TT.initOnePicUpload();
 	    itemAddEditor = KindEditor.create("#itemAddForm [name=content]", TT.kingEditorParams);
+        TAOTAO.init({fun:function(node){
+            //根据商品的分类id取商品 的规格模板，生成规格信息。第四天内容。
+            TAOTAO.changeItemParam(node, "itemAddForm");
+        }});
 	});
 	//提交表单
 	function submitForm(){

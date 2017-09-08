@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>top</title>
+<title>杭州钱王万家信息科技有限公司管理后台</title>
 <link href="${pageContext.request.contextPath}/skin/css/base.css" rel="stylesheet" type="text/css">
 <script language='javascript'>
 var preFrameW = '206,*';
@@ -145,7 +145,7 @@ a:link,a:visited {
     	<table width="750" border="0" cellspacing="0" cellpadding="0">
       <tr>
       <td align="right" height="26" style="padding-right:10px;line-height:26px;">
-        	您好：<span class="username" ><font color="red">${employee.e_name }</font></span>，欢迎使用项目平台管理系统！
+        	您好：<span class="username" ><font color="red">${employee.e_name }</font></span>，欢迎使用万家科技平台管理系统！
         	
         	[<a href="${pageContext.request.contextPath}/index.html" target="_top">主页</a>]
         	[<a href="${pageContext.request.contextPath}/modpassword.html"  target="_blank">修改密码</a>]

@@ -1,11 +1,8 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"
-%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
-
 <html>
 <head>
-
-    <title>产品展示</title>
+    <title>杭州钱王万家信息科技有限公司</title>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/skin/css/base.css">
     <script type="text/javascript" src="${pageContext.request.contextPath}/jquery-easyui-1.2.6/jquery-1.7.2.min.js"></script>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jquery-easyui-1.2.6/themes/default/easyui.css">

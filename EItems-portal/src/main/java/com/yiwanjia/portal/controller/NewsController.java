@@ -27,7 +27,7 @@ public class NewsController {
     @Autowired
     private NewsService newsService;
 
-    @RequestMapping("page")
+    @RequestMapping()
     public String getNewsToPage(@RequestParam(value = "page",defaultValue = "1") int page, Model model){
         TbNewsExample example = new TbNewsExample();
         TbNewsExample.Criteria criteria = example.createCriteria();

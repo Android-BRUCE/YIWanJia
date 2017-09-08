@@ -1,7 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <html>
 <head>
-<title>项目平台管理系统</title>
+<title>杭州钱王万家信息科技有限公司管理后台</title>
 <style>
 body
 {

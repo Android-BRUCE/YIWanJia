@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title></title>
+<title>杭州钱王万家信息科技有限公司</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="杭州钱王万家信息科技有限公司" />
 <meta name="author" content="杭州钱王万家信息科技有限公司" />
@@ -31,6 +31,11 @@
 	<header class="topbar">
 		<div class="container">
 			<div class="row">
+				<ul class="info">
+					<li><i class="icon-info-blocks material-icons">邮箱地址:</i><span>zjqwwy@163.com</span></li>
+					<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>
+				</ul>
+				<div class="clr"></div>
 			</div>
 		</div>
 	</header>
@@ -46,25 +51,26 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">
+					<a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
 						<%--<i class="icon-info-blocks material-icons">language</i>--%>
-						<img src="/img/top.png" alt="" height="50" width="50" align=""/>
+							<img src="${pageContext.request.contextPath}/img/logo.jpg" alt="" height="50" width="50" align=""/>
+							杭州钱王万家信息科技有限公司
 					</a>
 				</div>
 				<div class="navbar-collapse collapse ">
 					<ul class="nav navbar-nav">
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">主页</a></li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品展示</a></li>
-						<li ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/services.html">服务与支持</a></li>
+						<li ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">服务与支持</a></li>
 						<%--<li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>--%>
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about/aboutUs.html">公司介绍</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news/page.html">公司新闻</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/culture.html">公司文化</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity/page.html">公司活动</a></li>
-								<li><a class="waves-effect waves-dark" href="#">加入我们</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">公司介绍</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">公司新闻</a></li>
+								<%--<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/culture.html">公司文化</a></li>--%>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity.html">公司活动</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">加入我们</a></li>
 							</ul>
 						</li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
@@ -103,8 +109,8 @@
 					<ul style="position:relative">
 						<li ><a href="${pageContext.request.contextPath}/about.html" title="公司介绍" id="nynavID91">公司介绍</a></li>
 						<li ><a href="${pageContext.request.contextPath}/aboutHonour.html" title="荣誉资质" id="nynavID92">荣誉资质</a></li>
-						<li ><a href="${pageContext.request.contextPath}/about/road.html" title="发展历程" id="nynavID93" class="acvier">发展历程</a></li>
-						<li ><a href="${pageContext.request.contextPath}/about/videoPath.html" title="企业宣传视频" id="nynavID97">企业宣传视频</a></li>
+						<li ><a href="${pageContext.request.contextPath}/aboutDevelopment.html" title="发展历程" id="nynavID93" class="acvier">发展历程</a></li>
+						<li ><a href="${pageContext.request.contextPath}/aboutPropaganda.html" title="企业宣传视频" id="nynavID97">企业宣传视频</a></li>
 						<%--<li ><a href="about.aspx?cateid=95" title="联系我们" id="nynavID95">联系我们</a></li>--%>
 
 

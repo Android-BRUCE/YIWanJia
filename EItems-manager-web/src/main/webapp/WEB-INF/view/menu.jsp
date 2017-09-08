@@ -45,7 +45,7 @@
           <ul class='sitemu'>
             <li><a href='${pageContext.request.contextPath}/banner.html' target='main'>轮播控制</a> </li>
             <%--<li><a href='${pageContext.request.contextPath}/indexGoods.html' target='main'>首页产品轮播</a> </li>--%>
-            <li><a href='${pageContext.request.contextPath}/task.html' target='main'>底部导航栏</a> </li>
+            <li><a href='javascript:void(0)' target='main'>底部导航栏</a> </li>
           </ul>
         </dd>
       </dl>
@@ -89,9 +89,9 @@
           <ul class='sitemu'>
             <%--<li><a href='${pageContext.request.contextPath}/about.html' target='main'>公司介绍管理</a> </li>--%>
             <li><a href='${pageContext.request.contextPath}/about_news.html' target='main'>公司新闻管理</a> </li>
-            <li><a href='${pageContext.request.contextPath}/role.html' target='main'>公司文化管理</a> </li>
+            <%--<li><a href='${pageContext.request.contextPath}/role.html' target='main'>公司文化管理</a> </li>--%>
             <li><a href='${pageContext.request.contextPath}/about_activity.html' target='main'>公司活动管理</a> </li>
-            <li><a href='${pageContext.request.contextPath}/role.html' target='main'>加入我们管理</a> </li>
+            <li><a href='${pageContext.request.contextPath}/joinUs.html' target='main'>加入我们管理</a> </li>
           </ul>
         </dd>
       </dl>

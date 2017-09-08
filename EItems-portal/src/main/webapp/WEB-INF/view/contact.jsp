@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title></title>
+<title>杭州钱王万家信息科技有限公司</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="杭州钱王万家信息科技有限公司" />
 <meta name="author" content="杭州钱王万家信息科技有限公司" />
@@ -17,13 +17,6 @@
 <link href="/css/style.css" rel="stylesheet" />
 <link href="/css/public/default/css-outM/about.css" rel="stylesheet" />
 <link href="/css/public/default/css-outM/default.css" rel="stylesheet" />
-	<!--引用百度地图API-->
-	<style type="text/css">
-		html,body{margin:0;padding:0;}
-		.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
-		.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
-	</style>
-	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -48,8 +41,8 @@
 				<div class="col-sm-9">
 					<div class="row">
 						<ul class="info">
-							<li><i class="icon-info-blocks material-icons">question_answer</i><span>info@Arrive.com</span></li>
-							<li><i class="icon-info-blocks material-icons">perm_phone_msg</i><span>+(012) 345 6789</span></li>
+							<li><i class="icon-info-blocks material-icons">邮箱地址: </i><span>zjqwwy@163.com</span></li>
+							<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>
 						</ul>
 						<div class="clr"></div>
 					</div>
@@ -69,25 +62,25 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">
+					<a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
 						<%--<i class="icon-info-blocks material-icons">language</i>--%>
-						<img src="/img/top.png" alt="" height="50" width="50" align=""/>
+							<img src="${pageContext.request.contextPath}/img/logo.jpg" alt="" height="50" width="50" align=""/>
+							杭州钱王万家信息科技有限公司
 					</a>
 				</div>
 				<div class="navbar-collapse collapse ">
 					<ul class="nav navbar-nav">
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">主页</a></li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品展示</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/services.html">服务与支持</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">服务与支持</a></li>
 						<%--<li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>--%>
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about/aboutUs.html">公司介绍</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news/page.html">公司新闻</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/culture.html">公司文化</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity/page.html">公司活动</a></li>
-								<li><a class="waves-effect waves-dark" href="#">加入我们</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">公司介绍</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">公司新闻</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity.html">公司活动</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">加入我们</a></li>
 							</ul>
 						</li>
 						<li class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
@@ -245,6 +238,7 @@
 
 <script src="${pageContext.request.contextPath}/contact/jqBootstrapValidation.js"></script>
 <script src="${pageContext.request.contextPath}/contact/contact_me.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 <script type="text/javascript">
     //创建和初始化地图函数：
     function initMap(){
@@ -305,4 +299,10 @@
     var map;
     initMap();
 </script>
+<!--引用百度地图API-->
+<style type="text/css">
+	html,body{margin:0;padding:0;}
+	.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+	.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
 </html>

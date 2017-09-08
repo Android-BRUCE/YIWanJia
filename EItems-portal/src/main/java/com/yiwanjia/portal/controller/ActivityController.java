@@ -27,7 +27,7 @@ public class ActivityController {
     @Autowired
     private ActivityService activityService;
 
-    @RequestMapping("page")
+    @RequestMapping()
     public String getNewsToPage(@RequestParam(value = "page",defaultValue = "1") int page, Model model){
         TbActivityExample example = new TbActivityExample();
 

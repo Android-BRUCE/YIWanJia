@@ -14,11 +14,11 @@
     <form id="itemAddForm" class="itemForm" method="post">
         <table cellpadding="5">
             <tr>
-                <td>轮播图标题:</td>
-                <td><input class="easyui-textbox" type="text" name="title" data-options="required:true" style="width: 280px;"></input></td>
+                <td>轮播图标题(显示再图片上可以不加):</td>
+                <td><input class="easyui-textbox" type="text" name="title" data-options="validType:'length[0,50]'" style="width: 280px;"></input></td>
             </tr>
             <tr>
-                <td>轮播图要点:</td>
+                <td>轮播图要点（同上）:</td>
                 <td><input class="easyui-textbox" type="text" name="point" data-options="multiline:true,validType:'length[0,150]'" style="height:60px;width: 280px;"></input></td>
             </tr>
             <tr>
@@ -57,8 +57,8 @@
     function submitForm(){
         //有效性验证
         if(!$('#itemAddForm').form('validate')){
-            $.messager.alert('提示','表单还未填写完成!');
-            return ;
+          //  $.messager.alert('提示','表单还未填写完成!');
+           // return ;
         }
         //ajax的post方式提交表单
         //$("#itemAddForm").serialize()将表单序列号为key-value形式的字符串

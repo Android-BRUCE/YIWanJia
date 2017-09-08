@@ -8,22 +8,14 @@
 	<title>杭州钱王万家信息科技有限公司</title>
 	<meta name="keywords" content="杭州钱王万家信息科技有限公司"/>
 	<meta name="description" content="杭州钱王万家信息科技有限公司"/>
-
-
-
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="/stylesheet" href="${pageContext.request.contextPath}/materialize/css/materialize.min.css" media="screen,projection" />
 	<link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="${pageContext.request.contextPath}/css/fancybox/jquery.fancybox.css" rel="stylesheet">
 	<link href="${pageContext.request.contextPath}/css/flexslider.css" rel="stylesheet" />
 	<link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" />
-
 	<link href="${pageContext.request.contextPath}/css/public/default/css-outM/style.css" rel="stylesheet" />
-
 	<link href="${pageContext.request.contextPath}/css/public/default/css-outM/style.css" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="${pageContext.request.contextPath}/css/public/default/css-outM/jquery.min.js"></script>
-	<script type="text/javascript" src="${pageContext.request.contextPath}/css/public/default/css-outM/jquery.SuperSlide.2.1.1.js"></script>
-	<script src="${pageContext.request.contextPath}/css/public/default/css-outM/common.js" type="text/javascript"></script>
 </head>
 <body>
 <header class="topbar">
@@ -31,19 +23,12 @@
 		<div class="row">
 			<!-- social icon-->
 			<div class="col-sm-3">
-				<ul class="social-network">
-					<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>
-					<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>
-					<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>
-				</ul>
 			</div>
 			<div class="col-sm-9">
 				<div class="row">
 					<ul class="info">
-						<li><i class="icon-info-blocks material-icons">question_answer</i><span>info@Arrive.com</span></li>
-						<li><i class="icon-info-blocks material-icons">perm_phone_msg</i><span>+(012) 345 6789</span></li>
+						<li><i class="icon-info-blocks material-icons">邮箱地址: </i><span>zjqwwy@163.com</span></li>
+						<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>
 					</ul>
 					<div class="clr"></div>
 				</div>
@@ -60,25 +45,25 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
 					<%--<i class="icon-info-blocks material-icons">language</i>--%>
-					<img src="/img/top.png" alt="" height="50" width="50" align=""/>
+						<img src="${pageContext.request.contextPath}/img/logo.jpg" alt="" height="50" width="50" align=""/>
+						杭州钱王万家信息科技有限公司
 				</a>
 			</div>
 			<div class="navbar-collapse collapse ">
 				<ul class="nav navbar-nav">
 					<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">主页</a></li>
 					<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品展示</a></li>
-					<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/services.html">服务与支持</a></li>
+					<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">服务与支持</a></li>
 					<%--<li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>--%>
 					<li class="dropdown">
 						<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about/aboutUs.html">公司介绍</a></li>
-							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news/page.html">公司新闻</a></li>
-							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/culture.html">公司文化</a></li>
-							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity/page.html">公司活动</a></li>
-							<li><a class="waves-effect waves-dark" href="#">加入我们</a></li>
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">公司介绍</a></li>
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">公司新闻</a></li>
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity.html">公司活动</a></li>
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">加入我们</a></li>
 						</ul>
 					</li>
 					<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
@@ -104,11 +89,11 @@
 
 	<c:forEach items="${paging.rows}" var="pr">
 		<dl>
-			<dd><a href="newsdetail.aspx?id=${pr.id}"><img src="${pr.image}"  alt="${pr.newstitle}"/></a></dd>
+			<dd><a href="${pageContext.request.contextPath}/news/newsdetail.aspx?id=${pr.id}"><img src="${pr.image}"  alt="${pr.newstitle}"/></a></dd>
 			<dt>
-				<a class="bt" href="newsdetail.aspx?id=${pr.id}">${pr.newstitle}</a>
+				<a class="bt" href="${pageContext.request.contextPath}/news/newsdetail.aspx?id=${pr.id}">${pr.newstitle}</a>
 				<div class="nr_ms">${pr.point}</div>
-				<a class="more" href="newsdetail.aspx?id=${pr.id}">了解详细<span>>></span></a>
+				<a class="more" href="${pageContext.request.contextPath}/news/newsdetail.aspx?id=${pr.id}">了解详细<span>>></span></a>
 			</dt>
 		</dl>
 
@@ -278,5 +263,8 @@
 
 <script src="${pageContext.request.contextPath}/contact/jqBootstrapValidation.js"></script>
 <script src="${pageContext.request.contextPath}/contact/contact_me.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/css/public/default/css-outM/jquery.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/css/public/default/css-outM/jquery.SuperSlide.2.1.1.js"></script>
+<script src="${pageContext.request.contextPath}/css/public/default/css-outM/common.js" type="text/javascript"></script>
 </body>
 </html>

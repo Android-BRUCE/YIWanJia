@@ -33,7 +33,7 @@
     var itemAddEditor ;
     //页面初始化完毕后执行此方法
     $(function(){
-        TT.initOnePicUpload();
+       // TT.initOnePicUpload();
     });
 
     //提交表单

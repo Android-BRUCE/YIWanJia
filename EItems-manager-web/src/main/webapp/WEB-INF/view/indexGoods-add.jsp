@@ -20,7 +20,7 @@
 	        <tr>
 	            <td>商品图片:</td>
 	            <td>
-	            	 <a href="javascript:void(0)" class="easyui-linkbutton onePicUpload">上传图片</a>
+	            	 <a href="javascript:void(0)" class="easyui-linkbutton picFileUpload">上传图片</a>
 	                 <input type="hidden" name="image" id="image"/>
 	            </td>
 	        </tr>
@@ -43,7 +43,11 @@
     var itemAddEditor ;
     //页面初始化完毕后执行此方法
     $(function(){
-        TT.initOnePicUpload();
+    //    TT.initOnePicUpload();
+        TAOTAO.init({fun:function(node){
+            //根据商品的分类id取商品 的规格模板，生成规格信息。第四天内容。
+            TAOTAO.changeItemParam(node, "itemAddForm");
+        }});
     });
     //提交表单
     function submitForm(){

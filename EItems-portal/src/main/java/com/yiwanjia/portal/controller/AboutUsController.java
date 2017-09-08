@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("about")
 public class AboutUsController {
 
     @Autowired
@@ -30,30 +29,30 @@ public class AboutUsController {
 //            return roadDevolopment;
 //        }
 
-    @RequestMapping("road")
+    @RequestMapping("aboutDevelopment")
     public String getRoad(Model model){
         TbAboutWithBLOBs roadDevolopment = aboutUsService.getRoadDevolopment();
         model.addAttribute("road",roadDevolopment);
         return "aboutDevelopment";
     }
 
-    @RequestMapping("videoPath")
+    @RequestMapping("aboutPropaganda")
     public String getVideoPath(Model model){
         TbAboutWithBLOBs roadDevolopment = aboutUsService.getVideo();
         model.addAttribute("videoPath",roadDevolopment);
         return "aboutPropaganda";
     }
 
-    @RequestMapping("aboutUs")
+    @RequestMapping("about")
     public String getAboutUs(Model model){
         TbAboutWithBLOBs roadDevolopment = aboutUsService.getAboutUsContent();
         model.addAttribute("aboutUsContent",roadDevolopment);
         return "about";
     }
 
-    @RequestMapping("aboutUsPic")
+    @RequestMapping("aboutHonour")
     public String getaboutUsPic(Model model){
-        TbAboutWithBLOBs roadDevolopment = aboutUsService.getAboutUsContent();
+        TbAboutWithBLOBs roadDevolopment = aboutUsService.getAboutUsPic();
         model.addAttribute("aboutUsPic",roadDevolopment);
         return "aboutHonour";
     }

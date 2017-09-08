@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>杭州钱王万家信息科技有限公司</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="杭州钱王万家信息科技有限公司" />
 	<meta name="author" content="杭州钱王万家信息科技有限公司" />
@@ -34,19 +34,19 @@
 			<div class="row">
 				<!-- social icon-->
 				<div class="col-sm-3">
-					<ul class="social-network">
-						<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>
-						<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
+					<%--<ul class="social-network">--%>
+						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>&ndash;%&gt;--%>
+					<%--</ul>--%>
 				</div>
 				<div class="col-sm-9">
 					<div class="row">
 						<ul class="info">
-							<li><i class="icon-info-blocks material-icons">question_answer</i><span>info@Arrive.com</span></li>
-							<li><i class="icon-info-blocks material-icons">perm_phone_msg</i><span>+(012) 345 6789</span></li>
+							<li><i class="icon-info-blocks material-icons">邮箱地址: </i><span>zjqwwy@163.com</span></li>
+							<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>
 						</ul>
 						<div class="clr"></div>
 					</div>
@@ -66,26 +66,25 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">
+					<a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
 						<%--<i class="icon-info-blocks material-icons">language</i>--%>
-						<img src="/img/top.png" alt="" height="50" width="50" align=""/>
-						易万家科技
+							<img src="${pageContext.request.contextPath}/img/logo.jpg" alt="" height="50" width="50" align=""/>
+							杭州钱王万家信息科技有限公司
 					</a>
 				</div>
 				<div class="navbar-collapse collapse ">
 					<ul class="nav navbar-nav">
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">主页</a></li>
 						<li class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品展示</a></li>
-						<li ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/services.html">服务与支持</a></li>
+						<li ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">服务与支持</a></li>
 						<%--<li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>--%>
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about/aboutUs.html">公司介绍</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news/page.html">公司新闻</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/culture.html">公司文化</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity/page.html">公司活动</a></li>
-								<li><a class="waves-effect waves-dark" href="#">加入我们</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">公司介绍</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">公司新闻</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity.html">公司活动</a></li>
+								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">加入我们</a></li>
 							</ul>
 						</li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
@@ -167,17 +166,17 @@
 						<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper ${pr.name}">
 							<div class="gallery-item">
 								<div class="gallery-thumb">
-									<img src="http://localhost:8080${pr.image}" class="img-responsive" alt="2st ${pr.name}">
+									<img src="${pr.image}" class="img-responsive" alt="2st ${pr.name}">
 									<div class="image-overlay"></div>
-									<a href="http://localhost:8080${pr.image}" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+									<a href="${pr.image}" class="gallery-zoom"><i class="fa fa-eye"></i></a>
 
 								</div>
 								<div class="gallery-details">
 									<div class="editContent">
-										<a href="${pr.id}/detilPortfolio.html"><h5>${pr.goodsttile}</h5></a>
+										<a href="${pageContext.request.contextPath}/${pr.id}/detilPortfolio.html"><h5>${pr.goodsttile}</h5></a>
 									</div>
 									<div class="editContent">
-										<a href="${pr.id}/detilPortfolio.html"><p>${pr.point}</p></a>
+										<a href="${pageContext.request.contextPath}/${pr.id}/detilPortfolio.html"><p>${pr.point}</p></a>
 									</div>
 								</div>
 							</div>

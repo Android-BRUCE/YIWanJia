@@ -4,6 +4,7 @@ import com.github.pagehelper.PageHelper;
 import com.yiwanjia.common.pojo.EUDataGridResult;
 import com.yiwanjia.common.pojo.TaotaoResult;
 import com.yiwanjia.dao.TbGoodsCategoryMapper;
+import com.yiwanjia.dao.TbGoodsMapper;
 import com.yiwanjia.pojo.TbGoodsCategory;
 import com.yiwanjia.pojo.TbGoodsCategoryExample;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,8 @@ import java.util.List;
 public class GoodsCategoryService {
     @Autowired
     private TbGoodsCategoryMapper tbGoodsCategoryMapper;
+    @Autowired
+    private TbGoodsMapper tbGoodsMapper;
 
     public TaotaoResult addGoodsCategory(TbGoodsCategory tbGoodsCategory){
 
@@ -66,6 +69,11 @@ public class GoodsCategoryService {
         criteria.andStatusEqualTo(1);
          List<TbGoodsCategory> list = tbGoodsCategoryMapper.selectByExample(example);
         return list;
+    }
+
+    public long getCountByCID(long id){
+        long count = tbGoodsMapper.countByCID(id);
+        return count;
     }
 }
 

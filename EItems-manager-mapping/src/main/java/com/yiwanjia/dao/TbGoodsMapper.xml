@@ -130,6 +130,16 @@
     </if>
   </delete>
   <!--===================================================自定义select 链表=====start============================================-->
+  <select id="countByCID" parameterType="java.lang.Long" resultType="java.lang.Long">
+    SELECT COUNT(*) FROM tb_goods a WHERE a.cid=#{cid,jdbcType=BIGINT}
+  </select>
+
+
+  <!--===================================================自定义select 链表=====end============================================-->
+
+
+
+  <!--===================================================自定义select 链表=====start============================================-->
 <select id="selectUnionCategory" resultType="com.yiwanjia.pojo.TbGoods" >
   SELECT a.id,a.GoodsTtile,a.image,a.CreateTime,a.UpdateTime,a.point,a.cid,b.name FROM tb_goods a , tb_GoodsCategory b WHERE a.`cid`=b.`id`
 </select>
@@ -145,7 +155,17 @@
     </foreach>
   </delete>
   <!--===================================================批量删除=====end============================================-->
+  <!--===================================================自定义select 链表=====start============================================-->
+  <select id="selectUnionCategory" resultType="com.yiwanjia.pojo.TbGoods" parameterType="">
+    SELECT * FROM tb_goods
+    <where>
+      <if test=""></if>
 
+    </where>
+
+</select>
+
+  <!--===================================================自定义select 链表=================================================-->
 
   <insert id="insert" parameterType="com.yiwanjia.pojo.TbGoods">
     insert into tb_goods (id, GoodsTtile, image, 

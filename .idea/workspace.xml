@@ -2,123 +2,36 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="EItems-portal:war exploded" />
+      <artifact name="EItems-manager-web:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9fda87d-8d88-4571-80c0-f3ec2e83cc10" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/img/logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/app1_20170908151237.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/app_20170908151237.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/gong2_20170908151221.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/gong_20170908151221.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_EItems_EItems_common_1_0_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/JoinUsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/JoinUsController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/joinUs.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/JoinUsController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/SupportController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/service/JoinUsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/support.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/skin/images/frame/logo.gif" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/skin/images/frame/logo.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/EItems_manager_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/EItems_manager_web_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/EItems_portal_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/EItems_portal_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_29.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_29.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_miemiedev_mybatis_paginator_1_2_15.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_miemiedev_mybatis_paginator_1_2_15.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_api_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_api_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_32.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_32.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_solr_solr_solrj_4_10_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_solr_solr_solrj_4_10_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_wstx_asl_3_2_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_wstx_asl_3_2_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_noggit_noggit_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_noggit_noggit_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_5_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_2_5_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_5_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_5_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_5_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_5_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_5_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_2_5_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_5_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_5_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_7_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_7_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/erweima.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-manager-pojo/src/main/java/com/yiwanjia/pojo/QueryConditions.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/app1_20170908151237.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/app_20170908151237.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/bg_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/gong2_20170908151221.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/gong_20170908151221.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-mapping/EItems-manager-mapping.iml" afterPath="$PROJECT_DIR$/EItems-manager-mapping/EItems-manager-mapping.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-pojo/EItems-manager-pojo.iml" afterPath="$PROJECT_DIR$/EItems-manager-pojo/EItems-manager-pojo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/EItems-manager-service.iml" afterPath="$PROJECT_DIR$/EItems-manager-service/EItems-manager-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/EItems-manager-web.iml" afterPath="$PROJECT_DIR$/EItems-manager-web/EItems-manager-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/about_activity.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/about_activity.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/about_activity_add.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/about_activity_add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/about_news_add.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/about_news_add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/banner-add.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/banner-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/companyPic.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/companyPic.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/companyRoad.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/companyRoad.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/contact-add.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/contact-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/contact.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/contact.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/goods-add.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/goods-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/index.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/indexGoods-add.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/indexGoods-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/menu.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/menu.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/top.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/top.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager/EItems-manager.iml" afterPath="$PROJECT_DIR$/EItems-manager/EItems-manager.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/EItems-portal.iml" afterPath="$PROJECT_DIR$/EItems-portal/EItems-portal.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/AboutUsController.java" afterPath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/AboutUsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/ActivityController.java" afterPath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/ActivityController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/NewsController.java" afterPath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/NewsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/resources/spring/applicationContext-dao.xml" afterPath="$PROJECT_DIR$/EItems-portal/src/main/resources/spring/applicationContext-dao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/ActivityPages.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/ActivityPages.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/about.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/about.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/aboutDevelopment.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/aboutDevelopment.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/aboutHonour.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/aboutHonour.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/aboutPropaganda.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/aboutPropaganda.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/activity.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/activity.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/contact.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/contact.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-mapping/src/main/java/com/yiwanjia/dao/TbGoodsMapper.java" afterPath="$PROJECT_DIR$/EItems-manager-mapping/src/main/java/com/yiwanjia/dao/TbGoodsMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-mapping/src/main/java/com/yiwanjia/dao/TbGoodsMapper.xml" afterPath="$PROJECT_DIR$/EItems-manager-mapping/src/main/java/com/yiwanjia/dao/TbGoodsMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/BannerService.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/BannerService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/GoodsCategoryService.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/GoodsCategoryService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/GoodsService.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/GoodsService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/BannerController.java" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/BannerController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/GoodsCategoryContorller.java" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/GoodsCategoryContorller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/GoodsController.java" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/GoodsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/Goods.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/Goods.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/banner-edit.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/banner-edit.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/goodsCategory.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/goodsCategory.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/js/common2.js" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/js/common2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/js/easyUIShow-category.js" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/js/easyUIShow-category.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/js/easyUIShow.js" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/js/easyUIShow.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/index.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/joinUs.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/joinUs.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/news.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/news.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/newsPages.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/newsPages.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/portfolio.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/portfolio.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/portfolioPage.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/portfolioPage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/about_bak.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/about_bak" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/culture.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/culture.jsp.bak" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/pricing.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/pricing.bak" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/services.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/services.bak" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -155,64 +68,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Bar.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/Bar.gif">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="280" column="102" lean-forward="false" selection-start-line="280" selection-start-column="102" selection-end-line="280" selection-end-column="102" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/about.jpg">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bg2.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/bg2.gif">
+      <file leaf-file-name="about1.jpg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/about1.jpg">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login_tit.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/Login_tit.gif">
+      <file leaf-file-name="ind_news_bg.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/ind_news_bg.jpg">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login_line.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/Login_line.gif">
+      <file leaf-file-name="service11.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/service11.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu01.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/menu01.gif">
+      <file leaf-file-name="service21.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/service21.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu01_right.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/menu01_right.gif">
+      <file leaf-file-name="service31.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/service31.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Menu_BG.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/Menu_BG.gif">
+      <file leaf-file-name="slider-arrow_left02.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/slider-arrow_left02.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="paymentsby_01.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/paymentsby_01.gif">
+      <file leaf-file-name="slider-arrow_left03.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/slider-arrow_left03.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qqonline.gif" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/qqonline.gif">
+      <file leaf-file-name="slider-arrow_right02.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/slider-arrow_right02.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -232,9 +155,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>waves-dark</find>
-      <find>tt</find>
-      <find>selectByPrimaryKey</find>
       <find>deleteByExample</find>
       <find>QUERYID</find>
       <find>BaseResultMap</find>
@@ -262,6 +182,9 @@
       <find>1.</find>
       <find>1.h</find>
       <find>1.j</find>
+      <find>update</find>
+      <find>selectUnionCategory</find>
+      <find>selectByExampleWithBLOBs</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -275,24 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/js/kindeditor-4.1.10/plugins/template/html/2.html" />
-        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/js/kindeditor-4.1.10/plugins/template/html/3.html" />
-        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/js/kindeditor-4.1.10/kindeditor-all.js" />
-        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/js/kindeditor-4.1.10/plugins/template/html/1.jsp" />
-        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/js/kindeditor-4.1.10/lang/ar.js" />
-        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/js/kindeditor-4.1.10/plugins/template/html/2.html" />
-        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/js/kindeditor-4.1.10/kindeditor-all.js" />
-        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/js/kindeditor-4.1.10/kindeditor-all-min.js" />
-        <option value="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/service/SupportService.java" />
-        <option value="$PROJECT_DIR$/EItems-portal/src/main/resources/spring/applicationContext-dao.xml" />
-        <option value="$PROJECT_DIR$/EItems-portal/src/main/webapp/css/style.css" />
-        <option value="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/Support.jsp" />
-        <option value="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/SupportController.java" />
-        <option value="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/NewsController.java" />
-        <option value="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/culture.jsp" />
-        <option value="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/services.jsp" />
-        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/companyRoad.jsp" />
-        <option value="D:/maven/my_local_repository/org/springframework/spring-beans/4.2.5.RELEASE/spring-beans-4.2.5.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class" />
         <option value="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/JoinUsService.java" />
         <option value="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/JoinUsController.java" />
         <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/joinUs.jsp" />
@@ -323,9 +228,27 @@
         <option value="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/news.jsp" />
         <option value="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/ActivityPages.jsp" />
         <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/menu.jsp" />
-        <option value="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/index.jsp" />
         <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/contact.jsp" />
         <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/about_activity.jsp" />
+        <option value="$PROJECT_DIR$/EItems-portal/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/js/easyUIShow.js" />
+        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/BannerController.java" />
+        <option value="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/BannerService.java" />
+        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/js/common2.js" />
+        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/banner-edit.jsp" />
+        <option value="$PROJECT_DIR$/EItems-manager-mapping/src/main/java/com/yiwanjia/dao/TbGoodsCategoryMapper.xml" />
+        <option value="$PROJECT_DIR$/EItems-manager-mapping/src/main/java/com/yiwanjia/dao/TbGoodsMapper.java" />
+        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/EItems-manager-mapping/src/main/java/com/yiwanjia/dao/TbGoodsCategoryMapper.java" />
+        <option value="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/GoodsCategoryService.java" />
+        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/GoodsCategoryContorller.java" />
+        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/goodsCategory.jsp" />
+        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/js/easyUIShow-category.js" />
+        <option value="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/Goods.jsp" />
+        <option value="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/GoodsService.java" />
+        <option value="$PROJECT_DIR$/EItems-manager-pojo/src/main/java/com/yiwanjia/pojo/QueryConditions.java" />
+        <option value="$PROJECT_DIR$/EItems-manager-mapping/src/main/java/com/yiwanjia/dao/TbGoodsMapper.xml" />
+        <option value="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/index.jsp" />
       </list>
     </option>
   </component>
@@ -372,9 +295,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="40" />
-    <option name="y" value="12" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-46" />
+    <option name="y" value="22" />
     <option name="width" value="1360" />
     <option name="height" value="726" />
   </component>
@@ -422,6 +345,76 @@
             <path>
               <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
               <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-manager-mapping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-manager-mapping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-manager-mapping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-manager-mapping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-manager-mapping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-manager-pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-manager-pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-manager-pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-manager-pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-manager-pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
@@ -509,45 +502,7 @@
               <item name="EItems-manager-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
-              <item name="EItems-manager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
-              <item name="EItems-manager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="skin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
-              <item name="EItems-manager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="skin" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
-              <item name="EItems-manager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="skin" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="frame" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
@@ -562,6 +517,104 @@
               <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
               <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
               <item name="EItems-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-portal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YIWanJia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YIWanJia" type="462c0819:PsiDirectoryNode" />
+              <item name="EItems-portal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
@@ -591,9 +644,9 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\git_work_space\YIWanJia\EItems-manager-web\src\main\webapp\skin\images\frame" />
       <recent name="D:\git_work_space\YIWanJia\EItems-portal\src\main\webapp\img" />
       <recent name="D:\git_work_space\YIWanJia\EItems-portal\src\main\webapp\img\public" />
+      <recent name="D:\git_work_space\YIWanJia\EItems-manager-web\src\main\webapp\skin\images\frame" />
       <recent name="D:\git_work_space\YIWanJia\EItems-portal\src\main\webapp\WEB-INF\view" />
       <recent name="D:\git_work_space\YIWanJia\EItems-manager-web\src\main\webapp\WEB-INF\view" />
     </key>
@@ -621,7 +674,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.portal">
+  <component name="RunManager" selected="Tomcat Server.manager">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1366,7 +1419,7 @@
       <workItem from="1504486780609" duration="4927000" />
       <workItem from="1504492043299" duration="3274000" />
       <workItem from="1504495358199" duration="91310000" />
-      <workItem from="1504784971836" duration="27413000" />
+      <workItem from="1504784971836" duration="47360000" />
     </task>
     <servers />
   </component>
@@ -1403,7 +1456,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="462774000" />
+    <option name="totallyTimeSpent" value="482721000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1415,7 +1468,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="12" width="1360" height="726" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29387188" sideWeight="0.5028653" order="15" side_tool="true" content_ui="tabs" />
@@ -1439,8 +1492,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37883008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286517" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286517" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1769663" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2830769" sideWeight="0.14044943" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13927576" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27836612" sideWeight="0.14044943" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30818966" sideWeight="0.85955054" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1480,7 +1533,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="264" />
+      <option name="time" value="279" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1489,379 +1542,301 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/about_bak">
+    <entry file="file://$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/GoodsCategoryService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/service/JoinUsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/JoinUsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/pricing.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/newsPages.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="34" column="73" lean-forward="false" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/support.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="34" column="73" lean-forward="false" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/about_activity_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="27" column="87" lean-forward="false" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/about_news_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" column="87" lean-forward="false" selection-start-line="27" selection-start-column="87" selection-end-line="27" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/companyRoad.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="53" selection-end-column="13" />
+        <state relative-caret-position="437">
+          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/companyPic.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="35" column="87" lean-forward="false" selection-start-line="35" selection-start-column="74" selection-end-line="35" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/contact-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/goods-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="252" column="12" lean-forward="false" selection-start-line="252" selection-start-column="12" selection-end-line="252" selection-end-column="12" />
-          <folding>
-            <marker date="1504875247327" expanded="true" signature="2388:2398" ph="..." />
-            <marker date="1504875247327" expanded="true" signature="2845:2885" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/goodsCategory-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="50" column="35" lean-forward="true" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/banner-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="26" column="83" lean-forward="false" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/indexGoods-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="22" column="88" lean-forward="false" selection-start-line="22" selection-start-column="88" selection-end-line="22" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/joinUs.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="44" column="48" lean-forward="true" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-247">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/top.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="147" column="99" lean-forward="false" selection-start-line="147" selection-start-column="99" selection-end-line="147" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/user.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/portfolio.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="178" column="84" lean-forward="false" selection-start-line="178" selection-start-column="84" selection-end-line="178" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/portfolioPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456">
-          <caret line="123" column="35" lean-forward="false" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/NewsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="55" column="31" lean-forward="false" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/news.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="95" column="73" lean-forward="false" selection-start-line="95" selection-start-column="73" selection-end-line="95" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/joinUs.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="35" column="73" lean-forward="false" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/culture.jsp.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="62" column="132" lean-forward="false" selection-start-line="62" selection-start-column="132" selection-end-line="62" selection-end-column="132" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/contact.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="44" column="81" lean-forward="false" selection-start-line="44" selection-start-column="81" selection-end-line="44" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/ActivityPages.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="116" column="46" lean-forward="false" selection-start-line="116" selection-start-column="46" selection-end-line="116" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/activity.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-969">
-          <caret line="36" column="77" lean-forward="false" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/aboutPropaganda.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/aboutHonour.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1615">
-          <caret line="47" column="81" lean-forward="false" selection-start-line="47" selection-start-column="81" selection-end-line="47" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/aboutDevelopment.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1615">
-          <caret line="35" column="73" lean-forward="false" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/about.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2527">
-          <caret line="46" column="81" lean-forward="false" selection-start-line="46" selection-start-column="81" selection-end-line="46" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="47" column="42" lean-forward="false" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/banner-edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-639">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/contact.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2413">
-          <caret line="172" column="136" lean-forward="false" selection-start-line="172" selection-start-column="136" selection-end-line="172" selection-end-column="136" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/about_activity.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/ServerAndSupport.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-570">
+        <state relative-caret-position="-1482">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/admin_p.gif">
+    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/Goods.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="56" column="69" lean-forward="true" selection-start-line="56" selection-start-column="69" selection-end-line="56" selection-end-column="69" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#td#3;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/GoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-manager-mapping/src/main/java/com/yiwanjia/dao/TbGoodsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-manager-pojo/src/main/java/com/yiwanjia/pojo/QueryConditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-manager-mapping/src/main/java/com/yiwanjia/dao/TbGoodsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="161" column="23" lean-forward="true" selection-start-line="161" selection-start-column="23" selection-end-line="161" selection-end-column="23" />
+          <folding>
+            <marker date="1504942145658" expanded="true" signature="4431:4581" ph="select , fro... " />
+            <marker date="1504942145658" expanded="true" signature="4664:4721" ph="delete from " />
+            <marker date="1504942145658" expanded="true" signature="4819:4839" ph="delete from " />
+            <marker date="1504942145658" expanded="true" signature="5161:5227" ph="SELECT COUNT... tb_goods" />
+            <marker date="1504942145658" expanded="true" signature="5573:5710" ph="SELECT a.id,... tb_goods" />
+            <marker date="1504942145658" expanded="true" signature="6528:6550" ph="SELECT * FRO... tb_goods" />
+            <marker date="1504942145658" expanded="true" signature="6528:6555" ph="SELECT * FRO... tb_goods" />
+            <marker date="1504942145658" expanded="true" signature="6805:7173" ph="insert into tb_goods... " />
+            <marker date="1504942145658" expanded="true" signature="8713:8742" ph="select count... tb_goods" />
+            <marker date="1504942145658" expanded="true" signature="9985:10420" ph="update tb_go... " />
+            <marker date="1504942145658" expanded="true" signature="10591:10966" ph="update tb_go... " />
+            <marker date="1504942145658" expanded="true" signature="11171:11912" ph="update tb_go... " />
+            <marker date="1504942145658" expanded="true" signature="12015:12397" ph="update tb_go... " />
+            <marker date="1504942145658" expanded="true" signature="12491:12820" ph="update tb_go... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/avatar.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/arrow.gif">
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/bg_direction_nav.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/Bar.gif">
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/logo.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/bg2.gif">
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/wanjiaweixin.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/Login_tit.gif">
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/slider-arrow_right03.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/Login_line.gif">
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/slider-arrow_right01.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/menu01.gif">
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/client1.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/menu01_right.gif">
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/client2.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/Menu_BG.gif">
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/glyphicons-halflings.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/paymentsby_01.gif">
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/nivo-bullets.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/images/qqonline.gif">
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/top.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/skin/images/frame/logo.gif">
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/top.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/works/x1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/works/x2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/works/x3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/works/7.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/works/4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/works/3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/works/2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/works/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/dev1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/client3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/css/public/default/service31.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/css/public/default/service32.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/css/public/default/service21.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/css/public/default/service22.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/css/public/default/service12.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/css/public/default/service11.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/app1_20170908151237.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/app_20170908151237.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/gong_20170908151221.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/gong2_20170908151221.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/service21.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/service31.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/slider-arrow_left02.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/slider-arrow_left03.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/slider-arrow_right02.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/bg_1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/service11.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/ind_news_bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/about.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="280" column="102" lean-forward="false" selection-start-line="280" selection-start-column="102" selection-end-line="280" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/img/about1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>

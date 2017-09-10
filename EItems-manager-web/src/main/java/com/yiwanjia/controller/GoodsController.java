@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
@@ -74,5 +75,11 @@ public class GoodsController {
     public TaotaoResult deleteGoodByIds(@PathVariable int[] id){
         TaotaoResult result = goodsService.deleteGoods(id);
         return result;
+    }
+    @RequestMapping("query/count")
+    @ResponseBody
+    public long getCountByCID(@RequestParam(value = "cid") long cid){
+        long ccount = goodsService.getCountByCID(cid);
+        return ccount;
     }
 }

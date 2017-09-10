@@ -46,9 +46,8 @@
                         <td width='160'>
                             <select name='cid' style='width:150' id="cid">
                                 <option value='0'>选择类型...</option>
-                                <option value='1'>角色编号</option>
-                                <option value='2'>角色名称</option>
-                                <option value='3'>角色状态</option>
+                                <option value='cid'>分类id号</option>
+                                <option value='goodsttile'>产品名称</option>
                             </select>
                         </td>
                         <td width='70'>

@@ -6,10 +6,8 @@ import com.yiwanjia.pojo.TbBanner;
 import com.yiwanjia.service.BannerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 import javax.xml.ws.RequestWrapper;
 
@@ -43,5 +41,29 @@ public class BannerController {
     public TaotaoResult deleteBanner(@PathVariable int id){
         TaotaoResult result = bannerService.deleteBanner(id);
         return result;
+    }
+
+    /**
+     * 获取banner信息跳转到修改页面
+     * @param id
+     * @param Model
+     * @return
+     */
+    @RequestMapping("edit")
+    public String getBnanerById(@RequestParam(value = "id") int id, Model Model){
+        TbBanner banner = bannerService.getBannerById(id);
+        Model.addAttribute("banner",banner);
+        return "banner-edit";
+    }
+
+    /**
+     * 修改banner
+     * @return
+     */
+    @RequestMapping("saveEdit")
+    @ResponseBody
+    public TaotaoResult editBanner(TbBanner TbBanner){
+        TaotaoResult taotaoResult = bannerService.updateBanner(TbBanner);
+        return taotaoResult;
     }
 }

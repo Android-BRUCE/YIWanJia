@@ -2,7 +2,7 @@ $(function(){
     var editing;
     var flag;
     $("#tt").datagrid({
-        width:1200,
+        width:1500,
         height: 600,
         collapsible:true,
         //idField:"id",只能选中一个行
@@ -13,7 +13,7 @@ $(function(){
         striped:true,
         columns:[[
             {field:"ck",checkbox:true, width:50},
-            {field:"id",title:"主键", width:0,hidden:true},
+            {field:"id",title:"分类ID号", width:50,align:"center"},
             {field:"name",title:"分类名称",width:50,align:"center"},
             {field:"status",title:"状态",width:200,align:"center",
                 formatter:function(value,row,index){
@@ -81,7 +81,7 @@ $(function(){
                     var cid = document.getElementById("cid").value;
                     $("#tt").datagrid(//重定向url
                         {
-                            url:"${pageContext.request.contextPath}/role/dimRole.do?keyword="+keyword+"&cid="+cid
+                            url:"role/dimRole.do?keyword="+keyword+"&cid="+cid
                         }
                     );
                 }

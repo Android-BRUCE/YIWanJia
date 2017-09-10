@@ -8,6 +8,7 @@
 <meta name="description" content="杭州钱王万家信息科技有限公司" />
 <meta name="author" content="杭州钱王万家信息科技有限公司" />
 <!-- css -->
+
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/materialize/css/materialize.min.css" media="screen,projection" />
 	<link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet" />
@@ -18,6 +19,11 @@
 	<link href="${pageContext.request.contextPath}/css/public/default/css-outM/common.js" rel="stylesheet" />
 	<link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" />
 
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/script/jquery.min.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/script/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/script/countUp.min.js"></script>
+	<script src="${pageContext.request.contextPath}/js/script/common.js" type="text/javascript"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/css/public/default/css-outM/jquery.SuperSlide.2.1.1.js"></script>
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -64,7 +70,7 @@
                     </button>
                     <a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
 						<%--<i class="icon-info-blocks material-icons">language</i>--%>
-							<img src="${pageContext.request.contextPath}/img/logo.jpg" alt="" height="50" width="50" align=""/>
+							<img src="${pageContext.request.contextPath}/img/logo.png" alt="" height="50" width="50" align=""/>
 							杭州钱王万家信息科技有限公司
 					</a>
                 </div>
@@ -109,45 +115,43 @@
 		</section>
 	<!-- end slider -->
 	</section>
+
+
+
+	<!-- ###################start####################-->
 	<section class="section-padding gray-bg">
-	<div class="ind_zszk_box" style=" padding:50px 0 50px 0;">
-		<ul class="zszk_icon">
-			<li>
-				<A href="####">
-					<i class="icon icon01"></i>
-					<div class="text">
-						<h1>环卫云平台</h1>
-						<p class="ms">提供环卫服务，为客户提供专业化的订制服务</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h2>Our <strong>Business</strong></h2>
+						<p>Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada Pellentesque <br>ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
 					</div>
-				</A>
-			</li>
-			<li>
-				<A href="####">
-					<i class="icon icon02"></i>
-					<div class="text">
-						<h1>垃圾分类云平台</h1>
-						<p class="ms">利用物联网、互联网融合技术，实现垃圾投放的有源可溯</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="about-image">
+						<img src="${pageContext.request.contextPath}/img/about.jpg" alt="About Images">
 					</div>
-				</A>
-			</li>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="about-text">
+						<p>Grids is a responsive Multipurpose Template. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
 
-			<li>
-				<A href="####">
-					<i class="icon icon03"></i>
-					<div class="text">
-						<h1>公路云平台</h1>
-						<p class="ms">实现对施工过程的监控，提升养护清洁作业质量</p>
-					</div>
-				</A>
-			</li>
-			<div id="clear"></div>
-		</ul>
-	</div>
+						<p>Grids is a responsive Multipurpose Template. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
 
+						<p>Grids is a responsive Multipurpose Template. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
+	<!-- ################end#######################-->
+
 
 	<div id="clear" ></div>
-
 	<section class="section-padding gray-bg">
 
 		<div id="ind_box_service">
@@ -183,50 +187,59 @@
 
 		</div>
 		<!--================================================= -->
+		<section class="section-padding gray-bg">
+			<div class="ind_zszk_box" style=" padding:50px 0 50px 0;">
+				<ul class="zszk_icon">
+					<li>
+						<A href="####">
+							<i class="icon icon01"></i>
+							<div class="text">
+								<h1>环卫云平台</h1>
+								<p class="ms">提供环卫服务，为客户提供专业化的订制服务</p>
+							</div>
+						</A>
+					</li>
+					<li>
+						<A href="####">
+							<i class="icon icon02"></i>
+							<div class="text">
+								<h1>垃圾分类云平台</h1>
+								<p class="ms">利用物联网、互联网融合技术，实现垃圾投放的有源可溯</p>
+							</div>
+						</A>
+					</li>
+
+					<li>
+						<A href="####">
+							<i class="icon icon03"></i>
+							<div class="text">
+								<h1>公路云平台</h1>
+								<p class="ms">实现对施工过程的监控，提升养护清洁作业质量</p>
+							</div>
+						</A>
+					</li>
+					<div id="clear"></div>
+				</ul>
+			</div>
+		</section>
+
+
 	</section>
 
 
 
 	
-	<section class="section-padding gray-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-title text-center">
-						<h2>Our <strong>Business</strong></h2>
-						<p>Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada Pellentesque <br>ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row"> 
-				<div class="col-md-6 col-sm-6">
-					<div class="about-image">
-						<img src="${pageContext.request.contextPath}/img/about.jpg" alt="About Images">
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="about-text">
-						<p>Grids is a responsive Multipurpose Template. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
 
-						<p>Grids is a responsive Multipurpose Template. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
 
-						<p>Grids is a responsive Multipurpose Template. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="content">
-		<div class="case_hd">
-			<ul>
-				<li><A href="####"><img src="${pageContext.request.contextPath}/img/works/x1.jpg" /></A></li>
-				<li><A href="####"><img src="${pageContext.request.contextPath}/img/works/x2.jpg" /></A></li>
-				<li><A href="####"><img src="${pageContext.request.contextPath}/img/works/x3.jpg" /></A></li>
-			</ul>
-		</div>
-	</section>
+	<%--<section id="content">--%>
+		<%--<div class="case_hd">--%>
+			<%--<ul>--%>
+				<%--<li><A href="####"><img src="${pageContext.request.contextPath}/img/works/x1.jpg" /></A></li>--%>
+				<%--<li><A href="####"><img src="${pageContext.request.contextPath}/img/works/x2.jpg" /></A></li>--%>
+				<%--<li><A href="####"><img src="${pageContext.request.contextPath}/img/works/x3.jpg" /></A></li>--%>
+			<%--</ul>--%>
+		<%--</div>--%>
+	<%--</section>--%>
 	<footer>
 	<div class="container">
 		<div class="row">
@@ -264,9 +277,9 @@
 					</ul>
 				</div>
 			</div>
-				<img src="${pageContext.request.contextPath}/img/public/gong2_20170908151221.jpg" alt="" height="135" width="135" align="">
-			&nbsp;&nbsp;
-			<img src="${pageContext.request.contextPath}/img/public/app1_20170908151237.jpg" alt="" height="135" width="135" align="">
+			<div class="col-sm-3">
+				<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="220" width="290" align="">
+			</div>
 		<%--<p>&nbsp;&nbsp;&nbsp;&nbsp;公众号</p>--%>
 </div>
 
@@ -312,10 +325,6 @@
 
 <script src="${pageContext.request.contextPath}/contact/jqBootstrapValidation.js"></script>
 <script src="${pageContext.request.contextPath}/contact/contact_me.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/script/jquery.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/script/jquery.SuperSlide.2.1.1.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/script/countUp.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/script/common.js" type="text/javascript"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/css/public/default/css-outM/jquery.SuperSlide.2.1.1.js"></script>
+
 </body>
 </html>

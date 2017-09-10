@@ -9,7 +9,7 @@ public interface TbGoodsMapper {
     long countByExample(TbGoodsExample example);
 
     List<TbGoods> selectUnionCategory();
-
+    long countByCID(long id);
     int deleteByExample(TbGoodsExample example);
 
     int deleteByPrimaryKey(Long id);

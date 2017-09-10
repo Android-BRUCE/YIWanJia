@@ -79,6 +79,9 @@ public class BannerService{
 
         //设置更新时间
         tbBanner.setUpdatetime(new Date());
+        if (tbBanner.getImage() == ""){
+            tbBanner.setImage(null);
+        }
 //        int id = tbBanner.getId();
 //        TbBannerExample example = new TbBannerExample();
 //        TbBannerExample.Criteria criteria = example.createCriteria();
@@ -93,4 +96,13 @@ public class BannerService{
         return TaotaoResult.build(200,"更新成功!");
     }
 
+    /**
+     * 根据id获取信息
+     * @param id
+     * @return
+     */
+    public TbBanner getBannerById(int id){
+        TbBanner tbBanner = tbBannerMapper.selectByPrimaryKey(id);
+        return  tbBanner;
+    }
 }

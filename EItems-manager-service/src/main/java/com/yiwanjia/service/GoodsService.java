@@ -61,4 +61,15 @@ public class GoodsService {
         }
         return TaotaoResult.build(200,"产品删除成功！");
     }
+
+    /**
+     * 查询产品中是否存在分类id号
+     * @param id
+     * @return
+     */
+    public long getCountByCID(long id){
+        long count = tbGoodsMapper.countByCID(id);
+        return count;
+    }
+
 }

@@ -43,7 +43,15 @@ public class GoodsCategoryContorller {
     @ResponseBody
     @RequestMapping("{ids}/delete")
     public TaotaoResult deleteGoodsCategory(@PathVariable int[] ids){
-        TaotaoResult result = goodsCategoryService.deleteGoodsCategory(ids);
+        TaotaoResult result = null;
+        for(int id:ids){
+           long count =  goodsCategoryService.getCountByCID((long)id);
+           if(count != 0){
+               result = TaotaoResult.build(500,"无法删除已使用的分类！请删除或者修改相应产品的分类!");
+               return result;
+           }
+        }
+        result = goodsCategoryService.deleteGoodsCategory(ids);
         return result;
     }
 

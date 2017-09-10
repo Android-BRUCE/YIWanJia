@@ -25,16 +25,7 @@ $(function(){
             }},
 
             {field:"title",title:"标题显示",width:50,align:"center"},
-            {field:"point",title:"要点显示",width:80,align:"center",
-                editor:{
-                    type:"validatebox",
-                    options:{
-                        required:true,
-                        validType:"usernameLength[4,12]",
-                        missingMessage:"角色名称必填"
-                    }
-                }
-            },
+            {field:"point",title:"要点显示",width:80,align:"center"},
             {field:"status",title:"轮播状态",width:20,align:"center",
                 formatter:function(value,rowData,rowIndex){
                     if(value==1)
@@ -91,10 +82,10 @@ $(function(){
                             var ids="";
                             for(var i=0;i<rows.length;i++)
                             {
-                                ids=ids+rows[i].r_id+",";
+                                ids=ids+rows[i].id+",";
                             }
                             ids=ids.substring(0,ids.length-1);
-                            var path = "${pageContext.request.contextPath}/role/role_edit.do?r_id="+ids;
+                            var path = "banner/edit.do?id="+ids;
                             window.location=path;
                         }
                         /*                                 //增加一行

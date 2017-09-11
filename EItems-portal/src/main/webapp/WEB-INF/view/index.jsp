@@ -278,7 +278,7 @@
 				</div>
 			</div>
 			<div class="col-sm-3">
-				<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="220" width="290" align="">
+				<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="180" width="290" align="">
 			</div>
 		<%--<p>&nbsp;&nbsp;&nbsp;&nbsp;公众号</p>--%>
 </div>

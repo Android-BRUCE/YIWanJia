@@ -54,7 +54,7 @@
              <dt onClick='showHide("items1_1")'><b>服务与支持</b></dt>
              <dd style='display:none' class='sitem' id='items1_1'>
                  <ul class='sitemu'>
-                     <li><a href='${pageContext.request.contextPath}/ServerAndSupport.html' target='main'>服务与支持修改</a> </li>
+                     <li><a href='${pageContext.request.contextPath}/jump/support.html?id=1' target='main'>服务与支持修改</a> </li>
                  </ul>
              </dd>
          </dl>
@@ -74,10 +74,10 @@
         <dt onClick='showHide("items4_1")'><b>公司介绍管理</b></dt>
         <dd style='display:none' class='sitem' id='items4_1'>
           <ul class='sitemu'>
-            <li><a href='${pageContext.request.contextPath}/companyIntroduction.html' target='main'>公司介绍更改</a> </li>
+            <li><a href='${pageContext.request.contextPath}/company/companyIntroduction.html' target='main'>公司介绍更改</a> </li>
             <li><a href='${pageContext.request.contextPath}/companyPic.html' target='main'>更换荣誉资质图片</a> </li>
-            <li><a href='${pageContext.request.contextPath}/companyRoad.html' target='main'>修改发展历程</a> </li>
-            <li><a href='${pageContext.request.contextPath}/companyVideo.html'>更换宣传视频</a> </li>
+            <li><a href='${pageContext.request.contextPath}/company/companyRoad.html' target='main'>修改发展历程</a> </li>
+            <li><a href='${pageContext.request.contextPath}/company/companyVideo.html'>更换宣传视频</a> </li>
           </ul>
         </dd>
       </dl>

@@ -71,9 +71,38 @@ public class GoodsCategoryService {
         return list;
     }
 
+    /**
+     * 根据分类id号查询是否有产品在使用这个分类名称
+     * @param id
+     * @return
+     */
     public long getCountByCID(long id){
         long count = tbGoodsMapper.countByCID(id);
         return count;
+    }
+
+    /**
+     * 根据id获取分类信息
+     * @param id
+     * @return
+     */
+    public TbGoodsCategory getGoodsCategory(long id){
+        TbGoodsCategory tbGoodsCategory = tbGoodsCategoryMapper.selectByPrimaryKey(id);
+        return tbGoodsCategory;
+    }
+
+    /**
+     * 修改信息
+     * @param TbGoodsCategory
+     * @return
+     */
+    public TaotaoResult updateCategoryInfo(TbGoodsCategory TbGoodsCategory){
+        TbGoodsCategory.setUpdatetime(new Date());
+        int result = tbGoodsCategoryMapper.updateByPrimaryKeySelective(TbGoodsCategory);
+        if(result==0){
+            return TaotaoResult.build(500,"修改分类信息失败！");
+        }
+        return TaotaoResult.build(200,"修改信息成功！");
     }
 }
 

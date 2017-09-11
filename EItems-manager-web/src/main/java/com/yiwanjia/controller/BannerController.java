@@ -26,6 +26,9 @@ public class BannerController {
     @RequestMapping(value="save",method = RequestMethod.POST)
     @ResponseBody
     public TaotaoResult insertBanner(TbBanner banner){
+        if (banner.getStatus()==null){
+            return TaotaoResult.build(500,"请选择轮播状态喔~");
+        }
         TaotaoResult result = bannerService.addBanner(banner);
         return result;
     }
@@ -63,6 +66,9 @@ public class BannerController {
     @RequestMapping("saveEdit")
     @ResponseBody
     public TaotaoResult editBanner(TbBanner TbBanner){
+        if (TbBanner.getStatus()==null){
+            return TaotaoResult.build(500,"请选择轮播状态喔~");
+        }
         TaotaoResult taotaoResult = bannerService.updateBanner(TbBanner);
         return taotaoResult;
     }

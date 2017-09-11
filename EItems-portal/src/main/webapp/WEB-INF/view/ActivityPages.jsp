@@ -53,7 +53,7 @@
 					</button>
 					<a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
 						<%--<i class="icon-info-blocks material-icons">language</i>--%>
-							<img src="${pageContext.request.contextPath}/img/logo.jpg" alt="" height="50" width="50" align=""/>
+							<img src="${pageContext.request.contextPath}/img/logo.png" alt="" height="50" width="50" align=""/>
 							杭州钱王万家信息科技有限公司
 					</a>
 				</div>
@@ -124,55 +124,50 @@
 	</div>
 
 	</section>
-	<footer>
+<footer>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">
 				<div class="widget">
-					<h5 class="widgetheading">Our Contact</h5>
+					<h5 class="widgetheading">联系方式</h5>
 					<address>
-					<strong>Bootstrap company Inc</strong><br>
-					JC Main Road, Near Silnile tower<br>
-					 Pin-21542 NewYork US.</address>
+						<strong>杭州钱王万家信息科技有限公司</strong><br>
+						杭州临安市青山湖街道958号<br>
+						科创大楼A603</address>
 					<p>
-						<i class="icon-phone"></i> (123) 456-789 - 1255-12584 <br>
-						<i class="icon-envelope-alt"></i> email@domainname.com
+						<i class="icon-phone"></i>电话：0571-61099111<br>
+						<i class="icon-envelope-alt"></i>邮箱：zjqwwy@163.com
 					</p>
 				</div>
 			</div>
 			<div class="col-sm-3">
 				<div class="widget">
-					<h5 class="widgetheading">Quick Links</h5>
+					<h5 class="widgetheading">万家产品</h5>
 					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="#">Latest Events</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Terms and conditions</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Privacy policy</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Career</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Contact us</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">手持终端</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">定点投放箱体</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">垃圾分类app</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">传感器原件</a></li>
 					</ul>
 				</div>
 			</div>
+
 			<div class="col-sm-3">
 				<div class="widget">
-					<h5 class="widgetheading">Latest posts</h5>
+					<h5 class="widgetheading">新闻资讯</h5>
 					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">万家新闻直达</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity.html">万家活动直达</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="col-sm-3">
-					<div class="widget">
-					<h5 class="widgetheading">Recent News</h5>
-					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-					</ul>
-				</div>
+				<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="180" width="290" align="">
 			</div>
+			<%--<p>&nbsp;&nbsp;&nbsp;&nbsp;公众号</p>--%>
 		</div>
+
+
 	</div>
 	<div id="sub-footer">
 		<div class="container">
@@ -180,23 +175,18 @@
 				<div class="col-lg-6">
 					<div class="copyright">
 						<p>
-							Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+							Copyright &copy; 2017.杭州钱王万家信息科技有限公司 All rights reserved.
 						</p>
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<ul class="social-network">
-						<li><a class="waves-effect waves-dark" href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a class="waves-effect waves-dark" href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-						<li><a class="waves-effect waves-dark" href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-						<li><a class="waves-effect waves-dark" href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
-						<li><a class="waves-effect waves-dark" href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
+						<p>浙ICP备14036718号-6浙公网安备 33018502001594号</p></ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	</footer>
+</footer>
 </div>
 <a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up active"></i></a>
 <!-- javascript

@@ -23,7 +23,7 @@
             fitColumns:true,
             rownumbers:true,
             loadMsg:"正在加载中....",
-            url:"aboutActivity/getActivityList.do",
+            url:"${pageContext.request.contextPath}/aboutActivity/getActivityList.do",
             striped:true,
             nowrap:false,
             columns:[[
@@ -35,7 +35,7 @@
                     formatter:function(value, rec) {//使用formatter格式化刷子
                         var str = "";
                         var aa= value;
-                        if (value == null||value=="") {var aa="http://localhost:8080/skin/images/frame/book.gif";
+                        if (value == null||value=="") {var aa="${pageContext.request.contextPath}/skin/images/frame/book.gif";
                             str = "<img src='../skin/images/frame/book.gif ' onclick='download(\""+aa+"\")'/>";
                             return str; }else{str = "<img src=\'"+value+"\' onclick='download(\""+aa+"\")'  height='200' width='400'  />";}
                         return str;
@@ -197,7 +197,7 @@
             <table width="58%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td >
-                        当前位置:首页管理>>产品展示
+                        当前位置:关于我们管理>>公司活动管理
                     </td>
                     <td>
                         <input type='button' class="coolbg np" onClick="location='${pageContext.request.contextPath}/about_activity_add.do';" value='添加产品信息' />

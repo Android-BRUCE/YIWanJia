@@ -5,7 +5,7 @@
 <html>
 <head>
 
-    <title>产品展示</title>
+    <title>加入我们</title>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/skin/css/base.css">
     <script type="text/javascript" src="${pageContext.request.contextPath}/jquery-easyui-1.2.6/jquery-1.7.2.min.js"></script>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jquery-easyui-1.2.6/themes/default/easyui.css">
@@ -24,7 +24,7 @@
             <table width="58%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td >
-                        当前位置:首页管理>>产品展示
+                        当前位置:公司介绍管理>>加入我们
                     </td>
                     <td>
                         <input type='button' class="coolbg np" onClick="location='${pageContext.request.contextPath}/goods/jump/goodsAddPage.do';" value='添加产品信息' />

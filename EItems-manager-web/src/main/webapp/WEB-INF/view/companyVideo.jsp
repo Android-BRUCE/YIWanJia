@@ -111,7 +111,7 @@ function yulan(){
         </tr>
         <tr >
             <td align="right" bgcolor="#FAFAF1" height="22">添加更换的视频链接：</td>
-            <td  align='left' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22"><textarea   style="width:1000px;" type="text" name="video" id="video"></textarea></td>
+            <td  align='left' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22"><textarea   style="width:1000px;" type="text" name="video" id="video">${video.video}</textarea></td>
         </tr>
         <tr bgcolor="#FAFAF1">
             <td height="28" colspan=4 align=center>

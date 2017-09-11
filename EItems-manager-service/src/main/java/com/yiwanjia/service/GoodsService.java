@@ -54,6 +54,16 @@ public class GoodsService {
         return eUDataGridResult;
     }
 
+    /**
+     * 获取单条数据
+     * @param id
+     * @return
+     */
+        public TbGoods getSingelDate(long id){
+            TbGoods tbGoods = tbGoodsMapper.selectByPrimaryKey(id);
+            return tbGoods;
+        }
+
     public TaotaoResult deleteGoods(int[] ids){
         int result = tbGoodsMapper.deleteByGoodsIds(ids);
         if(result == 0){
@@ -70,6 +80,22 @@ public class GoodsService {
     public long getCountByCID(long id){
         long count = tbGoodsMapper.countByCID(id);
         return count;
+    }
+
+    /**
+     * 修改产品信息
+     * @param TbGoods
+     * @return
+     */
+    public TaotaoResult editGoods(TbGoods TbGoods){
+        if ((TbGoods.getGoodsdesc()=="")){TbGoods.setGoodsdesc(null);}
+        if (TbGoods.getGoodsttile()==""){TbGoods.setGoodsttile(null);}
+        if (TbGoods.getImage()==""){TbGoods.setImage(null);}
+        if (TbGoods.getPoint()==""){TbGoods.setPoint(null);}
+        TbGoods.setUpdatetime(new Date());
+        int result = tbGoodsMapper.updateByPrimaryKeySelective(TbGoods);
+        if (result == 0){return TaotaoResult.build(500,"修改产品信息失败！");}
+        return TaotaoResult.build(200,"修改产品信息成功！");
     }
 
 }

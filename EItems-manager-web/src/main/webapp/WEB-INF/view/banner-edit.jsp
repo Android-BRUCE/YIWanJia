@@ -230,12 +230,20 @@
                 <td>轮播图要点:</td>
                 <td><input value="${banner.point}" class="easyui-textbox" type="text" name="point" data-options="multiline:true,validType:'length[0,150]'" style="height:60px;width: 280px;"></input></td>
             </tr>
+
             <tr>
                 <td>轮播图图片:</td>
                 <td>
                 <a href="javascript:void(0)" class="easyui-linkbutton picFileUpload">上传图片</a>
                     <input type="hidden" name="image"  hidden/>
                     <input type="hidden" name="id"  value="${banner.id}" hidden/>
+                </td>
+            </tr>
+            <tr>
+                <td>状态设置:</td>
+                <td>
+                    <input class="easyui-radio" type="radio" name="status" value="1" data-options="required:true" style="width: 10px;">开启</input>
+                    <input class="easyui-radio" type="radio" name="status" value="0" style="width: 10px;">关闭</input>
                 </td>
             </tr>
         </table>

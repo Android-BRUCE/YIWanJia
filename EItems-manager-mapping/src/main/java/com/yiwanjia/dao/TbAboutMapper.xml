@@ -119,7 +119,7 @@
   </select>
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <select id="seleteRoad" resultType="com.yiwanjia.pojo.TbAboutWithBLOBs">
-    select introduction from tb_about where id = 1
+    select introduction,title from tb_about where id = 1
   </select>
   <select id="seleteVideo" resultType="com.yiwanjia.pojo.TbAboutWithBLOBs">
     select video from tb_about where id = 1

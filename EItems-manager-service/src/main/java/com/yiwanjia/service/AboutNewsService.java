@@ -59,4 +59,32 @@ public class AboutNewsService {
         gridResult.setTotal(tbNewsMapper.countByExample(example));
         return gridResult;
     }
+
+    /**
+     * 根据id获取信息
+     * @param id
+     * @return
+     */
+    public TbNews getNewsById(Long id){
+        TbNews news = tbNewsMapper.selectByPrimaryKey(id);
+        return news;
+    }
+
+    /**
+     * 修改info
+     * @param TbNews
+     * @return
+     */
+    public TaotaoResult saveEditInfo(TbNews TbNews){
+        //TbNews.setUpdatetime(new Date());
+        if (TbNews.getContent()==""){TbNews.setContent(null );}
+        if (TbNews.getImage()==""){TbNews.setImage(null);}
+        if (TbNews.getNewstitle()==""){TbNews.setNewstitle(null);}
+        if (TbNews.getPoint()==""){TbNews.setPoint(null);}
+        int i = tbNewsMapper.updateByPrimaryKeySelective(TbNews);
+        if (i == 0){
+            return TaotaoResult.build(500,"修改新闻失败！");
+        }
+        return TaotaoResult.build(200,"修改新闻成功！");
+    }
 }

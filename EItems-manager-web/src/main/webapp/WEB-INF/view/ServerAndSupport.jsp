@@ -17,7 +17,7 @@
 	        <tr>
 	            <td>服务与支持:</td>
 	            <td>
-	                <textarea style="width:1000px;height:600px;visibility:hidden;" name="content"></textarea>
+	                <textarea style="width:1000px;height:600px;visibility:hidden;" name="content">${support.content}</textarea>
 	            </td>
 	        </tr>
 	    </table>

@@ -39,7 +39,7 @@
                     formatter:function(value, rec) {//使用formatter格式化刷子
                         var str = "";
                         var aa= value;
-                        if (value == null||value=="") {var aa="http://localhost:8080/skin/images/frame/book.gif";
+                        if (value == null||value=="") {var aa="${pageContext.request.contextPath}/skin/images/frame/book.gif";
                             str = "<img src='../skin/images/frame/book.gif ' onclick='download(\""+aa+"\")'/>";
                             return str; }else{str = "<img src=\'"+value+"\' onclick='download(\""+aa+"\")'  height='200' width='400'  />";}
                         return str;
@@ -51,7 +51,7 @@
                     }
                 },
                 {field:"status",title:"展示状态",width:50,align:"center",
-                formatter(value){
+                         formatter(value,row,index){
                     if(value == 1){return "展示";}
                     return "取消";
                 }
@@ -83,10 +83,10 @@
                                 var ids="";
                                 for(var i=0;i<rows.length;i++)
                                 {
-                                    ids=ids+rows[i].r_id+",";
+                                    ids=ids+rows[i].id+",";
                                 }
                                 ids=ids.substring(0,ids.length-1);
-                                var path = "${pageContext.request.contextPath}/role/role_edit.do?r_id="+ids;
+                                var path = "${pageContext.request.contextPath}/about/edit.do?id="+ids;
                                 window.location=path;
                             }
                         }

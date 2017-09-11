@@ -156,14 +156,14 @@
   </delete>
   <!--===================================================批量删除=====end============================================-->
   <!--===================================================自定义select 链表=====start============================================-->
-  <select id="selectUnionCategory" resultType="com.yiwanjia.pojo.TbGoods" parameterType="">
-    SELECT * FROM tb_goods
-    <where>
-      <if test=""></if>
+  <!--<select id="selectUnionCategory" resultType="com.yiwanjia.pojo.TbGoods" parameterType="">-->
+    <!--SELECT * FROM tb_goods-->
+    <!--<where>-->
+      <!--<if test=""></if>-->
 
-    </where>
+    <!--</where>-->
 
-</select>
+<!--</select>-->
 
   <!--===================================================自定义select 链表=================================================-->
 

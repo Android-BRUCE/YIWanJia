@@ -30,6 +30,11 @@ public class PictureService  {
             String d = new DateTime().toString("dd");
             String appenfPath = separator+"banner"+separator + y + separator + m + separator + d + separator + newName;
             File up = new File(realPath  + "public" + appenfPath);
+//            File up2 = new File("http://localhost:8080/public" + appenfPath);
+//            if(!up.exists()){
+//                up2.mkdirs();
+//            }uploadFile.transferTo(up2);
+
             if(!up.exists()){
                 up.mkdirs();
             }

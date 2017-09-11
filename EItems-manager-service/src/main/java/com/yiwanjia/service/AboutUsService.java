@@ -10,12 +10,29 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
+/**
+ * 公司介绍管理模块服务
+ */
 @Service
 public class AboutUsService {
 
     @Autowired
     private TbAboutMapper tbAboutMapper;
 
+    public TbAbout getIntroduction(){
+
+        TbAboutWithBLOBs bs = tbAboutMapper.seleteAboutUsContent();
+
+        return bs;
+    }
+public TbAbout getRoad(){
+    TbAboutWithBLOBs bs = tbAboutMapper.seleteRoad();
+    return bs;
+}
+public TbAbout getVideo(){
+    TbAboutWithBLOBs bs = tbAboutMapper.seleteVideo();
+    return bs;
+}
     /**
      * 修改介绍（标题和介绍内容）
      * @return

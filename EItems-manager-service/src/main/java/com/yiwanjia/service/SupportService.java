@@ -19,4 +19,9 @@ public class SupportService {
        }
 return TaotaoResult.build(200,"success!");
     }
+
+    public TbSupport getSupportInfo(Integer id){
+        TbSupport tbSupport = tbSupportMapper.selectByPrimaryKey(id);
+        return  tbSupport;
+    }
 }

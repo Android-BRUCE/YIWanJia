@@ -16,7 +16,7 @@
 	    <table cellpadding="5">
 	        <tr>
 	            <td>介绍标题（暂可随意填）:</td>
-	            <td><input class="easyui-textbox" type="text" name="title" data-options="required:true" style="width: 280px;"></input></td>
+	            <td><input value="${introduction.title}" class="easyui-textbox" type="text" name="title" data-options="required:true" style="width: 280px;"></input></td>
 	        </tr>
 			<%--<tr>--%>
 				<%--<td>状态设置:</td>--%>
@@ -28,7 +28,7 @@
 	        <tr>
 	            <td>具述:</td>
 	            <td>
-	                <textarea style="width:800px;height:300px;visibility:hidden;" name="content"></textarea>
+	                <textarea style="width:800px;height:300px;visibility:hidden;" name="content">${introduction.content}</textarea>
 	            </td>
 	        </tr>
 	    </table>

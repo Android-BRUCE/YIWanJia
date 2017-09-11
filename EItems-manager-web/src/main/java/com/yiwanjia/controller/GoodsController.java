@@ -61,7 +61,7 @@ public class GoodsController {
     @RequestMapping("query/getgoodsList")
     public EUDataGridResult getGoodsList(int page,int rows){
         EUDataGridResult gList = goodsService.getGList(page, rows);
-        System.out.println("page = [" + page + "], rows = [" + rows + "]");
+       // System.out.println("page = [" + page + "], rows = [" + rows + "]");
         return gList;
     }
 
@@ -81,5 +81,30 @@ public class GoodsController {
     public long getCountByCID(@RequestParam(value = "cid") long cid){
         long ccount = goodsService.getCountByCID(cid);
         return ccount;
+    }
+
+    /**
+     * 修改产品信息
+     * @param TbGoods
+     * @return
+     */
+    @RequestMapping("editGoods")
+    @ResponseBody
+    public TaotaoResult eidtGoods(TbGoods TbGoods){
+        TaotaoResult result = goodsService.editGoods(TbGoods);
+        return result;
+    }
+
+    //其他携带数据页面跳转
+    @RequestMapping("edit")
+    public String jumpToGoodsEdit(@RequestParam(value = "id") Long id, Model Model){
+        if (id==null){
+            return "Goods";
+        }
+        TbGoods goods = goodsService.getSingelDate(id);
+        Model.addAttribute("goods",goods);
+        List<TbGoodsCategory> categoryList = goodsCategoryService.getCategoryList();
+        Model.addAttribute("goodsCategory",categoryList);
+        return "goods-edit";
     }
 }

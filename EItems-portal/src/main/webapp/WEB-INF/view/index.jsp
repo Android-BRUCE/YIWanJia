@@ -31,33 +31,33 @@
 </head>
 <body>
 <div id="wrapper" class="home-page"> 
-	<header class="topbar">
-		<div class="container">
-			<div class="row">
-				<!-- social icon-->
-				<div class="col-sm-3">
-				   <ul class="social-network">
-					<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>--%>
-					<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>--%>
-					<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>--%>
-					<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>--%>
-					<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>--%>
-				</ul>
-				</div>
-				<div class="col-sm-9">
-					<div class="row">
-						<ul class="info"> 
-							<li><i class="icon-info-blocks material-icons">邮箱地址: </i><span>zjqwwy@163.com</span></li>
-							<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>
-						</ul>
-						<div class="clr"></div>
-					</div>
-				</div>
-				<!-- info -->
+	<%--<header class="topbar">--%>
+		<%--<div class="container">--%>
+			<%--<div class="row">--%>
+				<%--<!-- social icon-->--%>
+				<%--<div class="col-sm-3">--%>
+				   <%--<ul class="social-network">--%>
+					<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>&ndash;%&gt;--%>
+					<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>&ndash;%&gt;--%>
+					<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>&ndash;%&gt;--%>
+					<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>&ndash;%&gt;--%>
+					<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>&ndash;%&gt;--%>
+				<%--</ul>--%>
+				<%--</div>--%>
+				<%--<div class="col-sm-9">--%>
+					<%--<div class="row">--%>
+						<%--<ul class="info"> --%>
+							<%--<li><i class="icon-info-blocks material-icons">邮箱地址: </i><span>zjqwwy@163.com</span></li>--%>
+							<%--<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>--%>
+						<%--</ul>--%>
+						<%--<div class="clr"></div>--%>
+					<%--</div>--%>
+				<%--</div>--%>
+				<%--<!-- info -->--%>
 
-			</div>
-		</div>
-	</header>
+			<%--</div>--%>
+		<%--</div>--%>
+	<%--</header>--%>
 	<!-- start header -->
 	<header>
         <div class="navbar navbar-default navbar-static-top">
@@ -70,28 +70,23 @@
                     </button>
                     <a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
 						<%--<i class="icon-info-blocks material-icons">language</i>--%>
-							<img src="${pageContext.request.contextPath}/img/logo.png" alt="" height="50" width="50" align=""/>
+							<img src="${pageContext.request.contextPath}/img/logo.png" alt="" height="50" width="50" />
 							杭州钱王万家信息科技有限公司
+							<%--钱王万家--%>
 					</a>
+
                 </div>
-                <div class="navbar-collapse collapse ">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">主页</a></li>
-                        <li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品展示</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">服务与支持</a></li>
-                        <%--<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/pricing.html">Pricing</a></li>--%>
-						<li class="dropdown">
-							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">公司介绍</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">公司新闻</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity.html">公司活动</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">加入我们</a></li>
-							</ul>
-						</li>
+				<div class="navbar-collapse collapse ">
+					<ul class="nav navbar-nav">
+						<li class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">首 页</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻咨询</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品中心</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">解决方案</a></li><!--服务支持-->
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/case.html">公司案例</a></li><!---->
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">人才招聘</a></li><!--加入我们-->
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
-                    </ul>
-                </div>
+					</ul>
+				</div>
             </div>
         </div>
 	</header>
@@ -103,7 +98,7 @@
             <ul class="slides" id="banner_show" >
 				<c:forEach items="${banner }" var="pr">
 					<li>
-						<img src="${pr.image}" alt="" />
+						<img src="${pr.image}" alt="" height="450"/>
 						<div class="flex-caption">
 							<h3>${pr.title}</h3>
 							<p>${pr.point}</p>
@@ -116,79 +111,10 @@
 	<!-- end slider -->
 	</section>
 
-
-
-	<!-- ###################start####################-->
-	<section class="section-padding gray-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-title text-center">
-						<h2>Our <strong>Business</strong></h2>
-						<p>Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada Pellentesque <br>ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-6">
-					<div class="about-image">
-						<img src="${pageContext.request.contextPath}/img/about.jpg" alt="About Images">
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="about-text">
-						<p>Grids is a responsive Multipurpose Template. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-
-						<p>Grids is a responsive Multipurpose Template. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-
-						<p>Grids is a responsive Multipurpose Template. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ################end#######################-->
-
-
-	<div id="clear" ></div>
-	<section class="section-padding gray-bg">
-
-		<div id="ind_box_service">
-			<h1 class="ind_bt">产品</h1>
-			<h2 class="ind_ms">PRODUCTS</h2>
-			<span class="ind_x"></span>
-
-			<div class="picScroll-left" id="ind_service_box">
-				<div class="hd">
-					<a class="next"></a>
-					<a class="prev"></a>
-				</div>
-				<div class="bd">
-					<div class="tempWrap" style="overflow:hidden; position:relative; width:1100px">
-						<ul class="ind_service_list" style="width: 2750px; left: 0px; position: relative; overflow: hidden; padding: 0px; margin: 0px;">
-
-							<c:forEach items="${goods}" var="pr">
-								<li style="float: left; width: 255px;">
-									<div class="title">
-										<a href="${pageContext.request.contextPath}${pr.id}/detilPortfolio.html" title="${pr.goodsttile}">${pr.goodsttile}</a>
-										<p class="ms"></p>
-									</div>
-									<div class="pic"><a href="${pageContext.request.contextPath}${pr.id}/detilPortfolio.html"><img src="${pr.image}" alt=${pr.goodsttile}></a></div>
-								</li>
-							</c:forEach>
-
-					</ul></div>
-				</div>
-			</div>
-			<script type="text/javascript">
-                jQuery(".picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:4,easing:"easeOutCirc"});
-			</script>
-
-		</div>
-		<!--================================================= -->
 		<section class="section-padding gray-bg">
+
 			<div class="ind_zszk_box" style=" padding:50px 0 50px 0;">
+				<p align="center" style="font-size: 50">互联网+智慧平台</p><br><br><br>
 				<ul class="zszk_icon">
 					<li>
 						<A href="####">
@@ -223,42 +149,92 @@
 			</div>
 		</section>
 
+	<!-- ###################start####################-->
+	<%--<section class="section-padding gray-bg">--%>
+		<%--<div class="container">--%>
+			<%--<div class="row">--%>
+				<%--<div class="col-md-12">--%>
+					<%--<div class="section-title text-center">--%>
+						<%--<h2>Our <strong>Business</strong></h2>--%>
+						<%--<p>Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada Pellentesque <br>ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>--%>
+					<%--</div>--%>
+				<%--</div>--%>
+			<%--</div>--%>
+			<%--<div class="row">--%>
+				<%--<div class="col-md-6 col-sm-6">--%>
+					<%--<div class="about-image">--%>
+						<%--<img src="${pageContext.request.contextPath}/img/about.jpg" alt="About Images">--%>
+					<%--</div>--%>
+				<%--</div>--%>
+				<%--<div class="col-md-6 col-sm-6">--%>
+					<%--<div class="about-text">--%>
+						<%--<p>Grids is a responsive Multipurpose Template. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>--%>
 
-	</section>
+						<%--<p>Grids is a responsive Multipurpose Template. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>--%>
 
+						<%--<p>Grids is a responsive Multipurpose Template. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>--%>
 
-
-	
-
-
-	<%--<section id="content">--%>
-		<%--<div class="case_hd">--%>
-			<%--<ul>--%>
-				<%--<li><A href="####"><img src="${pageContext.request.contextPath}/img/works/x1.jpg" /></A></li>--%>
-				<%--<li><A href="####"><img src="${pageContext.request.contextPath}/img/works/x2.jpg" /></A></li>--%>
-				<%--<li><A href="####"><img src="${pageContext.request.contextPath}/img/works/x3.jpg" /></A></li>--%>
-			<%--</ul>--%>
+					<%--</div>--%>
+				<%--</div>--%>
+			<%--</div>--%>
 		<%--</div>--%>
 	<%--</section>--%>
+	<!-- ################end#######################-->
+
+
+	<div id="clear" ></div>
+	<section class="section-padding gray-bg">
+
+		<div id="ind_box_service">
+			<h1 class="ind_bt">产品</h1>
+			<h2 class="ind_ms">PRODUCTS</h2>
+			<div class="picScroll-left" id="ind_service_box">
+				<div class="hd">
+					<a class="next"></a>
+					<a class="prev"></a>
+				</div>
+				<div class="bd">
+					<div class="tempWrap" style="overflow:hidden; position:relative; width:1100px">
+						<ul class="ind_service_list" style="width: 2750px; left: 0px; position: relative; overflow: hidden; padding: 0px; margin: 0px;">
+
+							<c:forEach items="${goods}" var="pr">
+								<li style="float: left; width: 255px;">
+									<div class="title">
+										<a href="${pageContext.request.contextPath}${pr.id}/detilPortfolio.html" title="${pr.goodsttile}">${pr.goodsttile}</a>
+										<p class="ms"></p>
+									</div>
+									<div class="pic"><a href="${pageContext.request.contextPath}${pr.id}/detilPortfolio.html"><img src="${pr.image}" alt=${pr.goodsttile}></a></div>
+								</li>
+							</c:forEach>
+
+					</ul></div>
+				</div>
+			</div>
+			<script type="text/javascript">
+                jQuery(".picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:4,easing:"easeOutCirc"});
+			</script>
+		</div>
+		<!--================================================= --><br><br><br><br><br><br><br><br><br><br><br><br>
+	</section>
 	<footer>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">
 				<div class="widget">
 					<h5 class="widgetheading">联系方式</h5>
+					<ul class="foot_add_box">
+						<li class="foot_tel">电话：0571-61099111</li>
+						<li class="foot_add">邮箱：zjqwwy@163.com</li>
+					</ul>
+					<br>
 					<address>
-					<strong>杭州钱王万家信息科技有限公司</strong><br>
-						杭州临安市青山湖街道958号<br>
-						科创大楼A603</address>
-					<p>
-						<i class="icon-phone"></i>电话：0571-61099111<br>
-						<i class="icon-envelope-alt"></i>邮箱：zjqwwy@163.com
-					</p>
+						杭州市临安市青山湖街道<br>
+						大园路958号科创大楼A603</address>
 				</div>
 			</div>
 			<div class="col-sm-3">
 				<div class="widget">
-					<h5 class="widgetheading">万家产品</h5>
+					<h5 class="widgetheading">产品中心</h5>
 					<ul class="link-list">
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">手持终端</a></li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">定点投放箱体</a></li>
@@ -267,23 +243,22 @@
 					</ul>
 				</div>
 			</div>
-
 			<div class="col-sm-3">
 				<div class="widget">
 					<h5 class="widgetheading">新闻资讯</h5>
 					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">万家新闻直达</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity.html">万家活动直达</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻直达</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-3">
-				<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="180" width="290" align="">
-			</div>
-		<%--<p>&nbsp;&nbsp;&nbsp;&nbsp;公众号</p>--%>
-</div>
-
-
+			<div class="col-sm-4">
+				<div class="widget">
+					<h5 class="widgetheading"></h5>
+					<ul class="link-list">
+						<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="170" width="290" align="">
+					</ul>
+				</div>
+			</div></div>
 		</div>
 	<div id="sub-footer">
 		<div class="container">

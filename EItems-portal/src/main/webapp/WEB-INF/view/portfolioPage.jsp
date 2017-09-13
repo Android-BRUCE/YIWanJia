@@ -28,64 +28,59 @@
 </head>
 <body>
 <div id="wrapper"> 
-	<header class="topbar">
-		<div class="container">
-			<div class="row">
-				<ul class="info">
-					<li><i class="icon-info-blocks material-icons">邮箱地址: </i><span>zjqwwy@163.com</span></li>
-					<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>
-				</ul>
-				<div class="clr"></div>
-			</div>
-		</div>
-	</header>
+	<%--<header class="topbar">--%>
+		<%--<div class="container">--%>
+			<%--<div class="row">--%>
+				<%--<ul class="info">--%>
+					<%--<li><i class="icon-info-blocks material-icons">邮箱地址: </i><span>zjqwwy@163.com</span></li>--%>
+					<%--<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>--%>
+				<%--</ul>--%>
+				<%--<div class="clr"></div>--%>
+			<%--</div>--%>
+		<%--</div>--%>
+	<%--</header>--%>
 
 	<!-- start header -->
 	<!-- start header -->
-	<header>
-		<div class="navbar navbar-default navbar-static-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
-						<%--<i class="icon-info-blocks material-icons">language</i>--%>
-							<img src="${pageContext.request.contextPath}/img/logo.png" alt="" height="50" width="50" align=""/>
+		<header>
+			<div class="navbar navbar-default navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
+							<%--<i class="icon-info-blocks material-icons">language</i>--%>
+							<img src="${pageContext.request.contextPath}/img/logo.png" alt="" height="50" width="50" />
 							杭州钱王万家信息科技有限公司
-					</a>
-				</div>
-				<div class="navbar-collapse collapse ">
-					<ul class="nav navbar-nav">
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">主页</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品展示</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">服务与支持</a></li>
-						<%--<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/pricing.html">Pricing</a></li>--%>
-						<li class="dropdown">
-							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">公司介绍</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">公司新闻</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity.html">公司活动</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">加入我们</a></li>
-							</ul>
-						</li>
-						<li  ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
-					</ul>
+							<%--钱王万家--%>
+						</a>
+
+					</div>
+					<div class="navbar-collapse collapse ">
+						<ul class="nav navbar-nav">
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">首 页</a></li>
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻咨询</a></li>
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品中心</a></li>
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">解决方案</a></li><!--服务支持-->
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/case.html">公司案例</a></li><!---->
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">人才招聘</a></li><!--加入我们-->
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 
 
 	<section id="inner-headline">
 	<div class="container">
 		<div class="row">
-			<%--<div class="col-lg-12">--%>
-				<%--&lt;%&ndash;<h2 class="pageTitle">联系我们</h2>&ndash;%&gt;--%>
-			<%--</div>--%>
+			<div class="col-lg-12">
+				<h2 class="pageTitle">产品详情</h2>
+			</div>
 		</div>
 	</div>
 	</section>
@@ -152,19 +147,19 @@ ${list.goodsdesc}
 			<div class="col-sm-3">
 				<div class="widget">
 					<h5 class="widgetheading">联系方式</h5>
+					<ul class="foot_add_box">
+						<li class="foot_tel">电话：0571-61099111</li>
+						<li class="foot_add">邮箱：zjqwwy@163.com</li>
+					</ul>
+					<br>
 					<address>
-						<strong>杭州钱王万家信息科技有限公司</strong><br>
-						杭州临安市青山湖街道958号<br>
-						科创大楼A603</address>
-					<p>
-						<i class="icon-phone"></i>电话：0571-61099111<br>
-						<i class="icon-envelope-alt"></i>邮箱：zjqwwy@163.com
-					</p>
+						杭州市临安市青山湖街道<br>
+						大园路958号科创大楼A603</address>
 				</div>
 			</div>
 			<div class="col-sm-3">
 				<div class="widget">
-					<h5 class="widgetheading">万家产品</h5>
+					<h5 class="widgetheading">产品中心</h5>
 					<ul class="link-list">
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">手持终端</a></li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">定点投放箱体</a></li>
@@ -173,23 +168,22 @@ ${list.goodsdesc}
 					</ul>
 				</div>
 			</div>
-
 			<div class="col-sm-3">
 				<div class="widget">
 					<h5 class="widgetheading">新闻资讯</h5>
 					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">万家新闻直达</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity.html">万家活动直达</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻直达</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-3">
-				<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="180" width="290" align="">
-			</div>
-			<%--<p>&nbsp;&nbsp;&nbsp;&nbsp;公众号</p>--%>
-		</div>
-
-
+			<div class="col-sm-4">
+				<div class="widget">
+					<h5 class="widgetheading"></h5>
+					<ul class="link-list">
+						<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="170" width="290" align="">
+					</ul>
+				</div>
+			</div></div>
 	</div>
 	<div id="sub-footer">
 		<div class="container">

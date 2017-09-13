@@ -26,69 +26,64 @@
 </head>
 <body>
 <div id="wrapper"> 
-	<header class="topbar">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3">
-					<ul class="social-network">
-						<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>--%>
-						<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>--%>
-						<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>--%>
-						<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>--%>
-						<%--<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>--%>
-					</ul>
-				</div>
-				<div class="col-sm-9">
-					<div class="row">
-						<ul class="info">
-							<li><i class="icon-info-blocks material-icons">邮箱地址: </i><span>zjqwwy@163.com</span></li>
-							<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>
-						</ul>
-						<div class="clr"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+	<%--<header class="topbar">--%>
+		<%--<div class="container">--%>
+			<%--<div class="row">--%>
+				<%--<div class="col-sm-3">--%>
+					<%--<ul class="social-network">--%>
+						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>&ndash;%&gt;--%>
+						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>&ndash;%&gt;--%>
+					<%--</ul>--%>
+				<%--</div>--%>
+				<%--<div class="col-sm-9">--%>
+					<%--<div class="row">--%>
+						<%--<ul class="info">--%>
+							<%--<li><i class="icon-info-blocks material-icons">邮箱地址: </i><span>zjqwwy@163.com</span></li>--%>
+							<%--<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>--%>
+						<%--</ul>--%>
+						<%--<div class="clr"></div>--%>
+					<%--</div>--%>
+				<%--</div>--%>
+			<%--</div>--%>
+		<%--</div>--%>
+	<%--</header>--%>
 
 	<!-- start header -->
 	<!-- start header -->
-	<header>
-		<div class="navbar navbar-default navbar-static-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<header>
+			<div class="navbar navbar-default navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
-						<%--<i class="icon-info-blocks material-icons">language</i>--%>
-							<img src="${pageContext.request.contextPath}/img/logo.png" alt="" height="50" width="50" align=""/>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
+							<%--<i class="icon-info-blocks material-icons">language</i>--%>
+							<img src="${pageContext.request.contextPath}/img/logo.png" alt="" height="50" width="50" />
 							杭州钱王万家信息科技有限公司
-					</a>
-				</div>
-				<div class="navbar-collapse collapse ">
-					<ul class="nav navbar-nav">
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">主页</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品展示</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">服务与支持</a></li>
-						<%--<li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>--%>
-						<li class="dropdown">
-							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">公司介绍</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">公司新闻</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity.html">公司活动</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">加入我们</a></li>
-							</ul>
-						</li>
-						<li class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
-					</ul>
+							<%--钱王万家--%>
+						</a>
+
+					</div>
+					<div class="navbar-collapse collapse ">
+						<ul class="nav navbar-nav">
+							<li ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">首 页</a></li>
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻咨询</a></li>
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品中心</a></li>
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">解决方案</a></li><!--服务支持-->
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/case.html">公司案例</a></li><!---->
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">人才招聘</a></li><!--加入我们-->
+							<li class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 
 
 	<section id="inner-headline">
@@ -101,19 +96,6 @@
 	</div>
 	</section>
 	<section id="content">
-	
-	<div class="container">
-		<div class="row">
-							<div class="col-md-12">
-								<div class="about-logo">
-									<h3>Get<span class="color"> in Touch</span></h3>
-									<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
-                                    	<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
-								</div>
-							</div>
-						</div>
-
-
 		<div class="about-main" id="company-profile">
 			<div class="about-con">
 				<div class="about-us-left">
@@ -149,19 +131,19 @@
 			<div class="col-sm-3">
 				<div class="widget">
 					<h5 class="widgetheading">联系方式</h5>
+					<ul class="foot_add_box">
+						<li class="foot_tel">电话：0571-61099111</li>
+						<li class="foot_add">邮箱：zjqwwy@163.com</li>
+					</ul>
+					<br>
 					<address>
-						<strong>杭州钱王万家信息科技有限公司</strong><br>
-						杭州临安市青山湖街道958号<br>
-						科创大楼A603</address>
-					<p>
-						<i class="icon-phone"></i>电话：0571-61099111<br>
-						<i class="icon-envelope-alt"></i>邮箱：zjqwwy@163.com
-					</p>
+						杭州市临安市青山湖街道<br>
+						大园路958号科创大楼A603</address>
 				</div>
 			</div>
 			<div class="col-sm-3">
 				<div class="widget">
-					<h5 class="widgetheading">万家产品</h5>
+					<h5 class="widgetheading">产品中心</h5>
 					<ul class="link-list">
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">手持终端</a></li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">定点投放箱体</a></li>
@@ -170,23 +152,22 @@
 					</ul>
 				</div>
 			</div>
-
 			<div class="col-sm-3">
 				<div class="widget">
 					<h5 class="widgetheading">新闻资讯</h5>
 					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">万家新闻直达</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity.html">万家活动直达</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻直达</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-3">
-				<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="180" width="290" align="">
-			</div>
-			<%--<p>&nbsp;&nbsp;&nbsp;&nbsp;公众号</p>--%>
-		</div>
-
-
+			<div class="col-sm-4">
+				<div class="widget">
+					<h5 class="widgetheading"></h5>
+					<ul class="link-list">
+						<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="170" width="290" align="">
+					</ul>
+				</div>
+			</div></div>
 	</div>
 	<div id="sub-footer">
 		<div class="container">
@@ -254,7 +235,7 @@
     }
     function addMapOverlay(){
         var markers = [
-            {content:"联系电话：0571-61103779",title:"杭州钱王万家信息科技有限公司",imageOffset: {width:0,height:3},position:{lat:30.273234,lng:119.835484}},
+            {content:"联系电话：0571-61099111",title:"杭州钱王万家信息科技有限公司",imageOffset: {width:0,height:3},position:{lat:30.273234,lng:119.835484}},
         ];
         for(var index = 0; index < markers.length; index++ ){
             var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
@@ -295,4 +276,5 @@
 	.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
 	.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
 </style>
+</body>
 </html>

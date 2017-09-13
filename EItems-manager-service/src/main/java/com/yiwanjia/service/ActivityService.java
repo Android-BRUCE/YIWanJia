@@ -45,4 +45,25 @@ public class ActivityService {
 
         return result;
     }
+
+    /**
+     * 通过activity的id获取information
+     * @param id
+     * @return
+     */
+    public TbActivity getActivityByID(Long id){
+        TbActivity tbActivity = activityMapper.selectByPrimaryKey(id);
+        return tbActivity;
+    }
+
+    /**
+     *
+     * @param TbActivity
+     * @return
+     */
+    public TaotaoResult saveEditInfo(TbActivity TbActivity){
+        int i = activityMapper.updateByPrimaryKeySelective(TbActivity);
+        if(i == 0){return TaotaoResult.build(500,"活动修改失败！");}
+        return TaotaoResult.build(200,"活动修改成功！");
+    }
 }

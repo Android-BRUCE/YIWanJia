@@ -28,17 +28,17 @@
 </head>
 <body>
 <div id="wrapper"> 
-	<header class="topbar">
-		<div class="container">
-			<div class="row">
-				<ul class="info">
-					<li><i class="icon-info-blocks material-icons">邮箱地址:</i><span>zjqwwy@163.com</span></li>
-					<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>
-				</ul>
-				<div class="clr"></div>
-			</div>
-		</div>
-	</header>
+	<%--<header class="topbar">--%>
+		<%--<div class="container">--%>
+			<%--<div class="row">--%>
+				<%--<ul class="info">--%>
+					<%--<li><i class="icon-info-blocks material-icons">邮箱地址:</i><span>zjqwwy@163.com</span></li>--%>
+					<%--<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>--%>
+				<%--</ul>--%>
+				<%--<div class="clr"></div>--%>
+			<%--</div>--%>
+		<%--</div>--%>
+	<%--</header>--%>
 
 	<!-- start header -->
 	<!-- start header -->
@@ -59,20 +59,12 @@
 				</div>
 				<div class="navbar-collapse collapse ">
 					<ul class="nav navbar-nav">
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">主页</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品展示</a></li>
-						<li ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">服务与支持</a></li>
-						<%--<li><a class="waves-effect waves-dark" href="pricing.html">Pricing</a></li>--%>
-						<li class="dropdown">
-							<a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">关于我们 <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">公司介绍</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">公司新闻</a></li>
-								<%--<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/culture.html">公司文化</a></li>--%>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/activity.html">公司活动</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">加入我们</a></li>
-							</ul>
-						</li>
+						<li class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">首 页</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻咨询</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品中心</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">解决方案</a></li><!--服务支持-->
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">公司案例</a></li><!---->
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">人才招聘</a></li><!--加入我们-->
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
 					</ul>
 				</div>

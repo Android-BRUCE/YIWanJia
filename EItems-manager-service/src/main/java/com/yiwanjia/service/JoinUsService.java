@@ -5,6 +5,7 @@ import com.yiwanjia.dao.TbJoinMapper;
 import com.yiwanjia.pojo.TbJoin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * 加入我们
@@ -22,4 +23,8 @@ public class JoinUsService {
         }
         return TaotaoResult.build(200,"修改成功！");
     }
+//    public TbJoin getTbJoin(Long id){
+//        tbJoinMapper.selectByPrimaryKey(id);
+//
+//    }
 }

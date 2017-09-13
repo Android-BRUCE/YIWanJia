@@ -78,10 +78,10 @@
                                 var ids="";
                                 for(var i=0;i<rows.length;i++)
                                 {
-                                    ids=ids+rows[i].r_id+",";
+                                    ids=ids+rows[i].id+",";
                                 }
                                 ids=ids.substring(0,ids.length-1);
-                                var path = "${pageContext.request.contextPath}/role/role_edit.do?r_id="+ids;
+                                var path = "${pageContext.request.contextPath}/aboutActivity/about_activity_edit.do?id="+ids;
                                 window.location=path;
                             }
                         }

@@ -51,10 +51,10 @@
       </dl>
       <!-- Item  End -->
          <dl class='bitem'>
-             <dt onClick='showHide("items1_1")'><b>服务与支持</b></dt>
+             <dt onClick='showHide("items1_1")'><b>解决方案</b></dt>
              <dd style='display:none' class='sitem' id='items1_1'>
                  <ul class='sitemu'>
-                     <li><a href='${pageContext.request.contextPath}/jump/support.html?id=1' target='main'>服务与支持修改</a> </li>
+                     <li><a href='${pageContext.request.contextPath}/jump/support.html?id=1' target='main'>解决方案</a> </li>
                  </ul>
              </dd>
          </dl>
@@ -71,7 +71,7 @@
       <!-- Item  End -->
 	<!-- Item  Strat -->
       <dl class='bitem'>
-        <dt onClick='showHide("items4_1")'><b>公司介绍管理</b></dt>
+        <dt onClick='showHide("items4_1")'><b>公司介绍管理（废弃）</b></dt>
         <dd style='display:none' class='sitem' id='items4_1'>
           <ul class='sitemu'>
             <li><a href='${pageContext.request.contextPath}/company/companyIntroduction.html' target='main'>公司介绍更改</a> </li>
@@ -84,21 +84,31 @@
       <!-- Item  End -->
 	<!-- Item  Strat -->
       <dl class='bitem'>
-        <dt onClick='showHide("items5_1")'><b>关于我们管理</b></dt>
+        <dt onClick='showHide("items5_1")'><b>新闻|人才</b></dt>
         <dd style='display:none' class='sitem' id='items5_1'>
           <ul class='sitemu'>
             <%--<li><a href='${pageContext.request.contextPath}/about.html' target='main'>公司介绍管理</a> </li>--%>
             <li><a href='${pageContext.request.contextPath}/about_news.html' target='main'>公司新闻管理</a> </li>
             <%--<li><a href='${pageContext.request.contextPath}/role.html' target='main'>公司文化管理</a> </li>--%>
-            <li><a href='${pageContext.request.contextPath}/about_activity.html' target='main'>公司活动管理</a> </li>
-            <li><a href='${pageContext.request.contextPath}/joinUs.html' target='main'>加入我们管理</a> </li>
+            <%--<li><a href='${pageContext.request.contextPath}/about_activity.html' target='main'>公司活动管理</a> </li>--%>
+            <li><a href='${pageContext.request.contextPath}/joinUs.html' target='main'>人才招聘</a> </li>
           </ul>
         </dd>
       </dl>
       <!-- Item  End -->
+         <!-- Item  Start -->
+         <dl class='bitem'>
+             <dt onClick='showHide("items7_1")'><b>公司案例</b></dt>
+             <dd style='display:none' class='sitem' id='items7_1'>
+                 <ul class='sitemu'>
+                     <li><a href='${pageContext.request.contextPath}/case.html' target='main'>公司案管理</a> </li>
+                 </ul>
+             </dd>
+         </dl>
+         <!-- Item  End -->
 	<!-- Item  Strat -->
       <dl class='bitem'>
-        <dt onClick='showHide("items6_1")'><b>联系我们管理</b></dt>
+        <dt onClick='showHide("items6_1")'><b>联系我们</b></dt>
         <dd style='display:none' class='sitem' id='items6_1'>
           <ul class='sitemu'>
             <li><a href='${pageContext.request.contextPath}/contact.html' target='main'>联系方式</a> </li>
@@ -106,7 +116,9 @@
           </ul>
         </dd>
       </dl>
+
       <!-- Item  End -->
+
 	  </td>
   </tr>
 </table>

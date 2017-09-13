@@ -4,8 +4,6 @@ import com.github.pagehelper.PageHelper;
 import com.yiwanjia.dao.TbActivityMapper;
 import com.yiwanjia.pojo.TbActivity;
 import com.yiwanjia.pojo.TbActivityExample;
-import com.yiwanjia.pojo.TbNews;
-import com.yiwanjia.pojo.TbNewsExample;
 import com.yiwanjia.portal.pojo.PageSetting;
 import com.yiwanjia.portal.service.ActivityService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,7 +46,7 @@ public class ActivityController {
         setting.setRows(list);
         model.addAttribute("paging",setting);
 
-        return "activity";
+        return "/WEB-INF/view/activity.bak";
     }
 
     @RequestMapping("activitydetail")
@@ -67,7 +65,7 @@ public class ActivityController {
 
         model.addAttribute("activity",activity);
 
-        return "ActivityPages";
+        return "/WEB-INF/view/ActivityPages.bak";
     }
 
 }

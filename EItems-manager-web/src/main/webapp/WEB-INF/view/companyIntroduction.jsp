@@ -14,10 +14,10 @@
 <div style="padding:10px 10px 10px 10px">
 	<form id="itemAddForm" class="itemForm" method="post">
 	    <table cellpadding="5">
-	        <tr>
-	            <td>介绍标题（暂可随意填）:</td>
-	            <td><input value="${introduction.title}" class="easyui-textbox" type="text" name="title" data-options="required:true" style="width: 280px;"></input></td>
-	        </tr>
+	        <%--<tr>--%>
+	            <%--<td>介绍标题（随意填）:</td>--%>
+	            <%--<td><input value="${introduction.title}" class="easyui-textbox" type="text" name="title" data-options="required:true" style="width: 280px;"></input></td>--%>
+	        <%--</tr>--%>
 			<%--<tr>--%>
 				<%--<td>状态设置:</td>--%>
 				<%--<td>--%>
@@ -26,9 +26,9 @@
 				<%--</td>--%>
 			<%--</tr>--%>
 	        <tr>
-	            <td>具述:</td>
+	            <td></td>
 	            <td>
-	                <textarea style="width:800px;height:300px;visibility:hidden;" name="content">${introduction.content}</textarea>
+	                <textarea style="width:1100px;height:480px;visibility:hidden;" name="content">${introduction.content}</textarea>
 	            </td>
 	        </tr>
 	    </table>

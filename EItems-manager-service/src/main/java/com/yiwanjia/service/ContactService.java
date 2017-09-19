@@ -62,4 +62,13 @@ public class ContactService {
         }
         return TaotaoResult.build(200, "删除联系方式成功！");
     }
+    public  TbContact getContact(Integer id){
+        TbContact contact = tbContactMapper.selectByPrimaryKey(id);
+        return contact;
+    }
+    public TaotaoResult saveEdit(TbContact TbContact){
+        int i = tbContactMapper.updateByPrimaryKeySelective(TbContact);
+        if (i==0){return TaotaoResult.build(500,"修改失败！");}
+        return TaotaoResult.build(200,"修改成功！");
+    }
 }

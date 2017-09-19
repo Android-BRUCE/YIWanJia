@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="icon" sizes="124x124" href="${pageContext.request.contextPath}/img/logo.png">
+	<link rel="shortcut icon" href="${pageContext.request.contextPath}/img/logo.png">
 <meta charset="utf-8">
 <title>杭州钱王万家信息科技有限公司</title>
 <meta name="viewport" content="杭州钱王万家信息科技有限公司" />
@@ -65,7 +67,7 @@
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">解决方案</a></li><!--服务支持-->
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/case.html">公司案例</a></li><!---->
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">人才招聘</a></li><!--加入我们-->
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">关于我们</a></li>
 					</ul>
 				</div>
             </div>
@@ -160,8 +162,8 @@
 				<div class="widget">
 					<h5 class="widgetheading">联系方式</h5>
 					<ul class="foot_add_box">
-						<li class="foot_tel">电话：0571-61099111</li>
-						<li class="foot_add">邮箱：zjqwwy@163.com</li>
+						<li class="foot_tel">&nbsp;0571-61099111</li>
+						<li class="foot_add">zjqwwy@163.com</li>
 					</ul>
 					<br>
 					<address>
@@ -235,8 +237,6 @@
 <script src="${pageContext.request.contextPath}/js/animate.js"></script>
 <script src="${pageContext.request.contextPath}/js/custom.js"></script>
 
-<script src="${pageContext.request.contextPath}/contact/jqBootstrapValidation.js"></script>
-<script src="${pageContext.request.contextPath}/contact/contact_me.js"></script>
 
 </body>
 </html>

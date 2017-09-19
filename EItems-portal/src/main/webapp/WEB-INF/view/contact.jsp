@@ -3,87 +3,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="icon" sizes="124x124" href="${pageContext.request.contextPath}/img/logo.png">
+	<link rel="shortcut icon" href="${pageContext.request.contextPath}/img/logo.png">
 <meta charset="utf-8">
 <title>杭州钱王万家信息科技有限公司</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="杭州钱王万家信息科技有限公司" />
-<meta name="author" content="杭州钱王万家信息科技有限公司" />
-<!-- css --> 
+<meta name="description" content="" />
+<meta name="author" content="" />
+<!-- css -->
+	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="/stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
-<link href="/css/bootstrap.min.css" rel="stylesheet" />
-<link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-<link href="/css/flexslider.css" rel="stylesheet" />
-<link href="/css/style.css" rel="stylesheet" />
-<link href="/css/public/default/css-outM/about.css" rel="stylesheet" />
-<link href="/css/public/default/css-outM/default.css" rel="stylesheet" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/materialize/css/materialize.min.css" media="screen,projection" />
+<link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/flexslider.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/public/default/css-outM/style.css" rel="stylesheet" />
 
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+	<!--引用百度地图API-->
 
 </head>
 <body>
-<div id="wrapper"> 
-	<%--<header class="topbar">--%>
-		<%--<div class="container">--%>
-			<%--<div class="row">--%>
-				<%--<div class="col-sm-3">--%>
-					<%--<ul class="social-network">--%>
-						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>&ndash;%&gt;--%>
-					<%--</ul>--%>
-				<%--</div>--%>
-				<%--<div class="col-sm-9">--%>
-					<%--<div class="row">--%>
-						<%--<ul class="info">--%>
-							<%--<li><i class="icon-info-blocks material-icons">邮箱地址: </i><span>zjqwwy@163.com</span></li>--%>
-							<%--<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>--%>
-						<%--</ul>--%>
-						<%--<div class="clr"></div>--%>
-					<%--</div>--%>
-				<%--</div>--%>
-			<%--</div>--%>
-		<%--</div>--%>
-	<%--</header>--%>
-
-	<!-- start header -->
-	<!-- start header -->
-		<header>
-			<div class="navbar navbar-default navbar-static-top">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<div id="wrapper">
+	<header>
+		<div class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
-							<%--<i class="icon-info-blocks material-icons">language</i>--%>
-							<img src="${pageContext.request.contextPath}/img/logo.png" alt="" height="50" width="50" />
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
+						<%--<i class="icon-info-blocks material-icons">language</i>--%>
+							<img src="${pageContext.request.contextPath}/img/logo.png" alt="" height="50" width="50" align=""/>
 							杭州钱王万家信息科技有限公司
-							<%--钱王万家--%>
-						</a>
-
-					</div>
-					<div class="navbar-collapse collapse ">
-						<ul class="nav navbar-nav">
-							<li ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">首 页</a></li>
-							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻咨询</a></li>
-							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品中心</a></li>
-							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">解决方案</a></li><!--服务支持-->
-							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/case.html">公司案例</a></li><!---->
-							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">人才招聘</a></li><!--加入我们-->
-							<li class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
-						</ul>
-					</div>
+					</a>
+				</div>
+				<div class="navbar-collapse collapse ">
+					<ul class="nav navbar-nav">
+						<li ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">首 页</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻咨询</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品中心</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">解决方案</a></li><!--服务支持-->
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/case.html">公司案例</a></li><!---->
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">人才招聘</a></li><!--加入我们-->
+						<li class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">关于我们</a></li>
+					</ul>
 				</div>
 			</div>
-		</header>
+		</div>
+	</header>
 
 
 	<section id="inner-headline">
@@ -96,26 +70,40 @@
 	</div>
 	</section>
 	<section id="content">
+	<div class="container">
 		<div class="about-main" id="company-profile">
-			<div class="about-con">
-				<div class="about-us-left">
-					<!--<img src="../../r/cms/www/default/img/about/map.jpg"/>-->
-					<!--百度地图容器-->
-					<div style="width:686px;height:455px;border:#ccc solid 1px;" id="map"></div>
-				</div>
-				<div class="about-us-right" style="padding: 175px 0;width: 450px;">
-					<style type="text/css">
-						.about-us-right p{
-							display: block;
-						}
+			<div id="nr_main_box">
+			<!-- =+++++++++++++++++++++-->
+				<div class="about_right">
+					<div class="rnav_bt">
+						<b>关于万家</b>
+						<span class="x"></span>
+					</div>
+					<ul style="position:relative">
+						<li ><a href="${pageContext.request.contextPath}/about.html" title="公司介绍">公司介绍</a></li>
+						<li ><a href="${pageContext.request.contextPath}/aboutHonour.html" title="荣誉资质" >荣誉资质</a></li>
+						<li ><a href="${pageContext.request.contextPath}/aboutDevelopment.html" title="发展历程" >发展历程</a></li>
+						<li ><a href="${pageContext.request.contextPath}/aboutPropaganda.html" title="企业宣传视频" >企业宣传视频</a></li>
+						<%--<li ><a href="about.aspx?cateid=95" title="联系我们" id="nynavID95">联系我们</a></li>--%>
 
-					</style>
-					<h2 style="padding-left: 60;">联系方式</h2>
-					<c:forEach items="${contact}" var="pr">
-						<p class="about-us-right-p5">${pr.contactname}： ${pr.contactcontent}</p>
-					</c:forEach>
+						<li ><a href="${pageContext.request.contextPath}/contact.html" title="联系我们" class="acvier">联系我们</a></li>
+					</ul>
 				</div>
-			</div>
+				<!-- =++++++++++++++left        left    left   +++++++-->
+				<div class="about_left">
+					<div>
+					<div style="width:450px;height:350px;border:#ccc solid 1px;float: left" id="dituContent"></div>
+						<div style="float: right;padding:0px 10px;width:300px;">
+							<h2 style="font-size: 22px;font-weight: 500;color:#646464;margin-bottom:10px;line-height: 45px;padding-left: 30px;margin-top: 60px">联系方式</h2>
+							<c:forEach items="${contact}" var="pr">
+								<p style="font-size: 15px;font-weight: 500;color:#555555;margin-bottom:10px;padding-left: 30px;">${pr.contactname}： ${pr.contactcontent}</p>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
+				<div id="clear" ></div>
+			</div> <!--内容 END-->
+				<!-- =+++++++++++++++++++++-->
 		</div>
 		<!--end about-main-->
 	</div>
@@ -132,8 +120,8 @@
 				<div class="widget">
 					<h5 class="widgetheading">联系方式</h5>
 					<ul class="foot_add_box">
-						<li class="foot_tel">电话：0571-61099111</li>
-						<li class="foot_add">邮箱：zjqwwy@163.com</li>
+						<li class="foot_tel">&nbsp;0571-61099111</li>
+						<li class="foot_add">zjqwwy@163.com</li>
 					</ul>
 					<br>
 					<address>
@@ -207,74 +195,109 @@
 <script src="${pageContext.request.contextPath}/js/animate.js"></script>
 <script src="${pageContext.request.contextPath}/js/custom.js"></script>
 
-<script src="${pageContext.request.contextPath}/contact/jqBootstrapValidation.js"></script>
-<script src="${pageContext.request.contextPath}/contact/contact_me.js"></script>
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 <script type="text/javascript">
     //创建和初始化地图函数：
     function initMap(){
         createMap();//创建地图
         setMapEvent();//设置地图事件
         addMapControl();//向地图添加控件
-        addMapOverlay();//向地图添加覆盖物
+        addMarker();//向地图中添加marker
     }
+
+    //创建地图函数：
     function createMap(){
-        map = new BMap.Map("map");
-        map.centerAndZoom(new BMap.Point(120.100882,30.140296),14);
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(119.833768,30.272875);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
     }
+
+    //地图事件设置函数：
     function setMapEvent(){
-        map.enableScrollWheelZoom();
-        map.enableKeyboard();
-        map.enableDragging();
-        map.enableDoubleClickZoom()
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.disableScrollWheelZoom();//禁用地图滚轮放大缩小，默认禁用(可不写)
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.disableKeyboard();//禁用键盘上下左右键移动地图，默认禁用(可不写)
     }
-    function addClickHandler(target,window){
-        target.addEventListener("click",function(){
-            target.openInfoWindow(window);
-        });
-    }
-    function addMapOverlay(){
-        var markers = [
-            {content:"联系电话：0571-61099111",title:"杭州钱王万家信息科技有限公司",imageOffset: {width:0,height:3},position:{lat:30.273234,lng:119.835484}},
-        ];
-        for(var index = 0; index < markers.length; index++ ){
-            var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
-            var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
-                imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
-            })});
-            var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
-            var opts = {
-                width: 200,
-                title: markers[index].title,
-                enableMessage: false
-            };
-            var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
 
-            addClickHandler(marker,infoWindow);
-            map.addOverlay(marker);
-
-            map.openInfoWindow(infoWindow,point); //开启信息窗口
-
-        };
-    }
-    //向地图添加控件
+    //地图控件添加函数：
     function addMapControl(){
-        var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
-        map.addControl(scaleControl);
-        var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:0});
-        map.addControl(navControl);
-        var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:false});
-        map.addControl(overviewControl);
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_TOP_LEFT});
+        map.addControl(ctrl_sca);
     }
-    var map;
-    initMap();
+
+    //标注点数组
+    var markerArr = [{title:"杭州钱王万家信息科技有限公司",content:"联系电话：0571-61099111",point:"119.834792|30.273078",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor:"#808080",
+                color:"#333",
+                cursor:"pointer"
+            });
+
+            (function(){
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click",function(){
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click",function(){
+                    _marker.openInfoWindow(_iw);
+                })
+                if(!!json.isOpen){
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
 </script>
-<!--引用百度地图API-->
 <style type="text/css">
 	html,body{margin:0;padding:0;}
 	.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
 	.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
 </style>
+
 </body>
+
 </html>

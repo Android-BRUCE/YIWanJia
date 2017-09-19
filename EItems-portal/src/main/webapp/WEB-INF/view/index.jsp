@@ -2,6 +2,8 @@
 <%@taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html lang="en">
 <head>
+<link rel="icon" sizes="124x124" href="${pageContext.request.contextPath}/img/logo.png">
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/img/logo.png">
 <meta charset="utf-8">
 <title>杭州钱王万家信息科技有限公司</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +11,7 @@
 <meta name="author" content="杭州钱王万家信息科技有限公司" />
 <!-- css -->
 
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<%--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">--%>
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/materialize/css/materialize.min.css" media="screen,projection" />
 	<link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="${pageContext.request.contextPath}/css/fancybox/jquery.fancybox.css" rel="stylesheet">
@@ -30,34 +32,7 @@
     <![endif]-->
 </head>
 <body>
-<div id="wrapper" class="home-page"> 
-	<%--<header class="topbar">--%>
-		<%--<div class="container">--%>
-			<%--<div class="row">--%>
-				<%--<!-- social icon-->--%>
-				<%--<div class="col-sm-3">--%>
-				   <%--<ul class="social-network">--%>
-					<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>&ndash;%&gt;--%>
-					<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>&ndash;%&gt;--%>
-					<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>&ndash;%&gt;--%>
-					<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>&ndash;%&gt;--%>
-					<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>&ndash;%&gt;--%>
-				<%--</ul>--%>
-				<%--</div>--%>
-				<%--<div class="col-sm-9">--%>
-					<%--<div class="row">--%>
-						<%--<ul class="info"> --%>
-							<%--<li><i class="icon-info-blocks material-icons">邮箱地址: </i><span>zjqwwy@163.com</span></li>--%>
-							<%--<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>--%>
-						<%--</ul>--%>
-						<%--<div class="clr"></div>--%>
-					<%--</div>--%>
-				<%--</div>--%>
-				<%--<!-- info -->--%>
-
-			<%--</div>--%>
-		<%--</div>--%>
-	<%--</header>--%>
+<div id="wrapper" class="home-page">
 	<!-- start header -->
 	<header>
         <div class="navbar navbar-default navbar-static-top">
@@ -84,7 +59,7 @@
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">解决方案</a></li><!--服务支持-->
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/case.html">公司案例</a></li><!---->
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">人才招聘</a></li><!--加入我们-->
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">关于我们</a></li>
 					</ul>
 				</div>
             </div>
@@ -114,7 +89,7 @@
 		<section class="section-padding gray-bg">
 
 			<div class="ind_zszk_box" style=" padding:50px 0 50px 0;">
-				<p align="center" style="font-size: 50">互联网+智慧平台</p><br><br><br>
+				<p align="center" style="font-size: 50">互联网+智慧服务平台</p><br><br><br>
 				<ul class="zszk_icon">
 					<li>
 						<A href="####">
@@ -200,10 +175,10 @@
 							<c:forEach items="${goods}" var="pr">
 								<li style="float: left; width: 255px;">
 									<div class="title">
-										<a href="${pageContext.request.contextPath}${pr.id}/detilPortfolio.html" title="${pr.goodsttile}">${pr.goodsttile}</a>
+										<a href="${pageContext.request.contextPath}/${pr.id}/detilPortfolio.html" title="${pr.goodsttile}">${pr.goodsttile}</a>
 										<p class="ms"></p>
 									</div>
-									<div class="pic"><a href="${pageContext.request.contextPath}${pr.id}/detilPortfolio.html"><img src="${pr.image}" alt=${pr.goodsttile}></a></div>
+									<div class="pic"><a href="${pageContext.request.contextPath}/${pr.id}/detilPortfolio.html"><img src="${pr.image}" alt=${pr.goodsttile}></a></div>
 								</li>
 							</c:forEach>
 
@@ -214,7 +189,7 @@
                 jQuery(".picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:4,easing:"easeOutCirc"});
 			</script>
 		</div>
-		<!--================================================= --><br><br><br><br><br><br><br><br><br><br><br><br>
+		<!--================================================= --><br>
 	</section>
 	<footer>
 	<div class="container">
@@ -223,8 +198,8 @@
 				<div class="widget">
 					<h5 class="widgetheading">联系方式</h5>
 					<ul class="foot_add_box">
-						<li class="foot_tel">电话：0571-61099111</li>
-						<li class="foot_add">邮箱：zjqwwy@163.com</li>
+						<li class="foot_tel">&nbsp;0571-61099111</li>
+						<li class="foot_add">zjqwwy@163.com</li>
 					</ul>
 					<br>
 					<address>
@@ -278,7 +253,7 @@
 		</div>
 	</div>
 	</footer>
-</div>
+ </div>
 <a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up active"></i></a>
 <!-- javascript
     ================================================== -->
@@ -298,8 +273,6 @@
 <script src="${pageContext.request.contextPath}/js/animate.js"></script>
 <script src="${pageContext.request.contextPath}/js/custom.js"></script>
 
-<script src="${pageContext.request.contextPath}/contact/jqBootstrapValidation.js"></script>
-<script src="${pageContext.request.contextPath}/contact/contact_me.js"></script>
 
 </body>
 </html>

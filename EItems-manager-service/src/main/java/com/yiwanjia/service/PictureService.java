@@ -13,6 +13,7 @@ public class PictureService  {
 
     @Value("${LOCAL_PICTURE_ADDRESS}")
     private String LOCAL_PICTURE_ADDRESS;
+
     public Map uploadPicture(MultipartFile uploadFile,String realPath ) {
         String separator = File.separator;
         Map resultMap = new HashMap<>();

@@ -11,12 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @Controller
-@RequestMapping("contact")
 public class ContactController {
     @Autowired
     protected TbContactMapper tbContactMapper;
 
-    @RequestMapping("contactUs")
+    @RequestMapping("contact")
     public String getContact(Model model){
         TbContactExample example = new TbContactExample();
         List<TbContact> list = tbContactMapper.selectByExample(example);

@@ -14,7 +14,7 @@ import java.util.*;
 
 public class FTPTest {
 
-	@Test
+
 	public void testFtpClient() throws Exception {
 		//创建一个FtpClient对象
 		FTPClient ftpClient = new FTPClient();
@@ -40,7 +40,7 @@ public class FTPTest {
 		ftpClient.logout();
 		
 	}
-	@Test
+
 	public void testFtpClient2() throws Exception {
 		 Logger LOG = LoggerFactory.getLogger(FTPTest.class);
 		listFileNames("118.178.253.131", 22, "root", "#", "/home/ftpuser/www/images");
@@ -94,7 +94,7 @@ public class FTPTest {
 		}
 	}
 
-	@Test
+
 	public void testFtpUtil() throws Exception {
 		FileInputStream inputStream = new FileInputStream(new File("C:\\Users\\brucezheng\\Desktop\\banner03.jpg"));
 		boolean b = FtpUtil.uploadFile("118.178.253.131", 21, "root", "#", "/home/ftpuser/www/images", "/2017/09/12", "hello.jpg", inputStream);
@@ -102,7 +102,7 @@ public class FTPTest {
 
 	}
 
-	@Test
+
 	public void jschSFTP(){
 			ChannelSftp sftp = null;
 			JSch jsch = new JSch();

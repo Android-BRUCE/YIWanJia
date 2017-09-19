@@ -1,6 +1,8 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <html>
 <head>
+  <link rel="icon" sizes="124x124" href="${pageContext.request.contextPath}/images/logo.png">
+  <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 <title>杭州钱王万家信息科技有限公司管理后台</title>
 <style>
 body

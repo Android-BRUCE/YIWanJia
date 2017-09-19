@@ -54,16 +54,16 @@ public class ActivityController {
         return result;
     }
 
-    /**
-     * 携带数据跳转至编辑页面
-     * @param id
-     * @param Model
-     * @return
-     */
-    @RequestMapping("about_activity_edit")
-    public String jumpToActivity(@RequestParam(value = "id") Long id, Model Model){
-        TbActivity activity = activityService.getActivityByID(id);
-        Model.addAttribute("activity",activity);
-        return "about_activity_edit";
-    }
+//    /**
+//     * 携带数据跳转至编辑页面
+//     * @param id
+//     * @param Model
+//     * @return
+//     */
+//    @RequestMapping("about_activity_edit")
+//    public String jumpToActivity(@RequestParam(value = "id") Long id, Model Model){
+//        TbActivity activity = activityService.getActivityByID(id);
+//        Model.addAttribute("activity",activity);
+//        return "about_activity_edit";
+//    }
 }

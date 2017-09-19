@@ -31,14 +31,6 @@
 					<input type="hidden" name="id" value="${activity.id}"/>
 				</td>
 			</tr>
-
-			<%--<tr>--%>
-				<%--<td>状态设置:</td>--%>
-				<%--<td>--%>
-					<%--<input class="easyui-radio" type="radio" name="status" value="1" data-options="required:true" style="width: 10px;">开启</input>--%>
-					<%--<input class="easyui-radio" type="radio" name="status" value="0" style="width: 10px;">关闭</input>--%>
-				<%--</td>--%>
-			<%--</tr>--%>
 	        <tr>
 	            <td>活动具述:</td>
 	            <td>

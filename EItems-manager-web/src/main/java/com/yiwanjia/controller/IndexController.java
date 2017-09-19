@@ -2,9 +2,11 @@ package com.yiwanjia.controller;
 
 
 import com.yiwanjia.dao.TbSupportMapper;
+import com.yiwanjia.pojo.TbActivity;
 import com.yiwanjia.pojo.TbGoods;
 import com.yiwanjia.pojo.TbGoodsCategory;
 import com.yiwanjia.pojo.TbSupport;
+import com.yiwanjia.service.ActivityService;
 import com.yiwanjia.service.GoodsCategoryService;
 import com.yiwanjia.service.GoodsService;
 import com.yiwanjia.service.SupportService;
@@ -25,7 +27,8 @@ public class IndexController {
     private GoodsCategoryService goodsCategoryService;
     @Autowired
     private SupportService SupportService;
-
+    @Autowired
+    private ActivityService activityService;
     @RequestMapping("/")
     public String showIndex(){ return "/WEB-INF/view/index.jsp"; }
 
@@ -35,10 +38,23 @@ public class IndexController {
     @RequestMapping("/{page}")
     public String showPages(@PathVariable String page){return page;}
 
-    @RequestMapping("jump/support")
+    @RequestMapping("ServerAndSupport")
     public String getSuportInfo(@RequestParam(value = "id") Integer id,Model Model){
     TbSupport info = SupportService.getSupportInfo(id);
     Model.addAttribute("support",info);
     return "ServerAndSupport";
 }
+    /**
+     * 携带数据跳转至编辑页面
+     * @param id
+     * @param Model
+     * @return
+     */
+    @RequestMapping("about_activity_edit")
+    public String jumpToActivity(@RequestParam(value = "id") Long id, Model Model){
+        TbActivity activity = activityService.getActivityByID(id);
+        Model.addAttribute("activity",activity);
+        return "about_activity_edit";
+    }
+
 }

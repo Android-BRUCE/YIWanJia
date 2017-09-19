@@ -15,9 +15,9 @@ public class SupportService {
         tbSupport.setId(1);
        int result = tbSupportMapper.updateByPrimaryKeySelective(tbSupport);
        if(result == 0){
-           return TaotaoResult.build(500,"失败");
+           return TaotaoResult.build(500,"修改失败！");
        }
-return TaotaoResult.build(200,"success!");
+return TaotaoResult.build(200,"修改成功!");
     }
 
     public TbSupport getSupportInfo(Integer id){

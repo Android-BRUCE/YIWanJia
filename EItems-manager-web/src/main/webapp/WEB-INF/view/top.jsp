@@ -145,11 +145,11 @@ a:link,a:visited {
     	<table width="750" border="0" cellspacing="0" cellpadding="0">
       <tr>
       <td align="right" height="26" style="padding-right:10px;line-height:26px;">
-        	您好：<span class="username" ><font color="red">${employee.e_name }</font></span>，欢迎使用万家科技平台管理系统！
+        	您好：${user.name}<span class="username" ><font color="red"></font></span>，欢迎使用万家科技平台管理系统！
         	
         	[<a href="${pageContext.request.contextPath}/index.html" target="_top">主页</a>]
-        	[<a href="${pageContext.request.contextPath}/modpassword.html"  target="_blank">修改密码</a>]
-        	[<a href="${pageContext.request.contextPath}/login/exit.do" onClick="parent.location.href='login.htm'" target="_login">注销退出</a>]&nbsp;
+        	<%--[<a href="${pageContext.request.contextPath}/modpassword.html"  target="main">修改密码</a>]--%>
+        	[<a href="${pageContext.request.contextPath}/user/exit.do" onClick="parent.location.href='login.html'">注销退出</a>]&nbsp;
       </td>
       </tr>
       <tr>

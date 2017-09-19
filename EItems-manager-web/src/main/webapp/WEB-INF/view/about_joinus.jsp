@@ -20,7 +20,7 @@
 <!--  快速转换位置按钮  -->
 <table width="98%" border="0" cellpadding="0" cellspacing="1" bgcolor="#D1DDAA" align="left">
     <tr>
-        <td height="26" background="${pageContext.request.contextPath}/skin/images/newlinebg3.gif">
+        <td height="26" >
             <table width="58%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td >

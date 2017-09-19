@@ -6,6 +6,7 @@ import com.yiwanjia.pojo.TbContact;
 import com.yiwanjia.service.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -53,5 +54,18 @@ public class ContactConller {
     public TaotaoResult deleteContact(@PathVariable int[] id){
         TaotaoResult result = contactService.deleteContactArray(id);
         return result;
+    }
+
+    @RequestMapping("contactedit")
+    public String getCOntacct(Integer id , Model model){
+        TbContact contact = contactService.getContact(id);
+        model.addAttribute("contact",contact);
+        return "contact-edit";
+    }
+    @RequestMapping("saveEdit")
+    @ResponseBody
+    public TaotaoResult saveEdit(TbContact TbContact){
+        TaotaoResult result = contactService.saveEdit(TbContact);
+        return  result;
     }
 }

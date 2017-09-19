@@ -14,14 +14,14 @@
     <script type="text/javascript" src="${pageContext.request.contextPath}/jquery-easyui-1.2.6/locale/easyui-lang-zh_CN.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/easyUIShow-Goods.js"></script>
 </head>
-<body leftmargin="8" topmargin="8" background='${pageContext.request.contextPath}/skin/images/allbg.gif'>
+<body leftmargin="8" topmargin="8" >
 <div id="dd"></div>
 <div id="address"></div>
 <!--  快速转换位置按钮  -->
-<table width="98%" border="0" cellpadding="0" cellspacing="1" bgcolor="#D1DDAA" align="left">
+<table width="105%" border="0" cellpadding="0" cellspacing="1" bgcolor="#D1DDAA" align="left">
     <tr>
-        <td height="26" background="${pageContext.request.contextPath}/skin/images/newlinebg3.gif">
-            <table width="58%" border="0" cellspacing="0" cellpadding="0">
+        <td height="26" >
+            <table width="90%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td >
                         当前位置:首页管理>>产品展示
@@ -40,25 +40,25 @@
     <table width='98%'  border='0' cellpadding='1' cellspacing='1' bgcolor='#CBD8AC' align="left" style="margin-top:8px">
         <tr bgcolor='#EEF4EA'>
             <td background='${pageContext.request.contextPath}/skin/images/wbg.gif' align='left'>
-                <table border='0' cellpadding='0' cellspacing='0'>
-                    <tr>
-                        <td width='90' align='center'>搜索条件：</td>
-                        <td width='160'>
-                            <select name='cid' style='width:150' id="cid">
-                                <option value='0'>选择类型...</option>
-                                <option value='1'>角色编号</option>
-                                <option value='2'>角色名称</option>
-                                <option value='3'>角色状态</option>
-                            </select>
-                        </td>
-                        <td width='70'>
-                            关键字：
-                        </td>
-                        <td width='160'>
-                            <input type='text' name='keyword' style='width:120px' id="keyword"/>
-                        </td>
-                    </tr>
-                </table>
+                <%--<table border='0' cellpadding='0' cellspacing='0'>--%>
+                    <%--<tr>--%>
+                        <%--<td width='90' align='center'>搜索条件：</td>--%>
+                        <%--<td width='160'>--%>
+                            <%--<select name='cid' style='width:150' id="cid">--%>
+                                <%--<option value='0'>选择类型...</option>--%>
+                                <%--<option value='1'>角色编号</option>--%>
+                                <%--<option value='2'>角色名称</option>--%>
+                                <%--<option value='3'>角色状态</option>--%>
+                            <%--</select>--%>
+                        <%--</td>--%>
+                        <%--<td width='70'>--%>
+                            <%--关键字：--%>
+                        <%--</td>--%>
+                        <%--<td width='160'>--%>
+                            <%--<input type='text' name='keyword' style='width:120px' id="keyword"/>--%>
+                        <%--</td>--%>
+                    <%--</tr>--%>
+                <%--</table>--%>
             </td>
         </tr>
     </table>

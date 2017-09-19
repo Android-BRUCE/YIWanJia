@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * 公司介绍管理
  */
 @Controller
-@RequestMapping("company")
 public class AboutUsController {
 
     @Autowired
@@ -53,7 +52,7 @@ public String jumpToIntroduction(Model Model){
      * @param content
      * @return
      */
-    @RequestMapping("introduction")
+    @RequestMapping("company/introduction")
     @ResponseBody
     public TaotaoResult updateIntrodution(String title,String content){
         TaotaoResult result = aboutUsService.updateIntroduction(title, content);
@@ -65,7 +64,7 @@ public String jumpToIntroduction(Model Model){
      * @param image
      * @return
      */
-    @RequestMapping("honourPic")
+    @RequestMapping("company/honourPic")
     @ResponseBody
     public TaotaoResult updateHonourPic(String image){
         TaotaoResult result = aboutUsService.updateHonourPic(image);
@@ -77,7 +76,7 @@ public String jumpToIntroduction(Model Model){
      * @param introduction
      * @return
      */
-    @RequestMapping("road")
+    @RequestMapping("company/road")
     @ResponseBody
     public TaotaoResult updateRoad(String introduction){
         TaotaoResult result = aboutUsService.updateRoad(introduction);
@@ -89,7 +88,7 @@ public String jumpToIntroduction(Model Model){
      * @param video
      * @return
      */
-    @RequestMapping("video")
+    @RequestMapping("company/video")
     @ResponseBody
     public TaotaoResult updateVideo(String video){
         return aboutUsService.updateVideo(video);

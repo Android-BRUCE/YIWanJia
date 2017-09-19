@@ -8,6 +8,7 @@ import com.yiwanjia.pojo.TbCase;
 import com.yiwanjia.pojo.TbCase2;
 import com.yiwanjia.pojo.TbCaseExample;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -18,7 +19,6 @@ import java.util.List;
 public class CaseService {
     @Autowired
     private TbCaseMapper TbCaseMapper;
-
     /**
      * 获取list
      * @param page

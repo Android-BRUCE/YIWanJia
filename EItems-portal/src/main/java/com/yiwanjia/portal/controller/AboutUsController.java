@@ -31,28 +31,28 @@ public class AboutUsController {
     public String getRoad(Model model){
         TbAboutWithBLOBs roadDevolopment = aboutUsService.getRoadDevolopment();
         model.addAttribute("road",roadDevolopment);
-        return "/WEB-INF/view/aboutDevelopment.bak";
+        return "aboutDevelopment";
     }
 
     @RequestMapping("aboutPropaganda")
     public String getVideoPath(Model model){
         TbAboutWithBLOBs roadDevolopment = aboutUsService.getVideo();
         model.addAttribute("videoPath",roadDevolopment);
-        return "/WEB-INF/view/aboutPropaganda.bak";
+        return "aboutPropaganda";
     }
 
     @RequestMapping("about")
     public String getAboutUs(Model model){
         TbAboutWithBLOBs roadDevolopment = aboutUsService.getAboutUsContent();
         model.addAttribute("aboutUsContent",roadDevolopment);
-        return "/WEB-INF/view/about.bak";
+        return "/about";
     }
 
     @RequestMapping("aboutHonour")
     public String getaboutUsPic(Model model){
         TbAboutWithBLOBs roadDevolopment = aboutUsService.getAboutUsPic();
         model.addAttribute("aboutUsPic",roadDevolopment);
-        return "/WEB-INF/view/aboutHonour.bak";
+        return "aboutHonour";
     }
 
 }

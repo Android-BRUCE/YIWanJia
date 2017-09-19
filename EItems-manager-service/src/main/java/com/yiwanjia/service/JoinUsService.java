@@ -23,8 +23,8 @@ public class JoinUsService {
         }
         return TaotaoResult.build(200,"修改成功！");
     }
-//    public TbJoin getTbJoin(Long id){
-//        tbJoinMapper.selectByPrimaryKey(id);
-//
-//    }
+    public TbJoin getTbJoin(Long id){
+        TbJoin tbJoin = tbJoinMapper.selectByPrimaryKey(id);
+        return tbJoin;
+    }
 }

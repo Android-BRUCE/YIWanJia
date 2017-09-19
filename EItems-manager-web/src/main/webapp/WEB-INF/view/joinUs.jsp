@@ -14,9 +14,9 @@
 	<form id="itemAddForm" class="itemForm" method="post">
 	    <table cellpadding="5">
 	        <tr>
-	            <td>修改加入我们内容:</td>
+	            <td></td>
 	            <td>
-	                <textarea style="width:800px;height:300px;visibility:hidden;" name="content"></textarea>
+	                <textarea style="width:1100px;height:450px;visibility:hidden;" name="content">${join.content}</textarea>
 	            </td>
 	        </tr>
 	    </table>
@@ -39,7 +39,6 @@
 		$.post("${pageContext.request.contextPath}/join/updateJoin.do",$("#itemAddForm").serialize(), function(data){
 			if(data.status == 200){
                 $.messager.alert('提示',data.msg);
-                clearForm()
             }
             if(data.status == 500){
                 $.messager.alert('提示',data.msg);

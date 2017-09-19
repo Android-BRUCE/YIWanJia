@@ -25,8 +25,18 @@
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<!-- 设定默认编码 -->
 		<property name="defaultEncoding" value="UTF-8"></property>
-		<!-- 设定文件上传的最大值5MB，5*1024*1024 -->
-		<property name="maxUploadSize" value="5242880"></property>
+		<!-- 设定文件上传的最大值10MB，10*1024*1024 5242880*2-->
+		<property name="maxUploadSize" value="10485760"></property>
 	</bean>
 
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**"/>
+			<mvc:exclude-mapping path="/js/**"></mvc:exclude-mapping>
+			<mvc:exclude-mapping path="/css/**"></mvc:exclude-mapping>
+			<mvc:exclude-mapping path="/login.html"></mvc:exclude-mapping>
+			<mvc:exclude-mapping path="/user/login.do"></mvc:exclude-mapping>
+			<bean class="com.yiwanjia.intercepter.LoginIntercepter"></bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
 </beans>

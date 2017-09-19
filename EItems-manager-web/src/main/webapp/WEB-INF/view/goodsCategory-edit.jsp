@@ -47,7 +47,6 @@
         $.post("${pageContext.request.contextPath}/goodsCategory/SaveEdit.do",$("#itemAddForm").serialize(), function(data){
             if(data.status == 200){
                 $.messager.alert('提示',data.msg);
-                clearForm();
             }
             if(data.status == 500){
                 $.messager.alert('提示',data.msg);

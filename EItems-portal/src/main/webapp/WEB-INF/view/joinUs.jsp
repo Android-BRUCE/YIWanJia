@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="icon" sizes="124x124" href="${pageContext.request.contextPath}/img/logo.png">
+	<link rel="shortcut icon" href="${pageContext.request.contextPath}/img/logo.png">
 <meta charset="utf-8">
 <title>杭州钱王万家信息科技有限公司</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +12,7 @@
 <meta name="author" content="杭州钱王万家信息科技有限公司" />
 <!-- css --> 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="/stylesheet" href="${pageContext.request.contextPath}/materialize/css/materialize.min.css" media="screen,projection" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/materialize/css/materialize.min.css" media="screen,projection" />
 <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet" />
 <link href="${pageContext.request.contextPath}/css/fancybox/jquery.fancybox.css" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/css/flexslider.css" rel="stylesheet" />
@@ -26,20 +28,7 @@
     <![endif]-->
 </head>
 <body>
-<div id="wrapper"> 
-	<%--<header class="topbar">--%>
-		<%--<div class="container">--%>
-
-			<%--<div class="row">--%>
-				<%--<ul class="info">--%>
-					<%--<li><i class="icon-info-blocks material-icons">邮箱地址: </i><span>zjqwwy@163.com</span></li>--%>
-					<%--<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>--%>
-				<%--</ul>--%>
-				<%--<div class="clr"></div>--%>
-			<%--</div>--%>
-		<%--</div>--%>
-	<%--</header>--%>
-	<!-- start header -->
+<div id="wrapper">
 	<!-- start header -->
 	<header>
 		<div class="navbar navbar-default navbar-static-top">
@@ -61,10 +50,10 @@
 						<li ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">首 页</a></li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻咨询</a></li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品中心</a></li>
-						<li ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">解决方案</a></li><!--服务支持-->
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">解决方案</a></li><!--服务支持-->
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/case.html">公司案例</a></li><!---->
 						<li class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">人才招聘</a></li><!--加入我们-->
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/contact/contactUs.html">联系我们</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">关于我们</a></li>
 					</ul>
 				</div>
 			</div>
@@ -99,11 +88,6 @@
 		<%--</div>--%>
 		<!--end about-main-->
 	</div>
-</div>
-
-</div>
-	</div>
-
 	</section>
 <footer>
 	<div class="container">
@@ -112,8 +96,8 @@
 				<div class="widget">
 					<h5 class="widgetheading">联系方式</h5>
 					<ul class="foot_add_box">
-						<li class="foot_tel">电话：0571-61099111</li>
-						<li class="foot_add">邮箱：zjqwwy@163.com</li>
+						<li class="foot_tel">&nbsp;0571-61099111</li>
+						<li class="foot_add">zjqwwy@163.com</li>
 					</ul>
 					<br>
 					<address>
@@ -187,7 +171,6 @@
 <script src="${pageContext.request.contextPath}/js/animate.js"></script>
 <script src="${pageContext.request.contextPath}/js/custom.js"></script>
 
-<script src="${pageContext.request.contextPath}/contact/jqBootstrapValidation.js"></script>
-<script src="${pageContext.request.contextPath}/contact/contact_me.js"></script>
+
 </body>
 </html>

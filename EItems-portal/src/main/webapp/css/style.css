@@ -125,7 +125,7 @@ width: 20px;
     color: #5584a9;
 }
 .row,.row-fluid {
-	margin-bottom:30px;
+	margin-bottom:5px;
 }
 
 .row .row,.row-fluid .row-fluid{
@@ -1035,7 +1035,7 @@ ul.general {
     letter-spacing: 1px;
 }
 .foot_tel {
-    background: url("../img/phone1.jpg") no-repeat top left;
+    background: url("../img/phone.png") no-repeat top left;
     padding-left: 30px;
     line-height: 25px;
     height: 30px;
@@ -1044,7 +1044,7 @@ ul.general {
     font-size: 14px;
 }
 .foot_add {
-    background: url(../img/email.jpg) no-repeat top left;
+    background: url(../img/email.png) no-repeat top left;
     padding-left: 35px;
     line-height: 30px;
     height: 30px;
@@ -1470,7 +1470,7 @@ footer .widget .flickr_badge img {
 
   
 footer{
-	padding:50px 0 0 0;
+	padding:20px 0 0 0;
 	color:#f8f8f8;
 }
 
@@ -1516,8 +1516,8 @@ ul.social-network li {
 	text-shadow:none;
 	color: #dedede;
 	padding:0;
-	padding-top:30px;
-	margin:20px 0 0 0;
+	padding-top:5px;
+	margin:0px 0 0 0;
 	background: #0c314e;
 	border-top: 1px solid #133a58;
 }
@@ -1938,20 +1938,20 @@ h1.ind_bt{ text-align:center; font-size:35px; color:#fff; font-weight:normal; ma
 h2.ind_ms{ text-align:center; font-size:16px; color:#FFF; font-weight:normal;  letter-spacing:7px;opacity:0.5;}
 span.ind_x{ width:50px; height:3px; display:block; margin:25px auto 0 ; background:#fff;}
 /* 服务列表 背景大图片css */
-#ind_box_service{ clear:both; padding-top:10px; background: url(/img/public/ind_news_bg.jpg) no-repeat center #fff; padding-bottom:0px;}
+#ind_box_service{ clear:both; padding-top:10px; background: url("../img/public/ind_news_bg.jpg") no-repeat center #fff; padding-bottom:0px;}
 /* 服务列表 滚动css */
 #ind_service_box{ width:1100px; margin:-20px auto;   position:relative;  }
 #ind_service_box .hd{ overflow:hidden;  height:50px; width:1230px; margin-left:-60px; margin-top:150px; position:absolute; }
 #ind_service_box .hd .prev{ display:block;  width:50px; height:50px; float:left; margin-right:5px;  overflow:hidden;
-    cursor:pointer; background:url("/img/public/slider-arrow_left01.png") no-repeat;}
+    cursor:pointer; background:url("../img/public/slider-arrow_left01.png") no-repeat;}
 #ind_service_box .hd .next{  display:block;  width:50px; height:50px; float:right; margin-right:5px;  overflow:hidden;
-    cursor:pointer; background:url("/img/public/slider-arrow_right01.png") no-repeat; }
+    cursor:pointer; background:url("../img/public/slider-arrow_right01.png") no-repeat; }
 
-#ind_service_box .hd .prev:hover{ background:url("/img/public/slider-arrow_left02.png") no-repeat;}
-#ind_service_box .hd .next:hover{ background:url("/img/public/slider-arrow_right02.png") no-repeat;}
+#ind_service_box .hd .prev:hover{ background:url("../img/public/slider-arrow_left02.png") no-repeat;}
+#ind_service_box .hd .next:hover{ background:url("../img/public/slider-arrow_right02.png") no-repeat;}
 
-#ind_service_box .hd .prevStop{ background:url("/img/public/slider-arrow_left03.png") no-repeat;}
-#ind_service_box .hd .nextStop{ background:url("/img/public/slider-arrow_right03.png") no-repeat;}
+#ind_service_box .hd .prevStop{ background:url("../img/public/slider-arrow_left03.png") no-repeat;}
+#ind_service_box .hd .nextStop{ background:url("../img/public/slider-arrow_right03.png") no-repeat;}
 
 #ind_service_box .bd{ padding:0px;   }
 #ind_service_box .bd ul{ overflow:hidden; zoom:1; }

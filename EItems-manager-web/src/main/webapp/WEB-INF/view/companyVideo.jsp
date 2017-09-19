@@ -95,7 +95,7 @@ function yulan(){
             <table width="58%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td >
-                        当前位置:公司介绍管理>>更换宣传视频
+                        当前位置:关于我们>>更换宣传视频
                     </td>
                 </tr>
             </table>
@@ -107,7 +107,7 @@ function yulan(){
 
     <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px">
         <tr bgcolor="#E7E7E7">
-            <td height="24" colspan="2" background="${pageContext.request.contextPath}/skin/images/tbg.gif">&nbsp;添加链接&nbsp;</td>
+            <td height="24" colspan="2" >&nbsp;添加链接&nbsp;</td>
         </tr>
         <tr >
             <td align="right" bgcolor="#FAFAF1" height="22">添加更换的视频链接：</td>

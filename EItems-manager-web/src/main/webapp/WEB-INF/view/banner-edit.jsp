@@ -1,31 +1,38 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<link href="${pageContext.request.contextPath}/js/kindeditor-4.1.10/themes/default/default.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" charset="utf-8" src="${pageContext.request.contextPath}/js/kindeditor-4.1.10/kindeditor-all-min.js"></script>
-<script type="text/javascript" charset="utf-8" src="${pageContext.request.contextPath}/js/kindeditor-4.1.10/lang/zh_CN.js"></script>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/js/jquery-easyui-1.4.1/themes/default/easyui.css" />
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/js/jquery-easyui-1.4.1/themes/icon.css" />
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/taotao.css" />
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<link href="${pageContext.request.contextPath}/js/kindeditor-4.1.10/themes/default/default.css" type="text/css"
+      rel="stylesheet">
+<script type="text/javascript" charset="utf-8"
+        src="${pageContext.request.contextPath}/js/kindeditor-4.1.10/kindeditor-all-min.js"></script>
+<script type="text/javascript" charset="utf-8"
+        src="${pageContext.request.contextPath}/js/kindeditor-4.1.10/lang/zh_CN.js"></script>
+<link rel="stylesheet" type="text/css"
+      href="${pageContext.request.contextPath}/js/jquery-easyui-1.4.1/themes/default/easyui.css"/>
+<link rel="stylesheet" type="text/css"
+      href="${pageContext.request.contextPath}/js/jquery-easyui-1.4.1/themes/icon.css"/>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/taotao.css"/>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-easyui-1.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-easyui-1.4.1/jquery.easyui.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-easyui-1.4.1/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript"
+        src="${pageContext.request.contextPath}/js/jquery-easyui-1.4.1/jquery.easyui.min.js"></script>
+<script type="text/javascript"
+        src="${pageContext.request.contextPath}/js/jquery-easyui-1.4.1/locale/easyui-lang-zh_CN.js"></script>
 <script>
 
-    Date.prototype.format = function(format){
-        var o =  {
-            "M+" : this.getMonth()+1, //month
-            "d+" : this.getDate(), //day
-            "h+" : this.getHours(), //hour
-            "m+" : this.getMinutes(), //minute
-            "s+" : this.getSeconds(), //second
-            "q+" : Math.floor((this.getMonth()+3)/3), //quarter
-            "S" : this.getMilliseconds() //millisecond
+    Date.prototype.format = function (format) {
+        var o = {
+            "M+": this.getMonth() + 1, //month
+            "d+": this.getDate(), //day
+            "h+": this.getHours(), //hour
+            "m+": this.getMinutes(), //minute
+            "s+": this.getSeconds(), //second
+            "q+": Math.floor((this.getMonth() + 3) / 3), //quarter
+            "S": this.getMilliseconds() //millisecond
         };
-        if(/(y+)/.test(format)){
-            format = format.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));
+        if (/(y+)/.test(format)) {
+            format = format.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
         }
-        for(var k in o)  {
-            if(new RegExp("("+ k +")").test(format)){
-                format = format.replace(RegExp.$1, RegExp.$1.length==1 ? o[k] : ("00"+ o[k]).substr((""+ o[k]).length));
+        for (var k in o) {
+            if (new RegExp("(" + k + ")").test(format)) {
+                format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));
             }
         }
         return format;
@@ -33,48 +40,48 @@
 
     var TT = TAOTAO = {
         // 编辑器参数
-        kingEditorParams : {
+        kingEditorParams: {
             //指定上传文件参数名称
-            filePostName  : "uploadFile",
+            filePostName: "uploadFile",
             //指定上传文件请求的url。
-            uploadJson : '${pageContext.request.contextPath}/pic/upload.do',
+            uploadJson: '${pageContext.request.contextPath}/pic/upload.do',
             //上传类型，分别为image、flash、media、file
-            dir : "image"
+            dir: "image"
         },
         // 格式化时间
-        formatDateTime : function(val,row){
+        formatDateTime: function (val, row) {
             var now = new Date(val);
             return now.format("yyyy-MM-dd hh:mm:ss");
         },
         // 格式化连接
-        formatUrl : function(val,row){
-            if(val){
-                return "<a href='"+val+"' target='_blank'>查看</a>";
+        formatUrl: function (val, row) {
+            if (val) {
+                return "<a href='" + val + "' target='_blank'>查看</a>";
             }
             return "";
         },
         // 格式化价格
-        formatPrice : function(val,row){
-            return (val/1000).toFixed(2);
+        formatPrice: function (val, row) {
+            return (val / 1000).toFixed(2);
         },
         // 格式化商品的状态
-        formatItemStatus : function formatStatus(val,row){
-            if (val == 1){
+        formatItemStatus: function formatStatus(val, row) {
+            if (val == 1) {
                 return '正常';
-            } else if(val == 2){
+            } else if (val == 2) {
                 return '<span style="color:red;">下架</span>';
             } else {
                 return '未知';
             }
         },
 
-        init : function(data){
+        init: function (data) {
             // 初始化图片上传组件
             this.initPicUpload(data);
         },
         // 初始化图片上传组件
-        initPicUpload : function(data){
-            $(".picFileUpload").each(function(i,e){
+        initPicUpload: function (data) {
+            $(".picFileUpload").each(function (i, e) {
                 var _ele = $(e);
                 _ele.siblings("div.pics").remove();
                 _ele.after('\
@@ -82,26 +89,26 @@
         			<ul></ul>\
         		</div>');
                 // 回显图片
-                if(data && data.pics){
+                if (data && data.pics) {
                     var imgs = data.pics.split(",");
-                    for(var i in imgs){
-                        if($.trim(imgs[i]).length > 0){
-                            _ele.siblings(".pics").find("ul").append("<li><a href='"+imgs[i]+"' target='_blank' id='imagehref'><img name='image' id='image' src='"+imgs[i]+"' width='80' height='50'/></a></li>");
+                    for (var i in imgs) {
+                        if ($.trim(imgs[i]).length > 0) {
+                            _ele.siblings(".pics").find("ul").append("<li><a href='" + imgs[i] + "' target='_blank' id='imagehref'><img name='image' id='image' src='" + imgs[i] + "' width='80' height='50'/></a></li>");
                         }
                     }
                 }
                 //给“上传图片按钮”绑定click事件================================多图上传js
-                $(e).click(function(){
+                $(e).click(function () {
                     var form = $(this).parentsUntil("form").parent("form");
                     //打开图片上传窗口
-                    KindEditor.editor(TT.kingEditorParams).loadPlugin('multiimage',function(){
+                    KindEditor.editor(TT.kingEditorParams).loadPlugin('multiimage', function () {
                         var editor = this;
                         editor.plugin.multiImageDialog({
-                            clickFn : function(urlList) {
+                            clickFn: function (urlList) {
                                 var imgArray = [];
-                                KindEditor.each(urlList, function(i, data) {
+                                KindEditor.each(urlList, function (i, data) {
                                     imgArray.push(data.url);
-                                    form.find(".pics ul").append("<li><a href='"+data.url+"' target='_blank'><img src='"+data.url+"' width='80' height='50' id='image'/></a></li>");
+                                    form.find(".pics ul").append("<li><a href='" + data.url + "' target='_blank'><img src='" + data.url + "' width='80' height='50' id='image'/></a></li>");
                                 });
                                 form.find("[name=image]").val(imgArray.join(","));
                                 editor.hideDialog();
@@ -112,7 +119,7 @@
             });
         },
 
-        createEditor : function(select){
+        createEditor: function (select) {
             return KindEditor.create(select, TT.kingEditorParams);
         },
 
@@ -133,59 +140,59 @@
          *
          *
          */
-        createWindow : function(params){
-            $("<div>").css({padding:"5px"}).window({
-                width : params.width?params.width:"80%",
-                height : params.height?params.height:"80%",
-                modal:true,
-                title : params.title?params.title:" ",
-                href : params.url,
-                onClose : function(){
+        createWindow: function (params) {
+            $("<div>").css({padding: "5px"}).window({
+                width: params.width ? params.width : "80%",
+                height: params.height ? params.height : "80%",
+                modal: true,
+                title: params.title ? params.title : " ",
+                href: params.url,
+                onClose: function () {
                     $(this).window("destroy");
                 },
-                onLoad : function(){
-                    if(params.onLoad){
+                onLoad: function () {
+                    if (params.onLoad) {
                         params.onLoad.call(this);
                     }
                 }
             }).window("open");
         },
 
-        closeCurrentWindow : function(){
+        closeCurrentWindow: function () {
             $(".panel-tool-close").click();
         },
 
-        changeItemParam : function(node,formId){
-            $.getJSON("/item/param/query/itemcatid/" + node.id,function(data){
-                if(data.status == 200 && data.data){
-                    $("#"+formId+" .params").show();
+        changeItemParam: function (node, formId) {
+            $.getJSON("/item/param/query/itemcatid/" + node.id, function (data) {
+                if (data.status == 200 && data.data) {
+                    $("#" + formId + " .params").show();
                     var paramData = JSON.parse(data.data.paramData);
                     var html = "<ul>";
-                    for(var i in paramData){
+                    for (var i in paramData) {
                         var pd = paramData[i];
-                        html+="<li><table>";
-                        html+="<tr><td colspan=\"2\" class=\"group\">"+pd.group+"</td></tr>";
+                        html += "<li><table>";
+                        html += "<tr><td colspan=\"2\" class=\"group\">" + pd.group + "</td></tr>";
 
-                        for(var j in pd.params){
+                        for (var j in pd.params) {
                             var ps = pd.params[j];
-                            html+="<tr><td class=\"param\"><span>"+ps+"</span>: </td><td><input autocomplete=\"off\" type=\"text\"/></td></tr>";
+                            html += "<tr><td class=\"param\"><span>" + ps + "</span>: </td><td><input autocomplete=\"off\" type=\"text\"/></td></tr>";
                         }
 
-                        html+="</li></table>";
+                        html += "</li></table>";
                     }
-                    html+= "</ul>";
-                    $("#"+formId+" .params td").eq(1).html(html);
-                }else{
-                    $("#"+formId+" .params").hide();
-                    $("#"+formId+" .params td").eq(1).empty();
+                    html += "</ul>";
+                    $("#" + formId + " .params td").eq(1).html(html);
+                } else {
+                    $("#" + formId + " .params").hide();
+                    $("#" + formId + " .params td").eq(1).empty();
                 }
             });
         },
-        getSelectionsIds : function (select){
+        getSelectionsIds: function (select) {
             var list = $(select);
             var sels = list.datagrid("getSelections");
             var ids = [];
-            for(var i in sels){
+            for (var i in sels) {
                 ids.push(sels[i].id);
             }
             ids = ids.join(",");
@@ -197,18 +204,18 @@
          * 选择器为：.onePicUpload <br/>
          * 上传完成后会设置input内容以及在input后面追加<img>
          */
-        initOnePicUpload : function(){
+        initOnePicUpload: function () {
 
-            $(".onePicUpload").click(function(){
+            $(".onePicUpload").click(function () {
                 var _self = $(this);
-                KindEditor.editor(TT.kingEditorParams).loadPlugin('image', function() {
+                KindEditor.editor(TT.kingEditorParams).loadPlugin('image', function () {
                     this.plugin.imageDialog({
-                        showRemote : false,
-                        clickFn : function(url, title, width, height, border, align) {
+                        showRemote: false,
+                        clickFn: function (url, title, width, height, border, align) {
                             var input = _self.siblings("input");
                             input.parent().find("img").remove();
                             input.val(url);
-                            input.after("<a href='"+url+"' target='_blank'><img src='"+url+"' width='80' height='50' id='image'/></a>");
+                            input.after("<a href='" + url + "' target='_blank'><img src='" + url + "' width='80' height='50' id='image'/></a>");
                             this.hideDialog();
                         }
                     });
@@ -223,26 +230,40 @@
     <form id="itemAddForm" class="itemForm" method="post">
         <table cellpadding="5">
             <tr>
-                <td>轮播图标题:</td>
-                <td><input class="easyui-textbox" type="text" name="title" data-options="validType:'length[0,50]'" style="width: 280px;" value="${banner.title}"></input></td>
-            </tr>
-            <tr>
-                <td>轮播图要点:</td>
-                <td><input value="${banner.point}" class="easyui-textbox" type="text" name="point" data-options="multiline:true,validType:'length[0,150]'" style="height:60px;width: 280px;"></input></td>
-            </tr>
 
+                <td>轮播图标题:&nbsp;&nbsp;<input class="easyui-textbox" type="text" name="title" data-options="validType:'length[0,50]'"
+                           style="width: 280px;" value="${banner.title}"></input></td>
+            </tr>
             <tr>
-                <td>轮播图图片:</td>
-                <td>
-                <a href="javascript:void(0)" class="easyui-linkbutton picFileUpload">上传图片</a>
-                    <input type="hidden" name="image"  hidden/>
-                    <input type="hidden" name="id"  value="${banner.id}" hidden/>
+
+                <td>轮播图要点:&nbsp;&nbsp;<input value="${banner.point}" class="easyui-textbox" type="text" name="point"
+                           data-options="multiline:true,validType:'length[0,150]'"
+                           style="height:60px;width: 280px;"></input></td>
+            </tr>
+            <tr>
+            <tr>
+                <td>目前图片：&nbsp;&nbsp;
+                    <div>
+                        <ul>
+                            &nbsp;&nbsp; <li><a href="${banner.image}" target="_blank"><img
+                                    src="${banner.image}" width="1000"
+                                    height="322" id="image1"></a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td>轮播图图片:&nbsp;&nbsp;
+                    <a href="javascript:void(0)" class="easyui-linkbutton picFileUpload">上传图片</a>
+                    <input type="hidden" name="image" hidden/>
+                    <input type="hidden" name="id" value="${banner.id}" hidden/>
                 </td>
             </tr>
             <tr>
-                <td>状态设置:</td>
-                <td>
-                    <input class="easyui-radio" type="radio" name="status" value="1" data-options="required:true" style="width: 10px;">开启</input>
+                <td>状态设置:&nbsp;&nbsp;
+                    <input class="easyui-radio" type="radio" name="status" value="1" data-options="required:true"
+                           style="width: 10px;">开启</input>
                     <input class="easyui-radio" type="radio" name="status" value="0" style="width: 10px;">关闭</input>
                 </td>
             </tr>
@@ -255,37 +276,40 @@
     </div>
 </div>
 <script type="text/javascript">
-    var itemAddEditor ;
+    var itemAddEditor;
     //页面初始化完毕后执行此方法
-    $(function(){
+    $(function () {
         //初始化类目选择和图片上传器
-        TAOTAO.init({fun:function(node){
-            //根据商品的分类id取商品 的规格模板，生成规格信息。第四天内容。
-            TAOTAO.changeItemParam(node, "itemAddForm");
-        }});
+        TAOTAO.init({
+            fun: function (node) {
+                //根据商品的分类id取商品 的规格模板，生成规格信息。第四天内容。
+                TAOTAO.changeItemParam(node, "itemAddForm");
+            }
+        });
     });
+
     //提交表单
-    function submitForm(){
+    function submitForm() {
         //有效性验证
-        if(!$('#itemAddForm').form('validate')){
-            $.messager.alert('提示','表单还未填写完成!');
-            return ;
+        if (!$('#itemAddForm').form('validate')) {
+            $.messager.alert('提示', '表单还未填写完成!');
+            return;
         }
         //ajax的post方式提交表单
         //$("#itemAddForm").serialize()将表单序列号为key-value形式的字符串
-        $.post("/banner/saveEdit.do",$("#itemAddForm").serialize(), function(data){
-            if(data.status == 200){
-                $.messager.alert('提示',data.msg);
+        $.post("${pageContext.request.contextPath}/banner/saveEdit.do", $("#itemAddForm").serialize(), function (data) {
+            if (data.status == 200) {
+                $.messager.alert('提示', data.msg);
                 clearForm();
             }
-            if(data.status == 500){
-                $.messager.alert('提示',data.msg);
+            if (data.status == 500) {
+                $.messager.alert('提示', data.msg);
                 clearForm();
             }
         });
     }
 
-    function clearForm(){
+    function clearForm() {
         $('#itemAddForm').form('reset');
         itemAddEditor.html('');
     }

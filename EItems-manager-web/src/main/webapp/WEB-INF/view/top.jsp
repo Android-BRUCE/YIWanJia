@@ -148,7 +148,7 @@ a:link,a:visited {
         	您好：${user.name}<span class="username" ><font color="red"></font></span>，欢迎使用万家科技平台管理系统！
         	
         	[<a href="${pageContext.request.contextPath}/index.html" target="_top">主页</a>]
-        	<%--[<a href="${pageContext.request.contextPath}/modpassword.html"  target="main">修改密码</a>]--%>
+        	[<a href="${pageContext.request.contextPath}/user-edit.html"  target="main">修改密码</a>]
         	[<a href="${pageContext.request.contextPath}/user/exit.do" onClick="parent.location.href='login.html'">注销退出</a>]&nbsp;
       </td>
       </tr>

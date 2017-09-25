@@ -3,6 +3,7 @@ package com.yiwanjia.controller;
 import com.yiwanjia.common.pojo.TaotaoResult;
 import com.yiwanjia.dao.TbAboutMapper;
 import com.yiwanjia.pojo.TbAbout;
+import com.yiwanjia.pojo.TbAboutWithBLOBs;
 import com.yiwanjia.service.AboutUsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,22 +25,23 @@ public class AboutUsController {
 
     //跳转start
     @RequestMapping("companyIntroduction")
-public String jumpToIntroduction(Model Model){
-    TbAbout about = aboutUsService.getIntroduction();
-    Model.addAttribute("introduction",about);
-    return "companyIntroduction";
-}
+    public String jumpToIntroduction(Model Model) {
+        TbAbout about = aboutUsService.getIntroduction();
+        Model.addAttribute("introduction", about);
+        return "companyIntroduction";
+    }
+
     @RequestMapping("companyRoad")
-    public String jumpToRoad(Model Model){
+    public String jumpToRoad(Model Model) {
         TbAbout about = aboutUsService.getRoad();
-        Model.addAttribute("road",about);
+        Model.addAttribute("road", about);
         return "companyRoad";
     }
 
     @RequestMapping("companyVideo")
-    public String jumpToVideo(Model Model){
+    public String jumpToVideo(Model Model) {
         TbAbout about = aboutUsService.getVideo();
-        Model.addAttribute("video",about);
+        Model.addAttribute("video", about);
         return "companyVideo";
     }
 
@@ -48,49 +50,66 @@ public String jumpToIntroduction(Model Model){
 
     /**
      * 介绍
+     *
      * @param title
      * @param content
      * @return
      */
     @RequestMapping("company/introduction")
     @ResponseBody
-    public TaotaoResult updateIntrodution(String title,String content){
+    public TaotaoResult updateIntrodution(String title, String content) {
         TaotaoResult result = aboutUsService.updateIntroduction(title, content);
         return result;
     }
 
     /**
-     * 荣耀
+     * 荣耀图片
+     *
      * @param image
      * @return
      */
     @RequestMapping("company/honourPic")
     @ResponseBody
-    public TaotaoResult updateHonourPic(String image){
+    public TaotaoResult updateHonourPic(String image) {
         TaotaoResult result = aboutUsService.updateHonourPic(image);
         return result;
     }
 
     /**
      * 发展历程
+     *
      * @param introduction
      * @return
      */
     @RequestMapping("company/road")
     @ResponseBody
-    public TaotaoResult updateRoad(String introduction){
+    public TaotaoResult updateRoad(String introduction) {
         TaotaoResult result = aboutUsService.updateRoad(introduction);
         return result;
     }
 
     /**
      * 展示视频
+     *
      * @param video
      * @return
      */
     @RequestMapping("company/video")
     @ResponseBody
-    public TaotaoResult updateVideo(String video){
+    public TaotaoResult updateVideo(String video) {
         return aboutUsService.updateVideo(video);
+    }
+
+    /**
+     * 跳转至修改荣誉图页面
+     *
+     * @param model
+     * @return
+     */
+    @RequestMapping("companyPic")
+    public String jumpToPicPage(Model model) {
+        TbAboutWithBLOBs hourPic = aboutUsService.getHourPic();
+        model.addAttribute("pic", hourPic);
+        return "companyPic";
     }
 }

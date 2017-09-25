@@ -19,25 +19,33 @@ public class AboutUsService {
     @Autowired
     private TbAboutMapper tbAboutMapper;
 
-    public TbAbout getIntroduction(){
+    public TbAbout getIntroduction() {
 
         TbAboutWithBLOBs bs = tbAboutMapper.seleteAboutUsContent();
 
         return bs;
     }
-public TbAbout getRoad(){
-    TbAboutWithBLOBs bs = tbAboutMapper.seleteRoad();
-    return bs;
-}
-public TbAbout getVideo(){
-    TbAboutWithBLOBs bs = tbAboutMapper.seleteVideo();
-    return bs;
-}
+
+    public TbAbout getRoad() {
+        TbAboutWithBLOBs bs = tbAboutMapper.seleteRoad();
+        return bs;
+    }
+
+    public TbAbout getVideo() {
+        TbAboutWithBLOBs bs = tbAboutMapper.seleteVideo();
+        return bs;
+    }
+    public TbAboutWithBLOBs getHourPic() {
+        TbAboutWithBLOBs tbAboutWithBLOBs = tbAboutMapper.seleteAboutUsPic();
+        return tbAboutWithBLOBs;
+    }
+
     /**
      * 修改介绍（标题和介绍内容）
+     *
      * @return
      */
-    public TaotaoResult updateIntroduction(String title,String content){
+    public TaotaoResult updateIntroduction(String title, String content) {
         TbAboutWithBLOBs bs = new TbAboutWithBLOBs();
         bs.setContent(content);
         bs.setUpdatetime(new Date());
@@ -45,61 +53,68 @@ public TbAbout getVideo(){
         TbAboutExample example = new TbAboutExample();
         TbAboutExample.Criteria criteria = example.createCriteria();
         criteria.andIdEqualTo(1L);
-        int r1 = tbAboutMapper.updateByExampleSelective(bs,example);//可为空的修改。
-       if( r1==0){
-        return TaotaoResult.build(500,"修改介绍失败！");
-       }
-        return TaotaoResult.build(200,"修改介绍成功！");
+        int r1 = tbAboutMapper.updateByExampleSelective(bs, example);//可为空的修改。
+        if (r1 == 0) {
+            return TaotaoResult.build(500, "修改介绍失败！");
+        }
+        return TaotaoResult.build(200, "修改介绍成功！");
     }
 
     /**
      * 修改荣誉展示图
+     *
      * @param image
      * @return
      */
-    public TaotaoResult updateHonourPic(String image){
+    public TaotaoResult updateHonourPic(String image) {
         TbAboutWithBLOBs bs = new TbAboutWithBLOBs();
         bs.setImage(image);
         bs.setUpdatetime(new Date());
         TbAboutExample example = new TbAboutExample();
         TbAboutExample.Criteria criteria = example.createCriteria();
         criteria.andIdEqualTo(1L);
-        int r1 = tbAboutMapper.updateByExampleSelective(bs,example);//可为空的修改。
-        if( r1==0){
-            return TaotaoResult.build(500,"修改荣誉展示失败！");
+        int r1 = tbAboutMapper.updateByExampleSelective(bs, example);//可为空的修改。
+        if (r1 == 0) {
+            return TaotaoResult.build(500, "修改荣誉展示失败！");
         }
-           return TaotaoResult.build(200,"修改荣誉展示成功！");
+        return TaotaoResult.build(200, "修改荣誉展示成功！");
     }
 
     /**
      * 修改企业发展历程文字
+     *
      * @return
      */
-    public TaotaoResult updateRoad(String introduction){
+    public TaotaoResult updateRoad(String introduction) {
         TbAboutWithBLOBs bs = new TbAboutWithBLOBs();
         bs.setIntroduction(introduction);
         bs.setUpdatetime(new Date());
         TbAboutExample example = new TbAboutExample();
         TbAboutExample.Criteria criteria = example.createCriteria();
         criteria.andIdEqualTo(1L);
-        int r1 = tbAboutMapper.updateByExampleSelective(bs,example);//可为空的修改。
-        if( r1==0){
-            return TaotaoResult.build(500,"修改发展历程展示失败！");
+        int r1 = tbAboutMapper.updateByExampleSelective(bs, example);//可为空的修改。
+        if (r1 == 0) {
+            return TaotaoResult.build(500, "修改发展历程展示失败！");
         }
-        return TaotaoResult.build(200,"修改发展历程展示成功！");
+        return TaotaoResult.build(200, "修改发展历程展示成功！");
     }
 
-    public TaotaoResult updateVideo(String vodie){
+    /**
+     * 修改视频
+     * @param vodie
+     * @return
+     */
+    public TaotaoResult updateVideo(String vodie) {
         TbAboutWithBLOBs bs = new TbAboutWithBLOBs();
         bs.setVideo(vodie);
         bs.setUpdatetime(new Date());
         TbAboutExample example = new TbAboutExample();
         TbAboutExample.Criteria criteria = example.createCriteria();
         criteria.andIdEqualTo(1L);
-        int r1 = tbAboutMapper.updateByExampleSelective(bs,example);//可为空的修改。
-        if( r1==0){
-            return TaotaoResult.build(500,"修改视频展示失败！");
+        int r1 = tbAboutMapper.updateByExampleSelective(bs, example);//可为空的修改。
+        if (r1 == 0) {
+            return TaotaoResult.build(500, "修改视频展示失败！");
         }
-        return TaotaoResult.build(200,"修改视频历程展示成功！");
+        return TaotaoResult.build(200, "修改视频历程展示成功！");
     }
 }

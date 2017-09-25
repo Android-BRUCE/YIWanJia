@@ -11,7 +11,7 @@
 <meta name="author" content="杭州钱王万家信息科技有限公司" />
 <!-- css -->
 
-	<%--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">--%>
+	<%--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">--%>	<link href="${pageContext.request.contextPath}/css/public/fonts-google.css" rel="stylesheet">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/materialize/css/materialize.min.css" media="screen,projection" />
 	<link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="${pageContext.request.contextPath}/css/fancybox/jquery.fancybox.css" rel="stylesheet">
@@ -26,13 +26,16 @@
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/script/countUp.min.js"></script>
 	<script src="${pageContext.request.contextPath}/js/script/common.js" type="text/javascript"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/css/public/default/css-outM/jquery.SuperSlide.2.1.1.js"></script>
+
+
+
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
 <body>
-<div id="wrapper" class="home-page">
+<div id="wrapper" >
 	<!-- start header -->
 	<header>
         <div class="navbar navbar-default navbar-static-top">
@@ -54,7 +57,7 @@
 				<div class="navbar-collapse collapse ">
 					<ul class="nav navbar-nav">
 						<li class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">首 页</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻咨询</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻资讯</a></li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品中心</a></li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">解决方案</a></li><!--服务支持-->
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/case.html">公司案例</a></li><!---->
@@ -95,7 +98,7 @@
 						<A href="####">
 							<i class="icon icon01"></i>
 							<div class="text">
-								<h1>环卫云平台</h1>
+								<h1>智慧环卫监控平台</h1>
 								<p class="ms">提供环卫服务，为客户提供专业化的订制服务</p>
 							</div>
 						</A>
@@ -104,7 +107,7 @@
 						<A href="####">
 							<i class="icon icon02"></i>
 							<div class="text">
-								<h1>垃圾分类云平台</h1>
+								<h1>智慧垃圾分类平台</h1>
 								<p class="ms">利用物联网、互联网融合技术，实现垃圾投放的有源可溯</p>
 							</div>
 						</A>
@@ -114,11 +117,20 @@
 						<A href="####">
 							<i class="icon icon03"></i>
 							<div class="text">
-								<h1>公路云平台</h1>
+								<h1>智慧养老服务平台</h1>
 								<p class="ms">实现对施工过程的监控，提升养护清洁作业质量</p>
 							</div>
 						</A>
-					</li>
+					</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<%--<li>--%>
+						<%--<A href="####">--%>
+							<%--<i class="icon icon04"></i>--%>
+							<%--<div class="text">--%>
+								<%--<h1>智慧物业管理平台</h1>--%>
+								<%--<p class="ms">实现对施工过程的监控，提升养护清洁作业质量</p>--%>
+							<%--</div>--%>
+						<%--</A>--%>
+					<%--</li>--%>
 					<div id="clear"></div>
 				</ul>
 			</div>
@@ -211,10 +223,9 @@
 				<div class="widget">
 					<h5 class="widgetheading">产品中心</h5>
 					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">手持终端</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">定点投放箱体</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">垃圾分类app</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">传感器原件</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=1">智慧环卫监控平台</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=2">智慧垃圾分类平台</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=3">智慧养老服务平台</a></li>
 					</ul>
 				</div>
 			</div>
@@ -222,7 +233,7 @@
 				<div class="widget">
 					<h5 class="widgetheading">新闻资讯</h5>
 					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻直达</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">公司新闻</a></li>
 					</ul>
 				</div>
 			</div>
@@ -230,7 +241,7 @@
 				<div class="widget">
 					<h5 class="widgetheading"></h5>
 					<ul class="link-list">
-						<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="170" width="290" align="">
+						<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="170" width="290" align="微信扫一扫">
 					</ul>
 				</div>
 			</div></div>
@@ -254,7 +265,7 @@
 	</div>
 	</footer>
  </div>
-<a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up active"></i></a>
+<%--<a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up active"></i></a>--%>
 <!-- javascript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->

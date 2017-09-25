@@ -28,7 +28,7 @@
 	        <tr>
 	            <td></td>
 	            <td>
-	                <textarea style="width:1100px;height:480px;visibility:hidden;" name="content">${introduction.content}</textarea>
+	                <textarea style="width:1200px;height:600px;visibility:hidden;" name="content">${introduction.content}</textarea>
 	            </td>
 	        </tr>
 	    </table>

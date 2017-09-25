@@ -1,62 +1,68 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>更换链接</title>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/skin/css/base.css">
-    <script type="text/javascript" src="${pageContext.request.contextPath}/jquery-easyui-1.2.6/jquery-1.7.2.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jquery-easyui-1.2.6/themes/default/easyui.css">
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jquery-easyui-1.2.6/themes/icon.css">
-    <script type="text/javascript" src="${pageContext.request.contextPath}/jquery-easyui-1.2.6/jquery.easyui.min.js"></script>
-    <script type="text/javascript" src="${pageContext.request.contextPath}/jquery-easyui-1.2.6/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript"
+            src="${pageContext.request.contextPath}/jquery-easyui-1.2.6/jquery-1.7.2.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="${pageContext.request.contextPath}/jquery-easyui-1.2.6/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css"
+          href="${pageContext.request.contextPath}/jquery-easyui-1.2.6/themes/icon.css">
+    <script type="text/javascript"
+            src="${pageContext.request.contextPath}/jquery-easyui-1.2.6/jquery.easyui.min.js"></script>
+    <script type="text/javascript"
+            src="${pageContext.request.contextPath}/jquery-easyui-1.2.6/locale/easyui-lang-zh_CN.js"></script>
 
     <script>
 
-        $(function(){
-            $.extend($.fn.validatebox.defaults.rules,{
-                usernameLength:{
-                    validator:function(value,param){
-                        return value.length>=param[0] && value.length<=param[1];
+        $(function () {
+            $.extend($.fn.validatebox.defaults.rules, {
+                usernameLength: {
+                    validator: function (value, param) {
+                        return value.length >= param[0] && value.length <= param[1];
                     },
-                    message:"用户名最少{0}个字符,最多{1}个字符"
+                    message: "用户名最少{0}个字符,最多{1}个字符"
                 }
             });
-            $.extend($.fn.validatebox.defaults.rules,{
-                passwordRegex:{
-                    validator:function(value,param){
-                        var passRegex=/^[a-zA-Z](\w|\d){5,11}$/;
+            $.extend($.fn.validatebox.defaults.rules, {
+                passwordRegex: {
+                    validator: function (value, param) {
+                        var passRegex = /^[a-zA-Z](\w|\d){5,11}$/;
                         return passRegex.test(value);
                     },
-                    message:"密码必须以字母开头,至少6个字符,最多12个字符"
+                    message: "密码必须以字母开头,至少6个字符,最多12个字符"
                 }
 
             });
             $("#video").validatebox({
-                required:true,
-                missingMessage:"视频链接必填",
-                validType:"usernameLength[4,500]"
+                required: true,
+                missingMessage: "视频链接必填",
+                validType: "usernameLength[4,500]"
             });
             $("#r_comment").validatebox({
-                required:true,
-                missingMessage:"最多120个字数",
-                validType:"usernameLength[0,120]"
+                required: true,
+                missingMessage: "最多120个字数",
+                validType: "usernameLength[0,120]"
             });
 
-            $("#submit").click(function (){
+            $("#submit").click(function () {
 
-                var flag=$("#form2").form("validate");
+                var flag = $("#form2").form("validate");
 
-                if(!flag){
+                if (!flag) {
                     $.messager.show({
-                        title:"消息1",
-                        width:200,
-                        height:100,
-                        msg:"验证未通过!!"
-                    }); }else{
+                        title: "消息1",
+                        width: 200,
+                        height: 100,
+                        msg: "验证未通过!!"
+                    });
+                } else {
 
-                    $.post("${pageContext.request.contextPath}/company/video.do",$("#form2").serialize(), function(data){
-                        if(data.status == 200){
-                            $.messager.alert('提示',data.msg);
+                    $.post("${pageContext.request.contextPath}/company/video.do", $("#form2").serialize(), function (data) {
+                        if (data.status == 200) {
+                            $.messager.alert('提示', data.msg);
                         }
                     });
                     document.getElementById("form2").reset();
@@ -67,21 +73,31 @@
 
         function allcheck(num) {
             var list = document.getElementsByName(num);
-            for(var i=1;i<list.length;i++){
-                if(list[i].checked){
-                    list[i].checked=false;
-                }else{
-                    list[i].checked=true;
+            for (var i = 1; i < list.length; i++) {
+                if (list[i].checked) {
+                    list[i].checked = false;
+                } else {
+                    list[i].checked = true;
                 }
             }
 
         }
-function yulan(){
+
+        function yulan() {
             var url = document.getElementById("video").value;
 
+            //<iframe src="http://open.iqiyi.com/developer/player_js/coopPlayerI
+            // ndex.html?vid=e0e519497838bfc9ff0301920d04e866&tvId=797125600&accessToken=2.f22860a2479ad60d8da7697
+            // 274de9346&appKey=3955c3425820435e86d0f4cdfe56f5e7&appId=1368&height=100%&width=100%" frameborder="0" allowfullscreen="true" width="100%" height="100%"></iframe>
+            var str = url;
+            var num1 = str.indexOf("\"",1)+1;
+            var num2 = str.indexOf("\"",30);
 
-            document.getElementById("url").src = url;
-}
+            var url2 = url.substring(num1,num2);
+
+            //alert(url2);
+            document.getElementById("url").src = url2;
+        }
 
 
     </script>
@@ -94,7 +110,7 @@ function yulan(){
         <td height="26" background="${pageContext.request.contextPath}/skin/images/newlinebg3.gif">
             <table width="58%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
-                    <td >
+                    <td>
                         当前位置:关于我们>>更换宣传视频
                     </td>
                 </tr>
@@ -105,13 +121,18 @@ function yulan(){
 
 <form name="form2" id="form2">
 
-    <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px">
+    <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center"
+           style="margin-top:8px">
         <tr bgcolor="#E7E7E7">
-            <td height="24" colspan="2" >&nbsp;添加链接&nbsp;</td>
+            <td height="24" colspan="2">&nbsp;添加链接&nbsp;</td>
         </tr>
-        <tr >
+        <tr>
             <td align="right" bgcolor="#FAFAF1" height="22">添加更换的视频链接：</td>
-            <td  align='left' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22"><textarea   style="width:1000px;" type="text" name="video" id="video">${video.video}</textarea></td>
+            <td align='left' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';"
+                onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22"><textarea style="width:1000px;" type="text"
+                                                                                      name="video"
+                                                                                      id="video">${video.video}</textarea>
+            </td>
         </tr>
         <tr bgcolor="#FAFAF1">
             <td height="28" colspan=4 align=center>
@@ -125,17 +146,18 @@ function yulan(){
         </tr>
     </table>
 </form>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <center>
     <h1 style="color: #00ee00">视频预览</h1>
     <div>
-        <style>p{border:3px solid green;height: 500;width: 790;background: #68ffc1}</style>
-        <p id="videourl">加载视频中... ...<iframe id="url" height=500 width=790 src='' frameborder=0 'allowfullscreen'></iframe></p>
+        <style>p {
+            border: 3px solid green;
+            height: 500;
+            width: 790;
+            background: #68ffc1
+        }</style>
+        <p id="videourl">加载视频中... ...
+            <iframe id="url" height=500 width=790 src='' frameborder=0
+            'allowfullscreen'></iframe></p>
     </div>
 </center>
 </body>

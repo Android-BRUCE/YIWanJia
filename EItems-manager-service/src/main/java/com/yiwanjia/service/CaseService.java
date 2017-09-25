@@ -19,15 +19,17 @@ import java.util.List;
 public class CaseService {
     @Autowired
     private TbCaseMapper TbCaseMapper;
+
     /**
      * 获取list
+     *
      * @param page
      * @param rows
      * @return
      */
-    public EUDataGridResult getCasesList(int page,int rows){
+    public EUDataGridResult getCasesList(int page, int rows) {
         TbCaseExample example = new TbCaseExample();
-        PageHelper.startPage(page,rows);
+        PageHelper.startPage(page, rows);
         List<TbCase> cases = TbCaseMapper.selectByExample(example);
 
         EUDataGridResult euDataGridResult = new EUDataGridResult();
@@ -37,43 +39,79 @@ public class CaseService {
     }
 
     /**
-     * 保存
+     * 保存单图
+     *
      * @return
      */
-    public TaotaoResult addCasePic(TbCase TbCase){
+    public TaotaoResult addCasePic(TbCase TbCase) {
         int i = TbCaseMapper.insert(TbCase);
-        if(i == 0){return TaotaoResult.build(500,"啊哈哈失败了");}
-        return TaotaoResult.build(200,"恭喜恭喜成功啦");
+        if (i == 0) {
+            return TaotaoResult.build(500, "啊哈哈失败了");
+        }
+        return TaotaoResult.build(200, "恭喜恭喜成功啦");
     }
+
     /**
      * 多图保存
+     *
      * @return
      */
-    public TaotaoResult addCasesPic(String image){
+    public TaotaoResult addCasesPic(String image) {
 
         String[] split = image.split(",");
-        List ss =  new ArrayList();
-        for (int i=0;i<split.length;i++){
+        List ss = new ArrayList();
+        for (int i = 0; i < split.length; i++) {
             TbCase tbCase = new TbCase();
             tbCase.setCreatetime(new Date());
             tbCase.setUpdatetime(new Date());
             tbCase.setImage(split[i]);
             ss.add(tbCase);
         }
-        if (ss==null){return  TaotaoResult.build(500,"添加失败");}
+        if (ss == null) {
+            return TaotaoResult.build(500, "添加失败");
+        }
         int i = TbCaseMapper.addMuchCases(ss);
-        if(i == 0){return TaotaoResult.build(500,"啊哈哈失败了");}
-        return TaotaoResult.build(200,"恭喜恭喜成功啦");
+        if (i == 0) {
+            return TaotaoResult.build(500, "啊哈哈失败了");
+        }
+        return TaotaoResult.build(200, "恭喜恭喜成功啦");
     }
+
     /**
      * 批量删除
+     *
      * @param id
      * @return
      */
-    public TaotaoResult deleteById(int[] id){
+    public TaotaoResult deleteById(int[] id) {
         int i = TbCaseMapper.deleteByCaseIds(id);
-        if(i == 0){return TaotaoResult.build(500,"啊哈哈删除失败了");}
-        return TaotaoResult.build(200,"恭喜恭喜删除成功啦");
+        if (i == 0) {
+            return TaotaoResult.build(500, "啊哈哈删除失败了");
+        }
+        return TaotaoResult.build(200, "恭喜恭喜删除成功啦");
     }
 
+    /**
+     * 修改
+     * @param tbCase
+     * @return
+     */
+    public TaotaoResult editCaseById(TbCase tbCase) {
+        tbCase.setUpdatetime(new Date());
+        int i = TbCaseMapper.updateByPrimaryKeySelective(tbCase);
+        if (i == 0) {
+            return TaotaoResult.build(500, "修改案例图失败！");
+        }
+        return TaotaoResult.build(200, "修改案例图成功！");
+    }
+
+    /**
+     * 根据id获取数据
+     * @param id
+     * @return
+     */
+    public TbCase getCaseById(Long id){
+        TbCase tbCase = TbCaseMapper.selectByPrimaryKey(id);
+        return tbCase;
+    }
 }

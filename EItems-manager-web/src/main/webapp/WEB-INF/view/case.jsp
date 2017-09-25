@@ -17,8 +17,8 @@
             var editing;
             var flag;
             $("#tt").datagrid({
-                width:1200,
-                height: 600,
+                width:1245,
+                height: 650,
                 collapsible:true,
                 //idField:"id",只能选中一个行
                 fitColumns:true,
@@ -80,7 +80,7 @@
                                         ids=ids+rows[i].id+",";
                                     }
                                     ids=ids.substring(0,ids.length-1);
-                                    var path = "${pageContext.request.contextPath}/goods/edit.do?id="+ids;
+                                    var path = "${pageContext.request.contextPath}/case/case-edit.do?id="+ids;
                                     window.location=path;
                                 }
                             }
@@ -191,7 +191,7 @@
 <div id="dd"></div>
 <div id="address"></div>
 <!--  快速转换位置按钮  -->
-<table width="98%" border="0" cellpadding="0" cellspacing="1" bgcolor="#D1DDAA" align="left">
+<table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#D1DDAA" align="left">
     <tr>
         <td height="26" >
             <table width="58%" border="0" cellspacing="0" cellpadding="0">
@@ -200,7 +200,7 @@
                         当前位置:公司案例>>案例管理
                     </td>
                     <td>
-                        <input type='button' class="coolbg np" onClick="location='${pageContext.request.contextPath}/case-add.html';" value='添加产品信息' />
+                        <input type='button' class="coolbg np" onClick="location='${pageContext.request.contextPath}/case-add.html';" value='添加案例图' />
                     </td>
                 </tr>
             </table>
@@ -210,7 +210,7 @@
 <!--  搜索表单  -->
 <form name='form3' method='post'>
     <input type='hidden' name='dopost' value='' />
-    <table width='98%'  border='0' cellpadding='1' cellspacing='1' bgcolor='#CBD8AC' align="left" style="margin-top:8px">
+    <table width='100%'  border='0' cellpadding='1' cellspacing='1' bgcolor='#CBD8AC' align="left" style="margin-top:8px">
         <tr bgcolor='#EEF4EA'>
             <td background='${pageContext.request.contextPath}/skin/images/wbg.gif' align='left'>
                 <%--<table border='0' cellpadding='0' cellspacing='0'>--%>

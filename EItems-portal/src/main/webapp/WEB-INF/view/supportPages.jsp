@@ -28,26 +28,13 @@
 <div id="wrapper"> 
 	<%--<header class="topbar">--%>
 		<%--<div class="container">--%>
-			<%--<div class="row">--%>
 
-				<%--<div class="col-sm-3">--%>
-					<%--<ul class="social-network">--%>
-						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>&ndash;%&gt;--%>
-						<%--&lt;%&ndash;<li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>&ndash;%&gt;--%>
-					<%--</ul>--%>
-				<%--</div>--%>
-				<%--<div class="col-sm-9">--%>
-					<%--<div class="row">--%>
-						<%--<ul class="info">--%>
-							<%--<li><i class="icon-info-blocks material-icons">邮箱地址: </i><span>zjqwwy@163.com</span></li>--%>
-							<%--<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>--%>
-						<%--</ul>--%>
-						<%--<div class="clr"></div>--%>
-					<%--</div>--%>
-				<%--</div>--%>
+			<%--<div class="row">--%>
+				<%--<ul class="info">--%>
+					<%--<li><i class="icon-info-blocks material-icons">邮箱地址: </i><span>zjqwwy@163.com</span></li>--%>
+					<%--<li><i class="icon-info-blocks material-icons">联系电话: </i><span>0571-61099111</span></li>--%>
+				<%--</ul>--%>
+				<%--<div class="clr"></div>--%>
 			<%--</div>--%>
 		<%--</div>--%>
 	<%--</header>--%>
@@ -71,13 +58,13 @@
 				</div>
 				<div class="navbar-collapse collapse ">
 					<ul class="nav navbar-nav">
-						<li ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">首 页</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">首 页</a></li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻资讯</a></li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品中心</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">解决方案</a></li><!--服务支持-->
+						<li class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">解决方案</a></li><!--服务支持-->
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/case.html">公司案例</a></li><!---->
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">人才招聘</a></li><!--加入我们-->
-						<li class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">关于我们</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/about.html">关于我们</a></li>
 					</ul>
 				</div>
 			</div>
@@ -89,103 +76,97 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="pageTitle">公司荣誉资质</h2>
+				<h2 class="pageTitle">方案详情</h2>
 			</div>
 		</div>
 	</div>
 	</section>
 	<section id="content">
+	
 	<div class="container">
-		<div class="about-main" id="company-profile">
+
+
+		<%--<div class="about-main" id="company-profile">--%>
 			<div id="nr_main_box">
 			<!-- =+++++++++++++++++++++-->
-				<div class="about_right">
-					<div class="rnav_bt">
-						<b>关于万家</b>
-						<span class="x"></span>
-					</div>
-					<ul style="position:relative">
-						<li ><a href="${pageContext.request.contextPath}/about.html" title="公司介绍" >公司介绍</a></li>
-						<li ><a href="${pageContext.request.contextPath}/aboutHonour.html" title="荣誉资质"  class="acvier">荣誉资质</a></li>
-						<li ><a href="${pageContext.request.contextPath}/aboutDevelopment.html" title="发展历程" >发展历程</a></li>
-						<li ><a href="${pageContext.request.contextPath}/aboutPropaganda.html" title="企业宣传视频" >企业宣传视频</a></li><li ><a href="${pageContext.request.contextPath}/contact.html" title="联系我们" id="nynavID95">联系我们</a></li>
-					</ul>
-				</div>
 				<!-- =++++++++++++++left        left    left   +++++++-->
-				<div class="about_left">
-					<div id="about_text">
-						<p><img src="${aboutUsPic.image}" alt="荣誉资质图"/></p>
+				<div id="inside_rnewtil">${solutionDetil.title}</div>
+				<div class="inside_rnewtime">发布时间：${solutionDetil.uptime}</div>
+				<%--<div id="about_text">--%>
+						<!-- =++++++++++++++context   start+++++++-->
+				<div id="nrboxstyle">
+					${solutionDetil.content}
+						<!-- =++++++++++++++context   end t+++++++-->
 					</div>
-				</div>
 				<div id="clear" ></div>
 			</div> <!--内容 END-->
 				<!-- =+++++++++++++++++++++-->
-		</div>
+		<%--</div>--%>
 		<!--end about-main-->
 	</div>
 	</section>
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-3">
-						<div class="widget">
-							<h5 class="widgetheading">联系方式</h5>
-							<ul class="foot_add_box">
-								<li class="foot_tel">&nbsp;0571-61099111</li>
-								<li class="foot_add">zjqwwy@163.com</li>
-							</ul>
-							<br>
-							<address>
-								杭州市临安市青山湖街道<br>
-								大园路958号科创大楼A603</address>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="widget">
-							<h5 class="widgetheading">产品中心</h5>
-							<ul class="link-list">
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=1">智慧环卫监控平台</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=2">智慧垃圾分类平台</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=3">智慧养老服务平台</a></li>
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html"></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="widget">
-							<h5 class="widgetheading">新闻资讯</h5>
-							<ul class="link-list">
-								<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">公司新闻</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="widget">
-							<h5 class="widgetheading"></h5>
-							<ul class="link-list">
-								<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="170" width="290" align="">
-							</ul>
-						</div>
-					</div></div>
-			</div>
-			<div id="sub-footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="copyright">
-								<p>
-									Copyright &copy; 2017.杭州钱王万家信息科技有限公司 All rights reserved.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<ul class="social-network">
-								<p>浙ICP备14036718号-6浙公网安备 33018502001594号</p></ul>
-						</div>
-					</div>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="widget">
+					<h5 class="widgetheading">联系方式</h5>
+					<ul class="foot_add_box">
+						<li class="foot_tel">&nbsp;0571-61099111</li>
+						<li class="foot_add">zjqwwy@163.com</li>
+					</ul>
+					<br>
+					<address>
+						杭州市临安市青山湖街道<br>
+						大园路958号科创大楼A603</address>
 				</div>
 			</div>
-		</footer>
+			<div class="col-sm-3">
+				<div class="widget">
+					<h5 class="widgetheading">产品中心</h5>
+					<ul class="link-list">
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=1">智慧环卫监控平台</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=2">智慧垃圾分类平台</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=3">智慧养老服务平台</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="widget">
+					<h5 class="widgetheading">新闻资讯</h5>
+					<ul class="link-list">
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">公司新闻</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="widget">
+					<h5 class="widgetheading"></h5>
+					<ul class="link-list">
+						<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="170" width="290" align="">
+					</ul>
+				</div>
+			</div></div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						<p>
+							Copyright &copy; 2017.杭州钱王万家信息科技有限公司 All rights reserved.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<ul class="social-network">
+						<p>浙ICP备14036718号-6浙公网安备 33018502001594号</p></ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 </div>
 <a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up active"></i></a>
 <!-- javascript

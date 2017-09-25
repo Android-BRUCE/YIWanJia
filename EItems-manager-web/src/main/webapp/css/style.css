@@ -128,6 +128,7 @@ input[type="text"] {
 	  border-bottom: 1px solid#484856;
 	  margin-bottom: 3em;
  }
+
 .key {
    background: url(../images/pass.png) no-repeat 447px 17px;
 }
@@ -309,6 +310,7 @@ label.lbl-3 {
 	  font-size: 17px;
 	  margin-top: .5em;
 	}
+
 	input[type="password"] {
 		width: 62%;
 		padding: 1.2em 2em .5em 2.5em;

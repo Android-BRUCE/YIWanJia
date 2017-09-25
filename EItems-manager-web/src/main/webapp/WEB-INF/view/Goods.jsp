@@ -17,8 +17,8 @@
             var editing;
             var flag;
             $("#tt").datagrid({
-                width:1200,
-                height: 600,
+                width:1245,
+                height: 650,
                 collapsible:true,
                 //idField:"id",只能选中一个行
                 fitColumns:true,
@@ -195,7 +195,7 @@
 <div id="dd"></div>
 <div id="address"></div>
 <!--  快速转换位置按钮  -->
-<table width="105%" border="0" cellpadding="0" cellspacing="1" bgcolor="#D1DDAA" align="left">
+<table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#D1DDAA" align="left">
     <tr>
         <td height="26">
             <table width="90%" border="0" cellspacing="0" cellpadding="0">
@@ -214,7 +214,7 @@
 <!--  搜索表单  -->
 <form name='form3' method='post'>
     <input type='hidden' name='dopost' value='' />
-    <table width='105%'  border='0' cellpadding='1' cellspacing='1' bgcolor='#CBD8AC' align="left" style="margin-top:8px">
+    <table width='100%'  border='0' cellpadding='1' cellspacing='1' bgcolor='#CBD8AC' align="left" style="margin-top:8px">
         <tr bgcolor='#EEF4EA'>
             <td background='${pageContext.request.contextPath}/skin/images/wbg.gif' align='left'>
                 <%--<table border='0' cellpadding='0' cellspacing='0'>--%>

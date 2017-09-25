@@ -11,21 +11,17 @@
 	<meta name="keywords" content="杭州钱王万家信息科技有限公司"/>
 <meta name="description" content="杭州钱王万家信息科技有限公司" />
 <meta name="author" content="杭州钱王万家信息科技有限公司" />
-<!-- css --> 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- css -->
+	<link href="${pageContext.request.contextPath}/css/public/fonts-google.css" rel="stylesheet">
 <link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
-<link href="css/flexslider.css" rel="stylesheet" />  
- 
+<link href="css/flexslider.css" rel="stylesheet" />
 <!-- Vendor Styles -->
 <link href="css/magnific-popup.css" rel="stylesheet"> 
 <!-- Block Styles -->
 <link href="css/style.css" rel="stylesheet" />
 <link href="css/gallery-1.css" rel="stylesheet">
- 
-
-
 <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet" />
 <link href="${pageContext.request.contextPath}/css/fancybox/jquery.fancybox.css" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/css/flexslider.css" rel="stylesheet" />
@@ -62,7 +58,7 @@
 				<div class="navbar-collapse collapse ">
 					<ul class="nav navbar-nav">
 						<li ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">首 页</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻咨询</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻资讯</a></li>
 						<li class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品中心</a></li>
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">解决方案</a></li><!--服务支持-->
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/case.html">公司案例</a></li><!---->
@@ -175,10 +171,10 @@
 				<div class="widget">
 					<h5 class="widgetheading">产品中心</h5>
 					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">手持终端</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">定点投放箱体</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">垃圾分类app</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">传感器原件</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=1">智慧环卫监控平台</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=2">智慧垃圾分类平台</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=3">智慧养老服务平台</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -186,7 +182,7 @@
 				<div class="widget">
 					<h5 class="widgetheading">新闻资讯</h5>
 					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻直达</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">公司新闻</a></li>
 					</ul>
 				</div>
 			</div>

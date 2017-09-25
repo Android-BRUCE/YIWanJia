@@ -15,8 +15,8 @@
             var editing;
             var flag;
             $("#tt").datagrid({
-                width:1200,
-                height: 600,
+                width:1244,
+                height: 650,
                 collapsible:true,
                 //idField:"id",只能选中一个行
                 fitColumns:true,
@@ -188,7 +188,7 @@
 
 
 <!--  快速转换位置按钮  -->
-<table width="105%" border="0" cellpadding="0" cellspacing="1" bgcolor="#D1DDAA" align="left">
+<table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#D1DDAA" align="left">
     <tr>
         <td height="26" >
             <table width="90%" border="0" cellspacing="0" cellpadding="0">

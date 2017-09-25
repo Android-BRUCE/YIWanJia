@@ -210,32 +210,39 @@
 	<form id="itemAddForm" class="itemForm" method="post">
 	    <table cellpadding="5">
 	        <tr>
-	            <td>新闻标题:</td>
-	            <td><input class="easyui-textbox" type="text" name="newstitle" data-options="required:true" style="width: 280px;" value="${news.newstitle}"></input></td>
+	            <td>新闻标题:&nbsp;&nbsp;<input class="easyui-textbox" type="text" name="newstitle" data-options="required:true" style="width: 280px;" value="${news.newstitle}"></input></td>
 	        </tr>
 	        <tr>
-	            <td>新闻简述:</td>
-	            <td><input value="${news.point}" class="easyui-textbox" name="point" data-options="multiline:true,validType:'length[0,150]'" style="height:60px;width: 280px;"></input></td>
+
+	            <td>新闻简述:&nbsp;&nbsp;<input value="${news.point}" class="easyui-textbox" name="point" data-options="multiline:true,validType:'length[0,100]'" style="height:60px;width: 280px;"></input></td>
 	        </tr>
 			<tr>
-				<td>产品图片:</td>
-				<td>
-					<a href="javascript:void(0)" class="easyui-linkbutton picFileUpload">卡片式图片上传</a>
+				<td>目前封面图片：&nbsp;&nbsp;
+					<div>
+						<ul>
+							&nbsp;&nbsp; <li><a href="${news.image}" target="_blank"><img
+								src="${news.image}" width="800"
+								height="322" id="image1"></a></li>
+						</ul>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>封面图片:&nbsp;&nbsp;
+					<a href="javascript:void(0)" class="easyui-linkbutton picFileUpload">图片上传</a>
 					<input type="hidden" name="image"/>
 				</td>
 			</tr>
 
 			<tr>
-				<td>状态设置:</td>
-				<td>
+				<td>状态设置:&nbsp;&nbsp;
 					<input class="easyui-radio" type="radio" name="status" value="1" data-options="required:true" style="width: 10px;">开启</input>
 					<input class="easyui-radio" type="radio" name="status" value="0" style="width: 10px;">关闭</input>
 				</td>
 			</tr>
 	        <tr>
-	            <td>新闻具述:</td>
-	            <td>
-	                <textarea style="width:800px;height:300px;visibility:hidden;" name="content" >${news.content}</textarea>
+	            <td>新闻具述:&nbsp;&nbsp;
+	                <textarea style="width:1200px;height:500px;visibility:hidden;" name="content" >${news.content}</textarea>
 	            </td>
 	        </tr>
 	    </table>

@@ -15,9 +15,8 @@
 	<form id="itemAddForm" class="itemForm" method="post">
 	    <table cellpadding="5">
 	        <tr>
-	            <td>发展历程:</td>
 	            <td>
-	                <textarea style="width:1000px;height:600px;visibility:hidden;" name="introduction">${road.introduction}</textarea>
+	                <textarea style="width:1200px;height:600px;visibility:hidden;" name="introduction">${road.introduction}</textarea>
 	            </td>
 	        </tr>
 	    </table>

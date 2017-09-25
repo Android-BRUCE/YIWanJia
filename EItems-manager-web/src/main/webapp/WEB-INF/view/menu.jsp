@@ -79,7 +79,8 @@
              <dt onClick='showHide("items1_1")'><b>解决方案</b></dt>
              <dd style='display:none' class='sitem' id='items1_1'>
                  <ul class='sitemu'>
-                     <li><a href='${pageContext.request.contextPath}/ServerAndSupport.html?id=1' target='main'>解决方案</a> </li>
+                     <%--<li><a href='${pageContext.request.contextPath}/ServerAndSupport.html?id=1' target='main'>解决方案</a> </li>--%>
+                     <li><a href='${pageContext.request.contextPath}/solution.html' target='main'>解决方案</a> </li>
                  </ul>
              </dd>
          </dl>

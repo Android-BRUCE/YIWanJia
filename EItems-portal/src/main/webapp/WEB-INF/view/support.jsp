@@ -3,22 +3,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="icon" sizes="124x124" href="${pageContext.request.contextPath}/img/logo.png">
-	<link rel="shortcut icon" href="${pageContext.request.contextPath}/img/logo.png">
 <meta charset="utf-8">
 <title>杭州钱王万家信息科技有限公司</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="杭州钱王万家信息科技有限公司" />
 <meta name="author" content="杭州钱王万家信息科技有限公司" />
-<!-- css --> 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/materialize/css/materialize.min.css" media="screen,projection" />
-<link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet" />
-<link href="${pageContext.request.contextPath}/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/flexslider.css" rel="stylesheet" />
-<link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" />
-<link href="${pageContext.request.contextPath}/css/public/default/css-outM/style.css" rel="stylesheet" />
-	<%--<script type="text/javascript" src="/css/public/default/css-outM/jquery.min.js"></script>--%>
+<!-- css -->
+	<link href="${pageContext.request.contextPath}/css/public/fonts-google.css" rel="stylesheet">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/materialize/css/materialize.min.css" media="screen,projection" />
+	<link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="${pageContext.request.contextPath}/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath}/css/flexslider.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="${pageContext.request.contextPath}/css/public/default/css-outM/style.css" rel="stylesheet" />
+	<link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" />
+
+
+
+
+<%--<script type="text/javascript" src="/css/public/default/css-outM/jquery.min.js"></script>--%>
 
 	<%--<script type="text/javascript" src="/css/public/default/css-outM/jquery.SuperSlide.2.1.1.js"></script>--%>
 
@@ -26,9 +29,19 @@
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
 </head>
 <body>
 <div id="wrapper">
+	<header class="topbar">
+		<div class="container">
+			<div class="row">
+			</div>
+		</div>
+	</header>
+
+	<!-- start header -->
+	<!-- start header -->
 	<header>
 		<div class="navbar navbar-default navbar-static-top">
 			<div class="container">
@@ -39,15 +52,18 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
-							<img src="${pageContext.request.contextPath}/img/logo.png" alt="" height="50" width="50" align=""/>
-							杭州钱王万家信息科技有限公司
+						<%--<i class="icon-info-blocks material-icons">language</i>--%>
+						<img src="${pageContext.request.contextPath}/img/logo.png" alt="" height="50" width="50" />
+						杭州钱王万家信息科技有限公司
+						<%--钱王万家--%>
 					</a>
+
 				</div>
 				<div class="navbar-collapse collapse ">
 					<ul class="nav navbar-nav">
-						<li ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">首 页</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻咨询</a></li>
-						<li ><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品中心</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/index.html">首 页</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻资讯</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">产品中心</a></li>
 						<li class="active"><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/support.html">解决方案</a></li><!--服务支持-->
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/case.html">公司案例</a></li><!---->
 						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/joinUs.html">人才招聘</a></li><!--加入我们-->
@@ -68,20 +84,90 @@
 		</div>
 	</div>
 	</section>
+	<%--<div class="map_box"><!--当前位置-->--%>
+		<%--<div class="w1200_center"><!--版块居中-->--%>
+			<%--<div class="ny_news_nav">--%>
+				<%--<a href="job.aspx" id="nynavID1" class="acvier">企业文化</a>--%>
+				<%--<a href="job_ln.aspx" id="nynavID2">员工宣言</a>--%>
+				<%--<a href="job_fc.aspx" id="nynavID3">万家语录</a>--%>
+				<%--<script language="javascript" type="text/javascript">--%>
+                    <%--try {--%>
+                        <%--document.getElementById("nynavID" + nynav).className = "acvier";--%>
+                    <%--}--%>
+                    <%--catch (e) {}--%>
+				<%--</script>--%>
+			<%--</div>--%>
+			<%--<div id="clear"></div>--%>
+		<%--</div>--%>
+
+
+	<%--</div><!--当前位置 END-->--%>
+
 	<section id="content">
-	
-	<div class="container">
+
+
+
+		<div class="container">
 		<%--<div class="about-main" id="company-profile">--%>
-			<div id="nr_main_box">
-				<!-- =++++++++++++++left        left    left   +++++++-->
+			<div id="nr_main_box2">
+				<%--<div id="about_text">--%>
 						<!-- =++++++++++++++context   start+++++++-->
-				<div id="nrboxstyle">
-					${support.content}
-						<!-- =++++++++++++++context   end t+++++++-->
-					</div>
-				<div id="clear" ></div>
+	<div style="float: left">
+		<c:forEach items="${solution}" var="pr">
+			<ul class="ny_case_list" >
+				<dl>
+					<dd><a href="${pageContext.request.contextPath}/supportPages.aspx?id=${pr.id}"><img src="${pr.image}"  alt="${pr.title}"/></a></dd>
+					<dt>
+						<a class="bt"  href="${pageContext.request.contextPath}/supportPages.aspx?id=${pr.id}">${pr.title}</a>
+						<div class="nr_ms">${pr.point}</div>
+						<a class="more" href="${pageContext.request.contextPath}/supportPages.aspx?id=${pr.id}">了解详细<span>>></span></a>
+					</dt>
+				</dl>
+				<span id='DcmsPage_PageInfo' style='display:none;'>1|1</span>
+			</ul>
+
+		</c:forEach>
+
+
+				<%--<ul class="ny_case_list" >--%>
+
+					<%--<dl>--%>
+						<%--<dd><a href="Solutiondetail.aspx?id=36"><img src="http://www.zjlyzhkj.com/Upload/%E6%99%BA%E6%85%A7%E7%8E%AF%E5%8D%AB%E6%95%B4%E4%BD%93%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-16451662589.jpg"  alt="智慧环卫整体解决方案"/></a></dd>--%>
+						<%--<dt>--%>
+							<%--<a class="bt"  href="Solutiondetail.aspx?id=36">智慧垃圾分类平台</a>--%>
+							<%--<div class="nr_ms">‍方案简介：智慧环卫整体解决方案是借助信息化基础发展起来的环卫管理升级模式，通过整合互联网、物联网、GPS、GIS、移动通信网络等信息技术，改变以往依靠人力…</div>--%>
+							<%--<a class="more" href="Solutiondetail.aspx?id=36">了解详细<span>>></span></a>--%>
+						<%--</dt>--%>
+					<%--</dl>--%>
+					<%--<span id='DcmsPage_PageInfo' style='display:none;'>1|1</span>--%>
+
+
+				<%--</ul>--%>
+		<%--<ul class="ny_case_list" >--%>
+
+			<%--<dl>--%>
+				<%--<dd><a href="Solutiondetail.aspx?id=36"><img src="http://www.zjlyzhkj.com/Upload/%E6%99%BA%E6%85%A7%E7%8E%AF%E5%8D%AB%E6%95%B4%E4%BD%93%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-16451662589.jpg"  alt="智慧环卫整体解决方案"/></a></dd>--%>
+				<%--<dt>--%>
+					<%--<a class="bt"  href="Solutiondetail.aspx?id=36">智慧养老服务平台</a>--%>
+					<%--<div class="nr_ms">‍方案简介：智慧环卫整体解决方案是借助信息化基础发展起来的环卫管理升级模式，通过整合互联网、物联网、GPS、GIS、移动通信网络等信息技术，改变以往依靠人力…</div>--%>
+					<%--<a class="more" href="Solutiondetail.aspx?id=36">了解详细<span>>></span></a>--%>
+				<%--</dt>--%>
+			<%--</dl>--%>
+			<%--<span id='DcmsPage_PageInfo' style='display:none;'>1|1</span>--%>
+
+
+		<%--</ul>--%>
+
+
+</div>
 			</div> <!--内容 END-->
-			<!-- =+++++++++++++++++++++-->
+
+
+				<!-- =+++++++++++++++++++++-->
+
+
+
+		<%--</div>--%>
 		<!--end about-main-->
 	</div>
 	</section>
@@ -105,10 +191,9 @@
 				<div class="widget">
 					<h5 class="widgetheading">产品中心</h5>
 					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">手持终端</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">定点投放箱体</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">垃圾分类app</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html">传感器原件</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=1">智慧环卫监控平台</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=2">智慧垃圾分类平台</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=3">智慧养老服务平台</a></li>
 					</ul>
 				</div>
 			</div>
@@ -116,7 +201,7 @@
 				<div class="widget">
 					<h5 class="widgetheading">新闻资讯</h5>
 					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">新闻直达</a></li>
+						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">公司新闻</a></li>
 					</ul>
 				</div>
 			</div>
@@ -166,5 +251,9 @@
 <script src="${pageContext.request.contextPath}/js/jquery.magnific-popup.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/animate.js"></script>
 <script src="${pageContext.request.contextPath}/js/custom.js"></script>
+
+ <script src="${pageContext.request.contextPath}/contact/jqBootstrapValidation.js"></script>
+ <script src="${pageContext.request.contextPath}/contact/contact_me.js"></script>
 </body>
+
 </html>

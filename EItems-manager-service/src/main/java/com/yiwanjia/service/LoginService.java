@@ -77,7 +77,7 @@ public class LoginService {
             e.printStackTrace();
         }
         Cookie cookie = new Cookie(COOKIE_NAME,toke);
-       cookie.setMaxAge(24*60*60);
+       cookie.setMaxAge(-1);
         cookie.setPath("/");//必须设置路径，否则addCookie会失败！
        response.addCookie(cookie);
         //返回token
@@ -128,23 +128,28 @@ public class LoginService {
     //创建用户
 
     //重名检查//return false is same as before;
-    public boolean checkName(String name){
+    public TaotaoResult checkName(TbUser tbUser){
         TbUserExample tbUserExample = new TbUserExample();
         TbUserExample.Criteria criteria = tbUserExample.createCriteria();
-        criteria.andNameEqualTo(name);
+        criteria.andNameEqualTo(tbUser.getName());
         List<TbUser> tbUsers = TbUserMapper.selectByExample(tbUserExample);
-        if ((tbUsers!=null)|| tbUsers.size()!=0){return false;}
-        return true;
+        if (tbUsers != null&&tbUsers.size()!=0){
+            for (int i = 0;i<tbUsers.size();i++){
+                if (tbUsers.get(i).getId() != tbUser.getId() && tbUsers.get(i).getName().equals(tbUser.getName())){//id不同，但是name相同
+                    return TaotaoResult.build(500,"已经有相同的名字了！");
+                }
+            }
+        }
+        return TaotaoResult.build(200,"ok!");
     }
-    //检查是否与之前密码相同 password:传入md5值;return false is  same as before;
+    //检查是否与之前密码相同
     public boolean checkPasswordIsSameAsBefore(String password,Long id){
-        TbUserExample tbUserExample = new TbUserExample();
-        TbUserExample.Criteria criteria = tbUserExample.createCriteria();
-        criteria.andIdEqualTo(id);
-        List<TbUser> tbUsers = TbUserMapper.selectByExample(tbUserExample);
-        if ((tbUsers!=null)|| tbUsers.size()!=0){return false;}
-        boolean b = tbUsers.get(0).getPassword().equals(password);
-        if (b){return false;}
+
+        TbUser tbUser = TbUserMapper.selectByPrimaryKey(id);
+
+        if (!tbUser.getPassword().equals(DigestUtils.md5DigestAsHex(password.getBytes()))){//不同 返回false;
+            return false;
+        }
         return true;
     }
 }

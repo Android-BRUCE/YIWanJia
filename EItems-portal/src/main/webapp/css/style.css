@@ -372,7 +372,7 @@ header ul.nav li {
 }
 
 header ul.nav li a {
-	font-size: 14px;
+	font-size: 16px;
 	border:none;
 	font-weight: 500;
 	text-transform:uppercase;
@@ -387,7 +387,7 @@ header ul.nav li ul li a {
 
 
 .navbar .nav > li > a {
-  color: #0e3655;
+  color: #000000;
   text-shadow: none;
   border: 1px solid rgba(255, 255, 255, 0) !important;
 }
@@ -447,7 +447,7 @@ ul.nav li.dropdown a {
  select.selectmenu {
 	display:none;
 }
-.pageTitle{color: #fff;margin: 30px 0 3px;display: inline-block;font-size: 20px;}
+.pageTitle{color: #fff;margin: 10px 0 3px;display: inline-block;font-size: 20px;}
  
 #banner{
 	/*width: 101.8%;*/
@@ -1079,6 +1079,7 @@ ul.link-list li{
 footer{background: #0e3655;}
 footer ul.link-list li a{
 	color: #5584a9;
+	/*color: #999999;*/
 }
 footer ul.link-list li a:hover {
 	color: #43ca83;
@@ -1101,6 +1102,7 @@ h4.heading {
 	width:100%;
 	padding:0;
 	font-weight: bold;
+    margin-bottom: 20px;
 }
 
 #bottom .widgetheading {
@@ -1483,7 +1485,8 @@ footer a:hover {
 }
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
-	color: #43ca83;
+	/*color: #43ca83;*/
+	color: #ffffff;
 }
 
 footer address {

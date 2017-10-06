@@ -242,7 +242,7 @@
 			</tr>
 	        <tr>
 	            <td>新闻具述:&nbsp;&nbsp;
-	                <textarea style="width:1200px;height:500px;visibility:hidden;" name="content" >${news.content}</textarea>
+	                <textarea style="width:1100px;height:400px;visibility:hidden;" name="content" >${news.content}</textarea>
 	            </td>
 	        </tr>
 	    </table>

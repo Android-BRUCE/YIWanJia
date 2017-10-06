@@ -38,8 +38,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
-							<img src="${pageContext.request.contextPath}/img/logo.png" alt="" height="50" width="50" align=""/>
-							杭州钱王万家信息科技有限公司
+						<img src="${pageContext.request.contextPath}/img/public/logo02.png" alt="" height="65" width="200" style="margin-bottom: 20px;float: left" />
 					</a>
 				</div>
 				<div class="navbar-collapse collapse ">
@@ -120,7 +119,6 @@
 							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=1">智慧环卫监控平台</a></li>
 							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=2">智慧垃圾分类平台</a></li>
 							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=3">智慧养老服务平台</a></li>
-							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/portfolio.html"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -132,28 +130,28 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4" style="float: right;margin-right: 150px;margin-top: 0px;">
 					<div class="widget">
 						<h5 class="widgetheading"></h5>
 						<ul class="link-list">
-							<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="170" width="290" align="">
+							<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="170" width="290" align="微信扫一扫">
 						</ul>
 					</div>
 				</div></div>
 		</div>
-		<div id="sub-footer">
+		<div id="sub-footer" style="margin-top: 20px">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6">
-						<div class="copyright">
+						<div class="copyright" style="float: left">
 							<p>
 								Copyright &copy; 2017.杭州钱王万家信息科技有限公司 All rights reserved.
 							</p>
 						</div>
 					</div>
-					<div class="col-lg-6">
-						<ul class="social-network">
-							<p>浙ICP备14036718号-6浙公网安备 33018502001594号</p></ul>
+					<div class="col-lg-6" style="float: right">
+						<ul class="copyright">
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;浙ICP备14036718号-6浙公网安备 33018502001594号</p></ul>
 					</div>
 				</div>
 			</div>

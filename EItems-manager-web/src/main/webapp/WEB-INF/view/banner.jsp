@@ -18,8 +18,8 @@
             var editing;
             var flag;
             $("#tt").datagrid({
-                width:1245,
-                height: 650,
+                width:1240,
+                height: 520,
                 collapsible:true,
                 idField:"id",
                 fitColumns:true,
@@ -222,7 +222,7 @@
 <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#D1DDAA" align="left">
     <tr>
         <td height="26" background="${pageContext.request.contextPath}/skin/images/newlinebg3.gif">
-            <table width="90%" border="0" cellspacing="0" cellpadding="0">
+            <table width="70%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td >
                         当前位置:首页管理>>轮播控制

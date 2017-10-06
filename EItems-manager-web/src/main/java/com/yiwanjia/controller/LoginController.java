@@ -61,7 +61,7 @@ public class LoginController {
         if (!b){return TaotaoResult.build(500,"目前密码不正确！");}
         TaotaoResult taotaoResult = LoginService.resetPassword(tbUser.getId(), newPassword);
         if (taotaoResult.getStatus()==200){
-            exit(request);
+            //exit(request);
         }
         newPassword = null;
         return taotaoResult;

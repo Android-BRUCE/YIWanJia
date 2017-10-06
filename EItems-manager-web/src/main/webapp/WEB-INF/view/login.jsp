@@ -75,12 +75,12 @@
         doLogin: function () {
             $.post("${pageContext.request.contextPath}/user/login.do", $("#formlogin").serialize(), function (data) {
                 if (data.status == 200) {
-                    alert("登录成功");
+                    alert(data.msg);
                     location.href = "index.html";
                 }
-                if (data.status == 400) {
+                if (data.status == 500) {
                     alert("登录失败，原因是：" + data.msg);
-                    $("#loginname").select();
+                    $("#nloginpwd").select();
                 }
             });
         },

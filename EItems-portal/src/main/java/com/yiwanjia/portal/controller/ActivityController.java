@@ -26,17 +26,17 @@ public class ActivityController {
     private ActivityService activityService;
 
     @RequestMapping()
-    public String getNewsToPage(@RequestParam(value = "page",defaultValue = "1") int page, Model model){
+    public String getNewsToPage(@RequestParam(value = "page",defaultValue = "1") Long page, Model model){
         TbActivityExample example = new TbActivityExample();
 
 
         long totalPage = (tbActivityMapper.countByExample(example)%5 == 0)?tbActivityMapper.countByExample(example)/5:tbActivityMapper.countByExample(example)/5 +1;
         //判断传递的page值是否超过总页数，否则设置为总页数大小
         if(page>totalPage){
-            page = new Long(totalPage).intValue();
+            page = totalPage;
         }
 //开始分页
-        PageHelper.startPage(page,5);
+        PageHelper.startPage(page.intValue(),5);
         List<TbActivity> list = tbActivityMapper.selectByExample(example);
         PageSetting setting = new PageSetting();
         setting.setPage(page);

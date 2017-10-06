@@ -28,21 +28,21 @@ public class NewsController {
     private NewsService newsService;
 
     @RequestMapping()
-    public String getNewsToPage(@RequestParam(value = "page",defaultValue = "1") int page, Model model){
+    public String getNewsToPage(@RequestParam(value = "page",defaultValue = "1") Double page, Model model){
         TbNewsExample example = new TbNewsExample();
         TbNewsExample.Criteria criteria = example.createCriteria();
         //设置查询条件 status为1；
         criteria.andStatusEqualTo(1);
         long totalPage = (tbNewsMapper.countByExample(example)%5 == 0)?tbNewsMapper.countByExample(example)/5:tbNewsMapper.countByExample(example)/5 +1;
         //判断传递的page值是否超过总页数，否则设置为总页数大小
-        if(page>totalPage){
-            page = new Long(totalPage).intValue();
+        if(page.intValue()>totalPage){
+            page = (double)totalPage;
         }
 //开始分页
-        PageHelper.startPage(page,5);
+        PageHelper.startPage(page.intValue(),5);
         List<TbNews> list = tbNewsMapper.selectByExample(example);
         PageSetting setting = new PageSetting();
-        setting.setPage(page);
+        setting.setPage(page.intValue());
 
 
         setting.setTotalPage(totalPage);
@@ -54,10 +54,11 @@ public class NewsController {
 
 
     @RequestMapping("newsdetail")
-    public String jumpToNewspages(@RequestParam(value = "id" ) long id,Model model){
+    public String jumpToNewspages(@RequestParam(value = "id" ) Double id,Model model){
 
-        TbNews newsDetail = newsService.getNewsDetail(id);
+        TbNews newsDetail = newsService.getNewsDetail(id.intValue());
 
+        if (newsDetail==null){return "newsPages";}
         Date createtime = newsDetail.getCreatetime();
 
         SimpleDateFormat format = new SimpleDateFormat("yy-MM-dd");

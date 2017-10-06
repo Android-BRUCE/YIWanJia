@@ -3,7 +3,6 @@ package com.yiwanjia.controller;
 import com.yiwanjia.common.pojo.TaotaoResult;
 import com.yiwanjia.pojo.TbJoin;
 import com.yiwanjia.service.JoinUsService;
-import net.sf.jsqlparser.statement.select.Join;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

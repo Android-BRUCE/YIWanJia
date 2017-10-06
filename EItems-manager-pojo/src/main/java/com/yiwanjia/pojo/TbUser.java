@@ -6,6 +6,29 @@ import java.util.Date;
 public class TbUser implements Serializable {
     private Long id;
 
+    private String cookie;
+
+    public String getCookie() {
+        return cookie;
+    }
+    public String loginTime;
+
+    public String getLoginTime() {
+        return loginTime;
+    }
+
+    public void setLoginTime(String loginTime) {
+        this.loginTime = loginTime;
+    }
+
+    public void setCookie(String cookie) {
+        this.cookie = cookie;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
     private String name;
 
     private String password;
@@ -15,6 +38,8 @@ public class TbUser implements Serializable {
     private Date createtime;
 
     private Date updatetime;
+
+    private Integer status;
 
     private static final long serialVersionUID = 1L;
 
@@ -66,6 +91,14 @@ public class TbUser implements Serializable {
         this.updatetime = updatetime;
     }
 
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
     @Override
     public boolean equals(Object that) {
         if (this == that) {
@@ -83,7 +116,8 @@ public class TbUser implements Serializable {
             && (this.getPassword() == null ? other.getPassword() == null : this.getPassword().equals(other.getPassword()))
             && (this.getPhone() == null ? other.getPhone() == null : this.getPhone().equals(other.getPhone()))
             && (this.getCreatetime() == null ? other.getCreatetime() == null : this.getCreatetime().equals(other.getCreatetime()))
-            && (this.getUpdatetime() == null ? other.getUpdatetime() == null : this.getUpdatetime().equals(other.getUpdatetime()));
+            && (this.getUpdatetime() == null ? other.getUpdatetime() == null : this.getUpdatetime().equals(other.getUpdatetime()))
+            && (this.getStatus() == null ? other.getStatus() == null : this.getStatus().equals(other.getStatus()));
     }
 
     @Override
@@ -96,6 +130,7 @@ public class TbUser implements Serializable {
         result = prime * result + ((getPhone() == null) ? 0 : getPhone().hashCode());
         result = prime * result + ((getCreatetime() == null) ? 0 : getCreatetime().hashCode());
         result = prime * result + ((getUpdatetime() == null) ? 0 : getUpdatetime().hashCode());
+        result = prime * result + ((getStatus() == null) ? 0 : getStatus().hashCode());
         return result;
     }
 
@@ -111,6 +146,7 @@ public class TbUser implements Serializable {
         sb.append(", phone=").append(phone);
         sb.append(", createtime=").append(createtime);
         sb.append(", updatetime=").append(updatetime);
+        sb.append(", status=").append(status);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

@@ -16,7 +16,7 @@
 	    <table cellpadding="5">
 	        <tr>
 	            <td>
-	                <textarea style="width:1200px;height:600px;visibility:hidden;" name="introduction">${road.introduction}</textarea>
+	                <textarea style="width:1100px;height:500px;visibility:hidden;" name="introduction">${road.introduction}</textarea>
 	            </td>
 	        </tr>
 	    </table>

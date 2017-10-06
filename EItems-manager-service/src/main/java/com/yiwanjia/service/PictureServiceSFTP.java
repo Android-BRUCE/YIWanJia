@@ -3,7 +3,6 @@ package com.yiwanjia.service;
 
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.JSchException;
-import com.jcraft.jsch.SftpATTRS;
 import com.yiwanjia.common.utils.IDUtils;
 import com.yiwanjia.common.utils.SFTPChannel;
 import com.yiwanjia.common.utils.SFTPConstants;

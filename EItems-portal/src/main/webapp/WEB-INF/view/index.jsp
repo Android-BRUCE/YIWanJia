@@ -7,8 +7,10 @@
 <meta charset="utf-8">
 <title>杭州钱王万家信息科技有限公司</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="杭州钱王万家信息科技有限公司" />
+<meta name="description" content="杭州、钱王、万家、万家科技、万家信息、万家产品、杭州钱王、杭州钱王万家、杭州钱王万家信息、杭州钱王万家信息科技
+钱王物业、万家信息科技、万家信息科技有限公司、钱王万家、钱王万家信息、钱王万家信息科技、易万家产品、杭州钱王万家信息科技有限公司" /><meta name="keywords" content="杭州、钱王、钱王万家、钱王万家信息、钱王万家信息科技、易万家产品、杭州钱王万家信息科技有限公司" />
 <meta name="author" content="杭州钱王万家信息科技有限公司" />
+
 <!-- css -->
 
 	<%--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">--%>	<link href="${pageContext.request.contextPath}/css/public/fonts-google.css" rel="stylesheet">
@@ -48,8 +50,8 @@
                     </button>
                     <a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
 						<%--<i class="icon-info-blocks material-icons">language</i>--%>
-							<img src="${pageContext.request.contextPath}/img/logo.png" alt="" height="50" width="50" />
-							杭州钱王万家信息科技有限公司
+							<img src="${pageContext.request.contextPath}/img/public/logo02.png" alt="" height="65" width="200" style="margin-bottom: 20px;float: left" />
+							<%--杭州钱王万家信息科技有限公司--%>
 							<%--钱王万家--%>
 					</a>
 
@@ -95,7 +97,7 @@
 				<p align="center" style="font-size: 50">互联网+智慧服务平台</p><br><br><br>
 				<ul class="zszk_icon">
 					<li>
-						<A href="####">
+						<A href="${pageContext.request.contextPath}/supportPages.aspx?id=1">
 							<i class="icon icon01"></i>
 							<div class="text">
 								<h1>智慧环卫监控平台</h1>
@@ -104,7 +106,7 @@
 						</A>
 					</li>
 					<li>
-						<A href="####">
+						<A href="${pageContext.request.contextPath}/supportPages.aspx?id=2">
 							<i class="icon icon02"></i>
 							<div class="text">
 								<h1>智慧垃圾分类平台</h1>
@@ -114,7 +116,7 @@
 					</li>
 
 					<li>
-						<A href="####">
+						<A href="${pageContext.request.contextPath}/supportPages.aspx?id=3">
 							<i class="icon icon03"></i>
 							<div class="text">
 								<h1>智慧养老服务平台</h1>
@@ -237,7 +239,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4" style="float: right;margin-right: 150px;margin-top: 0px;">
 				<div class="widget">
 					<h5 class="widgetheading"></h5>
 					<ul class="link-list">
@@ -246,19 +248,19 @@
 				</div>
 			</div></div>
 		</div>
-	<div id="sub-footer">
+	<div id="sub-footer" style="margin-top: 20px">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
-					<div class="copyright">
+					<div class="copyright" style="float: left">
 						<p>
 							Copyright &copy; 2017.杭州钱王万家信息科技有限公司 All rights reserved.
 						</p>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<ul class="social-network">
-						<p>浙ICP备14036718号-6浙公网安备 33018502001594号</p></ul>
+				<div class="col-lg-6" style="float: right">
+					<ul class="copyright">
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;浙ICP备14036718号-6浙公网安备 33018502001594号</p></ul>
 				</div>
 			</div>
 		</div>

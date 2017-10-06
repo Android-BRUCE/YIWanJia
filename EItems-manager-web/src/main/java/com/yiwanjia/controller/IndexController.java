@@ -1,10 +1,7 @@
 package com.yiwanjia.controller;
 
 
-import com.yiwanjia.dao.TbSupportMapper;
 import com.yiwanjia.pojo.TbActivity;
-import com.yiwanjia.pojo.TbGoods;
-import com.yiwanjia.pojo.TbGoodsCategory;
 import com.yiwanjia.pojo.TbSupport;
 import com.yiwanjia.service.ActivityService;
 import com.yiwanjia.service.GoodsCategoryService;
@@ -16,8 +13,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import java.util.List;
 
 @Controller
 public class IndexController {

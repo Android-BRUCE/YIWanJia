@@ -141,7 +141,7 @@
 
   <!--===================================================自定义select 链表=====start============================================-->
 <select id="selectUnionCategory" resultType="com.yiwanjia.pojo.TbGoods" >
-  SELECT a.id,a.GoodsTtile,a.image,a.CreateTime,a.UpdateTime,a.point,a.cid,b.name FROM tb_goods a , tb_GoodsCategory b WHERE a.`cid`=b.`id`
+  SELECT a.id,a.GoodsTtile,a.image,a.CreateTime,a.UpdateTime,a.point,a.cid,b.name FROM tb_goods a , tb_GoodsCategory b WHERE a.`cid`=b.`id` AND b.`status`=1
 </select>
 
   <!--===================================================自定义select 链表=================================================-->

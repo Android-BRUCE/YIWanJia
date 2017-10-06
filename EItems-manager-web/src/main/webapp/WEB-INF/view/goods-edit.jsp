@@ -209,7 +209,7 @@
             </tr>
             <tr>
                 <td>产品具述:&nbsp;&nbsp;
-                    <textarea style="width:1200px;height:500px;visibility:hidden;"
+                    <textarea style="width:1100px;height:400px;visibility:hidden;"
                               name="goodsdesc">${goods.goodsdesc}</textarea>
                 </td>
             </tr>

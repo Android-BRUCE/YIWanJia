@@ -40,7 +40,7 @@
 	        <tr>
 	            <td>新闻具述:</td>
 	            <td>
-	                <textarea style="width:800px;height:300px;visibility:hidden;" name="content"></textarea>
+	                <textarea style="width:1100px;height:400px;visibility:hidden;" name="content"></textarea>
 	            </td>
 	        </tr>
 	    </table>

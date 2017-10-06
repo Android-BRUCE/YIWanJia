@@ -1,5 +1,6 @@
 package com.yiwanjia.intercepter;
 
+import com.yiwanjia.common.pojo.TaotaoResult;
 import com.yiwanjia.pojo.TbUser;
 import com.yiwanjia.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,12 +46,12 @@ public class LoginIntercepter implements HandlerInterceptor {
         }
 
         //根据token换取用户信息
-        TbUser user = LoginService.getUserByCookie(request, cookieVaule);
-        if(user.getName()==""||user == null||user.getName()==null){
+          TaotaoResult result = LoginService.getUserByCookie(request, cookieVaule);
+          if(result.getStatus()==500){
             response.sendRedirect("login.html"+"");
             return false;
         }
-        request.setAttribute("user", user);
+      //  request.setAttribute("user", (TbUser)result.getData());
         return true;
       }catch (Exception e){
           response.sendRedirect("login.html"+"");

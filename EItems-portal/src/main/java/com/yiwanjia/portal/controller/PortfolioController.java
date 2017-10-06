@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
+/**
+ * 加载产品controller
+ */
 @Controller
 public class PortfolioController {
 
@@ -23,14 +26,20 @@ public class PortfolioController {
     @Autowired
     private TbGoodsCategoryMapper categoryMapper;
 
-
+    /**
+     * 获取产品和分类名称
+     * @param model
+     * @return
+     */
     @RequestMapping("portfolio")
     public String jumpToPortfolio(Model model){
 
         TbGoodsExample tbGoodsExample = new TbGoodsExample();
-        List<TbGoods> tbGoods = tbGoodsMapper.selectUnionCategory();
+        List<TbGoods> tbGoods = tbGoodsMapper.selectUnionCategory();//物品对应的分类应该为开启状态
 
         TbGoodsCategoryExample tbGoodsCategoryExample = new TbGoodsCategoryExample();
+        TbGoodsCategoryExample.Criteria criteria = tbGoodsCategoryExample.createCriteria();
+        criteria.andStatusEqualTo(1);//分类的状态为1 ： 开启
         List<TbGoodsCategory> categoryList = categoryMapper.selectByExample(tbGoodsCategoryExample);
 
         model.addAttribute("goods",tbGoods);
@@ -39,9 +48,19 @@ public class PortfolioController {
         return "portfolio";
     }
 
+    /**
+     * 产品详情页面。
+     * @param id
+     * @param model
+     * @return
+     */
     @RequestMapping("{id}/detilPortfolio")
-    public String jumpToPortfolioDetil(@PathVariable long id,Model model){
-        TbGoods goods = tbGoodsMapper.selectByPrimaryKey(id);
+    public String jumpToPortfolioDetil(@PathVariable double id,Model model){
+
+        TbGoods goods = tbGoodsMapper.selectByPrimaryKey((long)id);
+        if (goods==null){
+            return "portfolioPage";
+        }
         model.addAttribute("list",goods);
 
         return "portfolioPage";

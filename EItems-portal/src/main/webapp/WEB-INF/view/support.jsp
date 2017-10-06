@@ -3,11 +3,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="icon" sizes="124x124" href="${pageContext.request.contextPath}/img/logo.png">
+	<link rel="shortcut icon" href="${pageContext.request.contextPath}/img/logo.png">
 <meta charset="utf-8">
 <title>杭州钱王万家信息科技有限公司</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="杭州钱王万家信息科技有限公司" />
 <meta name="author" content="杭州钱王万家信息科技有限公司" />
+<meta name="keywords" content="钱王万家" />
 <!-- css -->
 	<link href="${pageContext.request.contextPath}/css/public/fonts-google.css" rel="stylesheet">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/materialize/css/materialize.min.css" media="screen,projection" />
@@ -53,8 +56,7 @@
 					</button>
 					<a class="navbar-brand" href="${pageContext.request.contextPath}/index.html">
 						<%--<i class="icon-info-blocks material-icons">language</i>--%>
-						<img src="${pageContext.request.contextPath}/img/logo.png" alt="" height="50" width="50" />
-						杭州钱王万家信息科技有限公司
+							<img src="${pageContext.request.contextPath}/img/public/logo02.png" alt="" height="65" width="200" style="margin-bottom: 20px;float: left" />
 						<%--钱王万家--%>
 					</a>
 
@@ -171,67 +173,67 @@
 		<!--end about-main-->
 	</div>
 	</section>
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-3">
-				<div class="widget">
-					<h5 class="widgetheading">联系方式</h5>
-					<ul class="foot_add_box">
-						<li class="foot_tel">&nbsp;0571-61099111</li>
-						<li class="foot_add">zjqwwy@163.com</li>
-					</ul>
-					<br>
-					<address>
-						杭州市临安市青山湖街道<br>
-						大园路958号科创大楼A603</address>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="widget">
-					<h5 class="widgetheading">产品中心</h5>
-					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=1">智慧环卫监控平台</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=2">智慧垃圾分类平台</a></li>
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=3">智慧养老服务平台</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="widget">
-					<h5 class="widgetheading">新闻资讯</h5>
-					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">公司新闻</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="widget">
-					<h5 class="widgetheading"></h5>
-					<ul class="link-list">
-						<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="170" width="290" align="">
-					</ul>
-				</div>
-			</div></div>
-	</div>
-	<div id="sub-footer">
+	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
-					<div class="copyright">
-						<p>
-							Copyright &copy; 2017.杭州钱王万家信息科技有限公司 All rights reserved.
-						</p>
+				<div class="col-sm-3">
+					<div class="widget">
+						<h5 class="widgetheading">联系方式</h5>
+						<ul class="foot_add_box">
+							<li class="foot_tel">&nbsp;0571-61099111</li>
+							<li class="foot_add">zjqwwy@163.com</li>
+						</ul>
+						<br>
+						<address>
+							杭州市临安市青山湖街道<br>
+							大园路958号科创大楼A603</address>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<ul class="social-network">
-						<p>浙ICP备14036718号-6浙公网安备 33018502001594号</p></ul>
+				<div class="col-sm-3">
+					<div class="widget">
+						<h5 class="widgetheading">产品中心</h5>
+						<ul class="link-list">
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=1">智慧环卫监控平台</a></li>
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=2">智慧垃圾分类平台</a></li>
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/supportPages.aspx?id=3">智慧养老服务平台</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="widget">
+						<h5 class="widgetheading">新闻资讯</h5>
+						<ul class="link-list">
+							<li><a class="waves-effect waves-dark" href="${pageContext.request.contextPath}/news.html">公司新闻</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4" style="float: right;margin-right: 150px;margin-top: 0px;">
+					<div class="widget">
+						<h5 class="widgetheading"></h5>
+						<ul class="link-list">
+							<img src="${pageContext.request.contextPath}/img/public/erweima.jpg" alt="" height="170" width="290" align="微信扫一扫">
+						</ul>
+					</div>
+				</div></div>
+		</div>
+		<div id="sub-footer" style="margin-top: 20px">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="copyright" style="float: left">
+							<p>
+								Copyright &copy; 2017.杭州钱王万家信息科技有限公司 All rights reserved.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-6" style="float: right">
+						<ul class="copyright">
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;浙ICP备14036718号-6浙公网安备 33018502001594号</p></ul>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</footer>
+	</footer>
 </div>
 <a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up active"></i></a>
 <!-- javascript

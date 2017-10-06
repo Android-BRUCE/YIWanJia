@@ -15,8 +15,8 @@
             var editing;
             var flag;
             $("#tt").datagrid({
-                width:1244,
-                height: 650,
+                width:1240,
+                height: 520,
                 collapsible:true,
                 //idField:"id",只能选中一个行
                 fitColumns:true,

@@ -4,7 +4,6 @@ import com.yiwanjia.common.pojo.EUDataGridResult;
 import com.yiwanjia.common.pojo.TaotaoResult;
 import com.yiwanjia.pojo.TbCase;
 import com.yiwanjia.service.CaseService;
-import org.apache.ibatis.annotations.Case;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

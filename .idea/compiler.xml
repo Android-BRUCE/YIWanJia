@@ -23,6 +23,7 @@
       <module name="EItems-manager-service" target="1.7" />
       <module name="EItems-manager-web" target="1.7" />
       <module name="EItems-portal" target="1.7" />
+      <module name="wanjiatest" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

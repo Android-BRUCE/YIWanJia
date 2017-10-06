@@ -1,7 +1,6 @@
 package com.yiwanjia.controller;
 
 import com.yiwanjia.common.utils.JsonUtils;
-import com.yiwanjia.service.PictureService;
 import com.yiwanjia.service.PictureServiceSFTP;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,8 +14,6 @@ import java.util.Map;
 @RequestMapping("pic")
 public class PictureController {
 
-    @Autowired
-    private PictureService pictureService;
     @Autowired
     private PictureServiceSFTP PictureServiceSFTP;
 

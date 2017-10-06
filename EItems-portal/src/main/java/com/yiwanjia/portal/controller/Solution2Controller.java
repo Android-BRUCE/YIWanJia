@@ -25,8 +25,12 @@ public class Solution2Controller {
         return "support";
     }
     @RequestMapping("supportPages")
-    public String jumpToSolutionDetilPage(@RequestParam(value = "id")Integer id,Model model){
-        TbSupport2 solutionById = solutionService.getSolutionById(id);
+    public String jumpToSolutionDetilPage(@RequestParam(value = "id",defaultValue = "1")double id,Model model){
+
+        TbSupport2 solutionById = solutionService.getSolutionById((int)id);
+        if (solutionById==null){
+            return "supportPages";
+        }
         Date updatetime = solutionById.getUpdatetime();
         SimpleDateFormat format = new SimpleDateFormat("yy-MM-dd");
 

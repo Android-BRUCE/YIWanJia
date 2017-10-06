@@ -20,8 +20,8 @@
         var editing;
         var flag;
         $("#tt").datagrid({
-            width:1244,
-            height: 650,
+            width:1240,
+            height: 520,
             collapsible:true,
             //idField:"id",只能选中一个行
             fitColumns:true,
@@ -51,7 +51,7 @@
                     }
                 },
                 {field:"status",title:"展示状态",width:50,align:"center",
-                         formatter(value,row,index){
+                         formatter:function(value,row,index){
                     if(value == 1){return "展示";}
                     return "取消";
                 }
@@ -198,7 +198,7 @@
 <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#D1DDAA" align="left">
     <tr>
         <td height="26">
-            <table width="90%" border="0" cellspacing="0" cellpadding="0">
+            <table width="60%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td >
                         当前位置:关于我们管理>>公司新闻管理

@@ -2,101 +2,13 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="EItems-manager-web:war exploded" />
+      <artifact name="EItems-portal:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9fda87d-8d88-4571-80c0-f3ec2e83cc10" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/img/public/logo02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_21.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_1_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_7_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_2_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/resources/spring/applicationContext-jedis.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-manager-web/src/test/java/com/yiwanjia/controller/JedisTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/js/teset01101.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/PictureService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/dao/impl/JedisClientCluster.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/EItems_manager_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/EItems_manager_web_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/js/teset01101.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-mapping/src/main/java/com/yiwanjia/dao/TbGoodsMapper.xml" afterPath="$PROJECT_DIR$/EItems-manager-mapping/src/main/java/com/yiwanjia/dao/TbGoodsMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-mapping/src/main/java/com/yiwanjia/dao/TbUserMapper.xml" afterPath="$PROJECT_DIR$/EItems-manager-mapping/src/main/java/com/yiwanjia/dao/TbUserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-pojo/src/main/java/com/yiwanjia/pojo/TbUser.java" afterPath="$PROJECT_DIR$/EItems-manager-pojo/src/main/java/com/yiwanjia/pojo/TbUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-pojo/src/main/java/com/yiwanjia/pojo/TbUserExample.java" afterPath="$PROJECT_DIR$/EItems-manager-pojo/src/main/java/com/yiwanjia/pojo/TbUserExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/EItems-manager-service.iml" afterPath="$PROJECT_DIR$/EItems-manager-service/EItems-manager-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/pom.xml" afterPath="$PROJECT_DIR$/EItems-manager-service/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/AboutNewsService.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/AboutNewsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/AboutUsService.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/AboutUsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/ActivityService.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/ActivityService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/BannerService.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/BannerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/CaseService.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/CaseService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/ContactService.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/ContactService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/GoodsCategoryService.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/GoodsCategoryService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/GoodsService.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/GoodsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/IndexaGoodsService.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/IndexaGoodsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/JoinUsService.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/JoinUsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/LoginService.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/LoginService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/PictureServiceSFTP.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/PictureServiceSFTP.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/SupportService.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/service/SupportService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/EItems-manager-web.iml" afterPath="$PROJECT_DIR$/EItems-manager-web/EItems-manager-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/pom.xml" afterPath="$PROJECT_DIR$/EItems-manager-web/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/AboutNewsController.java" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/AboutNewsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/ActivityController.java" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/ActivityController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/BannerController.java" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/BannerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/CaseController.java" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/CaseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/IndexController.java" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/JoinUsController.java" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/JoinUsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/LoginController.java" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/PictureController.java" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/PictureController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/SupportController.java" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/SupportController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/intercepter/LoginIntercepter.java" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/intercepter/LoginIntercepter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/resources/spring/applicationContext-dao.xml" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/resources/spring/applicationContext-dao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/resources/spring/applicationContext-service.xml" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/resources/spring/applicationContext-service.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/resources/spring/applicationContext-trans.xml" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/resources/spring/applicationContext-trans.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/resources/spring/springmvc.xml" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/resources/spring/springmvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/Goods.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/Goods.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/about_news.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/about_news.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/about_news_add.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/about_news_add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/about_news_edit.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/about_news_edit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/banner.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/banner.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/case.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/case.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/companyIntroduction.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/companyIntroduction.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/companyRoad.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/companyRoad.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/contact.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/contact.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/goods-add.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/goods-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/goods-edit.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/goods-edit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/goodsCategory.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/goodsCategory.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/joinUs.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/joinUs.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/login.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/solution.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/solution.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/solution_edit.jsp" afterPath="$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/solution_edit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/ActivityController.java" afterPath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/ActivityController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/NewsController.java" afterPath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/NewsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/PortfolioController.java" afterPath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/PortfolioController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/Solution2Controller.java" afterPath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/controller/Solution2Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/about.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/about.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/aboutDevelopment.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/aboutDevelopment.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/aboutHonour.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/aboutHonour.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/aboutPropaganda.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/aboutPropaganda.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/case.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/case.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/contact.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/contact.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/index.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/joinUs.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/joinUs.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/news.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/news.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/newsPages.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/newsPages.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/portfolio.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/portfolio.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/portfolioPage.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/portfolioPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/support.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/support.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/supportPages.jsp" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/WEB-INF/view/supportPages.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EItems-portal/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/EItems-portal/src/main/webapp/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/dao/JedisClient.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/dao/JedisClientReName.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/EItems-portal/src/main/java/com/yiwanjia/portal/dao/impl/JedisClientSingle.java" afterPath="$PROJECT_DIR$/EItems-manager-service/src/main/java/com/yiwanjia/dao/impl/JedisClientSingle.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -157,7 +69,7 @@
       <file leaf-file-name="PictureController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/PictureController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="152">
               <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -166,45 +78,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationContext-jedis.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="applicationContext-jedis.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/resources/spring/applicationContext-jedis.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-38">
-              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-              <folding>
-                <element signature="e#1506#1524#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="teset01101.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/js/teset01101.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <marker date="1507191290671" expanded="true" signature="29515:29546" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="32737:32768" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="33266:33276" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="154386:154423" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="154549:154586" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="154662:154699" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="154762:154799" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="154872:154909" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="154975:155052" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="155076:155197" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="155217:155347" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="155555:155607" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="155713:156704" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="157030:157123" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="157371:157484" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="157515:157557" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="157599:157785" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="225794:225830" ph="..." />
-                <marker date="1507191290671" expanded="true" signature="226099:226123" ph="..." />
-              </folding>
+            <state relative-caret-position="152">
+              <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -222,7 +101,7 @@
       <file leaf-file-name="springmvc.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/resources/spring/springmvc.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
+            <state relative-caret-position="741">
               <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
               <folding />
             </state>
@@ -460,10 +339,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -510,6 +388,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -562,7 +441,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.manager">
+  <component name="RunManager" selected="Tomcat Server.portal">
     <configuration name="JedisTest.jedisTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -683,6 +562,18 @@
       </option>
       <envs />
       <patterns />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="EItems" />
+      <envs />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -961,18 +852,6 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="EItems" />
-      <envs />
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -1404,6 +1283,10 @@
       <workItem from="1506665784546" duration="19086000" />
       <workItem from="1506740507365" duration="7504000" />
       <workItem from="1507190552021" duration="1308000" />
+      <workItem from="1507257194013" duration="1370000" />
+      <workItem from="1507513335413" duration="1273000" />
+      <workItem from="1507518981057" duration="591000" />
+      <workItem from="1508154517551" duration="221000" />
     </task>
     <servers />
   </component>
@@ -1440,7 +1323,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="818811000" />
+    <option name="totallyTimeSpent" value="822266000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1453,9 +1336,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5692308" sideWeight="0.51002866" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331058" sideWeight="0.51664144" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761577" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2161235" sideWeight="0.506079" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4417549" sideWeight="0.48955223" order="9" side_tool="false" content_ui="tabs" />
@@ -1475,8 +1359,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26013985" sideWeight="0.489255" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32307693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761577" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21440823" sideWeight="0.49392098" order="19" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29500756" sideWeight="0.14044943" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331058" sideWeight="0.48335856" order="19" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31240544" sideWeight="0.14044943" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30818966" sideWeight="0.85955054" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902735" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1534,7 +1418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1549,7 +1432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1571,7 +1453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1579,7 +1460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1594,7 +1474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1606,25 +1485,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EItems-manager-service/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
           <caret line="50" column="17" lean-forward="false" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EItems-manager-web/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="597">
           <caret line="68" column="21" lean-forward="false" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/webapp/WEB-INF/view/companyVideo.jsp">
@@ -1798,6 +1675,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/resources/resource/resource.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/PictureController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/intercepter/LoginIntercepter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="18" column="108" lean-forward="false" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/resources/spring/applicationContext-dao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1822,76 +1733,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/intercepter/LoginIntercepter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="18" column="108" lean-forward="false" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/resources/resource/resource.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/java/com/yiwanjia/controller/PictureController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/js/teset01101.js" />
     <entry file="file://$PROJECT_DIR$/EItems-manager-web/src/main/resources/spring/applicationContext-jedis.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding>
-            <element signature="e#1506#1524#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EItems-portal/src/main/webapp/js/teset01101.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1507191290671" expanded="true" signature="29515:29546" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="32737:32768" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="33266:33276" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="154386:154423" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="154549:154586" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="154662:154699" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="154762:154799" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="154872:154909" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="154975:155052" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="155076:155197" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="155217:155347" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="155555:155607" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="155713:156704" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="157030:157123" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="157371:157484" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="157515:157557" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="157599:157785" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="225794:225830" ph="..." />
-            <marker date="1507191290671" expanded="true" signature="226099:226123" ph="..." />
-          </folding>
+        <state relative-caret-position="152">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
